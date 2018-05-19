@@ -1,0 +1,244 @@
+reference model classifier  categorisation used to classify things present in  particular view of  system.
+modelling viewpoint  viewpoint on  distributed system as defined by RM ODP
+reference model thing  thing that exists in the context of one or more views of system.
+computational view thing The computational view point of the Model accounts for the major computational objects expected within  environment research infrastructure and the interfaces by which they can be interacted with. Each object encapsulates functionality that needs to be collectively implemented by  service or resource within the infrastructure; each object also provides  number of interfaces by which that functionality can be invoked, or by which the object can invoke the functions of other objects. By binding compatible interfaces together,  network of interactions between objects can be described that demonstrates the computational requirements of  compliant research infrastructure.
+engineering view thing Concepts defined for the Engineering Viewpoint in the Recommendation Information technology Open Distributed Processing  Reference model Foundations, Architecture information view thing The goal of the information viewpoint is to provide  common abstract model for the shared information handled by the infrastructure. The focus lies on the information itself, without considering any platform specific or implementation details. It is independent from the computational interfaces and functions that manipulate the information or the nature of technology used to store it. Similar to  high level ontology, it aims to provide  unique and consistent interpretation of the shared information entities of  particular domain. The information viewpoint specifies the types of the information objects and the relationships between those types. It describes how the state of the data evolves as the results of computational operations. It also defines the constraints on the data and the rules governing the processing of such data.
+reference activity  activity involving objects present in  view of  system.
+operation  computation operation represents  remote functionality invoked by one computation object onto one or more other objects.
+complex operation  complex operation represents  remote functionality invoked by one computation object onto  binding object created to broker interaction between more than two computational objects.
+brokered data export Exporting data out of a research infrastructure entails retrieving data from the data curation subsystem and delivering it to an external resource. This process must be brokered by the data use and data publishing subsystems.
+brokered data import Importing data from sources other than the acquisition network requires that the import be brokered by the publishing subsystem before data can be delivered into the data curation subsystem.
+data staging The staging of data for processing within a research infrastructure entails retrieving data from the data curation subsystem and delivering it to the data processing subsystem.
+raw data collection The collection of raw scientific data requires coordination between the data acquisition phase which extracts the raw data from instruments and the data curation phase which packages and stores the data
+simple operation  simple operation represents  remote functionality invoked by one computation object onto another.
+acquire identifier is used to request a new persistent identifier to be associated with the data being transferred.
+annotate data is used to request annotation of data held within the data curation subsystem of a research infrastructure.
+authorise action Is used to retrieve authorisation for any restricted interactions with the data acquisition subsystem.
+calibrate instrument is used to calibrate the reading of data by instruments based (in principle) on scientific analysis of data output. This interface can also be used to monitor activity on a given instrument.
+configure controller is used to configure data collection (and other configurable factors) on individual instruments.
+coordinate process is used to coordinate the execution of data processing tasks on execution resources presented by process controllers.
+export metadata is used to retrieve any additional metadata to be associated with the data being transferred.
+prepare data transfer is used to negotiate data transfers into the data curation subsystem.
+process request is used to make requests of the research infrastructure pertaining to data processing.
+query data is used to forward queries onto the data curation subsystem of a research infrastructure and receive the results.
+query resource is used to retrieve data from data stores.
+request data is used to make requests of the research infrastructure pertaining to curated datasets.
+resolve identifier Is used to resolve identifiers.
+retrieve data is used to request a new persistent identifier to be associated with the data being transferred.
+translate request is used to invoke a semantic broker where some mapping between different semantic domains is deemed necessary.
+update catalogue is used to update (or initiate the update) of data catalogues or catalogue information managed by a catalogue service.
+update model is used to update semantic models associated with a research infrastructure.
+update record is used to directly annotate existing datasets curated within one or more data stores.
+update registry is used to register and unregister instruments with the data acquistion subsystem.
+data stream operation A type of computational operation that involves the streaming of data from one computational object to another.
+deliver dataset is used to retrieve external datasets stored in external data stores outside of the data curation subsystem.
+deliver raw data is used to collect raw data sent by instruments in the data acquisition subsystem.
+export curated data is used to retrieve curated datasets stored within data stores in the data curation subsystem.
+import data for curation receives data packaged for curation within the associated datastore.
+stage data is used to acquire data sent from the data curation subsystem of a research infrastructure needed as part of some process.
+information action Information actions model the information processing in the system. Every action is associated with at least one object. Actions cause state changes in the objects that participate in them.
+add metadata Add additional data according to a predefined schema (metadata schema). This partially overlaps with data annotations.
+annotate entity  The general class of annotation actions.
+assign unique identifier  Obtain a unique identifier and associate it to the data.
+build conceptual model Establish a local or global model of interrelated concepts. This may involve the following issues: commitment (the agreement of a larger group of scientists / data providers / data users as to what should be achieved); unambiguousness (the conceptual model should be unambiguously defined); readability (the model should be readable by both human and machine?ontologies, for instance, express the meaning of the concepts with the relations to other concepts while being human and machine readable, and it has recently become increasingly important to add definitions in human readable language); and availability (the conceptual model must be referenceable and dereferenceable for a long time).
+carry out backup Replicate data to an additional data storage so it may be used to restore the original after a data loss event. Longterm preservation is a special type of backup.
+check quality Actions to verify the quality of data. For example it may involve: removing noise; removing apparently wrong data; calculating calibrations. Quality checks can be carried out at different points in the chain of data lifecycle. Quality checks can be supported by software tools for those processes which can be automated (e.g. statistic tolerance checks).
+cite data Produce a reference to persistent data or metadata.
+convert data Converting and generating data products, for instance translating to a different format.
+describe service Describe the accessibility of a service or processes, which is available for reuse, the interfaces, the description of behavior and/or implemented algorithms.
+final review Review the data to be published, which will not likely be changed again. The action triggers the change of the data state to be "finally reviewed". In practice, an annotation for such a state change should be recorded for provenance purposes. Usually, this is coupled with archiving and versioning actions.
+perform mapping Execute transformation rules for values (mapping from one unit to another unit) or translation rules for concepts (translating the meaning from one conceptual model to another conceptual model, e.g. translating code lists).
+perform measurement or observation Measure parameter(s) or observe an event. The performance of a measurement or observation produces measurement results.
+process data Process data for the purposes of: converting and generating data products; calculations (e.g. statistical processes, simulation models); visualisation (e.g. alpha-numerically, graphically, geographically). Data processes should be recorded as provenance instances.
+produce model Creation of statistical models, simulation models or summaries with the data provided.
+publish data Make data public accessible. For example, this can be done by presenting them in browsable form on the world wide web, or by presenting them via special services such as a RESTful service, a SOAP service, an OPEN GRID service, an OGC service (web feature service, web map service, etc.) or a SPARQL endpoint.
+publish metadata Make the registered metadata available to the public.
+query entity Query some entity, such as a dataset, metadata or annotation.
+query data Send a request to a data store to retrieve required data. In practice, there are two types of data query. First the two step approach (wherein step 1 is to query/search metadata and step 2 is to access data)?for example, when using OGC services, it usually first invokes a web feature service to obtain feature descriptions, then a web map service is invoked to obtain map images. Second the one step approach (wherein data is queried directly) e.g. by using SQL services or SPARQL endpoints. Requests can be directly sent to a service or distributed by a broker.
+query metadata Send a request to metadata resources to retrieve metadata of interests.
+query provenance This action requests specific persisted data about the provenance of some data or metadata. This is usually done to determine the origin and validity of data but can also be helpful for citation and referencing.
+resolve annotation Retrieve the reference to the specific set of objects that correspond to a set of annotation terms.
+register metadata Enter the metadata into a metadata catalogue.
+setup mapping rules Specify the mapping rules of data and/or concepts. These rules should be explicitly expressed using a language that can be processed by software. A minimal set of mapping rules should include the following data: source data / concept for which the mapping is valid; target data / concept for which the mapping is valid; the mapping process (the translation and/or transformation process); validity constraints for the mapping (temporal constraints, context constraints, etc.).
+specify investigation design Specify design of investigation, including sampling design. This may include geographical position of measurement or observation (site)?the selections of observations and measurement sites, e.g., can be statistical or stratified by domain knowledge; characteristics of a site; preconditions of measurements.
+specify measurement or observation Specify the details of the method of observations/measurements. For example, it may include the specification of a measurement device type and its settings, measurement/observation intervals.
+store data Archive or preserve data in persistent manner to ensure continued accessibility and usability.
+track provenance Automatically generate and store metadata about the actions and the data state changes as provenance instances.
+visualise data Creating visual models which display data alpha-numerically, graphically, or geographically.
+behaviour behaviour of  community is  composition of actions performed by roles normally addressing separate business requirements. In the ENVRI RM, the modelling of community behaviours is based on analysis of the common requirements of the ENVRI research infrastructure which has resulted in  list of common functions. The initial model focuses on the minimal set of requirements.  community behaviour can be either  single function or  composition of several functions from the function list.
+data acquisition behaviour A behaviour of a data acquisition community.
+data collection A behaviour performed by a DataCollector that control and monitor the collection of the digital values from a sensor instrument (or a human sensor such as a Measurer or a Observer), associating consistent timestamps and necessary metadata.
+design experiment A behaviour performed by a Environmental Scientist that designs the scientific experiment which motivates the data acquisition activities.
+design measurement model A behaviour performed by a Measurement Model Designer that designs the measurement or monitoring model based on scientific requirements.
+instrument calibration A behaviour performed by a Technician that controls and records the process of aligning or testing a sensor against dependable standards or specified verification processes.
+instrument configuration A behaviour performed by a Technician that sets up a sensor or a sensor network.
+data curation behaviour A behaviour of a data curation community.
+data annotation A behaviour performed by a SemanticCurator which supports the linking of data and metadata with a local conceptual model.
+data identification A behaviour performed by a PID manager which provides a unique PID for data and metadata being curated.
+data preservation A behaviour performed by a Data Curator that deposits (over long-term) the data and metadata or other supplementary data and methods according to specified policies, and makes them accessible on request.
+data product generation A behaviour performed by a Data Curator that processes data against requirement specifications and standardised formats and descriptions.
+data quality checking A behaviour performed by a Data Curator that detects and corrects (or removes) corrupt, inconsistent or inaccurate records from data sets.
+data replication A behaviour performed by a Storage Administrator that creates, deletes and maintains the consistency of copies of a data set on multiple storage devices.
+select build conceptual model A behaviour performed by a Semantic Curator which supports the annotation of data and metadata.
+data processing behaviour A behaviour of a data processing community.
+compose service A behaviour performed by a Service Provider to combine multiple services which can be achieved by either Choreography or Orchestration. Service Choreography is a collaboration between Service Providers and Service Consumers. Service Orchestration is the behaviour that a Service Provider performs internally to realise a service that it provides.
+coordinate service A behaviour performed by a Service Provider to coordinate the actions of distributed applications in order to reach consistent agreement on the outcome of distributed transactions.
+customise processing environment A behaviour performed by a processing environment planner to enable a Data Processing Subsystem to prepare customised infrastructure and service platforms for managing specific data processing applications optimally, including the planning, provisioning and deployment sub-activities.
+describe service A behaviour performed by a Service Provider to provide the information needed in order to use a service.
+register service A behaviour performed by a Service Provider to make the service visible to Service Consumers by registering it in a service registry.
+data publishing behaviour A behaviour of a data publishing community.
+data citation A behaviour performed by a PID Manager that assigns an accurate, consistent and standardised reference to a data object, in the same way as researchers routinely provide a bibliographic reference to printed resources. The RI publishing the data can define the citation contents such as authors, and dates for different citation styles.
+data discovery and access A behaviour enabled by a Data Discovery and Access System that retrieves requested data from a data resource by using suitable search technology.
+data publication A behaviour that provides clean, well-annotated, anonymity-preserving datasets in a suitable format, and by following specified data-publication and sharing policies, to make the datasets accessible publicly or to those who agree to certain conditions of use, and to individuals who meet certain professional criteria.
+meta data harvesting A behaviour performed by a metadata harvester to gather metadata from data objects in order to construct catalogues of the available information.
+semantic harmonisation A behaviour enabled by a Semantic Mediator that unifies similar data (knowledge) models based on the consensus of collaborative domain experts to achieve better data (knowledge) reuse and semantic interoperability.
+data use behaviour A behaviour of a data use community.
+cocreate A behaviour performed by active roles which entails the design and planning of activities for the collection, preservation, analysis or publishing of research data in partnership with different communities.
+collaborate A behaviour performed by active roles which entails assisting/participating in some of the phases of the collection, preservation, analysis or publishing of research data.
+contribute A behaviour performed by active roles which entails directly collecting, preserving, analysing, or publishing research data held by the RI, according to a predefined protocol.
+user behaviour tracking A behaviour enabled by a Community Support System to track the Users. If the research infrastructure has identity management, authorisation mechanisms, accounting mechanisms, for example, a Data Access (Sub)system is provided, then the Community Support System either include these or work well with them.
+user group work support A behaviour enabled by a Community Support System to support controlled sharing, collaborative work and publication of results, with persistent and externally citable PIDs.
+user profile management A behaviour enabled by a Community Support System to support persistent and mobile profiles, where profiles will include preferred interaction settings, preferred computational resource settings, and so on.
+user working relationships management A behaviour enabled by a Community Support System to support a record of working relationships, (virtual) group memberships and friends.
+user working space management A behaviour enabled by a Community Support System to support work spaces that allow data, document and code continuity between connection sessions and accessible from multiple sites or mobile smart devices.
+reference attribute  quality of  object or activity present in  view of system.
+information state Information objects can exist in  variety of different states relative to their natural lifecycle.
+data state Data state is the condition of an object that determines the set of all sequences of actions (or traces) in which the object can participate, at a given instant in time (as defined in ODP, ISO/IEC 10746-2).
+metadata state Metadata state is a refinement of data state applicable to data used as metadata in the system.
+reference object  object present in  view of system.
+data stream  data stream is  computational entity representing the transferral of data from one location to another, brokered by computational objects installed at each location.
+computational object  computational object is  representation of  entity in the real world from the computational viewpoint. It contains information and offers services.  system is composed of interacting objects.  object is characterized by that which makes it distinct from other objects and by encapsulation, abstraction and behaviour.
+bindingobject 
+data transporter Data transporters are provided for managing the movement of data from one part of a research infrastructure to another.
+data exporter Data exporters manage the movement of data from one or more data store objects to external destinations (such as a user machine or downstream service gathering data from the research infrastructure).
+data importer Data importers manage the movement of data from external sources (such as user-originated datasets and derived datasets from data processing) to one or more data stores objects.
+data stager Data stagers coordinate the transfer of data between curation and processing subsystems.
+raw data collector Raw data collectors manage the movement of data from one or more data acquisition objects to one or more data store objects.
+backend object Backend objects are computational objects which encompass the RI's systems and resources provided for acquiring, preserving, publishing, and processing research data and derived data products.
+broker object Broker objects act as intermediaries for access to data held within the datastore and facilitate performing semantic interpretation and routing of queries.
+data broker Data broker objects act as intermediaries for access to data held within the datastore.
+semantic broker Semantic broker objects perform semantic interpretation.
+component object Component objects offer programmatic access to the actual RI's systems and resources, the back end objects.
+data store controller Data store controllers provide access to data stores that may have their own internal data management regimes.
+instrument controller Instrument controllers encapsulate the accessible functionalities of instruments and other raw data sources out in the field.
+process controller Process controllers represent the computational functionality of registered execution resources.
+external resource External resources are resources outside of the scope of the system being modelled that nevertheless provide input or receive output from the system.
+presentation object Presentation objects are the entry points for human users to the systems and services provided to access research data and their derived products.
+science gateway science gateway object encapsulates the functions required to interact with a research infrastructure from outside with the objects provided for data acquisition, data curation, data brokering and data processing. A science gateway should be able to provide virtual 'laboratories' for authorised agents to interact with and possibly configure many of the science functions of a research infrastructure. A science gateway is also known as a VirtualResearchEnvironment.
+virtual laboratory A virtual laboratory object encapsulates interaction between a user or group of users and a subset of the science functions provided by a research infrastructure. Its role is to bind a AAAI service with (potentially) any number of other infrastructure objects.
+experimental laboratory Experimental laboratories are used to interact both with curated data and data processing facilities, allowing researchers to deploy datasets for processing and acquire results from computational experimentation.
+field laboratory Field laboratories (so-named because they interact with raw data sources 'in the field') are used to interact with the data acquisition components, allowing researchers to deploy, calibrate and un-deploy instruments as part of the integrated data acquisition network used by an infrastructure to collect its primary 'raw' data. Field laboratories have the ability to instantiate new instrument controllers from the data acquisition set.
+semantic laboratory Semantic laboratories are used to interact with the semantic models used by a research infrastructure to interpret datasets and characteristic metadata.
+service object Service objects offer programmatic access to distributed systems and resources (internal and external).
+AAAI service AAAI services handle authorisation requests and authentication of users before they can proceed with any privileged activities.
+acquisition service Acquisition services are responsible for ensuring that any data is delivered into the infrastructure in accordance with current policies.
+annotation service Annotation services are concerned with the updating of records (such as data-sets) and catalogues in response to user annotation requests.
+catalogue service Catalogue services are concerned with the cataloguing of metadata and other characteristic data associated with datasets stored within the infrastructure.
+coordination service Coordination service delegate all processing tasks sent to particular execution resources, coordinate multistage workflows and initiate execution of processes.
+data transfer service Data transfer services are concerned with the movement of data into and out of the infrastructure.
+PIDservice PIDservices provide globally readable persistent identifiers (PIDs) to infrastructure entities, mainly datasets, that may be cited by the community.
+persistent object
+information object  information object is  representation of  entity in the real world from the information viewpoint. It contains information and offers services.  system is composed of interacting objects.  object is characterized by that which makes it distinct from other objects and by encapsulation, abstraction and behaviour.
+persistentdata Data is the representations of information dealt with by information systems and users thereof (as defined in ODP, ISO/IEC 10746-2). Persistent Data denotes data that are persisted (stored for the long-term).
+annotated data Data that are connected to concepts, describing their meaning.
+backup data A copy of (persistent) data so it may be used to restore the original after a data loss event.
+registered backup Backup data that has been registered with some registry service or catalogue.
+citation A published, resolvable, token linking to a persistent data object via an identifier.
+conceptual model A collection of concepts, their attributes and their relations. It can be unstructured or structured (e.g. glossary, thesaurus, ontology). Usually the description of a concept and/or a relation defines the concept in a human readable form. Conceptual models can also be represented in machine readable formats, for instance  RDFS or OWL. Those sentences can be used to construct a self description. It is common practice to provide both the human readable description and the machine readable description within the same system. In this sense, a conceptual model can also be seen as a collection of human and machine readable sentences. They can be local, developed within a project, or global, accepted and used by a wider community (such as GEMET or OBOE). Conceptual models can be used to annotate data (e.g. within a network of triple stores).
+global conceptual model A local conceptual model describing the meaning of the data is established.
+local conceptual model A local conceptual model describing the meaning of the data is established.
+data with metadata Data that are connected to metadata which describe those data.
+finally reviewed data  Data that have undergone a final review and therefore will not be changed any more.
+identified data  Data which have been assigned a unique identifier.
+mapped data Data that are mapped to a certain conceptual model.
+measurement result Quantitative, qualitative, or cataloguing determinations of magnitude, dimension, and uncertainty to the outputs of observation instruments, sensors, sensor networks, human observers and observer networks.
+metadata Data about data, in scientific applications is used to describe, explain, locate, or make it easier to retrieve, use, or manage a data resource.
+annotated metadata Metadata that are connected to concepts, describing their meaning.
+concept Identifier, name and definition of the meaning of a thing (abstract or real thing). Human readable definition by sentences, machine readable definition by relations to other concepts (machine readable sentences). It can also be meant for the smallest entity of a conceptual model. It can be part of a flat list of concepts, a hierarchical list of concepts, a hierarchical thesaurus or an ontology.
+data provenance Metadata that traces the origins of data and records all state changes of data during their lifecycle and their movements between storages.
+mapping rule Configuration directives used for model-to-model transformation.
+published metadata Metadata made available to the public, the outside world. Metadata registered within public catalogues.
+QA notation Notation of the result of a Quality Assessment. This notation can be a nominal value out of a classification system up to a comprehensive (machine readable) description of the whole QA process.
+raw metadata Established metadata, which are not yet registered. In general, they are not shareable in this state.
+registered metadata Metadata which are inserted into a metadata catalogue.
+service description Description of services and processes available for reuse. The description is needed to facilitate usage. The service description usually includes a reference to a service or process making it available for reuse within a research infrastructure or within an open network like the Internet. Usually such descriptions include the accessibility of the service, the description of the interfaces, the description of behavior and/or implemented algorithms. Such descriptions are usually done along service description standards (e.g. WSDL, web service description language). Within some service description languages, semantic descriptions of the services and/or interfaces are possible (e.g. SAWSDL, Semantic Annotations for WSDL).
+specification of investigation design This is the background data needed to understand the overall goal of the measurement or observation. It could be the sampling design of observation stations, the network design, the description of the setup parameters (interval of measurements) and so on. It usually contains important data for the allowed evaluations of research results (e.g. the question of whether a sampling design was done randomly or by stratification determines which statistical methods can be applied).
+specification of measurements or observations The description of the measurement/observation which specifies: what is measured/observed;
+how it is measured/observed (including processes/ metods and instruments to be used); by whom it is measured/observed (including project, organisation and experimenter/observer profile); and what the temporal design is (single / multiple measurements / interval of measurement etc.).
+metadata catalogue A collection of metadata, usually established to make the metadata available to a community. A metadata catalogue can be exposed through an access service.
+processed data Data that have undergone processing (evaluation, transformation).
+published data Data that are presented to the outside world.
+QA assessed data Data that have undergone checks and are connected with descriptions of the results of those checks.
+raw data The primary results of observations or measurements.
+unique identifer With reference to a given type of data, objects a unique identifier (UID) is any identifier which is guaranteed to be unique among all identifiers used for those type of objects and for a specific purpose.
+engineeringobject 
+science object  entity that is explicitly identified within the science viewpoint.
+actor  actor is  science object that takes  active role in the behaviours of  system. Generally, such actors represent people or computational agents.
+capacity manager An active role, which is a person who manages and ensures that the IT capacity meets current and future business requirements in a cost-effective manner.
+data collector An active role, which is a person who prepares and collects data. The purpose of data collection is to obtain information to keep on record, to make decisions about important issues, or to pass information on to others.
+data consumer Either an active or a passive role, which is an entity who receives and uses the data.
+data curator An active role, which is a person who verifies the quality of the data; annotates the data; catalogues, preserves and maintains the data as a resource; and prepares various required data products.
+data originator A behaviour of a data acquisition community.
+data provider Either an active or a passive role, which is an entity providing the data to be used.
+data publisher An active role, is a person in charge of supervising the data publishing processes.
+measurement model designer An active role, which is a person who designs the measurements and monitoring models based on the requirements of environmental scientists.
+measurer An active role, which is a person who determines the ratio of a physical quantity (such as a length, time, temperature etc.), to a unit of measurement (such as the meter, second or degree Celsius).
+metadata harvester A passive role, which is a system or service collecting metadata which supports the construction/selection of a global conceptual model and the production of mapping rules
+observer An active role, which is a person who receives knowledge of the outside world through his senses, or records data using scientific instruments.
+PIDmanager A passive role, a system or service that assigns persistent global unique identifiers to data and metadata products. The Manager invokes a external entity, the PID Service, to obtain the PIDs. The manager maintains a local catalogue of PIDs that are being used to reference data and metadata. If the data or metadata in the RI change location or are removed, the PID manager updates this information locally and informs the PID Service.
+processing environment planner An active agent that plans how to optimally manage and execute a data processing activity using RI services and the underlying e-infrastructure resources (handling sub-activities such as data staging, data analysis/mining and result retrieval).
+semantic curator An active role, which is a person who designs and maintains local and global conceptual models and uses those models to annotate the data and metadata.
+semantic mediator A passive role, which is a system or middleware facilitating semantic mapping (i.e., executing mapping and translation rules), discovery and integration of heterogeneous data.
+storage administrator An active role, which is a person who has the responsibilities to design data storage, tune queries, perform backup and recovery operations, set up RAID mirrored arrays, and make sure drive space is available for the network.
+technician An active role, which is a person who develops and deploys sensor instruments, establishing and testing the sensor network, operating, maintaining, monitoring and repairing the observatory hardware.
+user Any actor who engages with an infrastructure via its data use subsystem.
+citizen An active role, which is a person or organisation interested in understanding the knowledge delivered by an environmental science research infrastructure, or discovering and exploring the knowledge base enabled by the research infrastructure.
+citizen scientist An active role, member of the general public who engages in scientific work, often in collaboration with or under the direction of professional scientists and scientific institutions (also known as amateur scientist).
+consultant An active role, which is a person who makes use of the data and application service for predicting markets so as to make business decisions on producing related commercial products.
+decision maker An active role, which is a person who makes decisions based on the data evidence.
+educator An active role, which is a person who makes use of the data and application services for education and training purposes.
+engineer An active role, which is a person who develops and maintains the research infrastructure.
+investor An active role, which is a person who makes use of the data and application service for predicting markets so as to make business decisions on producing related commercial products.
+journalist An active role, which is a person or organisation interested in understanding the knowledge delivered by an environmental science research infrastructure, or discovering and exploring the knowledge base enabled by the research infrastructure.
+policymaker An active role, which is a person who makes decisions based on the data evidence.
+researcher An active role, which is a person who makes use of the data and application services to conduct scientific research.
+scientist An active role, which is a person who makes use of the data and application services to conduct scientific research.
+environmental scientist An active role, which is a person who conducts research or performs scientific investigations. Using knowledge of various scientific disciplines, they may collect, process, analyse, synthesize, study, report, and/or recommend action based on data derived from measurements or observations of (for example) air, rock, soil, water, nature, and other sources.
+technologist An active role, which is a person who develops and maintains the research infrastructure.
+trainer An active role, which is a person who makes use of the data and application services for education and training purposes.
+artefact  artefact is something that created or passed between actors, or entrusted to resources, typically containing information of importance to some behaviour of the system.
+community  community is  collaboration which consists of  set of roles agreeing their objective to achieve  stated business purpose.
+data acquisition community Collects raw data and brings (streams of) measurements into a system.
+data curation community Curates the scientific data, maintains and archives them, and produces various data products with metadata.
+data processing community Provides various services, applications and software/tools to link and recombine data and metadata in order to derive knowledge.
+data publishing community Assists data publication, discovery and access.
+data use community Makes use of data and service products, and transfers knowledge into understanding.
+resource  resource is  science object that assumes  passive role in the behaviours of  system, typically representing some facility or tool that actors can engage with.
+catalogue system A passive role, a catalogue system is a special type of storage system designed to support building logical structures for classifying data and metadata.
+data acquisition system In the Science Viewpoint, the data acquisition subsystem is passive role of the data acquistion community. It is the part of the research infrastructure providing functionalities to automate the process of data acquisition.
+data consumer Either an active or a passive role, which is an entity who receives and uses the data.
+data curation system The data curation subsystem is a passive role of the data curation community. It is the part of the research infrastructure which stores, manages and ensures access to all persistent data and metadata produced within the infrastructure.
+data originator A behaviour of a data acquisition community.
+data processing system In the Science Viewpoint, the data processing subsystem represents a passive role of the data processing community.  It is the part of the research infrastructure providing services for data processing. These services could require authorisation at different levels for different roles.
+data provider Either an active or a passive role, which is an entity providing the data to be used.
+data publishing system In the Science Viewpoint, the data access subsystem represents a passive role of the data publication community.  It is the part of the research infrastructure enabling the discovery and retrieval of scientific data. The access to this subsystem could require authorisation at different levels for different roles.
+data repository A passive role, which is a facility for the deposition of published data.
+data usesystem In the Science Viewpoint, the data use subsystem represents a passive role of the data use community.  It is the part of the research infrastructure supporting the access of users to an infrastructure. The data use subsystem manages, and tracks user activities and supports users to conduct their roles in different communities.
+PID generator A passive role, a public system or service which generates and assigns persistent global unique identifiers (PIDs) to sets of digital objects. The PID Generator also maintains a public registry of PIDs for digital objects.
+research infrastructure A conglomeration of research resources providing some subset of data acquisition, data curation, data publishing, data processing and data use functionality to a research community.
+sensor A passive role, which is a converter that measures a physical quantity and converts it into a signal which can be read by an observer or by an (electronic) instrument.
+sensor network A passive role, which is a network consisting of distributed autonomous sensors to monitor physical or environmental conditions.
+service A passive role, in which a  functionality for processing data is made available for general use.
+data analysis service A service providing functionality for data analysis.
+data assimilation service A service providing functionality for data assimilation.
+data extraction service A service providing functionality for data extraction.
+data mining service A service providing functionality for data mining.
+modelling and simulation service A service providing functionality for modelling and simulation.
+workflow enactment service A service providing functionality for workflow enactment.
+service consumer Either an active or a passive role, which is an entity using the services provided.
+service provider Either an active or a passive role, which is an entity providing the services to be used.
+service registry A passive role, which is an information system for registering services.
+storage system A passive role, which includes memory, components, devices and media that retain data and metadata for an interval of time.
+technology object 
+science viewthing The ScienceViewpoint of the ENVRI RM intends to capture the requirements for  environmental research infrastructure from the perspective of the people who perform their tasks and achieve their goals as mediated by the infrastructure. Modelling in this viewpoint uses  reverse engineering method, which derives the principles and properties of model objects through the analysis of the structure and functionality of the realworld systems.
+technology viewthing Concepts defined for the TechnologyViewpoint in the Recommendation Information technology OpenDistributedProcessing  Reference model: Foundations, Architecture. 

@@ -1,0 +1,844 @@
+
+
+
+
+
+D6.1
+A system design for data identifier and citation services for environmental RIs projects to prepare an ENVRIPLUS strategy to negotiate with external organisations
+
+DRAFT version of 2016-12-13 (Happy Lucia!)
+To comment and collaborate, please follow instructions at:
+https://envriplus.manageprojects.com/projects/wp6-inter-ri-data-identification-and-cit-1/notebooks/719/pages/689
+WORK PACKAGE 6 ? INTER-RI DATA IDENTIFICATION AND CITATION SERVICES
+LEADING BENEFICIARY: LUND UNIVERSITY
+Author(s):
+Beneficiary/Institution
+Margareta Hellstr?m, Alex Vermeulen and Monica Lassi
+Lund University
+Robert Huber, Markus Stocker, NN?
+University of Bremen
+Frank Toussaint, NN
+DKRZ (IS-ENES)
+Malcolm Atkinson
+University of Edinburgh
+
+Accepted by: XXX (WP X leader)
+Deliverable type: REPORT
+Dissemination level: PUBLIC
+Deliverable due date: 30.12.2016/M20
+Actual Date of Submission:  24.12.2016/M20
+
+
+ABSTRACT
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla dignissim dolor vitae ultrices. Donec condimentum lacus tristique nulla sagittis, ac pellentesque nisl feugiat. In eu vestibulum mauris, vitae tincidunt ipsum. Proin euismod ante ac vulputate venenatis. Donec eu massa at libero faucibus fermentum. Ut porttitor tellus quis cursus vulputate. Aenean tincidunt porttitor risus nec lacinia. Sed dictum urna vitae mauris eleifend, nec faucibus diam lobortis. (Or words to that effect!)
+
+External reviewer(s): 
+Reviewer(s): 
+Institution
+Daan Broeder
+EUDAT
+NN
+?
+
+Project internal reviewer(s): 
+Project internal reviewer(s): 
+Beneficiary/Institution
+Ari Asmi	
+University of Helsinki
+Marko Scholtze
+University of Lund
+
+Document history:
+Date
+Version
+14.11.2016
+Initial draft for WP6 comments
+04.12.2016
+Draft sent for internal review
+20.11.2016
+Corrected version, sent for project review & approval
+23.12.2016
+Accepted by XX	
+
+DOCUMENT AMENDMENT PROCEDURE
+Amendments, comments and suggestions should be sent to the editors (Alex Vermeulen alex.vermeulen@icos-ri.eu and Margareta Hellstr?m margareta.hellstrom@nateko.lu.se), or one of the authors listed above.
+TERMINOLOGY 
+A complete project glossary is provided online at the ENVRIplus website, see: https://envriplus.manageprojects.com/s/text-documents/LFCMXHHCwS5hh
+PROJECT SUMMARY 
+ENVRIplus is a Horizon 2020 project bringing together Environmental and Earth System Research Infrastructures, projects and networks together with technical specialist partners to create a more coherent, interdisciplinary and interoperable cluster of Environmental Research Infrastructures across Europe. It is driven by three overarching goals: 1) promoting cross-fertilization between infrastructures, 2) implementing innovative concepts and devices across RIs, and 3) facilitating research and innovation in the field of environment for an increasing number of users outside the RIs. 
+ENVRIplus aligns its activities to a core strategic plan where sharing multi-disciplinary expertise will be most effective. The project aims to improve Earth observation monitoring systems and strategies, including actions to improve harmonization and innovation, and generate common solutions to many shared information technology and data related challenges. It also seeks to harmonize policies for access and provide strategies for knowledge transfer amongst RIs. ENVRIplus develops guidelines to enhance transdisciplinary use of data and data-products supported by applied use-cases involving RIs from different domains. The project coordinates actions to improve communication and cooperation, addressing Environmental RIs at all levels, from management to end-users, implementing RI-staff exchange programs, generating material for RI personnel, and proposing common strategic developments and actions for enhancing services to users and evaluating the socio-economic impacts. 
+ENVRIplus is expected to facilitate structuration and improve quality of services offered both within single RIs and at the pan-RI level. It promotes efficient and multi-disciplinary research offering new opportunities to users, new tools to RI managers and new communication strategies for environmental RI communities. The resulting solutions, services and other project outcomes are made available to all environmental RI initiatives, thus contributing to the development of a coherent European RI ecosystem. 
+
+
+
+TABLE OF CONTENTS
+ABSTRACT	2
+DOCUMENT AMENDMENT PROCEDURE	2
+TERMINOLOGY	2
+PROJECT SUMMARY	2
+TABLE OF CONTENTS	4
+1 INTRODUCTION	7
+2 BACKGROUND	8
+2.1 Data identification and citation: why, what, who and how?	8
+2.1.1 Background - Identification	8
+2.1.2 Background - Citation	9
+2.1.3 RDA Europe GEDE group statement collection	10
+2.2 The Data Fabric concept and the PID-centric model	11
+2.3 Data -> information -> knowledge	12
+2.4 Landing pages	13
+2.5 “Session PIDs” vs “Citation PIDs”	14
+2.6 Data publishing	14
+2.7 The Persistent Identifier zoo	16
+2.7.1 Handle	16
+2.7.2 Digital Object Identifier (DOI)	16
+2.7.3 URN	16
+2.7.4 PURL	17
+2.7.5 ARK	17
+2.7.6 Life Science Identifier (LSID)	17
+2.7.7 CoolURIs	17
+2.8 Identifiers for non-data entities	18
+3 OUTCOMES OF THE ENVRIPLUS RI REQUIREMENTS and Technology SURVEY	18
+3.1 RI requirements	19
+3.1.1 Data identification requirements	19
+3.1.2 Data citation requirements	19
+3.1.3 Assessment of the I&C requirements	19
+3.1.4 Conclusion	20
+3.2 Technology review	20
+3.2.1 Two-to-five year analysis of state of the art and trends	21
+3.2.2 Details underpinning the two-to-five year analysis	22
+3.2.3 A longer term horizon	27
+3.2.4 Summary of analysis highlighting implications and issues	27
+3.3 Services	28
+3.3.1 Assessing the data identification and citation technology review	28
+3.4 Training & promoting best practices	31
+4 A SUGGESTED SYSTEM DESIGN FOR ENVRIPLUS	33
+4.1 General comments	33
+4.2 Core components	33
+4.3 Technologies, services and tools	36
+4.4 Partners	36
+4.5 Regional and global initiatives	36
+4.5.1 Research Data Alliance	36
+4.5.2 CODATA & ICSU	37
+4.5.3 In ENVRIplus context	37
+4.6 Parallel activities by ENVRIplus partners	37
+4.6.1 University of Bremen (PANGAEA)	37
+4.6.2 DKRZ (CMIP6 project)	39
+4.6.3 Marine RIs	40
+4.6.4 ENVRIplus implementation case IC-01	40
+4.6.5 ENVRIplus implementation case IC-09	40
+5 EXISTING CONNECTION CHANNELS TO EXTERNAL ORGANIZATIONS	42
+5.1 PID providers	42
+5.1.1 ePIC - the European Persistent Identifier Consortium	42
+5.1.2 DataCite	42
+5.1.3 ORCID	42
+5.1.4 ISNI	43
+5.1.5 Others	43
+5.2 Publishers	43
+5.2.1 Thomson-Reuters	44
+5.2.2 Elsevier	44
+5.2.3 Others	44
+5.3 Indexing agencies	44
+5.3.1 Crossref	44
+5.3.2 Web of Science	44
+5.3.3 Mendeley	44
+5.4 Ongoing projects & initiatives	44
+5.4.1 THOR	44
+5.4.2 RDA-WDS groups	45
+6 NEGOTIATION STRATEGY	46
+6.1 The case for negotiations	46
+6.2 Discussion partners	46
+6.3 Wish-list for services	46
+6.3.1 Generic identifier minting services	46
+6.3.2 Support for inclusion of sub-setting information	46
+6.3.3 Dynamic data, including support for versioning	46
+6.3.4 Collections	46
+6.4 Timeline	46
+7 Conclusions	47
+8 IMPACT ON PROJECT	47
+9 IMPACT ON STAKEHOLDERS	47
+REFERENCES	48
+APPENDICES	51
+APPENDIX 1	52
+Some useful definitions	52
+APPENDIX 2 - REQUIREMENTS QUESTIONNAIRE (2015-2016)	53
+ENVRIplus RI requirements questionnaire: Identification and citation	53
+Identification	53
+Citation	53
+
+
+1 INTRODUCTION
+From the ENVRIplus project Description of Work:
+“[WP6 - Inter RI data identification and citation services] will focus on implementing data tracing and citation functionalities in environmental RIs and develop tools for the RIs if they are not otherwise available. In close cooperation with the successful consortia in call EINFRA-7-2014, the overarching objective of this work package therefore is to improve the efficiency of data identification and citation by providing convenient, effective and interoperable identifier management and citation services.”
+“Environmental research infrastructures are often built on a large number of distributed observational or experimental sites, run by hundreds of scientists and technicians, financially supported and administrated by a large number of institutions. If this data is shared under an open access policy it becomes therefore very important to acknowledge the data sources and their providers. There is also a strong need for common data citation tracking systems that allow data providers to identify downstream usage of their data so as to prove their importance and show the impact to stakeholders and the public. This work package highlights identification and citation in environmental RIs, reviews available technologies and develops common services for these operations.”
+“This task aims at implementing common policy models for persistent identifiers for publishing and citing data. Moreover, the services for assigning and handling identifiers and for retrieving data content based on identifiers will also be provided. This task will build on existing approaches (e.g. DataCite, EPIC) and further developments by up-coming activities. It will be, furthermore, operated in close cooperation with existing initiatives (e.g. Research Data Alliance, ICSU WDS) and will elaborate a common data citation solution for the involved RIs. This task will take actions to:
+A. Analyse the latest statuses of these existing technologies and business models in the mentioned initiatives, and transfer the best and most common solutions to the RIs. Data citation has progressed during recent years and important steps have already been made, such as the development of PANGAEA and data citation services in the DKRZ.
+B. Define test-bed requirements for the software and services, and identify conditions for operating final software and services inside a domain, and among multiple domains.
+C. Promote the needs of environmental RIs in the global context. Once the RIs have decided their prorities, these should be addressed to initiatives targeting pan-European Digital Identifier e-infrastructures as well as global initiatives such as the Belmont Forum and the Research Data Alliance. The goal of respective agreements should be a widely accepted and supported model.
+D. Support negotiations on collaboration and contracts with important publishers. Publishers are an important partner in developing a functioning system of data citation. There are different models already available (journals for data description, direct citation via DOI, and data citation systems). Since environmental RIs provide large amounts of important data they can efficiently support respective negotiations.
+E. Run case studies with environmental RIs that implement DOI and get experience with data citation by implementing data citation systems. This will assist in understanding details and will provide valuable feedback. Therefore, attention will be paid to developing case studies of existing research infrastructures. The respective RIs should have a developed internal data infrastructure and data should be standardised in a way that makes provision of DOI easy.
+F. Optimize the identification and citation model based on practice. The WP should be finalized by a task that summarises the work, and transfers experiences and further needs to cooperating e-infrastructures ? thus optimizing the permanent international solution for data citation.
+G. [Carry out two use-case studies:] 
+a. Develop a full data lifecycle model for biological data linked to the standards developed and promoted through GBIF and the experience of EMSO, EMBRC and SeaDataNet; establish GBIF Integrated Publishing Toolkit for the publication of data from the Marine Biological Records journal; and define workflows for the [marine biology & ecosystems] research community to facilitate the provision of DOIs and the archiving of data in compliance with international standards.
+b. Implement a full and integrated DOI and related metadata system for ICOS as an example of a distributed RI with very heterogeneous data; and test citation [and data usage] tracking models.
+H. Define policy models for persistent identifiers, publishing and citation. Optimally reuse EPIC and related work on EUDAT. It will also expose the EUDAT PID service to ENVRI testing and avail EUDAT services B2SAFE, B2SHARE and B2FIND as test beds for data publishing and referencing.”
+This first deliverable from WP6, entitled “A system design for data identifier and citation services for environmental RIs projects to prepare an ENVRIPLUS strategy to negotiate with external organisations”, addresses points X, Y and Z above. 
+2 BACKGROUND
+In this chapter, we define some key concepts and also put the report into context�
+2.1 Data identification and citation: why, what, who and how?
+2.1.1 Background - Identification
+A number of approaches have been applied to solve the questions of how to unambiguously identify digital research data objects [Duerr 2011]. Traditionally, researchers have relied on their own internal identifier systems, such as encoding identification information into filenames and file catalogue structures, but this is neither comprehensible to others, nor sustainable over time and space [Stehouwer 2014]. Instead, data object identifiers should be unique “labels”, registered in a central database that contains relevant basic metadata about the object, including a pointer to the location where the object can be found as well as basic information about the object itself. (Exactly which metadata should be registered, and in which formats, is a topic under discussion, see e.g., [Weigel 2014].) Environmental observational data pose a special challenge in that they are not reproducible, which means that also fixity information (checksums or even “content fingerprints”) should be tied to the identifier [Socha 2013]. 
+Duerr et al. [Duerr 2011] provide a comprehensive summary of the pros and cons of different identifier schemes, and also assess nine persistent identifier technologies and systems. Based on a combination of technical value, user value and archive value, DOIs (Digital Object Identifiers provided by DataCite) scored highest for overall functionality, followed by general handles (as provided by e.g., CNRI and DONA) and ARKs (Archive Resource Keys). DOIs have the advantage of being well-known to the scientific community via their use for scholarly publications, and this has contributed to their successful application to e.g., geoscience data sets over the last decade [Klump 2015]. General Handle PIDs have up to now mostly been used to enable referencing of data objects in the pre-publication steps [Schwardmann 2015] of the research data life cycle (illustrated in Figure 1). They could however in principle equally well be applied to finalised “publishable” data. 
+Persistent identifiers systems are also available for other research-related resources than digital data & metadata, articles and reports—it is now possible to register many other objects, including physical samples (IGSN), software, workflow processing methods— and of course also people and organisations (ORCID, ISNI). In the expanding “open data world”, PIDs are an essential tool for establishing clear links between all entities involved in or connected with any given research project [Dodds 2014].
+2.1.2 Background - Citation
+The FORCE11 Data Citation Principles [Martone 2014] state that in analogy to articles, reports and other written scholarly work, also data should be considered as legitimate, citable products of research. (Although there is currently a discussion as to whether data sets are truly “published” if they haven’t undergone a standardised quality control or peer-review, see e.g., [Parsons 2010].) Thus, any claims in scholarly literature that rely on data must include a corresponding citation, giving credit and legal attribution to the data producers, as well as facilitating the identification of, access to and verification of the used data (subsets). 
+Data citation methods must be flexible, which implies some variability in standards and practices across different scientific communities [Martone 2014]. However, to support interoperability and facilitate interpretation, the citation should preferably contain a number of metadata elements that make the data set discoverable, including author, title, publisher, publication date, resource type, edition, version, feature name and location. Especially important, the data citation should include a persistent method of identification that is globally unique and contains the resource location as well as (links to) all other pertinent information that makes it human and machine actionable. In some (sensitive) cases, it may also be desirable to add fixity information such as a checksum or even a “content fingerprint” in the actual citation text [Socha 2013]. 
+Finding standards for citing subsets of potentially very large and complex data sets poses a special problem, as outlined by Huber et al. [Huber 2013], as e.g., granularity, formats and parameter names can differ widely across disciplines. Another very important issue concerns how to unambiguously refer to the state and contents of a dynamic data set that may be variable with time, e.g., because new data are being added (open-ended time series) or corrections introduced (applying new calibrations or evaluation algorithms) [Rauber 2015], [Rauber 2016]. Both these topics are of special importance for environmental research today.
+Finally, a number of surveys have indicated that the perceived lack of proper attribution of data is a major reason for the hesitancy felt by many researchers to share their data openly [Uhlir 2012], [Socha 2013], [Gallagher 2015]. This attitude also extends to allowing their data to be incorporated into larger data collections, as it is often not possible to perform micro-attribution ? i.e., to trace back the provenance of an extracted subset (that was actually used in an analysis) to the individual provider ? through the currently used data citation practices. 
+2.1.3 RDA Europe GEDE group statement collection
+This sub-chapter is a “stub” and needs comprehensive rewriting!
+The RDA Europe Group of European Data Experts (GEDE) has started to collect recommendations related to PIDs from a number of sources in the scientific community, including thematic groups like FAIR/Force11, the International Telecommunications Union (ITU), the DOI Foundation, and RDA and its working groups. Summarize these and use for the introduction! Add more details about FAIR(+R) and FORCE-11!
+From FAIR/Force11 (https://www.force11.org/group/fairgroup/fairprinciples):
+* (Meta)data are assigned a globally unique and eternally persistent identifier
+* (Meta)data are retrievable by their identifier ...
+From RDA PID Information Types working group (https://rd-alliance.org/groups/pid-information-types-wg.html):
+* PID systems should support the generic PIT API where Information Types (properties of DOs) are openly registered and defined.
+From the RDA Data Fabric working group (https://www.rd-alliance.org/group/data-fabric-ig.html):
+* A trustworthy PID system must
+o be maintained by a dedicated and reliable team,
+o be based on a transparent sustainable business model,
+o be provided by a non-profit organisation,
+o be subject of regular quality assessments by external parties,
+o be governed by international boards,
+o be based on open standards,
+o be based on a redundant and secure architecture,
+o support a huge address space (comparable or even larger than IPv6) and
+o support an openly documented API optimally supporting accepted data models.
+* The PID Record can be used to store the context of digital objects (bitstream locations, metadata, PID, rights information, landing page, etc.)
+* A PID needs to be requested as early as possible, at least at the time of registration at a trustworthy repository a PID record needs to be available.
+* PIDs are associated with collections which can exist of a number of digital entities, i.e. the level of granularity at which PIDs will be assigned is left to the communities and repositories. A high granularity is recommended to anticipate future applications.
+* A metadata description contains the PID of the corresponding object. The PID record contains the metadata PID to ensure at all times that DO's context can be retrieved. (this can be compared with the reverse DNS mechanism)
+* The PID record should include an expiration date for the digital object. Even for digital objects that have been deleted the PID record should exist, indicate deletion and if possible point to the metadata record.
+From DataCite (http://datacite.org):
+* For electronic documents and published digital objects register a digital object identifier (DOI, which is a Handle with prefix 10) and associate suitable information with it (such as citation metadata).
+* A DOI needs to be registered for a published DO and it should be associated with citation metadata.
+Conclusions from the RDA Europe “Views about PID systems” workshop, https://www.rd-alliance.org/sites/default/files/attachment/20160901_RDA_PID_event_Garching_report_final.pdf), held in Garching, Germany September 1-2, 2016:
+* Proper PID usage and support will become key for competitiveness in science and industry.
+* PIDs need to be used by all parties dealing with data professionally to make full use of advanced opportunities. A PID centric approach to data management, access and use will open the way towards new and comprehensive way of data handling and finally to a Global Digital Object Cloud [5] as a generic, non-proprietary virtualisation layer.
+* International and national steps need to be taken urgently to offer a sustainable, structured and mature PID service landscape based on quality assessed service providers to all interested parties. Only such a structured and massive approach will prevent ending up with unresolvable PID zombies.
+* PIDs are becoming essential across sectors and communities for different application scenarios and efforts need to be taken to offer services across these sectors and communities.
+* Setting up and maintaining trustworthy repositories is key for a structured data landscape guaranteeing access to data and its accompanying metadata.
+* We need to design the required mechanisms (for facilitating automatic data processing) and build the needed tools now with high urgency.
+* We urgently need to come to a structured and integrated domain of Handle Service Providers.
+* Service providers need to ensure that these two interoperable domains are part of one integrated landscape of rich services.
+* The PID centric approaches that are key to managing the “data tsunami” require simple and clear messages for the users.
+2.2 The Data Fabric concept and the PID-centric model
+This sub-chapter is incomplete, and needs revising!
+The RDA Data Fabric interest group (https://www.rd-alliance.org/group/data-fabric-ig.html) works on finding ways to optimise data intensive research. Important steps include defining core components of data management & handling - as used throughout the data life cycle - and then enhancing interoperability between these in a way that benefits both human and machine consumption of data. But data-intensive research poses a number of challenges, including the need for good cataloguing systems that support fast discovery and retrieval of data sets based on complex searches. Machine-actionable workflow engines must be able to autonomously decide if a given search result actually contains useful information, if access is authorized and can be achieved under a suitable data license, and how to optimally access and process the bitstream. 
+The allocation of persistent identifiers to data objects is a pre-requisite, but it is not enough to simply store the object’s location in the PID record. 
+From the RDA DF IG website (https://rd-alliance.org/group/data-fabric-ig/wiki/df-configuration-pid-centric-data-management-and-access.html): (Summarize & condense!)
+“But the PID record should also contain the pointer to the full metadata description (see diagram below) so that richer decisions can be made. Pointers to the metadata embedded with the PID also ensure that the metadata record is not decoupled from the data record ? it is bound forever through the metadata record of the PID. To enable this kind of functionality, the information in the PID record needs to have type information with it, and the definition of the type both registered and described in a way that both humans and machines can interpret the typed data. The PID thus serves, in essence, as a map or a guide to both locating a given data object, aka digital object, as well as interpreting and potentially reusing the object. As is indicated in the diagram a PID record contains minimal information about the Digital Object it references. This can be implemented as links that are “call by reference” or “call by value” in computer science terms. If the former is true, the PID record points to external reliable information sources. In either case the PID has a binding role. All of the pieces that go together to make a data object available and understandable over time have to be sustained, so they have to be chosen carefully. If this binding model is useful to many it can be used on which to add additional components.”
+
+2.3 Data -> information -> knowledge
+This subchapter is incomplete!
+Verifiability and reproducibility! The scientific process requires that it must be possible to follow in detail - and as far as possible reproduce - all the steps of a research project, from data via analysis to information, and its interpretation to create knowledge. (Especially in Earth Sciences, it may not be possible to repeat observations under identical conditions or collect indistinguishable samples, but starting from the existence of the initial input data sets, reproducibility must apply!) 
+Reproducibility of research requires careful documentation of all the steps of the scientific process. This includes keeping track of which data sets have been used and their provenance - which in itself presupposes unambiguous identification and careful metadata collection & curation. 
+Traditional systems have been based on e.g. filenames and catalogue structures, but this is not good enough. Instead, persistent identifiers of some kind are needed. There are many different ones available (see article by [Duerr 2011) and info from Robert Huber, Ch 1.6 below), and they can be used for different purposes during different stages of the research data lifecycle. 
+We recommend using identifiers based on the Handle system (http://www.handle.net/), as developed by CNRI (the US-based Corporation for National Research Initiatives; https://www.cnri.reston.va.us/) in the 1990’s. Handle-based PIDs are issued by several different organizations operating their own handle registries. All support a common lookup service, though the Global Handle Registry (GHR). The DONA Foundation (http://dona.net/), based in Switzerland, is a technical management organization that has taken over responsibility for the evolution of CNRI's Digital Object Architecture (DOA) including outreach around the world. One of the Foundation's responsibilities is to administer and maintain the overall operation of the GHR, a task that was previously performed by CNRI.
+“Handles [�] are strings consisting of a prefix on the left and a suffix on the right, separated by a slash “/” (the first slash from the left, if there are more than one). 21.012 is the prefix and xyz-123 the suffix in 21.012/xyz-123 for instance. The prefix consists of alphanumeric ASCII characters together with the dot “.” as delimiter. Whereas Handle suffixes in general allow UTF-8 encoding, the suffix of an ePIC PID consists of a string of printable ASCII characters for disambiguation reasons. ePIC strongly recommends the use of [lower] case ASCII characters in the suffix, because this ensures a possible later transfer of an ePIC PID to a DOI.” (From http://www.pidconsortium.eu/?page_id=1060)
+The most well-known Handle based system is DataCite (), which has been issuing Digital Object Identifiers (DOIs) since XYZX. Somewhat lesser known is the European Persistent Identifier Consortium (ePIC; http://www.pidconsortium.eu/), which was formed in 2009 by a consortium of European partners in order to provide PID services for the European Research Community. 
+EUDAT (http://eudat.org) has chosen to use ePIC PIDs for all digital objects stored in its storage services B2SHARE and B2SAFE. (A majority of the ePIC consortium members are also members of EUDAT and its successor organization CDI (https://eudat.eu/news/a-landmark-agreement-sustaining-the-pan-european-collaborative-data-infrastructure-for-the-next
+2.4 Landing pages
+In a strict sense, he word “persistent” in the term “Persistent and Unique Identifier” refers to the identifier, and not to the object that is being identified. There is a common misconception that once a (data) item has been assigned a PID, the item may not be deleted from the location that the PID’s metadata resource locator field points to. This is not correct, as discussed by e.g. Duerr et al. [Duerr 2011]: 
+“Sometimes data are reprocessed using later versions of algorithms or calibration that are intended to improve their quality. Commonly, older versions of the data are viewed as obsolete and are no longer recommended for future research. Since there is a cost to maintaining data, they may be deleted to make room in an archive for data that may be viewed as more valuable. Identifiers should still reference the old data, especially if they were used in published works. To preserve the ‘persistent’ quality of the ‘locator’ aspect of these identifiers, they should still be resolvable even if the data have been deleted. This resolution usually takes the form of a ‘landing page’ pointing out the fact that the data have been deleted, and directing the requestor to the version of the data that replaced the original one. Ideally, the reference should include metadata, which is typically much smaller than the data, and thus less of a burden for an archive to maintain. This metadata should include provenance and context information for the missing data, so that a determined investigator might be able to reproduce the missing data if fortune allows it.” 
+Add stuff from Starr et al. (2015)
+2.5 “Session PIDs” vs “Citation PIDs”
+But is it then really useful and meaningful to define large numbers of PID records to data sets that one knows a priori will not be existing for a very long time, but perhaps be deleted after a few months? If it is, does it matter which of the different available types of persistent identifiers (see section X.X below) one chooses for these “short shelf-life” data? And who should pay for maintaining landing pages for obsolete data sets (also called “tombstone pages”)? 
+Connected to the discussion around these questions, the terms “session PID” and “citation PID” have emerged [Bilder 2016: Geoff Bilder’s presentation “Layered services on top of PIDs”, RDA Europe training course & workshop “Views about PID systems”, Garching, Germany, Aug. 31-Sept. 2, 2016]. Here, “session PID” refers to persistent identifiers that are applied to data objects that need to be referenceable, for example raw sensor data, or intermediate data produced during evaluation and analysis processes, that should be easily and unambiguously referred to in the provenance record of a finalized data product. Here, for example a PID from ePIC (see sections X and Y) would be quite sufficient. Conversely, a “citation PID” should be used for data that are “publishable” and ready to be used for research purposes, and therefore may warrant the assignment of an identifier that is associated with a richer metadata schema, such as a DataCite DOI.
+2.6 Data publishing
+The European Commission and many other organisations propose the practice of open science, which can be described as including open access, open data, open reproducible research, open science evaluation, open science policies, and open science tools [FOSTER 2016]. Similarly to the open access (for publications) and open software (for code) concepts, open data typically means that data are open to use with minimal restrictions ? but it does not have to be free of charge, i.e. gratis, to use [Borgman 2007]. A major difference between publishing data and a research publication is that data are not static in the way that a published paper generally is ? data can be dynamic, “living”, and evolving by new versions being made available [Austin 2016]. Publishing data could mean posting a data set on a simple website, but often involves far more work than that, such as making considerations regarding data formats, metadata descriptions, and persistence of the data [Callaghan 2013]. 
+The benefits of publishing data include allowing reproducibility of research, increasing the quality of research, creating new knowledge by combining data sets in new ways, and to make data accessible and usable to a wider audience, which could lead to more scientific publications [Austin 2016], [Borgman 2007], [Borgman 2015]. The audience of published data varies depending on topic and other characteristics of the research and the data, and could include researchers in the same field, researchers in related or unrelated fields, policy makers, industry, students and educators, or the general public. The FAIR guiding principles for data, developed by FORCE11, describe how to make published data Findable, Accessible, Interoperable, and Reusable for potential users [FORCE11 2014]. Findability means making the data possible to find by potential users, e.g. by describing the data with rich metadata. Accessibility means that the data and metadata should be usable in formats that are understandable by humans and machines, e.g. by adding machine-actionable PIDs. Interoperability pertains to using a metadata scheme that is open and well-defined. Reusability means that the metadata are verifiable, machine readable and can be used to make proper citations. [FORCE11 2014] By following the FAIR principles, the “7-R’s” of data can be fulfilled, i.e. that data are reusable, repurposeable, repeatable, reproducible, replayable, referencable, and respectful. [Bechhofer 2013] 
+Austin and colleagues [Austin 2016] have proposed a set of key components of data publishing (Figure 3) based on their analysis of workflows in 25 repositories, data related projects and data publishing platforms, all within the work of the RDAWDS Publishing Data Workflows Working Group. The proposed required elements for a published data set include a repository entry with a PID, metadata following a standardised schema, curation, and distribution. The optional elements have three themes: providing context, such as documentation and links to articles and other research objects; quality control, including peer review; and improving visibility and access to the data. [Austin 2016] 
+The data workflow analysis [AUSTIN 2016] resulted in the workflow description found in Figure 4. The two most common types of data publishing were found to be submitting data to a repository, and submitting a data article to a data journal. Focussing on the submission of data, the workflow consists of ingestion into a repository, a process which includes creating a PID for the data. A review of the data is also part of the workflow, based on the policies of the repositories, and may include metadata, formatting and a host of other aspects of the data curation. To ensure the quality of data, it is recommended that quality assessment procedures are available to users. Quality control procedures for dynamic data are also identified as important, due to more data being shared earlier in the research process. To ensure the persistence of data over time, the authors recommend using a repository certification system, such as Data Seal of Approval, and add that this could aid the data publishing process by facilitating collaboration with other actors involved in data publishing, including publishers. The repositories and other facilities analysed generally used a PID system, in most cases DOIs, and the authors note that the importance of data citation through linking PIDs was generally taken into account. 
+Linking data with papers, people and other research objects through PID systems is a strong trend, which was shown by the many presentations at the conference on PIDs, PIDapalooza, 9-10 November 2016 in Reykjavik. The conference found a common ground in the importance of PIDs for being able to identify, find, and link resources, and to reuse the metadata for published objects in other contexts. This could mean that the description of a project and the generated data at the planning stage, e.g. in a data management plan, can be extracted and used to generate content to a progress report to funders. Project Thor (see section xyz) is an example of an initiative to link data, publications and persons through their ORCIDs.
+2.7 The Persistent Identifier zoo
+(Contributed by Robert Huber)
+2.7.1 Handle
+Arguably the biggest impact in the field of persistent identification of digital research resources was achieved by the Handle system (Kahn and Wilensky 1995). The Handle system describes a minimal set of requirements for an infrastructure for the identification of objects in a digital infrastructure and how the identity of an object can be related to its location. The system is agnostic to the contents of the objects, keeping it open for interoperability with future applications. The Handle system separates the identifier from the resolving mechanism, making it independent of HTTP and DNS. The Handle system supplies a stable, distributed platform for the resolution of identifiers to URLs, including methods more sophisticated than HTTP redirects like template handles and embedded metadata.
+In our sample of 1381 repositories listed in the re3data repository, the Handle system is used by 102 repositories. Handle is mainly used by institutional repositories, which might be linked to the role of Handle as an identifier in repository software like DSpace.
+Besides the governance of top-level namespaces it does not provide more than the technical platform and comes with no obligations towards the persistence of the resolution of identifiers towards their targets.
+2.7.2 Digital Object Identifier (DOI)
+In a survey of the re3data.org registry, by far the largest number of repositories make use of digital object identifiers. DOIs, which were introduced in 1998 by the International DOI Foundation, are used by 275 out of 475 repositories. The use of digital identifiers eclipses all other persistent identifiers. The use of DOI persistent identification of data initiated by a project funded by the German research foundation in 2003 (Klump et al., 2016). DOI were chosen because of their already established part in the scholarly publication infrastructure. 
+The Digital Object Identifier (DOI) makes use of the Handle system and uses its namespace “10.[subnamespace]/”. DOI distinguished from other uses of the handle system by the underlying social contract. In this social contract participating parties pledge to maintain the resolution of identifiers to web endpoints indefinitely. This means that identifiers will always resolve to somewhere in point even though the referenced object might no longer exist.
+2.7.3 URN
+The origin of the Uniform Resource Name (URN) is its historical use as a name for a Uniform Resource Identifier (URI) that uses the URN scheme. Defined in 1997 in RFC 2141, URNs were intended to serve as persistent, location-independent identifiers, allowing the simple mapping of namespaces into a single URN namespace. The existence of such a URI does not imply availability of the identified resource, but such URIs are required to remain globally unique and persistent, even when the resource ceases to exist or becomes unavailable.
+Primary advocates for the use of URN were the national libraries. Unlike the handle system URNs do not use a common resolver system. It is therefore up to the user to know which resolver system to use. This has been a severe impediment against the uptake of this system. 
+URN systems were also primarily offered by national libraries, which offered great organisational stability to the system. In working with data centres the national libraries showed difficulties in adjusting their business processes to the requirements of data centres. This resulted in an overall low uptake of URL as a persistent identifier for data and only 16 out of 475 repositories make use this identifier system.
+2.7.4 PURL
+Persistent URL (PURL) was intended by the Online Computer Library Center, Inc. (OCLC) as a bridging technology to prepare for introduction of Universal Resource Names (URN). PURL implements URI concept. It does not separate between identifier and resolving mechanism. PURL has no single global resolving mechanism and PURL resolvers do not communicate amongst each other and share resolving information like DNS servers do. PURL has little social infrastructure and formal governance. In 2014 OCLC withdrew its institutional support and the future of PURL was unclear. For some time PURL experienced severe technical problems. As a consequence, the system was put into a ‘read-only’ maintenance mode (https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1511&L=DC-ARCHITECTURE&F=&S=&P=3711). In September 2016, however, it was announced (https://www.oclc.org/news/releases/2016/201623dublin.en.html) by the OCLC and the Internet Archive that the URL redirection service, on which PURL is based, will in future be operated by the Internet Archive. This move brought PURL back from the brink of extinction. In December 2015 a total of 16 research data repositories in re3data.org were listed as using PURL, and only few of them using PURL exclusively.
+2.7.5 ARK
+The ARK identifier system has been introduced by the California Digital Library in 2001 (Kunze, 2003). Arks are currently used by eleven repositories listed in the re3data registry. It was developed as an alternative to schemes like PURLs, URNs and Handles. The founders argued that persistence of identifiers is a matter of service and reliant on the continued stability and support of the service behind the identifiers. Initially the system was planned to enable decentralized resolvers, however this principles never was realized. Instead, ARK resolution depends on local resolvers ark issuing archives have to provide and a central service called N2T (name to things) which however solely resolves ARKs which are registers at the University of California. Thus ARKs rather represent a resolver convention and an associated syntax for the ARK URI pattern.
+2.7.6 Life Science Identifier (LSID)
+LSIDs have been introduced by the Object Management Group (OMG) in 2004. Since 2009 the biodiversity informatics communities’ standardization authority (Taxonomic Database Working Group, TDWG) strongly supports LSIDs as the preferred GUID technology. LSIDs are now used by all globally leading providers for biodiversity data to identify organism names. LSIDs do not provide a global resolving mechanism nor centralised provider registration. The implementation of this standard is relatively complex, resolution is DNS based and requires a multistep procedure, and in addition the associated metadata format is RDF. Consequently, the technology is controversially disputed (e.g. Hyam, 2015 or Page, 2015) and opinions in social media tend to favour a simpler identifier system such as HTTP URIs. In 2016, maintenance on TDWGs LSID resolution service was ceased and TDWGs support of LSIDs was heavily questioned by members of the group. After two months without a central resolving system, a resolver has been made available at http://www.lsid.info. However, the discussion is going on and as parts of the biodiversity informatics community still feel uncomfortable with LSIDs; they recommend switch from LSID to CoolURI (Guralnick et al., 2015). This approach may however be fragile, because it assumes that the base URL will not change, since this is a prerequisite for the operation of the system.
+2.7.7 CoolURIs
+Compared to the strict criteria of Nestor (Bütikofer, 2009) and other related efforts, CoolURIs somehow represent an anarchic view on identifiers. Similar to URN, the idea of CoolURIs goes back to early ideas about identification and location of objects on the web. The idea of CoolURI (Berners Lee, 1998) is fundamental for the Semantic Web. It is based on Uniform Resource Identifiers (URI) which, by proclamation, will not change. They make use of standard HTTP functionalities, in particular content negotiation, to enable the URI to be resolve to different representations (RDF, HTML) of the same object. CoolURIs allow webmasters to maintain the persistence of their resource identifiers, the URIs, with a minimum of effort and without a centralised PID system.
+Advocates of the CoolURI system reasoned that the use of HTTP functionalities is a bonus, suggesting that URI should be actionable. As we said in our introduction, over the years this has proven to be unstable, the main reason for this being the fragility of base URL. The result of unstable base URLs will be “link-rot on steroids”. There is already anecdotal evidence of base URL failures from the validation of xml schemas in long-term archiving of XML documents by the national libraries.
+The CoolURI concept relies on HTTP as resolving mechanism and assumes that the HTTP protocol will be around for a long time. HTTP went into operation in 1991 and on the timescales of technical developments in information technology we should not assume that it will still be in use in 25 years’ time.
+
+2.8 Identifiers for non-data entities
+Persistent identifiers are useful for many other entities than (digital) data objects and scientific articles. Refer to later sections for more details! 
+A. Identifiers for people
+Mention ORCID (and ISNI) here. Refer to chapter X.X
+B. Identifiers for organizations
+Mention ISNI here. Refer to chapter X.X
+C. Identifiers for instrumentation and sensors
+Mention sensor registries (including the ENVRIplus use case for EURO-Argo), and other similar initiatives. Refer to chapter X.X
+D. Identifiers for physical samples
+Mention IGSN, International Geological Sample Number here. “The IGSN is an alphanumeric code that uniquely identifies samples from our natural environment and related sampling features. You can get an IGSN for your sample by registering it in the System for Earth Sample Registration SESAR.” (See http://www.geosamples.org/igsnabout) Refer to chapter X.X
+E. Identifiers for data content types
+Mention Data Type Registries here. Refer to chapter X.X
+F. Identifiers for software
+Mention initiatives to curate software - see text and links in e.g. Jones et al. (http://purl.org/net/epubs/work/24496942) Refer to chapter X.X
+G. Identifiers for workflows
+Mention curation of workflows here. (Couplings to provenance.) Refer to chapter X.X
+3 OUTCOMES OF THE ENVRIPLUS RI REQUIREMENTS AND TECHNOLOGY SURVEY
+As part of the activities of the ENVRIplus Work Package 5 (REF), a review was undertaken to map out and assess the ICT and data management requirements, issues and opportunities of the Environmental Research Infrastructures (RIs) engaged in ENVRIplus. All in all, twelve topics were investigated, of which Data Identification & Citation was one topic. In the following, we summarize the most important outcomes for Identification & Citation that were reported in Deliverable D5.1 [Atkinson (2016)]. The survey questions, along with the ENVRIplus RIs’ responses, are available at the ENVRI Technology Review wiki site1.
+3.1 RI requirements
+3.1.1 Data identification requirements
+ADD A SELECTION OF CONCRETE, ILLUSTRATIVE RESPONSE EXAMPLES HERE!? 
+The survey found a large diversity between RIs regarding their practices. Most are applying file-based storage for their data, rather than database technologies, which suggests that it should be relatively straightforward to assign PIDs to a majority of the RI data objects. A profound gap in knowledge about what persistent and unique identifiers are, what they can be used for, and best practices regarding their use, emerged. Most identifier systems used are based on handles (DOIs from DataCite most common, followed by ePIC PIDs), but some RIs rely on formalized file names. While a majority see a strong need for assigning PIDs to their “finalized” data (individual files and/or databases), few apply this to raw data, and even fewer to intermediate data ? indicating PIDs are not used in workflow administration. Also, metadata objects are seldom assigned PIDs. Costs for maintaining PIDs are typically not treated explicitly. Assignment of PIDs to other forms of data, such as continuous time series, is discussed in Sections 3.2.
+3.1.2 Data citation requirements
+Currently, users refer to data sets in publications using DOIs if available, and otherwise provide information about producer, year, report number etc. either in the article text or in the References section. A majority of RIs feel it is absolutely necessary to allow unambiguous references to be made to specified subsets of datasets, preferably in the citation, while few find the ability to create and later cite collections of individual datasets is important. Ensuring that credit for producing (and to a lesser extent curating) scientific data sets is “properly assigned” is a common theme for all RIs ? not the least because funding agencies and other stakeholders require such performance indicators, but also because individual PIs want and need recognition of their work. Connected to this, most RIs have strategies for collecting usage statistics for their data products, i.e., through bibliometric searches (quasi-automated or manual) from scientific literature, but thus often rely on publishers indexing also data object DOIs. NOTE: RIs were asked to characterise their “designated user community” needs, but most responded with RI-centric requirements. This may be because there was not sufficient opportunity to directly communicate with users. Normally, their highest priority is to improve their productivity, in this case by having as much of the data identification and citation automated.
+3.1.3 Assessment of the I&C requirements
+The Identification and Citation requirements are summarised in Section Error! Reference source not found., which validates the need for this provision in ENVRIplus. However, the RIs showed significant diversity in their data-identification and data-citation practices and many were not aware of their importance in supporting data use. Data Identification and Citation are, however, key to reproducibility and quality in data-driven science and very often vital in persuading data creators of the value of contributing their data, data users of the need to recognise that contribution and funders to continue to support data gathering and curation. 
+The next steps will include:
+1. ENVRIplus will consider a programme of awareness raising and practical training to alert those RIs that would benefit, and to raise the skills of practitioners in any RI, of the relevance of Data Citation and Identification issues and some of the available technologies that will help with solutions and rapid adoption of good practices. The EU EDISON project2 has already worked on this for the cluster project CORBEL for the bio-medical RIs.
+2. The conceptual and technical issues in Data Citation and Identification are strongly linked with best practice in Curation and practically linked with Cataloguing and Provenance. These will be considered together in order to provide consistent advice and solutions to RIs.
+3. A key issue is adoption of appropriate steps in working practices. Where these are exploratory or innovative the citation of underpinning data may be crucial to others verifying the validity of the approach and to later packaging for repeated application. Once a working practice is established, it should be formalised, e.g., as a workflow, and packaged, e.g., through good user interfaces, so that as much of the underpinning record keeping: e.g., Citation, Cataloguing and Provenance is automated. This has two positive effects, it enables the practitioners to focus on domain-specific issues without distracting record keeping chores, and it promotes a consistent solution to be incrementally refined. For these things to happen there have to be good technologies, services and tools supporting each part of these processes, e.g., data citations being automatically and correctly generated as suggested by Buneman et al. [Buneman 2016]. Similarly, constructing immediate payoffs for practitioners using citation, as suggested by Myers et al. [Myers 2015], will increase the chances of researchers engaging with identification at an earlier stage.
+Many researchers today access and therefore consider citing individual files. This poses problems if the identified files may be changed, the issue of fixity. Many research results and outputs depend on very large numbers of files and simply enumerating them does not yield a comprehensible citation. Many derivatives depend on (computationally) selected parts of the input file(s). Many accesses to data are via time varying collections, e.g., catalogues or services, that may yield different results or contents on different occasions—generically referred to as databases. Some results will deal with continuous streaming data. Often citations should couple together the data sources, the queries that selected the data, the times at which those queries were applied, the workflows that processed these inputs and parameters or steering actions provided by the users (often during the application of the scientific method) that potentially influenced the result. All of these pose more sophisticated demands on the Data Identification and Citation systems. At present they should at least be considered during the awareness raising proposed above. In due course, those advanced aspects that would prove useful to one or more of the RI communities should be further analysed and supported. This is revisited in the technology review Section Error! Reference source not found. and in Section Error! Reference source not found..
+3.1.4 Conclusion
+The use of persistent and unique identifiers for both data and metadata objects throughout the entire data life cycle needs to be encouraged, e.g., by providing training and best-use cases. There is strong support for promoting “credit” to data collectors, through standards of data citation supporting adding specific sub-setting information to a basic (DOI-based) reference. Demonstrating that this can be done easily and effectively, and that data providers can trust that such citations will be made, will be a priority, as it will lead to adoption and improvement of citation practices.
+3.2 Technology review
+Add some sentences describing how the tech review was done�PLUS give a reference to the D5.1 document�
+It is important to keep in mind that there are many different actors involved in data identification and citation: data producers (RIs, agencies, individuals); data centres (community repositories, university libraries, global or regional data centres); publishers (specialised on data, or with a traditional focus); and data users (diverse ecosystem, from scientists, experts to stakeholders and members of the public). Technologies should reflect needs and requirements for all of these. Here the focus is on RIs that typically involve all of those viewpoints. Time constants for changing old practices and habits can be very long, especially if they are embedded in established cultures or when capital investment is required. 
+For these reasons, updating, or implementing totally new, technology alone does not improve “usage performance”3, as the behaviour of the “designated scientific community” will influence the discoverability and ease of reuse of research data. Scientific traditions and previous investments into soft- or hardware can lead to large time constants for change. Adopting new database technology quickly could, on paper, provide large benefits (to the data providers) like lower costs and easier administration and curation, but may de facto be unacceptably lowering overall productivity for significant parts of the user community over a long period of time while the transition is achieved.
+3.2.1 Two-to-five year analysis of state of the art and trends
+As evident from the large number of on-going initiatives for applying identifiers to, and subsequently providing linkages between, all components of research ? from individual observation values to the people making them ? it is a very difficult task to even try to envisage how the data-intensive research landscape will look in a few years from now. 
+Here, we list some of the issues and ideas that are being worked on now, and which we feel will continue to be of importance in the coming years:
+A. A majority of (starting-up) RIs adapt data curation strategies that are fully capable of handling dynamic data (both versioned static files and truly dynamic databases), centred around persistent identifiers for both data & metadata objects and queries. 
+B. Standards for unambiguous referencing of subsets of data sets (in citations and in workflow contexts) will become widely adopted by scientists and publishers alike, enabling both efficient (human and machine) extraction of “slices” of data as well as detailed (micro)attribution of the producers of the data subset.
+C. More complex data objects will become common, including data collections, “research objects” containing both data and related metadata, and other (virtual) aggregates of research information from a multitude of sources. This will require new strategies for content management and identification at both producer and user level.
+D. Systems for allocating persistent identifiers will become more user-friendly, e.g., by development of APIs and human-oriented UIs that are common to all major identifier registries. This will have profound positive impacts on the administration and reproducibility of scientific workflows.
+E. To enable efficient automation of data discovery and processing, it will become common to store an enhanced set of metadata about the objects directly in the PID registries’ data bases, e.g., related to fixity, versioning, basic provenance and citation. 
+F. The current trend to implement an ever tighter automated information exchange between publishers, data repositories and data producers will continue, and become the norm in many fields including Environmental and Earth Sciences.
+G. More effective usage tracking and analysis systems that harvest citation information not only from academic literature but from a wide range of sources will be developed. 
+Individual ENVRIplus RIs are engaged in a number of the above-mentioned developments through the activities outlined in the Description of Work of several work packages in Themes 1 and 2.
+There is also active participation, by individual ENVRIplus RIs, in projects such as EUDAT2020 or as use cases in RDA groups. However, the relatively short lifetimes, and limited number of members, of this type of project often has several negative consequences. Firstly, there may not be enough diversity within the use cases to encourage the development of broad solutions that cover the needs and requirements of a wider range of communities. Secondly, the knowledge and experience gained through such work often ends up benefiting only a small number of RIs ? if there is any long-lasting application at all! 
+ENVRIplus could therefore make a difference by setting up a platform for informing practitioners about on-going initiatives (especially those that involve ENVRIplus members, but not as part of ENVRIplus itself), collection of RI use cases for passing on to the technology developers, and finally promoting the dissemination, implementation and uptake of effective examples.
+3.2.2 Details underpinning the two-to-five year analysis
+In this section, we present more background for the 7 topics (A-G) listed above. For each topic, some specific examples of relevant technologies are listed, together with a brief narrative discussion and suggestions for further reading ? either links to the bibliography or to organisations whose web site addresses are listed under 4.2.2.
+A. A majority of (starting-up) RIs adapt data curation strategies that are fully capable of handling dynamic data (both versioned static files and truly dynamic databases), centred around persistent identifiers for both data & metadata objects and queries. 
+* Main technology needs: versionable databases to support “time machine” retrieval of large datasets (also sensor data) that are dynamic.
+Sources: [Rauber 2016] and personal communications with A. Asmi, 2016. 
+There exist already today several different technical database solutions that support versioning of database records—both SQL and NoSQL-based. Both approaches have advantages and disadvantages, but with optimised and well-planned schemas for storing all transactions and their associated timestamps, it is possible to achieve “time machine”-like extraction of data (and metadata) as they existed at any given time, without significant losses in performance ? at least for moderately-sized databases. But challenges remain, e.g., for databases required to store long time series of high-frequency sensor data. For data stored as flat files, it is mainly the metadata that must be stored in a database supporting versioning database, to allow identification of what file(s) represent the “current state” of the data at a given point in time. 
+* Connections to cataloguing and maintenance of provenance records, supporting automated metadata extraction and production for machine-actionable workflows.
+Sources: [Tilmes 2010], [Duerr 2011] (see example in the article supplement!)] + on-going work in RDA Metadata Interest Group, RDA Research Data Provenance Interest Group and EUDAT2020 (Work Package 8).
+In order for data-driven research to be reproducible, it is an absolute requirement that not only all analysis steps be described in detail, including the software and algorithms used, but that the input data that were processed are unambiguously defined. Ideally, this is achieved by minting a persistent identifier for the data set as the basis for the citation, and then adding details about the date when the data was extracted, the exact parameters of the subset selection (if used), version number (if applicable) and some kind of fixity information, like a checksum or content fingerprint. Optimally, at least one of 1) the citation itself; 2) the PID record metadata and/or 3) the resource locator associated with the PID, will provide all this information in a machine-actionable format, thus allowing workflow engines to check the validity and applicability of the data of interest. 
+Currently, a majority of the ENVRIplus RIs ? and their intended user communities ? haven’t yet started to implement the outlined practices in a consistent manner. As a consequence, the reproducibility of research based on data from these RIs could be called into question. What is needed to change this situation, are good examples and demonstrators that can be easily adopted by the RIs (without much investment in time and software). Such best practices need to be developed in cooperation across the Work Packages of Theme 2. 
+B. Standards for unambiguous referencing of subsets of data sets (in citations and in workflow contexts) will become widely adopted by scientists and publishers alike, allowing both efficient (human and machine) extraction of “slices” of data as well as detailed (micro)attribution of the producers of the data subset.
+* Query-centric citations for data, allowing for both unambiguous and less storage resource-intensive handling of dynamic data sets
+Sources: [Duerr 2011], [Huber 2013], [Rauber 2016]
+Data sets from research may undergo changes in time, e.g., as a result of improvements in algorithms driving a re-processing of observational data, errors having been discovered necessitating a new analysis, or because the data sets are open-ended and thus being updated as new values become available. Unless great care is taken, this dynamic aspect of data sets can cause problems with reproducibility of studies undertaken based on the state of the data set at a given point in time. The RDA working group on Data Citation has therefore produced a set of recommendations (in 14 steps) for implementing a query-based method that provides persistently identifiable links to (subsets of) dynamic data sets. The WG have presented a few examples of how these recommendations can be implemented in practice, but there is a great need for continued work towards sustainable and practical solutions that can easily be adopted by RIs with different types of data storage systems. 
+C. More complex data objects will become common, including data collections, “research objects” containing both data and related metadata, and other (virtual) aggregates of research information from a multitude of sources. This will require new strategies for content management and identification at both producer and user level.
+* systems for cataloguing and handling more complex collections, both of data sets and metadata (c.f. “research objects”). 
+Sources: OKFN, wf4Ever, the RDA Data Collections WG (just starting) + RDA Data Type Registries WG (concluded with recommendations).
+The increasing complexity of research data and metadata objects adds more challenges. Firstly, in contrast to printed scholarly records like articles or books, data objects are often in some sense “dynamic” ? updates due to re-analysis or discovered errors, or new data are collected and should be appended. The content can also be very complex, with thousands of individual parameters stored in a single data set. Furthermore, there is a growing trend to create collections of research-related items that have some common theme or characteristic. 
+In the simplest form, collections can consist of lists of individual data objects that belong together, such as 365 daily observations from a given year. Similarly, it may be desirable to combine data and associated metadata into packages, or to create even more complex “research objects” that may also contain annotations, related articles and reports, etc. Collections can be defined by the original data producers, but may also be collated by the users of the data ? and may thus contain information from a large variety of sources and types. This diversity is prompting work on providing tools for organising and managing collections, e.g., using APIs that are able to gather identity information about collection items (through their PIDs), as well as minting new PIDs for the collections themselves.
+There is also a need for sustainable registries for data type definitions that can be applied to “tag” content in a way that is useful and accessible both to humans and for machine-actionable workflows. However, the use of data types varies greatly between different user communities, making it a difficult task to coordinate both the registration of definitions as well as a sustainable operation of the required registries, especially if these are set up and operated by RIs. Here more work is needed in collaboration with a number of RIs each with differing data-set structures and catalogue organisations, in order to provide clear recipes for data typing.
+D. Systems for allocating persistent identifiers will become more user-friendly, e.g., by development of APIs and human-oriented UIs that are common to all major identifier registries. This will have profound positive impacts on the administration and reproducibility of scientific workflows. 
+* Adoption of a common API for PID minting, applicable across registries and methods.
+Sources: [Duerr 2011], [Socha 2012], [Klump 2015] + work by the RDA PID Information Types WG (concluded) and the RDA PID Interest Group (starting now).
+Although a number of systems for persistent identification of e.g., scientific publications have been available for over a decade, relatively few researchers are consistently applying these systems to their research data. There is, at the same time, a pressing need to encourage data producers to mint PIDs for any (digital) items belonging in the research data lifecycle that should be “referable” ? including also raw data and datasets produced during analysis, and not just finalised and “published” data sets. Surveys have indicated that the reasons for the slow adoption rate include a lack of knowledge about the existing opportunities, confusion over their relative differences and merits, and difficulties related to the identifier minting process (especially when it needs to be performed on a large scale, as often the case for data). The latter problem is to a large extent due to the large variety in design and functionality of PID registry user interfaces and APIs, and there are now several initiatives looking into how the registration and maintenance of PID records can be streamlined and simplified. However, the proposed inclusive user and programmatic interfaces will need extensive testing by a wide range of different user communities. There are also institutional issues, concern over intellectual property rights may inhibit the adoption of working practices or the delegation of authority to allocate PIDs.
+E. To enable efficient automation of data discovery and processing, it will become common to store an enhanced set of metadata about the objects directly in the PID registries’ databases, e.g., related to fixity, versioning, basic provenance and citation. 
+* Handle registries also need to become federated, and allow users to add community- or project-specific metadata to the handle records (see recommendations of the RDA WG on PID information types), including those required for identity and fixity verification.
+Sources: RDA PID Information Types WG (final), new RDA Data Collections WG + presentations from the ePIC & DataCite PID workshop in Paris, 20154.
+Mainly motivated by a desire to speed up and facilitate the automation of data discovery and processing, there are calls for the centralised handle (and other PID system) registries to also allow data producers and curators to store more types of metadata about the objects directly in the registries’ data bases. Examples include information related to data content type(s), fixity, versioning, basic provenance and citation. This would speed up data processing since the requesting agent (e.g., a workflow process) would be able to collect all basic metadata via just one call to the PID registry, instead of needing to first call the registry and then follow the resource locator pointer to e.g., a landing page (which data would need to be harvested and interpreted).
+Some PID management organisations, such as DataCite (and the DOI foundation) already support a relatively broad range of metadata fields, but other registries are more restrictive. The technology for storing the metadata is already in place, but database systems would need to be upgraded to allow for more PID information types. Also, registry servers’ capacity to handle the expected large increase in lookup query requests must be upgraded. Optimal performance will require the PID information types themselves to be defined and registered in a persistent way, e.g., using a data type registry. 
+F. The current trend to implement an ever tighter automated information exchange between publishers, data repositories and data producers will continue, and become the norm in many fields including Environmental and Earth Sciences. 
+* Expanding the application of persistent unique identifiers for people and institutions in research data object management, including metadata and PID registry records. 
+Sources: ORCID and DataCite, THOR web site and webinar series.
+Driven by demands from large scientific communities (e.g., biochemistry, biomedicine and high energy physics), publishers and funding agencies, there is a strong movement towards labelling “everything” and “everyone” with PIDs  to allow unambiguous (and exhaustive) linking between entities. Currently it quite common for individual researchers to register e.g., an ORCID identity, and subsequently use this to link to articles in their academic publications record. This could be equally well applied to (published) research data, for example by entering ORCID IDs in the relevant “author” metadata fields of the DataCite DOI registry record, and allowing this information to be harvested by CrossRef or similar services. 
+Connected with this is a growing trend to implement tighter information exchange (primarily links to content) between publishers, data repositories and data producers. There are several on-going initiatives looking into how to optimise and automate this, including the THOR project (operated by CERN), which involves amongst others OpenAIRE, ORCID, DataCite and Pangea. It is expected that the outcomes of these efforts will set the norm.
+However, to be fully inclusive and consistent (from a data curation and cataloguing point of view), this practice should be extended to all relevant “personnel categories” involved in the research data life cycle, including technicians collecting data, data processing staff, curators, etc. ? not just principal investigators and researchers, This would allow both a complete record of activities for individuals (suitable for inclusion in a CV), but conversely can also be seen as an important source of provenance information for linked data sets. 
+G. More effective usage tracking and analysis systems that harvest citation information not only from academic literature but from a wide range of sources will be developed. 
+* Discovering and accounting for (micro)attribution of credit to data producers and others involved in the processing & management of data objects ? especially in the context of “complex” data objects
+Sources: [Uhlir 2012], [Socha 2012], [Huber 2013] + RDA Research Data Collections Interest Group
+There is strong encouragement from policy makers and funding agencies for researchers to share their data, preferably under open-access policies, and most scientists are also very interested in using data produced by others for their own work. However, studies show that there is still widespread hesitancy to share data, mainly because of fears that the data producer will not receive proper acknowledgement and credit for the original work. 
+These apprehensions become stronger when discussing more “complex” data containers ? how to give “proper” credit if only parts of an aggregated data set, or a collection of data sets, were actually used in later scientific works? Indeed, many scientists deem it inappropriate or misleading to attribute “collective” credit to everyone who contributed to a collection.
+Proposed solutions, now under investigation by various projects focus on two approaches: 1) making the attribution information supplied together with data sets both more detailed and easier to interpret for end users; and 2) providing means for data centres and RIs to extract usage statistics for collection members based on harvested bibliometric information available for the collections. The first of these could be achieved by e.g., labelling every individual datum with a code indicating the producer, or minting PIDs (DOIs) for the smallest relevant subsets of data, e.g., from a given researcher, group or measurement facility. Based on such information, a data end user can provide detailed provenance about data sets used (at least in article text). The second approach may combine tracing downloads and other access events at the data centre or repository level with bibliometry, with the aim to produce usage statistics at regular intervals or on demand (from a data producer). However, handling each file’s records individually would quickly become cumbersome, so methods of reliably identifying groups of files should be considered.
+* Organisation of (RI-operated) metadata systems that will allow fast and flexible bibliometric data mining and impact analysis. 
+Sources: [Socha 2012], ePIC and DataCite PID workshop (Paris, 2015)68, Make Data Count project, CrossRef, OpenAIRE, THOR.
+By analysing information about the usage of research data, e.g., through collecting citations and references from a variety of (academic) sources, it is possible to extract interesting knowledge of e.g., what (subsets of) data sets are of interest, who has been accessing the data and how, and in what way they have been used and for what purpose. 
+Traditionally, this data usage mining is performed based on searching through citation indices or by full-text searches of academic literature (applying the same methods as for articles, e.g., CrossRef, Scopus, Web of Science), sometimes also augmented by counting downloads or searches for data at repositories and data portals. However, up till recently, citations of data sets were not routinely indexed by many publishers and indices, and such services are still not comprehensively available across all science fields. At least partly, this is due to limits in the design of citation record databases and the insufficient capacity of lookup services. Here, updated technologies and increased use of, e.g., semantic web-based databases, should bring large improvements.
+However, it is important to cover also non-traditional media and content types. Such “altmetric sources” include Mendeley, CiteULike and ScienceSeeker, as well as Facebook and Twitter. Indeed, while references to research data (rather than research output) in social media may not be very common in Earth Science yet, it may become more prevalent, e.g., where inferences from digital-media activity complement direct observations in poorly instrumented regions. (There are already examples from e.g., astronomy.) Data are in any case already being referred to in many other forms of non-peer-reviewed science-related content, such as Wikipedia articles, Reddit posts, and blogs. Since authors using these “alternative” information outlets are less likely to use PIDs or other standard citation formats, it is a great challenge to bibliometry mining systems to identify and properly attribute such references.  
+* Discovery and sharing, especially of data contained in “complex data objects”, may be enhanced by the use of data type registries that facilitate subset identification (and retrieval)
+Sources: RDA Data Type Registries Working Group, EUDAT
+Data sharing requires that data can be parsed, understood and reused by both people and applications other than those that created the data. Ideally, the metadata will contain exhaustive information about all relevant aspects, e.g., measurement units, geographical reference systems, variable names, etc. However, even if present, such information may not be readily interpretable ? it may be expressed in different languages, or contain non-standard terminology. There is a need for a support system that allows for a precise characterisation of the parameter descriptions in a way that can be accessed and understood by both human users and machine-actionable workflows.
+Registries containing persistently and uniquely identified Data Type definitions offer one solution that is highly configurable and can be adapted to needs of specific scientific disciplines and research infrastructures. In addition to the basic properties listed above, the type registry entries can also contain relationships with other types (e.g., parent and child, or more complex ones), pointers to services useful for processing or interpretation, or links to data convertors. Data providers can choose to register their own data types (possibly using their own namespace), apply definitions provided by others, or apply a mix of these approaches. The PIDs of the applicable data types are then inserted into the data objects’ metadata, and can also be exposed via cataloguing services and search interfaces. 
+The RDA Data Type Registry working group has designed a prototype registry server, which is currently being tested by a number of RIs and organisations. In a second phase, the RDA group will continue the development of the registry concept by formulating a data model and expression for types, designing a functional specification for type registries, and investigating different options for federating type registries at both technical and organisational levels. The adoption of unambiguous and clear annotation of data, as offered by Data Types, should go a long way towards allaying researchers’ concerns that their data will be “misused”, either in an erroneous fashion, or for inappropriate purposes.
+
+3.2.3 A longer term horizon
+As discussed in a recent report from the RDA Data Fabric Interest Group [Almas 2015], both the increasing amounts of available data and the rapidly evolving ecosystem of computing services, there will have to be an intensifying focus on interconnectedness and interoperability in order to make best use of the funding and resources available to scientists (and society). Tools and technologies including cloud-based processing and storage, and increasing application of machine-actionable workflows including autonomous information searches and data analyses, will all rely on sustainable and reliable systems for identification and citation of data.
+Based on this, we have identified a couple of likely trends for the period up to the year 2020:
+* A move towards automation of those aspects of the research data lifecycle that will involve basic tasks like assigning identifiers and citing or referring to all kinds of resources ? including data and metadata objects, software, workflows, etc.
+* Evolution towards more complex “collections” of research resources, like Research Objects, that will necessitate a more flexible approaches towards both strategies for identification and detailed, unambiguous citation or referencing parts of such objects.
+Much more tightly integrated systems for metadata, provenance, identification and citation will evolve (pushed by data producers, publishers and data centres), offering rapid and trusted feedback on data usage and impact.
+3.2.4 Summary of analysis highlighting implications and issues
+Tools and services now under development that will allow seamless linking of data, articles, people, etc. are likely to have a large impact on individual researchers, institutions, publishers and stakeholders by allowing streamlining of the entire data management cycle, virtually instantaneous extraction of usage statistics, and facilitation of data mining and other machine-actionable workflows.
+While DOIs for articles, and ORCID identifiers for researchers, are now an accepted part of the scientific information flow, publishing of data may not even consider identifiers for other resources (except for publications, for which DOIs are well established). To speed up the adaptation, both current and future technologies for (data) identification and citation must not only be flexible enough to serve a wide range of existing research environments, but they also have to be shown to provide clear benefits to both producers, curators and end users.
+Indeed, while some research communities and infrastructures have fully embraced the consistent use of PIDs for data, metadata and other resources throughout the entire data lifecycle, many others are only beginning to think about using them. Important reasons for this hesitancy or tardiness include a substantial knowledge gap, perceived high investment costs (both for personnel, hardware and software), and a lack of support from the respective scientific communities to change engrained work practices. 
+ENVRIplus is expected to play an important role in defining best practices for first applying identifiers to data and other research resources ? including the researchers themselves ? and secondly, how use them for citations and provenance tracking. This will be achieved by 1) designing and building demonstrators and implementations based on concrete needs and requirements of ENVRIplus member RIs; and 2) providing documentation and instructional materials that can be used for training activities.
+Further discussion of the data identification and citation technologies can be found in Section Error! Reference source not found.. This takes a longer term perspective and considers relations with strategic issues and other technology topics. 
+
+3.3 Services
+3.3.1 Assessing the data identification and citation technology review
+MUST BE CONDENSED - EXTRACT MOST IMPORTANT POINTS!
+(Written by Malcolm Atkinson, Alex Hardisty et al. for D5.1)
+Section 3.2 gives very clear explanations of the value of good quality working practices for identifying and referencing all items of data that are, or may become, significant in research. It highlighted two pervasive challenges faced by all those who are engaged in stages of the data lifecycle or are using or producing data in their research or for decision support. One, there are diverse suggestions, but not agreed and widely adopted standards, underpinning the necessary actions, whether those actions are carried out by humans or software. Two, today there aren’t good tools and technologies that make it easy for humans or software to perform these tasks efficiently. There is a great deal of work underway, and we can be optimistic about viable deployable support for data identification and citation becoming available within the next few years. This poses another two challenges: 1) how to identify and align with the software and methods that will be most widely supported and adopted; and 2) how best to use the emerging software, metadata standards and proposed methods in the ENVRIplus context. That requires developing standard practices, metadata and protocols that allow interworking within and between the RIs and other organisations. That is an issue prevalent in nearly all RIs for all technology topics. Indeed, cataloguing, curation and provenance all need to make effective use of the functionality and facilities data identification and citation will provide. Conversely, the work on catalogues may provide facilities for PID registries with associated metadata. 
+Scientists in each field will need to associate their identified items with concepts in their view of the natural world. Terms for widely adopted agreed concepts may be identified by standardised vocabularies underpinned by formal ontologies ? see Section 3.9. For such agreed concepts these external references provide identification and citation. However, scientists may take different views of the phenomena they observe, or they may be developing a conceptual framework for new phenomena, e.g., a new species, that they have identified. In this case, they need a framework for defining and citing the new concepts that they manage and develop. Presumably, this would use the data identification and citation machinery. When their contributions reach acceptance or are published these localised identities should easily migrate into the standard reference space of managed identities. Conversely, if they fail to establish evidence to back up their idea, their localised developments will not affect researchers other than those they are currently collaborating with.
+Optimisation will interact with data identification for two reasons: both caching and the co-location of data, processing and derived data depend on precise data referencing. Integration into workflows of the functions required for data identification and citation is a crucial labour and error saving step. Processing will then need to execute the data-intensive workflows and call on data identification services.
+The basic consistency for data identification and citation should be achievable within the ENVRIplus project’s lifetime (see Sections 3.2.3 and 3.2.4). But, as in so many scientific contexts, this leads to further challenges. In this case dealing with the more complex, composite and time-varying data generated by the work of RIs and their research communities (see Section 3.2.5). Finding ways of succinctly, efficiently and precisely identifying the growing volumes and many subtleties of the data used by and produced by future data-driven research will always be a challenge. As one aspect is covered, increases in volumes, increases in rates, increases in diversity and researcher ingenuity will pose new ones, or break existing solutions. It is vital to be on the ladder addressing such issues, as that is key to international research leadership and to addressing societal challenges. There is clearly good reason to believe from the understanding and insights shared in Section 3.2, that data identification and citation will be progressing well up that ladder during ENVRIplus. 
+There are further considerations that may be addressed in the future. These are enumerated here in no particular order—many of them apply to subsequent technology review topics as well.
+1.	Identification and cataloguing: The relationship between data identification and cataloguing is very close. The identity record could also be a catalogue entry for the referenced data. The metadata required for the identity purposes could be a subset of the total catalogue metadata. An operation, possibly a standard query pattern, could yield the information required for the purposes of data identification and citation. It seems unlikely that independent development and support of identification and cataloguing will make long-term sense. However, there may be a distinguished subset of catalogues that register data identity and the identifiers these use would be used in other catalogues, provenance, processing and optimisation. The principles and procedures for minting adequate references would still need to be independently designed and agreed. But their implementation would employ appropriate catalogue functionality. At which point, non-functional issues, such as performance and availability would come to the fore. Harmonised solutions would simplify interworking but they confront established cultures and investments.
+2.	Roles for data identifiers: It is obvious that cataloguing and provenance will need reliable data identifiers to refer to data from their records. It is desirable that almost all data processing refers to its inputs in terms of the data identifiers. This permits implementations to store copies of data replicated for availability and preservation, and then to choose the one with lowest contribution to the costs identified by optimisation. As the storage technologies, resource provisions and data-intensive middleware evolve, if the scientific methods are couched in terms of data identifiers rather than naming systems based on particular storage schemes, the mappings invoked during method enactment can adapt to those changes. Hard-wired naming means everyone who is involved in formulating the method has to be involved in adapting to the changed digital context—clearly an unsustainable policy. Indeed, the role for data identities in optimisation is much greater. If data are identified by a trustworthy mechanism, the optimiser can recognise when the same data are requested on two occasions (in the same workflow, by the same user running a different process, or by different users) and save work accessing, transferring and transforming it again. 
+3.	Raising the level of discourse: The majority of discussions in requirements gathering and in technology review were couched in terms of practical and concrete implementation terms. Such delivery mechanisms are critical but developing precise, abstract models, then clarifying them through discussion and revision is of greater and long-term benefit. The Reference Model (see Section 3.10) provides a vocabulary and context where such discussion takes place. Analysis and decisions couched in these higher-level terms are much less subject to the uncertainties of digital-technology evolution. Those decisions tend to have a rationale that is not based on the demands and issues of the current projects or current equipment and its software. Rather, it is based on the scientific and community goals. These need to be shaped and brought into as much harmonisation as possible. That is easier at a more abstract level. Once the goals are agreed, the mapping to implementations can develop and yield the best approximation to those goals given current circumstances. For example: Should the minting of a data identity be an atomic process? That is one that happens all at once leading to a complete and final record; i.e., the requestor would provide the data and all of the information required for metadata in one go. The identity system then allocates a PID, and builds all of the associated metadata, and makes a “permanent” record of the minted association. Or should a non-atomic, incremental sequence of operations be supported? For example: 
+a.	Either the workflow requests a data PID to allocate, or sends the data and gets a PID.
+b.	Later the workflow can supply the data and required metadata.
+c.	Later the workflow can say that it wants the PID promoted to a preserved status where it has been quality assured, or say that that binding between PID, data and metadata should be discarded.	
+4.	Transient identities: Such incremental approaches might allow internal identities for workflow intermediates and potential result sets to be allocated quickly. Clearly, fixity is not important at this time, and costs of supporting it and other metadata would slow a workflow. Many workflows fail or are under development, so their information should not be captured and curated, but their intermediate data may be highly relevant for diagnosis and for testing sub-tasks during development. What kinds of operation are allowed on a reference? Can a workflow or user retrieve the data associated with it? Can they retrieve (aspects of) the associated metadata? Can they formulate queries on the metadata that retrieve a set of identities? Can that set be used to perform a bundle of the above operations? And so on.
+5.	Accommodating diversity: Although the campaign for harmonisation is vital, it will never completely achieve conformity for two reasons: (i) there are many external forces, such as collaborative and global agreements that lock RIs and their communities into different standards and working practices, and (ii) researchers and their support teams are ingenious inventors of new methods—crucial innovation on which advances are built. We would not wish to inhibit this. The former can be accommodated by offering functions that map, sometimes with loss of precision, to a common interchange form, e.g., RDF triples conforming to the semantic web model [Berners-Lee 2001]. Is such a capability required for data identities and the operations on them? The user-driven variations can be accommodated by having some fields in the data-identity registry capable of holding any user defined material, e.g., JSON format records, RDF records, XML records, matrices, or plain text. The ability to use this information in queries would then be required [Spinuso 2016].  As most underlying database systems are capable of accommodating such flexibility (see below) this is potentially feasible. It is most likely to be required as the designated community becomes adept at using the existing facilities; hence, we would not expect it to have much prominence in the current round of requirements.
+6.	Registry platforms: It is necessary to build registries and other catalogues on top of high-quality database systems. There may be more of a catalogue framework above the database provided by the cataloguing campaign (see Sections 3.4 and 4.2.7) that delivers functionality that packages the underlying database semantics (so that, for example, the database delivery platform may be replaced). Database engineering has a huge investment and that helps address sustainability issues raised in Section 4.2.4. It also delivers scalability by use of multiple nodes, delivers accommodation of multiple data models, handles NoSQL and SQL distributed queries, and delivers mechanisms for high availability and mitigation of systems failure that might otherwise cause loss of data or inconsistent states. One approach to sustainability is to use widely supported Open Source projects, such as some of those under the Apache foundation, www.apache.org. Another is to depend on commercially supported software; there are several good database vendors. 
+7.	Temporal patterns: Are all of the registries or catalogues built incrementally? For example, many IVOA catalogues are rebuilt with a specified periodicity. This has two advantages: (i) they act as a stable referenceable data source for that period, typically six months, and (ii) redesign and improvement of the catalogue building methods can progress during that interval and then be released. Are the visible registries of data identities always built incrementally? Are they ever rebuilt?  What is the model for rebuilding them?
+8.	Distribution patterns: The registry of data identities for a particular community is almost certainly logically presented to them as a single entity. However, is it in fact a distributed entity, e.g., to handle transient and initial interactions locally and fast, but to promote persistent complete records to authority sites, replicated for durability and availability? Is this a recursive federation structure (see Section 4.2.3), where sub-communities within an RI pool their data identities and a group of RIs then pool these identity integrations? This may be more consistent with requirements for autonomy. It may also be easier from the viewpoint of incremental adoption. However, it almost certainly increases the operational and implementation complexity. It may be a later adaptation; but that may be easier if it is anticipated.
+9.	Jam tomorrow is not enough: Having visions of harmonised support for multiple RIs’ data and communities and a well-planned path to deliver that goal is important. However, it will be a futile and wasted effort if the results are not adopted by the majority of relevant practitioners: the researchers, the technologists, engineers and managers who support them, and the users of the produced derivatives. Experience has shown that promising exciting advances but not taking the practitioners along with you leaves them finding alternatives to get today’s work done. Once those alternatives have been developed, it takes a very long time and a lot of effort to re-recruit the community. Consequently, all of the important categories of practitioner have to see benefits as ENVRIplus progresses, i.e., they have to see Jam today180. This means finding immediate benefits for them, e.g., tools that help with their common tasks, data that they want, such as the usage of their data summarised, and automation of parts of working practices and scientific methods as soon as they become available, made accessible to them. This links back to raising the level of discourse above (3), as if we identify critical subtasks, e.g., request a data identity, issue a data identity, present a data identity to have action X applied to it, etc. then the discourse contains concepts that can be incrementally developed and can prove useful almost immediately. Their usability would be much helped by linking with communities of tool builders, e.g., the visualisation services in [Spinuso 2016]. Myers et al. [Myers 2015] identified the value of making the stages of curation incremental so that those stages yield benefits to practitioners as they work, e.g., they benefit from having some metadata associated with data in a catalogue, so they can find subsets of interest to them, and apply operations to all members of such subsets. This induces them to introduce metadata terms, such as dates and significant properties, because they are relevant for their current research campaign. Those same metadata will have been tested and improved by the time they are used for curation.
+3.4 Training & promoting best practices
+A wide adaptation of persistent identifiers into the day-to-day operations and workflows of ENVRIplus partners could bring very large dividends - but it will cost in time and money spent on aligning current practices with what for many are new steps and requirements. To facilitate the involved processes, it will be very important to provide relevant and useful information to the partner organizations. By documenting and presenting a couple of success stories from different domains, it will be easier to illustrate PID “best practices”.
+
+
+4 EXISTING CONNECTION CHANNELS TO EXTERNAL ORGANIZATIONS
+4.1 PID providers
+Here we will summarize the operations and features of some of the most important PID providers with relevance to ENVRIplus members’ operations.
+4.1.1 ePIC - the European Persistent Identifier Consortium
+http://www.pidconsortium.eu
+(Contributed by Lonica Lassi)
+The European Persistent Identifier Consortium (ePIC) provides PID services to European centres that store research data. Consortium members are: IT Center for Science (CSC) in Finland, DKRZ in Germany (see 4.2.2 for a description), Greek Research and Technology Network (grnet) in Greece, Gesellschaft für wissenschaftliche Datenverarbeitung G?ttingen (GWDG) in Germany, Center for High-Performance Computing at the KTH (PDC KTH) in Sweden, and SURFsara in the Netherlands.
+The ePIC PIDs are based on handles and can be used for data objects and data collections as the users  of the services see fit. The consortium members share services and APIs, and promises that if one centre is out of order, the other centres can still resolve PIDs. [ePIC 2016a] Services offered for ePIC PIDs are generation, resolution and replication of PIDs, and a mirror of the Global Handle Server in Europe, which ensures that PIDs can be resolved even if parts of the global network would be down. [ePIC 2016b]
+4.1.2 DataCite
+http://datacite.org
+(Contributed by Lonica Lassi)
+DataCite is a non-profit, community driven organisation that provides DOI services for research data, including generation and allocation of DOIs and related metadata, and discovery services for research data [DataCite 2016a]. The services are offered in collaboration with its community of members, which includes data centres, libraries, universities and other organisations [DataCite 2016b]. DataCite also works on advocacy for data citation through events and activities in research communities [DataCite 2016a]. 
+In collaboration with ORCID, DataCite offers the service DataCite Profiles which connects researchers’ ORCID profiles and can update researchers’ ORCID records for works that have DOIs [DataCite Profiles 2016]. The Citation formatter is another collaboratively developed service (with Crossref (see 5.3.1 for a description), mEDRA https://www.medra.org/ and ISTIC http://www.doi.org.cn/portal/index.htm ) which allows for create citations by extracting metadata from DOIs. Currently, over 5000 citation styles in 45 languages are supported. [DataCite 2016c] Connected to metadata, the service OAI-PMH Data Provider facilitates harvesting of metadata from resources with a DataCite DOI [DataCite 2016d]
+A new collaboration between DataCite, ORCID and CrossRef on organisational PIDs, the Organization Identifier Project, was presented at the PIDapalooza conference on 10 November 2016. For information about the project described from the member organisations’ different contexts, and for links to the documents, see DataCite:[Fenner 2016], ORCID: [Haak 2016], and Crossref: [Pentz 2016].
+4.1.3 ORCID 
+(Contributed by Monica Lassi)
+Open Researcher and Contributor ID (ORCID) is a non-profit organisation that provides PIDs to uniquely identify researchers and to connect researchers to their works and research outputs [ORCID 2016a]. ORCID’s mantra is “enter once, re-use often” [ORCID 2016b], meaning that data in a researcher’s ORCID ID can be imported into services provided by other actors, e.g. funders, publishers and libraries. The ORCID tools, and other work done by the organisation, are open and transparent, and are developed in close collaboration with the research community. [ORCID 2016a] ORCID IDs are used in the research workflow (e.g. submission of grants and manuscripts) by its member organisations as well as non-members. Both types of users include actors such as funders, research institutions, libraries and repositories [ORCID 2016c]. In November 2016 there were 2,763,353 ORCID IDs [ORCID 2016d].
+ORCID collaborates with other PID organisations, such as DataCite and Crossref, to create tools for linking research objects and people. For example, the service Auto-Update functionality makes it possible researchers’ ORCID record to be updated when new publications are published (if the researcher gives permission to link these services) [ORCID 2016e]. This simplifies the task of individual researchers keeping their publication lists up to date. 
+4.1.4 ISNI
+International Standard Name Identifier (ISNI) is an ISO certified standard for identification of creators of works, including researchers, publishers, producers, artists, and inventors to enable unambiguous attribution to a work’s creator. ISNI International Authority (IA) is the organisation behind the ISNI PIDs, and is a non-profit organisation consisting on members of rights management organisations and libraries [ISNI 2016b]. ISNI is a so called “bridge-identifier” linking domains together, and is used for linked data applications. In November 2016 there were 8,55 million names in the ISNI database, of which 2,58 million are researchers. [ISNI 2016a] ISNI is part of a set of international standard identifiers, including the DOI standard, ISBN (International Standard Book Number) for books, and ISSN (International Standard Serial number) used for identifying e.g. journals, collections, databases. [ISNI 2016b]
+The differences between ISNI and ORCID are related to their different foci and user communities: whereas ISNI can identify anyone responsible for a work, and have many users in creative arts, ORCID focuses specifically on researchers producing scholarly output, and the stakeholders involved in research. The organisations coordinate their work to ensure there is no overlap in assignment of PIDs, and ORCID follows the ISNI ISO standard [ORCID 2016f]. The management of historical and deceased persons differ between ISNI and ORCID. ISNI allows for creation of PIDs for persons who cannot themselves create the PID, whereas ORCID requires each person to create their own ORCID ID [Source: A session at PIDapalooza. Muntlig information fr?n Paul Jessop at County Alanlytics Ltd ?].
+4.1.5 Others
+We should mention and list repository initiatives that can be used by anyone wishing to store (research) data and/or associated documents 
+* Zenodo
+* Figshare
+* ResearchGate (?)
+In addition, there are various services to assign PIDs (handles) to web links - these can be used to identify e.g. documents not yet in a repository, images and visualizations (especially those created by passing parameters embedded into the URL of a web-based tool). One example is ShortRef (http://www.shortref.org/).
+4.2 Publishers
+As part of the preparations for the negotiation round(s), it will be important to first identify the publishing houses that are the most important ones for publishing research based on ENVRIplus members’ data. A second step could then be to invite their representatives to a workshop to discuss the general issues connected to data publishing, data identification, data citation and data usage extraction. Actual negotiations would then follow as step three. 
+4.2.1 Thomson-Reuters
+Thomson Reuters Corporation (http://www.thomsonreuters.com/) is a multinational mass media and information firm [with headquarters in New York, US] (From Wikipedia, https://en.wikipedia.org/wiki/Thomson_Reuters) 
+4.2.2 Elsevier
+Elsevier (http://www.elsevier.com/) is one of the world's major providers of scientific, technical, and medical information, and a technology company originally established in 1880. It is now a part of the RELX Group, known until 2015 as Reed Elsevier. Its products include journals such as The Lancet and Cell, the ScienceDirect collection of electronic journals, the Trends and Current Opinion series of journals, and the online citation database Scopus. (From Wikipedia, https://en.wikipedia.org/wiki/Elsevier)
+4.2.3 Others
+Add more as needed!
+4.3 Indexing agencies
+Vestibulum semper, magna ut pellentesque lacinia, ipsum mi aliquam purus, in iaculis orci erat a mauris. Curabitur non metus non sapien luctus ultrices vel id turpis. Nam condimentum dictum eros ultrices dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ut nibh pulvinar, fermentum magna eu, tempor massa. Phasellus
+4.3.1 Crossref
+Crossref (http://www.crossref.org/; formerly styled CrossRef) is an official Digital Object Identifier (DOI) Registration Agency of the International DOI Foundation. It is run by the Publishers International Linking Association Inc. (PILA) and was launched in early 2000 as a cooperative effort among publishers to enable persistent cross-publisher citation linking in online academic journals. (From Wikipedia, https://en.wikipedia.org/wiki/CrossRef)
+4.3.2 Web of Science
+Web of Science (http://ipscience.thomsonreuters.com/product/web-of-science/; previously known as (ISI) Web of Knowledge) is an online subscription-based scientific citation indexing service maintained by Thomson Reuters that provides a comprehensive citation search. It gives access to multiple databases that reference cross-disciplinary research, which allows for in-depth exploration of specialized sub-fields within an academic or scientific discipline. (from Wikipedia, https://en.wikipedia.org/wiki/Web_of_Science)
+4.3.3 Mendeley
+Mendeley (http://www.mendeley.com/) is a desktop and web program for managing and sharing research papers, discovering research data and collaborating online (from Wikipedia, https://en.wikipedia.org/wiki/Mendeley).
+4.4 Ongoing projects & initiatives
+Since data identification & citation is a hot topic, there are obviously many projects going on right now that are looking into a multitude of different angles. ENVRIplus needs to make sure that we are not simply repeating what is being done by others�
+4.4.1 THOR
+Project THOR (http://project-thor.eu/) is very relevant to WP6. A common denominator is the University of Bremen team, which is involved in both. 
+(Contributed by Markus Stocker:)
+The Technical and Human Infrastructure for Open Research (THOR) project and its partners play a key role in ongoing efforts of integrating ORCID in ENVRIplus RIs. THOR is a 30-months H2020 project in its second year and aims at placing PIDs at the fingertips of researchers such that researchers have access to PIDs for their research artefacts relevant to scientific workflows. THOR has facilitated ORCID integrations in disciplinary repositories at EBI, CERN, and PANGAEA.
+The THOR partners PANGAEA, ORCID, and DataCite are key to our efforts in discussing, coordinating, and facilitating ORCID integrations in RIs. A first teleconference between ORCID, ICOS Carbon Portal, and PANGAEA was organized on October 20. The meeting was a first attempt to bring representatives of ICOS, as an ENVRIplus RI, and THOR together to discuss the idea of THOR contributions to ORCID integrations in RIs. There was strong support for such collaboration and a shared understanding of its benefits to both THOR and ENVRIplus, and its RIs.
+We thus decided to present the idea of coordinating ORCID integrations in RIs, using PANGAEA's experience and THOR expertise, at the 3rd ENVRIweek. The presentation was received with enthusiasm. Additional RIs have already showed interest in joining the collaboration, specifically Euro-Argo and Ifremer.
+Following the 3rd ENVRIweek, we now aim at further discussions and coordination on the requirements and challenges RIs face in integrating ORCID. Greater understanding will form the base for a planned THOR-ENVRIplus bootcamp during which THOR experts of ORCID, PANGAEA, and DataCite and ENVRIplus RI representatives will convene to develop solutions for the identified challenges. The bootcamp is planned to be held in March 2017.
+4.4.2 RDA-WDS groups
+There are a number of RDA groups working on various aspects of data publishing. Their reports contain a lot of interesting and relevant points�
+
+5 A SUGGESTED SYSTEM DESIGN FOR ENVRIPLUS
+5.1 General comments
+Specifically, which type of persistent identifier is used by any RI should be dictated by the needs of both the RI and its typical end user communities. There are many different options (see section X). In general, those based on the handle system (DOIs from DataCite and PIDs from e.g. ePIC, as well as ORCIDs for people) are at present the most commonly used by ENVRIplus partners (based on the questionnaire). The amount of metadata that is mandatory to provide at the time of identifier registration (“minting”) varies.
+5.2 Core components
+Persistent identifiers should be assigned throughout all parts of the research data life cycle. This supports all the aspects of the FAIR (now FAIR+R) principles, namely Findability, Accessibility, Interoperability, Reusability + Reproducibility - all required in the new era of truly data-intensive research that environmental research infrastructures are entering into. To comply with FAIR+R, it is clearly no longer adequate to rely on specific folder structure designs and/or file naming conventions. 
+ENVRIplus partners should strive to implement the use of PIDs for all of the following categories:
+A. data objects (files, databases etc.)
+B. metadata objects
+C. articles, reports and other documents related to the data
+D. people, including everyone involved in the data production chain
+E. organizations (agencies, institutes, and RIs themselves) involved in the data production chain
+F. sensors and sensor platforms, measurement stations, cruises, measurement campaigns
+G. physical samples
+In addition, comprehensive use of PIDs should be considered for
+H. queries used for accessing and retrieving (subsets of) datasets
+I. data content types 
+J. software releases used in the data processing
+K. workflows used in the data processing
+To enable this approach, RIs need to take a number of steps, as outlined below for the different categories.
+A. Data
+The following applies to all kinds of digital data objects including flat files, file archives, and snapshots of databases (both relational and time-stamped/versionable types).
+* set up, or subscribe to, a repository service for safe and trustworthy storage of the data objects;
+* sign up to relevant PID providers (ePIC, DataCite, ...) themselves, or contact national data management resource providers (or data publishing repositories) to do this on their behalf
+o be prepared to pay yearly fees for prefixes
+o often also a small additional fee is paid per PID 
+o costs & procedures vary a lot between countries!
+* design workflows (scripts) or manual procedures for assigning PIDs - based on RESTful API calls
+o should include capability to provide RI-specific unique suffixes for each item
+o should include capability to calculate fixity information (checksums) and store in the PID registry
+* implement the PID assignment at all relevant data life cycle steps
+* adapt existing cataloguing systems to store PID information 
+* set up a system (interfaced to the catalogue) that can dynamically create landing pages
+o landing pages should be interpretable both by humans and (via content negotiation) machine-operated processes and workflows
+o landing pages should both link on to the data object itself and provide all relevant metadata, or at least links to where the (descriptive) metadata can be retrieved
+For data, practical issues like granularity and the data product level are important factors, as well as costs associated with assigning PIDs and maintaining their records. However, there are good reasons for applying PIDs at quite fine scales of granularity, as this is likely to greatly simplify and enhance
+i. the overall data publication process, by allowing for correct citation of data accessed & used by researchers;
+ii. the efficient retrieval of usage & citation statistics via bibliometric indexing agents;
+iii. the scientific reproducibility of the extraction of identical data sets based on a citation string including PID information; 
+iv. the correct usage of downloaded data, as all relevant metadata is reachable via the data object’s landing page;
+v. the annotation and associated record keeping of data items’ provenance information; 
+vi. the assignment of credit to all involved personnel and institutes;
+vii. the creation and maintenance of data collections;
+viii. the application of machine-based data harvesting, processing and evaluation
+B. Metadata
+Metadata about data objects may be stored in several different ways, i.e. as separate documents, in a plain database or in a cataloguing system. Especially in the first case, it is good practice to handle the files as data objects in their own right. Of course, as periodic snapshots of the metadata and/or cataloguing system database(s) are backed up and stored in a trusted repository, they too, should be assigned a PID. 
+Follow the same steps as outlined above for data objects. Note that ideally the catalogue entry - and hence the corresponding landing page - for a metadata object should contain information about, or at least PID-based links to, all related data objects. In this way, the relationship between data and metadata is completely defined.  
+C. Articles, reports and other documents related to the data
+All articles, reports and other documents related to the production of the data, the dataset types or the data from a project as a whole should be published - either in a data publication journal, or as separate documents on e.g. Zenodo, Figshare or a similar repository site. This will ensure that the documents will be assigned a DataCite DOI, and thus be easily citable. (This category also covers images and audiovisual content that describe the data production, analysis or general context of the data collection.)
+D. People, including everyone involved in the data production chain
+* All personnel involved in the RI’s data production activities should register at ORCID to receive their own individual identifier
+* If possible and allowed by the RI’s data publishing workflow, a coupling should be made between a data set being published and assigned a DataCite DOI (by e.g. the RI itself or a data publisher/repository), and the ORCID accounts of the individuals listed as owner, producer, contributor or fulfilling any other role as defined in the DataCite DOI registry records. In this way, data publication credit can be automatically assigned.
+E. Organizations (agencies, institutes, and RIs themselves) involved in the data production chain
+Registering, and thus assigning a persistent identifier to, an organizational entity can be very complicated to achieve in practice, since some types of organizations and groupings tend to be quite short-lived, or may be quite frequently reorganized. 
+* To facilitate unambiguous identification of the organizational entities (institutes, universities, agencies etc.) associated with the production of a data set, it is recommended to register the organizations in ISNI. 
+* ORCID is also planning to offer support for organizations 
+F. Sensors & sensor platforms, and measurement campaigns & cruises
+To simplify the unambiguous referencing to the specific conditions of data collection, for example in scientific literature and in the metadata records of datasets, it is recommended to 
+* set up and maintain a RI-specific catalogue of all sensors that are used to collect data, and subsequently assign a PID to each sensor (pointing to a landing page “driven” by the catalogue)
+* assign PIDs also to platforms used for sensor deployment (buoys, aircraft, towers etc.)
+* create separate PID records for time-limited measurement campaigns and cruises
+G. Physical samples
+Registering samples in a catalogue, and assigning unique identifiers to them, provides a simple yet very effective way to refer to the samples in publications, analysis workflows and related provenance records.
+* Geological samples (and similar) can be registered at IGSN
+* Biological samples, especially those from life science research, may be indexed in the XYZ system.
+* For other sample categories, a PID pointing to the sample’s metadata record in a catalogue can easily be created. 
+H. Queries used for accessing and retrieving (subsets of) datasets
+This follows the RDA Data Citation Working Group’s recent recommendations.
+* Format the query in a referable manner - for example a text file, or an executable URL
+* Assign a PID to the query object
+I. Data content types
+This refers to data type registries... Data type definitions, which should always be presentable in forms that are interpretable both by human and machine users, are intended to guide the proper usage of a dataset. 
+* Select or define an adequate schema for the data type definitions. This can be Dublin Core, Inspire(ISO 19115) or something else.
+* Using a data type registry, enter the data type definition following the selected schema. The definition is stored, and assigned a PID.
+* The type definition PID can then be used in a data object’s descriptive metadata, outlining its content
+J. Software releases used in the data processing
+Refer to e.g. GitHub and similar software repositories which also support versioning. No direct DOI coupling yet.
+K. Workflows used in the data processing
+Refer to features built into workflow engines like Kepler. Archive packages containing bundles of related configuration files and scripts can be published using e.g. Zenodo.
+5.3 Technologies, services and tools
+RIs need access to services that provide registration, indexing and discovery (through lookup of the associated handles) of objects - preferably at the moment the objects are ingested into a trusted repository. 
+In the case that a RI does not operate a sophisticated-enough cataloguing service, capable of supporting landing pages with the necessary level and detail of metadata and other information, then this capability needs to be provided by an external service provider. As an example, the metadata catalogue operated by DataCite supports a quite exhaustive set of attributes that may be used to populate landing pages for data objects that have been assigned a DOI. 
+To extract usage statistics, the RI needs to combine information on the frequency of access of a data resource with bibliometry information based on citations and mentions in (scientific) literature and other media. The access frequency analysis may include everything from positive search results, visualization and downloads via the RI’s own data center portal (if applicable) or the corresponding statistics from RI-external repositories holding the data.
+5.4 Partners
+Here we should just list the most involved RI’s, institutes and external organisations like RDA, ORCID etc. and refer to chapter 4!
+5.5 Regional and global initiatives
+Vestibulum semper, magna ut pellentesque lacinia, ipsum mi aliquam purus, in iaculis orci erat a mauris. Curabitur non metus non sapien luctus ultrices vel id turpis. Nam condimentum dictum eros ultrices dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ut nibh pulvinar, fermentum magna eu, tempor massa. Phasellus
+5.5.1 Research Data Alliance
+(Contributed by Monica Lassi)
+Research Data Alliance (RDA) is a community-driven organisation with the aim to facilitate data sharing and development of the necessary social and technical infrastructure to support sharing of data. It was created by 2013 by the European Commission, the United States Government's National Science Foundation and National Institute of Standards and Technology, and the Australian Government’s Department of Innovation. In November 2016, RDA had 4500+ members from 115 countries [RDA 2016a] and with a variety of professions and expertise, including scientists, technologists, and librarians.
+RDA contains a plethora of groups focussing on different aspects of data and infrastructures. Interest groups (IG) focus on finding solutions to data sharing problems and have no time limit. In March 2016 there were 70 IGs [RDA 2016b] on topics including Metadata, PIDs, and Research Data Provenance. The working groups (WG) can be created to develop and implement solutions discussed in the IGs and are limited to 18 months of activity. In March 2016 there were 25 active WGs [RDA 2016b] on topics including Data Citation, Data Type Registries, and PID Information Types [RDA 2016d]. 
+RDA Europe focuses on the European context with recommendations, training, events, news and more. [RDA 2016e]
+Would it be relevant to list some of the IGs and WGs ICOS (and other ENVRIplus members if we know some names to search for) are members of?
+5.5.2 CODATA & ICSU
+(Contributed by Monica Lassi)
+The Committee on Data for Science and Technology (CODATA) was formed in 1966 by the Scientific Committee of the International Council for Science (ICSU) to “promote and encourage the compilation, evaluation and dissemination of reliable numerical data of importance to science and technology” [CODATA 2016a]. In promoting accessibility and high quality data, CODATA arranges conferences and workshops on topics related to research data management, focussing in particular on promoting cross-disciplinary use of data and on issues that many disciplines have in common. CODATA has a global perspective, but there are also national committees that arrange national activities. A number of task groups and working groups focus on specific topics, including Coordination of multinational data projects, Supplying information on sources of reliable data, and Establishment of format standards to promote data exchange, sharing and compatibility. 
+The task group CODATA-ICSTI Data Citation Standards and Practices has published two reports: “For Attribution: Developing Data Attribution and Citation Practices and Standards (published in 2012)” and “Out of Cite Out Of Mind: The Current State of Practice, Policy, and Technology for the Citation of Data” (published in 2013). The GEO (Group on Earth Observations) Data Sharing Working Group, into which CODATA gained membership in 2014 [CODATA 2016b].
+5.5.3 In ENVRIplus context 
+Vestibulum semper.
+5.6 Parallel activities by ENVRIplus partners
+Apart from the activities defined in WP6 description of work, several of the ENVRIplus partners are involved in parallel activities that relate to developing or operating services that involve data identification and citation. 
+5.6.1 University of Bremen (PANGAEA)
+From Wikipedia (https://en.wikipedia.org/wiki/PANGAEA_(data_library)):
+“PANGAEA - Data Publisher for Earth & Environmental Science (http://www.pangaea.de/) is a digital data library and a data publisher for earth system science. Data can be georeferenced in time (date/time or geological age) and space (latitude, longitude, depth/height).
+Contribution by Monica Lassi:
+Scientific data are archived with related meta-information in a relational database (Sybase) through an editorial system. Data are in Open Access and are distributed through web services in standard formats on the Internet through various search engines and portals. Data set descriptions (metadata) are conform to the ISO 19115 standard and are served in various further formats (e.g. Directory Interchange Format, Dublin Core). They include a bibliographic citation and are persistently identified using Digital Object Identifiers (DOI). Identifier provision and long-term availability of data sets via library catalogues is ensured through cooperation with the German National Library of Science and Technology (TIB). Retrieval of data sets is provided through a full text search engine (based on Apache Lucene / panFMP). For efficient data compilations a data warehouse is operated. Data descriptions are available through various protocols (OAI-PMH, Web Catalog Service).
+PANGAEA is hosted by the Alfred Wegener Institute for Polar and Marine Research (AWI), Bremerhaven and the Center for Marine Environmental Sciences (MARUM), Bremen in Germany. The system is used by various international research projects from public funding as data repository and by the World Data Center for Marine Environmental Sciences (WDC-MARE) as long-term archive. The system was initially developed since 1987 and is operational on the Internet since 1995.”
+(Contributed by Markus Stocker:)
+In parallel to data identification, which is the main focus of this WP, UniHB (PANGAEA) has proposed to discuss and coordinate the identification of researchers and contributors to datasets curated by ENVRIplus RIs, specifically using ORCID and the PID researchers can obtain through ORCID. 
+The ORCID iD distinguishes researchers. It is a unique and persistent identifier, governed by ORCID. ORCID iDs are actionable, meaning that they can be resolved to obtain information about the person identified by the iD. In contrast to a person's name, the ORCID iD is unambiguous. In contrast to a researcher's email, the iD is persistent. In addition to providing digital identifiers for researchers (and contributors more generally) ORCID also facilitates the integration of iDs in research workflows as well as linking of researchers with research artefacts, such as datasets.
+Following the recent integration of ORCID in PANGAEA, we have proposed to integrate ORCID in ENVRIplus RIs. Research infrastructures involve both technical and social entities. The integration of ORCID in RIs will enable the identification of social entities (scientists, technicians, data managers, etc.) and the linking of social with technical entities (datasets, software, articles, devices, stations). Such linking will enable unambiguous attribution of the contributions by social entities to the development, implementation, and maintenance of technical entities.
+RIs can integrate ORCID to various degrees. First, they can integrate ORCID to identify their users. The ORCID iD can be a managed user profile attribute - akin to username, password, first and last name, and email. Technically, an RI can decide to adopt the iD as the primary key for user identification, as an alternative to email or an internal identifier. Second, RIs can integrate ORCID to identify contributors to datasets curated by the infrastructure or contributors to development, implementation, or maintenance of other RI elements. Third and beyond identification, RIs can integrate ORCID to push information about the relationships between PIDs of research artefacts and ORCID iDs of people who contribute to the development, implementation, or maintenance of the artefacts. RIs have the possibility to automatically push such information to ORCID in order to update contributor ORCID records and enable public attribution of contributions. Finally, RIs can adopt ORCID as a social login option, as the sole or additional authentication mechanism.
+The proposal to discuss and coordinate ORCID integrations in ENVRIplus RIs was presented at the 3rd ENVRIweek in November 2016. The presentation at ENVRIweek followed a short survey, submitted to 12 RIs, that aimed at a quick assessment of the relevance, timeliness, and state of ORCID integrations in RIs. Among the 10 replies, 50% of the RIs plan to integrate ORCID, one of which is partially in implementation phase. This preliminary survey highlights that ORCID integrations are relevant and timely. Hence, we plan to build on the experiences gained in integrating ORCID in PANGAEA and continue discussions and coordination to increase understanding of the requirements and challenges faced by RIs in integrating ORCID. This effort is aimed at facilitating such integrations in ENVRIplus.
+As a related activity, PANGAEA has discussed the persistent identification of instruments, as well as platforms and deployments, at PIDapalooza 2016, Reykjavik, Iceland, November 9-10. The session motivated why we may want to persistently identify these entities and preserve metadata about them. We presented two existing infrastructures that utilize DOI to identify platforms (seismic station networks) and deployments (cruises). The persistent identification of these entities extends the application of PID beyond articles, datasets, and people. The presentation is available at https://doi.org/10.6084/m9.figshare.4246100.v1.
+5.6.2 DKRZ (CMIP6 project)
+(Contributed by Lonica Lassi)
+Deutsches Klimarechenzentrum (DKRZ), English name is the German Climate Computing Center, is a computing centre that offers services to climate science. Services include high performance computing (HPC) resources, data management tools, visualization tools, and consultancy [DKRZ 2016].
+(Contributed by Frank Toussaint and colleagues)
+Introduction
+In present climate modelling projects like CMIP5 or CMIP6 incur millions of files aggregated at various levels (time-series, experiments�). To identify and track them, registered PIDs of ePIC are an appropriate means but complex technological and organizational efforts are required to be supported in an international data federation like IS-ENES and ESGF. They are, e.g., included in the CMIP6 file headers and registered as part of the file publication in the data federation. The organizational aspects are coordinated in the World Climate Research Program (WCRP) infrastructure panel (WIP). The technological aspects are implemented in the context of the Earth System Grid Federation (ESGF) and include a highly scalable PID registration infrastructure based on message queues. For citation of these data, aggregated groups of these files (sets of experiments) are equipped with DOIs registered by DataCite.org.
+ePIC PIDs: As a member of the PID Consortium ePIC (“Persistent Identifiers for eResearch”) DKRZ is involved in development and maintenance of ePIC’s PID infrastructure to support the use of long term identifiers for scientific data objects. 
+DataCite DOIs: A service for the integration of research data into scientific publications has been developed at DKRZ together with the Technical Information Library (TIB, Hannover) and is offered to the scientific Earth System community. DOIs (Digital Object Identifier) and citation codes are provided and registered with DataCite as DOI registration agency. The editorial process includes checks of metadata and research data quality in collaboration with the corresponding data producers.
+TABLE 1 COMPARISON BETWEEN USE OF EPIC PID AND DATACITE DOI AT DKRZ
+
+ePIC PID
+DataCite DOI
+Data Granularity
+Lowest granularity, file level; higher granularities possible by aggregation to PID Collections 
+Citation granularity
+Main (planned) use
+Data handling (internal) and data identification (internal & external) as well as data annotation (e.g. errata information etc.)
+Data citation followed by data access/identification
+Data Quality
+CMIP project compliance checks (file metadata, controlled vocabularies), data objects “as is”
+Multiple documented checks
+Data Quantity
+high numbers of single files, high degree of automation
+moderate number of DOI, low degree of automation, feedback to data producer possible
+Operational capability
+Pilot applications running, integration into international ESGF data federation, scalability solution for PID registration
+operational deployment in 2017
+Operational
+Main affected work fields
+Projects CMIP, EUDAT
+CMIP, CORDEX, single customers & partners
+
+Persistent Identifiers in the workflow
+ePIC PIDs: For the big model Intercomparison project CMIP6 it has been decided to integrate handle system based PIDs into the header of every file and integrate the PID registration process into the ESGF file publication process. To tackle the scalability problems of the handle system with respect to PID registration a distributed message queuing based solution is being deployed and integrated with the ESGF infrastructure. Further use of PIDs in the workflow is under development, e.g. in the context of managing data errata information.
+DataCite DOIs: For identification and citation, most long term archived (LTA) data is equipped with a DOI and registered at DataCite. Here two main challenges had to be solved.
+First, unlike a printed paper, stored data often undergo subsequent improvements or corrections for which the identifier system has to account. Here the data dissemination system has to account for versioning: from the data upload to the identification and to the Graphical User Interface (GUI). 
+Second, as the upload of the metadata (MD) to DataCite involves the completion of final quality checks, the need for data citation in an earlier stage of the workflow arose in some projects (see below Early Citation).
+For details of both challenges see the data management paper “CMIP6 Data Citation and Long-Term Archival” at the WIP resources (https://www.earthsystemcog.org/projects /wip/resources/) by Stockhause et al.
+Between first in-project publication and minting of the DOI: 
+Early Citation in the project CMIP6
+For data that have a DOI, a high degree of stability is expected which is not the case after early publication in the project ? corrections might follow. However, already in this early phase the need for an Early Citation became evident, too.
+The initial (default) citation information is collected from the data producer via the scientific contact person given in the file header. It is checked and entered into the meta database (MDB) by the data repository. The information is accessible to GUIs and other repositories by an API. In case citation information changes, the data producers have to update the MDB via a dedicated GUI. A check of the new information follows.
+5.6.3 Marine RIs
+Add text based on references & materials that were sent by Thierry and Sylvie!
+
+5.6.4 ENVRIplus implementation case IC-01
+Add a summary of the objectives of IC-01�
+5.6.5 ENVRIplus implementation case IC-09
+Add a summary of the objectives of IC-09� 
+From the abstract of Maggie’s “Views about PID systems” workshop talk “Credit where credit is due - PIDs, citations and bibliometry for research data collections”: 
+The ENVRIplus survey responses showed that a majority of RIs find that absolutely necessary to ensure that credit for producing and managing of scientific data sets is “properly assigned”, down to the level of individual principal investigators (PIs) in charge of measurement and observation stations. This result is in line with many earlier studies which have shown that the perceived lack of proper attribution of data is a major reason for the hesitancy felt by many researchers to share their data openly.
+While there is reasonable confidence that identification and subsequent citation practices will result in adequate possibilities to trace and account for usage of individual datasets, for example by assigning DOIs to data objects, many RIs are apprehensive and concerned about how usage statistics for data collections can be fairly and correctly translated into “usage credit” for data items that are members of such collections - i.e., they fear it will be difficult or even impossible to trace back the provenance of actually used collection items to their individual provider through the currently used data citation practices and bibliometry tools.
+One of the main causes for this concern is the increasing pressure from policy makers and funding agencies towards research groups and organizations to show that their data are not only being released under Open Access policies, but that they are also re-used, thus maximizing the benefit of public investments. Indeed, funding agencies are pushing towards increasingly more open data policies, including re-distribution and commercial use of data. At the same time, the same usage statistics (mainly in the form of “citation metrics”), remains the basis of documenting of scientific merit that is paramount for scientists’ employment and stations’ funding.
+Within ENVRIplus, a decision has been taken to set up a task force to investigate different methods for how data usage metrics and statistics can be improved, not only for individual datasets but especially for collections of data sets.
+
+6 NEGOTIATION STRATEGY
+6.1 The case for negotiations
+We need something very robust and well-motivated here!
+6.2 Discussion partners
+Publishers!?
+Data usage indexers!?
+Library organizations?!
+?!
+6.3 Wish-list for services
+What services do we want? Priorities, timelines, �
+6.3.1 Generic identifier minting services
+Discuss services like ePIC, DataCite but also Zenodo, Figshare and others.
+For organizations like RIs who have decided to procure and register their own handle prefixes (ICOS is an example), it is highly desirable to be able to assign “their own” PIDs to both data and documents. However, at the time of writing (December 2016), it is not possible to use e.g. DataCite for non-data objects as this goes against the int
+6.3.2 Support for inclusion of sub-setting information
+Connect to the report from the joint COOPEUS/ENVRI/EUDAT PID workshop held in Bremen 25-26 June, 2013 (R. Huber et al., Data citation and digital identifiers for time series data & environmental research infrastructures).
+Publishers should allow authors to add on “subsetting” information to 
+6.3.3 Dynamic data, including support for versioning
+Connect to the outcomes of the RDA Data Citation working group (A. Rauber et al., ”Identification of Reproducible Subsets for Data Citation, Sharing and Re-Use”. Bulletin of IEEE Technical Committee on Digital Libraries, Special Issue on Data Citation, 2016.).
+Cf presentation by Geoffrey Bilder in Garching� (“dynamic tags in PDFs”)!?
+6.3.4 Collections
+Connect to the ENVRIplus Implementation Case IC-09 and the ongoing work of the RDA Data Collection working group! 
+Collections offer great advantages but are problematic from a bibliometry point of view.
+6.4 Timeline
+* Revisit the RI data identification & citation requirements survey - January-March 2017
+* Workshop with publishers, PID providers, indexers and ENVRIplus RIs - March 2017
+* Shortlist of negotiation partners, and finalized strategy ready - April 1, 2017
+* Negotiations - April - August 2017
+* Summarizing outcomes - September - October 2017
+* Report milestone - October 31, 2017
+* Deliverable D6.2 - submission April 30, 2018 !!!
+
+
+7 CONCLUSIONS
+Lorem ipsum
+8 IMPACT ON PROJECT
+The document should contain here a short description how the given deliverable fits the project structure, and if it has e.g. repercussions for other work done within this project.
+9 IMPACT ON STAKEHOLDERS
+This is an important part for the usability of the Deliverable for the RIs. The role of the “RI reviewer” or “consultation” (in ActiveCollab) is to provide these insights and to clearly define where this could and will be used and what are the benefits (and shortcomings) of the work in this respect.
+
+
+REFERENCES
+[Almas 2015] B. Almas, J. Bicarregui, A. Blatecky, S. Hill, L. Lannom, R. Pennington, R. Stotzka, A. Treloar, R. Wilkinson, P. Wittenburg and Z. Yunqiang, “Data Management Trends, Principles and Components ? What Needs to be Done Next?” Report from the Research Data Alliance Data Fabric Interest Group, draft version (paris-doc-v6-1_0.docx) from September 2015. Available via http://hdl.handle.net/11304/f638f422-f619-11e4-ac7e-860aa0063d1f.
+[Atkinson 2016] M. Atkinson, A. Hardisty, R. Filgueira, C. Alexandru, A. Vermeulen, K. Jeffery, T. Loubrieu, L. Candela, B. Magagna, P. Martin, Y. Chen and M. Hellstr?m: A consistent characterisation of existing and planned RIs. ENVRIplus Deliverable 5.1, submitted on April 30, 2016. Available at http://www.envriplus.eu/wp-content/uploads/2016/06/A-consistent-characterisation-of-RIs.pdf 
+[Austin 2016] Austin, C. C., Bloom, T., Dallmeier-Tiessen, S., Khodiyar, V., Murphy, F., Nurnberger, A., Whyte, A. (2015). Key components of data publishing: Using current best practices to develop a reference model for data publishing.  https://doi.org/10.5281/zenodo.34542
+[Bechhofer 2013] Bechhofer, S, Buchan, I, De Roure, D, Missier, P et al. 2013. Why linked data is not enough for scientists. Future Generation Computer Systems, Volume 29, Issue 2, February 2013, Pages 599-611, ISSN 0167-739X, http://dx.doi.org/10.1016/j.future.2011.08.004.
+[Berners-Lee 1998]. T. Berners-Lee: Cool URIs don’t change, World Wide Web Consortium (W3C), Cambridge, MA. Available at https://www.w3.org/Provider/Style/URI.html.
+[Berners-Lee 2001] Berners-Lee, Tim, James Hendler, and Ora Lassila. 2001. The semantic web. Scientific American 284, no. 5, 28-37.
+[Borgman 2007] Borgman, C. 2007. Scholarship in the digital age. Cambridge, MA: MIT Press.
+[Borgman 2015] Borgman, C. 2015. Big data, little data, no data: scholarship in the networked world. Cambridge, MA.: MIT Press.
+[Buneman 2016] Buneman, P.; S. Davidson and J. Frew, Why data citation is a computational problem, Communications of the ACM, Vol. 59 No. 9, Pages 50-57, http://dx.doi.org/10.1145/2893181.
+[Bütikofer 2009] N. Bütikofer: Catalogue of criteria for assessing the trustworthiness of PI systems, nestor-Materialien, Nieders?chsische Staats und Universit?tsbibliothek G?ttingen, G?ttingen, Germany. http://nbn-resolving.de/urn:nbn:de:0008-20080710227
+[Callaghan 2013] Callaghan, S., Murphy, F., Tedds, J., Allan, R., Kunze, J., Lawrence, R., Mayernik, M.S., Whyte , A. 2013. Processes and procedures for data publication: a case study in the geosciences. Int. Journal of Digital Curation, Volume 8, Issue 1. http://dx.doi.org/10.2218/ijdc.v8i1.253
+[CODATA 2016a] Committee on Data for Science and Technology. 2016. Our mission. http://www.codata.org/about-codata/our-mission 
+[CODATA 2016b] Committee on Data for Science and Technology. 2016. CODATA Becomes a Participating Organisation of GEO. http://www.codata.org/news/24/62/CODATA-Becomes-a-Participating-Organisation-of-GEO 
+[DataCite 2016a] DataCite. 2016. Our mission. https://www.datacite.org/mission.html 
+[DataCite 2016b] DataCite. 2016. Members. https://www.datacite.org/members.html 
+[DataCite 2016c] DataCite. 2016. Citation formatter. https://www.datacite.org/citation.html 
+[DataCite 2016d] DataCite. 2016. OAI-PMH Data Provider. http://oai.datacite.org/ 
+[DataCite Profiles 2016] DataCite Profiles. 2016. https://profiles.datacite.org/ 
+[DKRZ 2016] Deutsches Klimarechenzentrum. 2016. Services around climate research. https://www.dkrz.de/about-en/dienste 
+[Dodds 2014] L. Dodds, G. Phillips, T. Hapuarachchi, B. Bailey and A. Fletcher, “Creating Value with Identifiers in an Open Data World”. Report from Open Data Institute and Thomson Reuters, October 2014. Available at http://innovation.thomsonreuters.com/content/dam/openweb/documents/pdf/corporate/Reports/creating-value-with-identifiers-in-an-open-data-world.pdf
+[Duerr 2011] R.E. Duerr, R.R. Downs, C. Tilmes, B. Barkstrom, W.C. Lenhardt, J. Glassy, L.E. Bermudez and P. Slaughter, “On the utility of identification schemes for digital earth science data: an assessment and recommendations”. Earth Science Informatics, vol 4, 2011, 139-160. Available at http://link.springer.com/content/pdf/10.1007%2Fs12145-011-0083-6.pdf.
+[ePIC 2016a] European Persistent Identifier Consortium. 2016. ePIC structure. http://www.pidconsortium.eu/?page_id=74 
+[ePIC 2016b] European Persistent Identifier Consortium. 2016. Service. http://www.pidconsortium.eu/?page_id=88 
+[Fenner 2016] Fenner, Martin: Announcing the Organization Identifier Project: a Way Forward. Blog published 2016-11-01. https://blog.datacite.org/announcing-organization-identifier-project/ 
+[FORCE11 2014] FORCE11. 2014. Guiding Principles for Findable, Accessible, Interoperable and Re-Usable Data Publishing Version B1.0. https://www.force11.org/fairprinciples Accessed 2016-11-28.
+[FOSTER 2016] FOSTER. 2016.Open Science taxonomy tree. http://openscience.com/wp-content/uploads/2016/10/xfLOCi.png Accessed 2016-11-28.
+[Gallagher 2015] J. Gallagher, J. Orcutt, P. Simpson, D. Wright, J. Pearlman and L. Raymond, “Facilitating open exchange of data and information”. Earth Science Informatics, Volume 8, Issue 4, pp 721-739, December 2015. Available via http://dx.doi.org/10.1007/s12145-014-0202-2.
+[Haak 2016] Haak, Laure: Organization identifier project: A way forward. Blog published 2016-10-31. http://ORCID.org/blog/2016/10/31/organization-identifier-project-way-forward 
+[Huber 2013] R. Huber, A. Asmi, J. Buck, J.M. de Luca, D. Diepenbroek, A. Michelini, and participants of the Bremen PID workshop, “Data citation and digital identification for time series data & environmental research infrastructures”, report from a joint COPEUS-ENVRI-EUDAT workshop in Bremen, June 25-26, 2013. Available via http://dx.doi.org/10.6084/m9.figshare.1285728
+[Hyan 2015] R. Hyan: Taxa, taxon names and globally unique identifiers in perspective. In: Watson et. al (Eds), Descriptive Taxonomy: The Foundation of Biodiversity Research, Cambridge University Press. p.260-270, http://doi.dx.org/10.13140/2.1.3381.8400.
+[ISNI 2016a] International Standard Name Identifier. 2016. ISNI. http://www.isni.org/ 
+[ISNI 2016b] International Standard Name Identifier. 2016. About the ISNI International Agency. http://www.isni.org/about 
+[Kahn 1995] R. Kahn and R. Wilensky: A Framework for Distributed Digital Object Services, Technical Note, Corporation for National Research Initiatives, Reston, VA. Re-published in International Journal on Digital Libraries (2006) 6(2): 115?123, http://dx.doi.org/10.1007/s00799-005-0128-x
+[Kunze, J. (2003). Towards electronic persistence using ARK identifiers. In: Proceedings of the 3rd ECDL Workshop on Web Archives, Trondheim, Norway, August 21, 2003. Available at http://bibnum.bnf.fr/ecdl/2003/proceedings.php?f=kunze.
+[Martone 2014] M. Martone, ed., “Joint Declaration of Data Citation Principles”, Data Citation Synthesis Group and FORCE11, San Diego CA, 2014. Available at https://www.force11.org/group/joint-declaration-data-citation-principles-final.
+[Myers 2015] Myers, J; M. Hedstrom; D. Akmon; S. Payette; B. A. Plale; I. Kouper ; S. McCaulay; R. McDonald; I. Suriarachchi; A. Varadharaju; P. Kumar; M. Elag; J. Lee; R. Kooper  and L. Marini, Towards sustainable curation and preservation, in Proc. IEEE eScience Conf. 2015, 526-535.
+[ORCID 2016a] ORCID. 2016. Our vision. http://orcid.org/node/8 
+[ORCID 2016b] ORCID. 2016. Welcome to Collect & Connect: ORCID’s integration and engagement program. http://orcid.org/content/collect-connect 
+[ORCID 2016c] ORCID. 2016. ORCID member organizations. http://members.orcid.org/member-list 
+[ORCID 2016d] ORCID. 2016. ORCID statistics. https://orcid.org/statistics 
+[ORCID 2016e] ORCID. 2016. Requiring ORCID in Publication Workflows: Open Letter. http://orcid.org/content/requiring-orcid-publication-workflows-open-letter 
+[ORCID 2016f] ORCID. 2016. Frequently asked questions: What is the relationship between ISNI and ORCID? https://orcid.org/faq-page#n80 
+[Parsons 2010] M.A. Parsons, R.E. Duerr and J.-B. Minster, ”Data citation and peer review”, EOS, Transactions of the American Geophysical Union vol 91, no 34, 24 August 2010, 297-304. Available at http://modb.oce.ulg.ac.be/wiki/upload/Alex/EOS_data_citation.pdf.
+[Pentz 2016] Pentz, Ed: The Organization Identifier Project: a way forward. Blog published 2015-10-31. http://blog.crossref.org/2016/10/the-oi-project.html 
+[Rauber 2015] A. Rauber et al., “Data citation of evolving data. Recommendations of the Working Group on Data Citation (WGDC)”. Preliminary report from 20 Oct 2015. Available at https://rd-alliance.org/system/files/documents/RDA-DC-Recommendations_151020.pdf.
+[Rauber 2016] A. Rauber, A. Asmi, D. van Uytvanck and S. Pr?ll, ”Identification of Reproducible Subsets for Data Citation, Sharing and Re-Use”. Bulletin of IEEE Technical Committee on Digital Libraries, vol. 12, issue 1, May 2016, 6-15. Available at http://students.cs.tamu.edu/ldmm/tcdl/v12n1/papers/IEEE-TCDL-DC-2016_paper_1.pdf 
+[RDA 2016a] Research Data Alliance. 2016. Who is RDA?. https://www.rd-alliance.org/about-rda/who-rda.html 
+[RDA 2016b] Research Data Alliance. 2016. RDA working on. https://www.rd-alliance.org/groups
+[RDA 2016c] Research Data Alliance. 2016. Interest groups. https://www.rd-alliance.org/groups/interest-groups 
+[RDA 2016d] Research Data Alliance. 2016. Working groups. https://www.rd-alliance.org/groups/working-groups
+[RDA Europe 2016] Research Data Alliance Europe. 2016. RDA Europe. https://europe.rd-alliance.org/
+[Schwardmann 2015] U. Schwardmann, “ePIC Persistent Identifiers for eResearch” Presentation at the joint DataCite-ePIC workshop Persistent Identifiers: Enabling Services for Data Intensive Research, Paris, 21 Sept 2015. Available at https://zenodo.org/record/31785. 
+[Socha 2013] Y.M. Socha, ed., “Out of cite, out of mind: The current state of practice, policy, and technology for the citation of data”. Data Science Journal vol. 12, 13 Sept 2013. Available at https://www.jstage.jst.go.jp/article/dsj/12/0/12_OSOM13-043/_pdf.
+[Spinuso 2016] Spinuso, A; Fligueira, R., Atkinson, M., Gemuend, A. Visualisation methods for large provenance collections in data-intensive collaborative platforms. In EGU  General Assembly 2016, - Information in earth sciences: visualization techniques  and communication of uncertainty. http://meetingorganizer.copernicus.org/EGU2016/EGU2016-14793-1.pdf.
+[Stehouwer 2014] H. Stehouwer and P. Wittenburg, eds. “Second year report on RDA Europe Analysis Programme: Survey of EU Data Architectures”, Deliverable D2.5 from the RDA Europe project (FP7-INFRASTRUCTURES-2012-1), 2015. Available at https://rd-alliance.org/sites/default/files/Survey%20of%20data%20mangement%20needs.docx.
+[Uhlir 2012] P.F. Uhlir, rapporteur, “For Attribution - Developing Data Attribution and Citation Practices and Standards”. Summary of an international workshop (August 2011), National Research Council, 2012. Available at http://www.nap.edu/openbook.php?record_id=13564.
+[Weigel 2014] T. Weigel, T. DiLauro and T. Zastrow, “RDA PID Information Types Working Group: Final Report”, Final report from the Research Data Alliance PID Information Types (PIT) Working Group, released on 2014-11-25, 25pp, http://dx.doi.org/10.15497/FDAA09D5-5ED0-403D-B97A-2675E1EBE786.
+
+
+
+APPENDICES
+
+
+
+
+
+
+APPENDIX 1 
+Some useful definitions
+This appendix is a “stub” and needs comprehensive rewriting!
+Some definitions from the Terms Definition Tool (TeD-T; http://smw-rda.esc.rzg.mpg.de/) set up by the RDA Data Foundation and Terminology Interest Group (https://www.rd-alliance.org/group/data-foundation-and-terminology-wg.html):
+* A digital object [(DO)] is composed of structured sequence of bits/bytes. [� The bit sequence] realizing the object can be identified & accessed by a unique and persistent identifier or by use of referencing attributes describing its properties referenced and identified by a persistent identifier.
+* A persistent identifier [(PID)] is a long-lasting ID represented by a string that uniquely identifies a DO and that is intended to be persistently resolved to meaningful state information about the identified DO.
+* A PID record contains a set of attributes stored with a PID describing DO properties.
+* A PID resolution system is a globally available infrastructure system that has the capability to resolve a PID into useful, current state information describing the properties of a DO. (state information can be interpreted as systems metadata)
+
+
+
+
+APPENDIX 2 - REQUIREMENTS QUESTIONNAIRE (2015-2016)
+ENVRIplus RI requirements questionnaire: Identification and citation
+These questions were sent out to all ENVRIplus partners during the RI requirements information gathering process that was part of Task 5.1, see [Atkinson 2016] for more information.
+Identification
+1) What granularity do your RI’s data products have:
+a) Content-wise (all parameters together, or separated e.g. by measurement category)?
+b) Temporally (yearly, monthly, daily, or other)?
+c) Spatially (by measurement station, region, country or all together)?
+2) How are the data products of your RI stored - as separate “static” files, in a database system, or a combination?
+3) How does your RI treat the “versioning” of data - are older datasets simply replaced by updates, or are several versions kept accessible in parallel? How do you identify different version of the same dataset? 
+4) Is it important to your data users that:
+a) Every digital data object is tagged with a unique & persistent digital identifier (PID)?
+b) The metadata for data files contains checksum information for the objects?
+c) Metadata (including any documentation about the data object contents) is given its own persistent identifier?
+d) Metadata and data objects can be linked persistently by means of PIDs?
+5) Is your RI currently using, or planning to use, a standardized system based on persistent digital identifiers (PIDs) for:
+a) “Raw” sensor data?
+b) Physical samples?
+c) Data undergoing processing (QA/QC etc.)?
+d) Finalized “publishable” data?
+6) Please indicate the kind of identifier system that are you using - e.g. Handle-based (EPIC or DOI), UUIDs or your own RI-specific system?
+7) If you are using Handle-based PIDs, are these handles pointing to “landing pages”? If so, are these pages maintained by your RI or an external organization (like the data centre used for archiving)?
+8) Are costs associated with PID allocation and maintenance (of landing pages etc.) specified in your RI’s operational cost budget?
+Citation    
+9) How does your “designated scientific community” (typical data users) primarily use your data products? As input for modelling, or for comparisons?
+10) Do your primary user community traditionally refer to datasets they use in publications:
+a) By providing information about producer, year, report number if available, title or short description in the running text (e.g. under Materials and Methods)?
+b) By adding information about producer, year, report number if available, title or short description in the References section?
+c) By DOIs, if available, in the References section?
+d) By using other information?
+e) By providing the data as supplementary information, either complete or via a link
+11) Is it important to your data users to be able to refer to specific subsets of the data sets in their citation? Examples:
+a) Date and time intervals
+b) Geographic selection
+c) Specific parameters or observables
+d) Other
+12) Is it important to be able to refer to many separate datasets in a collective way, e.g. having a collection of “all data” from your RI represented by one single DOI?
+13) What strategy does your RI have for collecting information about the usage of your data products?
+a) Downloads/access requests
+b) Visualization at your own data portal
+c) Visualization at other data portals
+d) References in scientific literature
+e) References in non-scientific literature
+f) Scientific “impact”
+14) Who receives credit when a dataset from your RI is cited?
+a) The RI itself
+b) The RI’s institutional partners (all or in part, depending on the dataset contents)
+c) Experts in the RI’s organization (named individuals)
+d)  “Principal investigators” in charge of measurements or data processing (named individuals)
+e) Staff (scientists, research engineers etc.) performing the measurements or data processing (named individuals)
+15) What steps in tooling, automation and presentation do you consider necessary to improve take up of identification and citation facilities and to reduce the effort required for supporting those activities?
+
+1 https://wiki.envri.eu/display/EC/Identification+and+citation+requirements
+2 http://www.edison-project.eu
+3 The working practices actually adopted by the practitioners in all of the roles involved with data or the work that created it or that it is used for.
+4 See http://blog.datacite.org/recap 
+---------------
+
+----------------------------------------
+
+---------------
+
+----------------------------------------
+
+
+
+
+17	
+
+ENVRIplus DELIVERABLE
+
+
+1
+
+
