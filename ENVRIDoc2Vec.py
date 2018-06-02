@@ -25,34 +25,6 @@ LabeledSentence = gensim.models.doc2vec.LabeledSentence
 from os import listdir
 from os.path import isfile, join
 
-'''
-docLabels = []
-docLabels = [f for f in listdir("inputfile/") if f.endswith('.txt')]
-print(docLabels)
-data = []
-for doc in docLabels:
-    data.append(open("inputfile/" + doc, 'r'))
-    
-'''
-'''
-class LabeledLineSentence(object):
-    def __init__(self,  filename):
-        self.filename = filename
-    def __iter__(self):
-        for uid, line in enumerate(open(filename)):
-            yield LabeledSentence(words=line.split(), labels=['SENT_%s' % uid])
-'''
-
-#now create a list that contains the name of all the text file in your data #folder
-docLabels = []
-docLabels = [f for f in listdir("inputfile/") if f.endswith('.txt')]
-print(docLabels)
-#create a list data that stores the content of all text files in order of their names in docLabels
-data = []
-for doc in docLabels:
-  data.append(open('inputfile/' + doc,encoding='utf-8').read())
-#print('data')
-#print(data)  
 class LabeledLineSentence(object):
     def __init__(self, doc_list, labels_list):
         self.labels_list = labels_list
@@ -68,6 +40,18 @@ class LabeledLineSentence(object):
           #print('in LabeledLineSentence tag')
           #print(tags)
           yield LabeledSentence(words=doc.split(),tags=[self.labels_list[idx]])
+
+
+#now create a list that contains the name of all the text file in your data #folder
+docLabels = []
+docLabels = [f for f in listdir("inputfile/") if f.endswith('.txt')]
+print(docLabels)
+#create a list data that stores the content of all text files in order of their names in docLabels
+data = []
+for doc in docLabels:
+  data.append(open('inputfile/' + doc,encoding='utf-8').read())
+#print('data')
+#print(data)  
 
 
 it = LabeledLineSentence(data, docLabels)
@@ -119,19 +103,3 @@ print(similar_doc)
 #print(model.most_similar("D3.3.txt"))
 #######################################
 #test
-'''
-for i in range(10):
-    doc_id = np.random.randint(d2v_model.docvecs.count)  # pick random doc; re-run cell for more examples
-    doc = d2v_model.docvecs[doc_id]
-    print(doc)
-#    print('doc %d length %d' % (doc_id, len(doc.words)))
-#    if len(doc.words) < 100:
-#        continue
-    # pick random 50-word slice of document
-    #slice50 = doc.words[np.random.randint(len(doc.words)-50):][:50]
-    #slice_inferred = model.infer_vector(slice50)
-    similars = d2v_model.docvecs.most_similar(positive=[doc],topn=100000)
-    print(similars)
-    #rank_of_source = [sim_id for sim_id, sim in similars].index(doc_id)
-    #print('%s: %s' % (model, rank_of_source))
-'''
