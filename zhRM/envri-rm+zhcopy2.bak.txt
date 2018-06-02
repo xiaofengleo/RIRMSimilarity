@@ -1,0 +1,3384 @@
+                                              rdflbel "ENVRI-RM ontology"@en ;
+                                              dretor "Xofeng Lo"@en ;
+                                              rdflbel "环境及地球科学研究基础设施本体"@zh-hn-n ;
+基于环境及地球科学研究基础设施参考模型描述环境科学研究基础设施的体系结构和信息流的本体。
+                                                         "环境科学研究基础设施" "环境及地球科学研究基础设施本体"
+                                                           "描述环境科学研究基础设施的体系结构和信息流的本体。"
+          
+                    "有角色"
+   "调用能力"
+                    "提供能力"
+"参与的角色"
+ "创建"
+ "被依照"
+"有属性"
+"有分类器"
+"有会员"
+
+"有一部分"
+
+"调用操作"
+"涉及"
+"映射"
+
+"由调用的操作"
+
+"由提供的操作"
+
+"部分"
+
+"扮演角色"
+
+"提供操作"
+"需求"
+
+"的资源"
+"ODP将目标定义为系统目的抽象。"
+"有目标"
+"AAAI服务处理用户的授权请求和身份验证，然后才能继续执行任何特权活动。
+"AAAI服务"
+                                  "用于请求一个新的与正在传输的数据相关联的持久标识符。"
+                              "获得标识"
+"采集服务负责确保根据当前的政策将任何数据传送到基础设施中。"
+                               "获取服务"
+"用于请求在研究基础设施的数据整理子系统内保存的数据标注。"
+                         "标注数据"@zh-hn-n .
+                              "与概念相关的数据，描述其含义。"@zh-hn-n ;
+                          "已标注数据"@zh-hn-n .
+                                  "连接到概念的元数据，描述它们的含义。"@zh-hn-n ;
+                              "已标注数据"@zh-hn-n .
+
+"标注服务涉及更新记录（如数据集）和目录以响应用户注释请求。"@zh-hn-n ;
+                              "标注服务"@zh-hn-n .
+                                "用于获取与数据采集子系统进行任何受限交互所需的授权。"@zh-hn-n ;
+                            "认证数据"@zh-hn-n .
+
+"后端对象是计算对象，它包含为获取，保存，发布和处理研究数据和派生数据产品而提供的RI系统和资源。"@zh-hn-n ;
+                          "后端对象"@zh-hn-n .
+
+                           "（持久性）数据的副本，以便在数据丢失事件后用于恢复原始数据。"@zh-hn-n ;
+                       "备份数据"@zh-hn-n .
+"代理对象充当访问存储在数据存储区内的数据的媒介，并且便于执行语义解释和查询路由。"@zh-hn-n ;
+                         "代理对象"@zh-hn-n .
+                                   "从研究基础设施中导出数据需要从数据处理子系统中检索数据并将其传送到外部资源。 这个过程必须由数据使用和数据发布子系统来处理。"@zh-hn-n ;
+                               "代理数据导出"@zh-hn-n .
+                                   "从采集网络以外的其他来源导入数据需要在数据传送到数据整理子系统之前由发布子系统进行代理。"@zh-hn-n ;
+                               "代理数据导入"@zh-hn-n .
+                                    "用于原则上基于科学分析输出数据的仪器来校准数据读取。 这个借口也可以用来监视给定仪器上的活动。"@zh-hn-n ;
+                                "校正仪器"@zh-hn-n .
+                  rdfomment "编目服务涉及与存储在基础结构内的数据集关联的元数据和其他特征数据的编目。"@zh-hn-n ;
+                             "编目服务"@zh-hn-n .
+                         "已发布的可解析令牌，通过标识符链接到持久数据对象。"@zh-hn-n ;
+                     "引用"@zh-hn-n .
+                 rdfomment "组件对象提供对实际RI系统和资源（后端对象）的编程访问。"@zh-hn-n ;
+                            "组件对象"@zh-hn-n .
+                                        "分配给计算对象并通过其公共API提供的功能，或计算对象所需的功能，以提供某些功能。"@zh-hn-n ;
+                                    "计算能力"@zh-hn-n .
+                        "标识符，名称和事物含义的定义（抽象的或真实的东西）。 通过句子进行人类可读的定义，通过与其他概念（机器可读语句）的关系进行机器可读的定义 它也可以用于概念模型的最小实体。 它可以是概念的平面列表的一部分，概念的分层列表，分层叙词表或本体。"@zh-hn-n ;
+                    "概念"@zh-hn-n .
+                                    "用于配置独立仪器上的数据收集（以及其他可配置因子）。"@zh-hn-n ;
+                                "配置控制器"@zh-hn-n .
+                                  "用于协调过程控制器提供的执行资源上的数据处理任务的执行。"@zh-hn-n ;
+                              "协调过程"@zh-hn-n .
+"协调服务委托发送给特定执行资源的所有处理任务，协调多阶段工作流程并启动过程执行。"@zh-hn-n ;
+                                "协同服务"@zh-hn-n .
+                                         "数据采集社区的行为。"@zh-hn-n ;
+                                     "数据获得行为"@zh-hn-n .
+                                    "提供数据分析功能的服务。"@zh-hn-n ;
+                                "数据分析服务"@zh-hn-n .
+                                        "提供数据同化功能的服务。"@zh-hn-n ;
+                                    "数据同化服务"@zh-hn-n .
+            rdfomment "数据代理对象充当访问存储在数据存储内的数据的中介。"@zh-hn-n ;
+                       "数据代理"@zh-hn-n .
+                                      "数据审编社区的行为。"@zh-hn-n ;
+                                  "数据审编行为"@zh-hn-n .
+              rdfomment "数据导出器管理从一个或多个数据存储对象到外部目标（例如用户机器或下游服务从研究基础设施收集数据）的数据移动。"@zh-hn-n ;
+                         "数据导出器"@zh-hn-n .
+                                      "提供数据提取功能的服务。"@zh-hn-n ;
+                                  "数据抽取服务"@zh-hn-n .
+              rdfomment "数据导入器管理从外部来源（例如用户发起的数据集和来自数据处理的派生数据集）到一个或多个数据存储对象的数据移动。"@zh-hn-n ;
+                         "数据导入器"@zh-hn-n .
+                                  "为数据挖掘提供功能的服务。"@zh-hn-n ;
+                              "数据挖掘服务"@zh-hn-n .
+                                        "数据处理社区的行为。"@zh-hn-n ;
+                                    "数据处理行为"@zh-hn-n .
+                               "追溯数据来源的元数据，记录数据在其生命周期中的所有状态变化及其在存储之间的移动。"@zh-hn-n ;
+                           "数据出处"@zh-hn-n .
+                                        "数据发布社区的行为。"@zh-hn-n ;
+                                    "数据发布服务"@zh-hn-n .
+            rdfomment "数据暂存器协调管理和处理子系统之间的数据传输。"@zh-hn-n ;
+                       "数据暂存器"@zh-hn-n .
+                            "在研究基础设施内进行数据处理需要从数据整理子系统中检索数据并将其传送到数据处理子系统。"@zh-hn-n ;
+                        "数据暂存"@zh-hn-n .
+                     rdfomment "数据存储控制器提供对可能拥有内部数据管理机制的数据存储的访问。"@zh-hn-n ;
+                                "数据存储控制器"@zh-hn-n .
+                                    "一种计算操作，涉及从一个计算对象到另一个计算对象的数据流。"@zh-hn-n ;
+                                "数据流操作"@zh-hn-n .
+                     rdfomment "数据传输服务涉及数据进出基础设施。"@zh-hn-n ;
+                                "数据传输服务"@zh-hn-n .
+                 rdfomment "数据传输器用于管理从研究基础架构的一个部分到另一个部分的数据移动。"@zh-hn-n ;
+                            "数据传送器"@zh-hn-n .
+                                 "数据使用社区的行为。"@zh-hn-n ;
+                             "数据使用行为"@zh-hn-n .
+                                 "连接到描述这些数据的元数据的数据。"@zh-hn-n ;
+                             "数据与元数据"@zh-hn-n .
+                                 rdfomment "管理数据和元数据存储和检索到逻辑结构化存储库的存储系统。"@zh-hn-n ;
+                                            "数据库管理系统后端"@zh-hn-n .
+                               "用于检索存储在数据整理子系统之外的外部数据存储中的外部数据集。"@zh-hn-n ;
+                           "分发数据集"@zh-hn-n .
+                               "用于采集数据采集子系统中仪器发送的原始数据。"@zh-hn-n ;
+                           "分发原始数据"@zh-hn-n .
+                        rdfomment "试验实验室用于与策划的数据和数据处理设施进行交互，使研究人员能够部署数据集进行处理，并从计算实验中获取结果。"@zh-hn-n ;
+                                   "试验实验室"@zh-hn-n .
+                                  "用于检索存储在数据存储子系统中的数据存储区内的策划数据集。"@zh-hn-n ;
+                              "导出审编数据"@zh-hn-n .
+                               "用于检索任何附加的元数据，以便与正在传输的数据相关联。"@zh-hn-n ;
+                           "导出元数据"@zh-hn-n .
+                  rdfomment "外部资源是被模拟的系统范围之外的资源，但仍然提供输入或从系统接收输出。"@zh-hn-n ;
+                             "外部资源"@zh-hn-n .
+                 rdfomment "野外实验室（因为与现场的原始数据源相互作用而被命名）被用于与数据采集组件进行交互，使研究人员能够部署，校准和取消部署仪器，作为集成数据采集网络的一部分 收集主要“原始”数据的基础设施。 现场实验室能够从数据采集装置中实例化新的仪器控制器。"@zh-hn-n ;
+                            "野外实验室"@zh-hn-n .
+                             rdfomment "以计算机系统中的文件方式管理数据的存储和检索的存储系统。"@zh-hn-n ;
+                                        "文件管理系统后端"@zh-hn-n .
+                                    "数据已经过最终审查，因此不会再改变。"@zh-hn-n ;
+                                "最终评阅数据"@zh-hn-n .
+                              "全局概念模型中的一个概念。"@zh-hn-n ;
+                          "全局概念"@zh-hn-n .
+                                  "全局概念模型"@zh-hn-n .
+                               "根据预定义模式（元数据模式）添加其他数据。 这与数据注释部分重叠。"@zh-hn-n ;
+                           "增加元数据"@zh-hn-n .
+                                  "执行信息对象的注释。"@zh-hn-n ;
+                              "标注活动"@zh-hn-n .
+                                "用含义注解数据（预定义的本地或全局概念模型的概念）。 在实践中，这可以通过向概念模型中的概念添加标签或指针来完成。 如果概念是术语，例如在SKOS / RDF叙词表中，并作为链接数据发布，则数据注释将意味着输入描述数据含义的术语的URL。 元数据和语义标注之间没有确切的界限。"@zh-hn-n ;
+                            "标注数据"@zh-hn-n .
+                                  "一般的注解行为。"@zh-hn-n ;
+                              "标注实体"@zh-hn-n .
+                                    "将元数据与意义联系起来（预定义的本地或全球概念模型的概念）。 这可以通过添加从概念模型中的概念指向元数据的指针来完成。 例如，如果概念是SKOS同义词的术语，由URI标识并作为链接数据发布，则注释等同于将元数据与术语的URI相关联。"@zh-hn-n ;
+                                "标注元数据"@zh-hn-n .
+                                          "获取一个唯一的标识符并将其与数据关联。"@zh-hn-n ;
+                                      "指定标志符"@zh-hn-n .
+                                        "建立一个相互关联概念的本地或全球模型。 这可能涉及以下问题：承诺（大量科学家/数据提供者/数据使用者就应该达成的协议达成一致）; 明确性（概念模型应明确定义）; 可读性（该模型应该是人类和机器本体都可读的，例如，在与人类和机器可读的同时，用与其他概念的关系来表达概念的含义，并且近来已经越来越重要的是将定义添加到人类可读的 语言）; 和可用性（概念模型必须长时间可参考和解除引用）。"@zh-hn-n ;
+                                    "构建概念模型"@zh-hn-n .
+                                  "将数据复制到其他数据存储区，以便在发生数据丢失事件后可用于恢复原始数据。 长期保存是一种特殊类型的备份。"@zh-hn-n ;
+                              "开展备份"@zh-hn-n .
+                                "验证数据质量的行动。 例如，它可能涉及：消除噪音; 删除明显错误的数据; 计算校准。 质量检查可以在数据生命周期的不同阶段进行。 质量检查可以通过软件工具支持那些可以自动进行的流程（例如统计公差检查）。"@zh-hn-n ;
+                            "核实质量"@zh-hn-n .
+                            "生成对持久数据或元数据的引用。"@zh-hn-n ;
+                        "引用数据"@zh-hn-n .
+                           "转化数据"@zh-hn-n .
+                                   "描述可重用的一个或多个服务的可访问性，接口，行为描述和/或实现的算法。"@zh-hn-n ;
+                               "描述服务"@zh-hn-n .
+                                "执行一系列的元数据/数据请求 - >解释结果 - >执行一个新的请求。通常这个顺序有助于加深对数据的了解。 通常这个序列可以：从数据到元数据和语义标注; 跟踪数据的来源; 可以跟踪数据处理; 可以通过专门的软件来支持，这些软件可以帮助执行数据请求和结果解释的顺序。"@zh-hn-n ;
+                            "挖掘数据"@zh-hn-n .
+                               "检查要发布的数据，这些数据不会再被更改。 该动作触发数据状态的改变以“最终复查”。 在实践中，出于溯源的目的，应该记录这种状态变化的注释。 通常，这与存档和版本控制操作相结合。"@zh-hn-n ;
+                           "最终评论"@zh-hn-n .
+                                  "执行值的转换规则（从一个单元到另一个单元的映射）或概念的转换规则（将含义从一个概念模型转换为另一个概念模型，例如转换代码列表）。"@zh-hn-n ;
+                              "执行映射"@zh-hn-n .
+                                                   "测量参数或观察事件。 测量或观察的性能产生测量结果。"@zh-hn-n ;
+                                               "执行测量或观测"@zh-hn-n .
+                               "处理数据，目的是：转换和生成数据产品; 计算（例如统计过程，模拟模型）; 可视化（例如字母数字，图形，地理）。 数据处理应记录为起源实例。"@zh-hn-n ;
+                           "处理数据"@zh-hn-n .
+                                "用所提供的数据创建统计模型，模拟模型或摘要。"@zh-hn-n ;
+                            "生成模型"@zh-hn-n .
+                               "使数据公开可获取。 例如，可以通过在万维网上以可浏览的形式呈现它们，或者通过诸如RESTful服务，SOAP服务，OPEN GRID服务，OGC服务（web特征服务，web 地图服务等）或SPARQL端点。"@zh-hn-n ;
+                           "发布数据"@zh-hn-n .
+                                   "将注册的元数据提供给公众。"@zh-hn-n ;
+                               "发布元数据"@zh-hn-n .
+                             "向数据存储发送请求以检索所需的数据。 在实践中，有两种类型的数据查询。 首先是两步法（其中步骤1是查询/搜索元数据，步骤2是访问数据） - 例如，在使用OGC服务时，通常首先调用Web特征服务来获取特征描述，然后是Web地图服务 被调用来获取地图图像。 其次是一步法（其中直接查询数据），例如 通过使用SQL服务或SPARQL端点。 请求可以直接发送到服务或经纪人分发。"@zh-hn-n ;
+                         "查询数据"@zh-hn-n .
+                               "查询某个实体，如数据集，元数据或注释。"@zh-hn-n ;
+                           "查询实体"@zh-hn-n .
+                                 "向元数据资源发送请求以检索感兴趣的元数据。"@zh-hn-n ;
+                             "查询元数据"@zh-hn-n .
+                                   "该操作请求关于某些数据或元数据起源的特定持续数据。 这通常是为了确定数据的来源和有效性，但也可能有助于引用和参考。"@zh-hn-n ;
+                               "查询出处"@zh-hn-n .
+                                    "将元数据输入到元数据目录中。"@zh-hn-n ;
+                                "注册元数据"@zh-hn-n .
+                                     "检索对应于一组注释术语的特定对象集的引用。"@zh-hn-n ;
+                                 "解析标注"@zh-hn-n .
+                                          "将数据对象与来自预定义的本地或全局概念模型的结构化信息链接起来。"@zh-hn-n ;
+                                      "语义标注活动"@zh-hn-n .
+                                     "指定数据和/或概念的映射规则。 这些规则应该使用可以通过软件处理的语言来明确表达。 最小的一组映射规则应该包括以下数据：映射有效的源数据/概念; 目标数据/概念的映射是有效的; 映射过程（翻译和/或转换过程）; 映射的有效性约束（时间约束，上下文约束等）。"@zh-hn-n ;
+                                 "建立映射规则"@zh-hn-n .
+                                              "指定调查的设计，包括抽样设计。 这可能包括测量或观测（地点）的地理位置 - 观测和测量地点的选择，例如，可以是统计的或按领域知识分层的; 网站的特点; 测量的先决条件。"@zh-hn-n ;
+                                          "指定调查设计"@zh-hn-n .
+                                                   "指定观测/测量方法的细节。 例如，可以包括测量设备类型及其设置，测量/观察间隔的规格。"@zh-hn-n ;
+                                               "指定测量或观测"@zh-hn-n .
+                             "以持久化的方式归档或保存数据，以确保持续的可访问性和可用性。"@zh-hn-n ;
+                         "储存数据"@zh-hn-n .
+                                   "自动生成并存储关于操作和数据状态更改的元数据作为起源实例。"@zh-hn-n ;
+                               "追踪出处"@zh-hn-n .
+                                 "创建以字母数字，图形或地理位置显示数据的视觉模型。"@zh-hn-n ;
+                             "可视化数据"@zh-hn-n .
+                               "已经被分配了唯一标识符的数据。"@zh-hn-n ;
+                           "已鉴定数据"@zh-hn-n .
+                                      "接收在相关联的数据存储装置中打包的数据。"@zh-hn-n ;
+                                  "导入待审编数据"@zh-hn-n .
+                      rdfomment "仪器控制器封装了现场仪器和其他原始数据源的可访问功能。"@zh-hn-n ;
+                                 "仪器控制器"@zh-hn-n .
+                               "一个通用接口，用于启用其他服务，如收集、导出数据或自动更新。 这包括与内部组件（如用于检索数据的数据存储控制器）的通信。"@zh-hn-n ;
+                           "调用资源"@zh-hn-n .
+                             "本地概念模型中的概念。"@zh-hn-n ;
+                         "局部对象"@zh-hn-n .
+                                 "局部概念模型"@zh-hn-n .
+                           "映射到特定概念模型的数据。"@zh-hn-n ;
+                       "映射数据"@zh-hn-n .
+                            "用于模型到模型转换的配置指令。"@zh-hn-n ;
+                        "映射规则"@zh-hn-n .
+                                  "测量说明包括用过的设备描述和可用的信息"@zh-hn-n ;
+                              "测量结果"@zh-hn-n .
+                         "关于数据的数据，在科学应用程序中用于描述，解释，定位数据资源，或者使得数据资源更容易检索，使用或管理。"@zh-hn-n ;
+                     "元数据"@zh-hn-n .
+                                  "元数据的集合，通常是为了使元数据可用于社区而建立的。 元数据目录可以通过访问服务公开。"@zh-hn-n ;
+                              "元数据编目"@zh-hn-n .
+                              "元数据状态是适用于在系统中用作元数据的数据的数据状态的改进。"@zh-hn-n ;
+                          "元数据状态"@zh-hn-n .
+                                              "提供建模和仿真功能的服务。"@zh-hn-n ;
+                                          "建模和模拟服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Oberver
+Oberver rdftype owlCl ;
+          owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                     [ rdftype owlRetrton ;
+                                                       owlonProperty beplyRole ;
+                                                       owlhVlue Oberver
+                                                     ]
+                                                   ) ;
+                                rdftype owlCl
+                              ] ;
+          rdfubClOf RwDtGtherer ,
+                          beAtor ,
+                          [ rdftype owlRetrton ;
+                            owlonProperty bememberOf ;
+                            owlomeVlueFrom DtAqutonCommunty
+                          ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PIDGenertor
+PIDGenertor rdftype owlCl ;
+              owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                         [ rdftype owlRetrton ;
+                                                           owlonProperty beplyRole ;
+                                                           owlhVlue PIDGenertor
+                                                         ]
+                                                       ) ;
+                                    rdftype owlCl
+                                  ] ;
+              rdfubClOf beReoure ,
+                              [ rdftype owlRetrton ;
+                                owlonProperty beprtOf ;
+                                owlomeVlueFrom DtCurtonSytem
+                              ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PIDMnger
+PIDMnger rdftype owlCl ;
+            owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                       [ rdftype owlRetrton ;
+                                                         owlonProperty beplyRole ;
+                                                         owlhVlue PIDMnger
+                                                       ]
+                                                     ) ;
+                                  rdftype owlCl
+                                ] ;
+            rdfubClOf beAtor ,
+                            [ rdftype owlRetrton ;
+                              owlonProperty bememberOf ;
+                              owlomeVlueFrom DtCurtonCommunty
+                            ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PIDServe
+PIDServe rdftype owlCl ;
+            rdfubClOf ServeObjet ,
+                            [ rdftype owlRetrton ;
+                              owlonProperty provdeCpblty ;
+                              owlhVlue AqureIdentferCpblty
+                            ] ,
+                            [ rdftype owlRetrton ;
+                              owlonProperty provdeCpblty ;
+                              owlhVlue ReolveIdentferCpblty
+                            ] ;
+            dderpton "PID erve provde globlly-redble pertent dentfer (PID) to nfrtruture entte, mnly dtet, tht my be ted by the ommunty."@en ;
+            rhetype EnvrRefereneModel ;
+            rdfomment "PID服务为基础设施实体（主要是数据集）提供全局可读的持久标识符（PID），可以由社区引用。"@zh-hn-n ;
+            rdflbel "PID erve"@en ,
+                       "PID服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PertentDt
+PertentDt rdftype owlCl ;
+                rdfubClOf ReerhDt ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty behAttrbute ;
+                                  owlomeVlueFrom PertentDtStte
+                                ] ;
+                dderpton "Dt  the repreentton of nformton delt wth by nformton ytem nd uer thereof ( defned n ODP, ISO/IEC 10746-2). Pertent Dt denote dt tht re perted (tored for the long-term)."@en ,
+                               "数据是由信息系统及其用户处理的信息的表示（如ODP，ISO / IEC 10746-2中所定义的）。 持久性数据表示持续存储的数据（长期存储）。"@zh-hn-n ;
+                rhetype EnvrRefereneModel ;
+                rdflbel "pertent dt"@en ,
+                           "持久数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PertentDtStte
+PertentDtStte rdftype owlCl ;
+                     rdfubClOf beIV_Stte ;
+                     dderpton "Dt tte  the ondton of n objet tht determne the et of ll equene of ton (or tre) n whh the objet n prtpte, t  gven ntnt n tme ( defned n ODP, ISO/IEC 10746-2)."@en ,
+                                    "数据状态是一个对象的条件，它在给定的时刻（如ODP，ISO / IEC 10746-2中定义的那样）确定对象可以参与的所有动作（或迹线）序列的集合。"@zh-hn-n ;
+                     rdflbel "pertent dt tte"@en ,
+                                "持久数据状态"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PolyMker
+PolyMker rdftype owlCl ;
+             owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                        [ rdftype owlRetrton ;
+                                                          owlonProperty beplyRole ;
+                                                          owlhVlue PolyMker
+                                                        ]
+                                                      ) ;
+                                   rdftype owlCl
+                                 ] ;
+             rdfubClOf Uer .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PrepreDtTrnfer
+PrepreDtTrnfer rdftype owlCl ;
+                     rdfubClOf beCV_SmpleOperton ,
+                                     [ rdftype owlRetrton ;
+                                       owlonProperty beopertonInvokedBy ;
+                                       owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                                 [ rdftype owlRetrton ;
+                                                                                   owlonProperty nvokeCpblty ;
+                                                                                   owlhVlue PrepreDtTrnferCpblty
+                                                                                 ]
+                                                                               ) ;
+                                                            rdftype owlCl
+                                                          ]
+                                     ] ,
+                                     [ rdftype owlRetrton ;
+                                       owlonProperty beopertonProvdedBy ;
+                                       owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                                 [ rdftype owlRetrton ;
+                                                                                   owlonProperty provdeCpblty ;
+                                                                                   owlhVlue PrepreDtTrnferCpblty
+                                                                                 ]
+                                                                               ) ;
+                                                            rdftype owlCl
+                                                          ]
+                                     ] ;
+                     dderpton " ued to negotte dt trnfer nto the dt urton ubytem."^xdtrng ,
+                                    "用于协调数据传输至数据审编系统。"@zh-hn-n ;
+                     rhetype EnvrRefereneModel ;
+                     rdflbel "prepre dt trnfer [operton]"@en ,
+                                "数据传输准备"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PreenttonObjet
+PreenttonObjet rdftype owlCl ;
+                    rdfubClOf beCV_PertentObjet ;
+                    dderpton "Preentton objet re the entry pont for humn uer to the ytem nd erve provded to e reerh dt nd ther derved produt."@en ;
+                    rdfomment "表征对象是人类用户访问提供的访问研究数据及其衍生产品的系统和服务的切入点。"@zh-hn-n ;
+                    rdflbel "preentton objet"@en ,
+                               "表征对象"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProeController
+ProeController rdftype owlCl ;
+                   rdfubClOf ComponentObjet ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty nvokeCpblty ;
+                                     owlhVlue StgeDtCpblty
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty provdeCpblty ;
+                                     owlhVlue CoordnteProeCpblty
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty provdeCpblty ;
+                                     owlhVlue DelverDtSetCpblty
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty provdeCpblty ;
+                                     owlhVlue RetreveDtCpblty
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty provdeCpblty ;
+                                     owlhVlue UpdteReordCpblty
+                                   ] ;
+                   dderpton "Proe ontroller repreent the omputtonl funtonlty of regtered exeuton reoure."@en ;
+                   rhetype EnvrRefereneModel ;
+                   rdfomment "过程控制器表示已注册的执行资源的计算功能。"@zh-hn-n ;
+                   rdflbel "proe ontroller"@en ,
+                              "处理控制器"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProeRequet
+ProeRequet rdftype owlCl ;
+                rdfubClOf beCV_SmpleOperton ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty beopertonInvokedBy ;
+                                  owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                            [ rdftype owlRetrton ;
+                                                                              owlonProperty nvokeCpblty ;
+                                                                              owlhVlue ProeRequetCpblty
+                                                                            ]
+                                                                          ) ;
+                                                       rdftype owlCl
+                                                     ]
+                                ] ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty beopertonProvdedBy ;
+                                  owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                            [ rdftype owlRetrton ;
+                                                                              owlonProperty provdeCpblty ;
+                                                                              owlhVlue ProeRequetCpblty
+                                                                            ]
+                                                                          ) ;
+                                                       rdftype owlCl
+                                                     ]
+                                ] ;
+                dderpton " ued to mke requet of the reerh nfrtruture pertnng to dt proeng."^^xdtrng ,
+                               "用于提出有关数据处理的研究基础设施的请求。"@zh-hn-n ;
+                rhetype EnvrRefereneModel ;
+                rdflbel "proe requet [operton]"@en ,
+                           "请求处理"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProeedDt
+ProeedDt rdftype owlCl ;
+               owlequvlentCl [ owlnteretonOf ( PertentDt
+                                                          [ rdftype owlRetrton ;
+                                                            owlonProperty behAttrbute ;
+                                                            owlhVlue ProeedStte
+                                                          ]
+                                                        ) ;
+                                     rdftype owlCl
+                                   ] ;
+               dderpton "Dt tht hve undergone proeng (evluton, trnformton)."@en ,
+                              "经过处理的数据（评估，转换）。"@zh-hn-n ;
+               rdflbel "proeed dt"@en ,
+                          "已处理数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProengEnvronmentPlnner
+ProengEnvronmentPlnner rdftype owlCl ;
+                              owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                                         [ rdftype owlRetrton ;
+                                                                           owlonProperty beplyRole ;
+                                                                           owlhVlue ProengEnvronmentPlnner
+                                                                         ]
+                                                                       ) ;
+                                                    rdftype owlCl
+                                                  ] ;
+                              rdfubClOf beAtor ,
+                                              [ rdftype owlRetrton ;
+                                                owlonProperty beprtOf ;
+                                                owlomeVlueFrom DtProengSytem
+                                              ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PublhedDt
+PublhedDt rdftype owlCl ;
+               owlequvlentCl [ owlnteretonOf ( PertentDt
+                                                          [ rdftype owlRetrton ;
+                                                            owlonProperty behAttrbute ;
+                                                            owlhVlue PublhedStte
+                                                          ]
+                                                        ) ;
+                                     rdftype owlCl
+                                   ] ;
+               dderpton "Dt tht re preented to the outde world."@en ,
+                              "提供给外部世界的数据。"@zh-hn-n ;
+               bepreondton "A deon  mde tht dt n be een by other."@en ,
+                                 "Dt re mde eble v  erve."@en ,
+                                 "Dt re mnble; you n follow lnk."@en ;
+               rdflbel "publhed dt"@en ,
+                          "已发布数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PublhedMetdt
+PublhedMetdt rdftype owlCl ;
+                   owlequvlentCl [ owlnteretonOf ( Metdt
+                                                              [ rdftype owlRetrton ;
+                                                                owlonProperty behAttrbute ;
+                                                                owlhVlue PublhedStte
+                                                              ]
+                                                            ) ;
+                                         rdftype owlCl
+                                       ] ;
+                   dderpton "Metdt mde vlble to the publ, the outde world. Metdt regtered wthn publ tlogue."@en ,
+                                  "元数据提供给公众，外界。 在公共目录中注册的元数据。"@zh-hn-n ;
+                   rdflbel "publhed metdt"@en ,
+                              "已发布元数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QAAeedDt
+QAAeedDt rdftype owlCl ;
+                owlequvlentCl [ owlnteretonOf ( PertentDt
+                                                           [ rdftype owlRetrton ;
+                                                             owlonProperty behAttrbute ;
+                                                             owlhVlue QAAeedStte
+                                                           ]
+                                                         ) ;
+                                      rdftype owlCl
+                                    ] ;
+                dderpton "Dt tht hve undergone hek nd re onneted wth derpton of the reult of thoe hek."@en ,
+                               "经过检查并与检查结果描述相关的数据。"@zh-hn-n ;
+                rdflbel "QA-eed dt"@en ,
+                           "QA评估数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QANotton
+QANotton rdftype owlCl ;
+            rdfubClOf Metdt ;
+            dderpton "Notton of the reult of  Qulty Aement. Th notton n be  nomnl vlue out of  lfton ytem up to  omprehenve (mhne redble) derpton of the whole QA proe."@en ,
+                           "质量评估结果的标记。 对于整个质量保证过程的全面（机器可读）描述，这个符号可以是分类系统中的一个名义值。"@zh-hn-n ;
+            rhetype EnvrRefereneModel ;
+            rdflbel "QA notton"@en ,
+                       "QA记号"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QueryCtlogue
+QueryCtlogue rdftype owlCl ;
+                 rdfubClOf beCV_SmpleOperton ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty beopertonInvokedBy ;
+                                   owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                             [ rdftype owlRetrton ;
+                                                                               owlonProperty nvokeCpblty ;
+                                                                               owlhVlue QueryCtlogueCpblty
+                                                                             ]
+                                                                           ) ;
+                                                        rdftype owlCl
+                                                      ]
+                                 ] ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty beopertonProvdedBy ;
+                                   owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                             [ rdftype owlRetrton ;
+                                                                               owlonProperty provdeCpblty ;
+                                                                               owlhVlue QueryCtlogueCpblty
+                                                                             ]
+                                                                           ) ;
+                                                        rdftype owlCl
+                                                      ]
+                                 ] ;
+                 dderpton "Provde funton for queryng dt held by the nfrtruture, nludng the retrevl of dtet oted wth  gven pertent dentfer."@en ,
+                                "提供用于查询基础结构所拥有的数据的功能，包括检索与给定持久标识符关联的数据集。"@zh-hn-n ;
+                 rhetype EnvrRefereneModel ;
+                 rdflbel "query tlogue [operton]"@en ,
+                            "查询编目"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QueryDt
+QueryDt rdftype owlCl ;
+           rdfubClOf beCV_SmpleOperton ,
+                           [ rdftype owlRetrton ;
+                             owlonProperty beopertonInvokedBy ;
+                             owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                       [ rdftype owlRetrton ;
+                                                                         owlonProperty nvokeCpblty ;
+                                                                         owlhVlue QueryDtCpblty
+                                                                       ]
+                                                                     ) ;
+                                                  rdftype owlCl
+                                                ]
+                           ] ,
+                           [ rdftype owlRetrton ;
+                             owlonProperty beopertonProvdedBy ;
+                             owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                       [ rdftype owlRetrton ;
+                                                                         owlonProperty provdeCpblty ;
+                                                                         owlhVlue QueryDtCpblty
+                                                                       ]
+                                                                     ) ;
+                                                  rdftype owlCl
+                                                ]
+                           ] ;
+           dderpton " ued to forwrd quere onto the dt urton ubytem of  reerh nfrtruture nd reeve the reult."^^xdtrng ,
+                          "用于将查询转发到研究基础架构的数据调整子系统并接收结果。"@zh-hn-n ;
+           rhetype EnvrRefereneModel ;
+           rdflbel "query dt [operton]"@en ,
+                      "查询数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QueryReoure
+QueryReoure rdftype owlCl ;
+               rdfubClOf beCV_SmpleOperton ,
+                               [ rdftype owlRetrton ;
+                                 owlonProperty beopertonInvokedBy ;
+                                 owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                           [ rdftype owlRetrton ;
+                                                                             owlonProperty nvokeCpblty ;
+                                                                             owlhVlue QueryReoureCpblty
+                                                                           ]
+                                                                         ) ;
+                                                      rdftype owlCl
+                                                    ]
+                               ] ,
+                               [ rdftype owlRetrton ;
+                                 owlonProperty beopertonProvdedBy ;
+                                 owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                           [ rdftype owlRetrton ;
+                                                                             owlonProperty provdeCpblty ;
+                                                                             owlhVlue QueryReoureCpblty
+                                                                           ]
+                                                                         ) ;
+                                                      rdftype owlCl
+                                                    ]
+                               ] ;
+               dderpton " ued to retreve dt from dt tore."^^xdtrng ,
+                              "用于从数据存储检索数据。"@zh-hn-n ;
+               rhetype EnvrRefereneModel ;
+               rdflbel "query reoure [operton]"@en ,
+                          "查询资源"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RwDt
+RwDt rdftype owlCl ;
+         owlequvlentCl [ owlnteretonOf ( PertentDt
+                                                    [ rdftype owlRetrton ;
+                                                      owlonProperty behAttrbute ;
+                                                      owlhVlue RwStte
+                                                    ]
+                                                  ) ;
+                               rdftype owlCl
+                             ] ;
+         dderpton "The prmry reult of obervton or meurement."@en ,
+                        "观测或测量的主要结果。"@zh-hn-n ;
+         rdflbel "rw dt"@en ,
+                    "原始数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RwDtColleton
+RwDtColleton rdftype owlCl ;
+                   rdfubClOf beCV_ComplexOperton ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty beopertonProvdedBy ;
+                                     owlomeVlueFrom RwDtColletor
+                                   ] ;
+                   dderpton "The olleton of rw entf dt requre oordnton between the dt quton phe (whh extrt the rw dt from ntrument) nd the dt urton phe (whh pkge nd tore the dt)."@en ,
+                                  "原始科学数据的收集需要数据采集阶段（提取仪器的原始数据）和数据整理阶段（包装和存储数据）之间的协调。"@zh-hn-n ;
+                   rhetype EnvrRefereneModel ;
+                   rdflbel "rw dt olleton [operton]"@en ,
+                              "原始数据收集"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RwDtColletor
+RwDtColletor rdftype owlCl ;
+                  rdfubClOf beCV_BndngObjet ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty benvokeOperton ;
+                                    owlomeVlueFrom AqureIdentfer
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty benvokeOperton ;
+                                    owlomeVlueFrom DelverRwDt
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty benvokeOperton ;
+                                    owlomeVlueFrom UpdteCtlogue
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty beprovdeOperton ;
+                                    owlomeVlueFrom ImportDtForCurton
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty nvokeCpblty ;
+                                    owlhVlue AqureIdentferCpblty
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty nvokeCpblty ;
+                                    owlhVlue DelverRwDtCpblty
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty nvokeCpblty ;
+                                    owlhVlue UpdteCtlogueCpblty
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty provdeCpblty ;
+                                    owlhVlue ImportDtForCurtonCpblty
+                                  ] ;
+                  dderpton "Rw dt olletor mnge the movement of dt from one or more dt quton objet to one or more dt tore objet."@en ;
+                  rhetype EnvrRefereneModel ;
+                  rdfomment "原始数据收集器管理从一个或多个数据获取对象到一个或多个数据存储对象的数据移动。"@zh-hn-n ;
+                  rdflbel "rw dt olletor"@en ,
+                             "原始数据收集器"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RwDtGtherer
+RwDtGtherer rdftype owlCl ;
+                 rdfubClOf beSV_Objet ;
+                 dderpton "持有传感器，观察者和测量者的类。"@zh-hn-n ;
+                 rdfomment "Holdng l for enor, oberver nd meurer."@en ;
+                 rdflbel "rw dt gtherer"@en ,
+                            "元数据收集者"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RwMetdt
+RwMetdt rdftype owlCl ;
+             owlequvlentCl [ owlnteretonOf ( Metdt
+                                                        [ rdftype owlRetrton ;
+                                                          owlonProperty behAttrbute ;
+                                                          owlhVlue RwStte
+                                                        ]
+                                                      ) ;
+                                   rdftype owlCl
+                                 ] ;
+             dderpton "Etblhed metdt, whh re not yet regtered. In generl, they re not hreble n th tte."@en ,
+                            "已建立的元数据，尚未注册。 一般来说，他们在这个状态不能共享。"@zh-hn-n ;
+             bepreondton "Rw dt  perted n  wy tht further nformton n be dded t mut hve  mnmum et of dentfer nd t mut llow lnk."@en ;
+             rdflbel "rw metdt"@en ,
+                        "原始元数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RegteredMetdt
+RegteredMetdt rdftype owlCl ;
+                    owlequvlentCl [ owlnteretonOf ( Metdt
+                                                               [ rdftype owlRetrton ;
+                                                                 owlonProperty behAttrbute ;
+                                                                 owlhVlue RegteredStte
+                                                               ]
+                                                             ) ;
+                                          rdftype owlCl
+                                        ] ;
+                    dderpton "Metdt whh re nerted nto  metdt tlogue."@en ,
+                                   "被插入到元数据目录中的元数据。"@zh-hn-n ;
+                    rdflbel "regtered metdt"@en ,
+                               "注册元数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RequetDt
+RequetDt rdftype owlCl ;
+             rdfubClOf beCV_SmpleOperton ,
+                             [ rdftype owlRetrton ;
+                               owlonProperty beopertonInvokedBy ;
+                               owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                         [ rdftype owlRetrton ;
+                                                                           owlonProperty nvokeCpblty ;
+                                                                           owlhVlue RequetDtCpblty
+                                                                         ]
+                                                                       ) ;
+                                                    rdftype owlCl
+                                                  ]
+                             ] ,
+                             [ rdftype owlRetrton ;
+                               owlonProperty beopertonProvdedBy ;
+                               owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                         [ rdftype owlRetrton ;
+                                                                           owlonProperty provdeCpblty ;
+                                                                           owlhVlue RequetDtCpblty
+                                                                         ]
+                                                                       ) ;
+                                                    rdftype owlCl
+                                                  ]
+                             ] ;
+             dderpton " ued to mke requet of the reerh nfrtruture pertnng to urted dtet."^^xdtrng ,
+                            "用于向研究基础设施提出有关整理数据集的请求。"@zh-hn-n ;
+             rhetype EnvrRefereneModel ;
+             rdflbel "requet dt [operton]"@en ,
+                        "请求数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ReerhDt
+ReerhDt rdftype owlCl ;
+              rdfubClOf beDt ;
+              dderpton "Reerh dt proeed by the RI. Th  the be nformton objet l from whh ll other nformton objet re derved."@en ,
+                             "由RI处理的研究数据。 这是派生所有其他信息对象的基本信息对象类。"@zh-hn-n ;
+              rhetype EnvrRefereneModel ;
+              rdflbel "reerh dt"@en ,
+                         "科学研究数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ReerhDtLfeylePhe
+ReerhDtLfeylePhe rdftype owlCl ;
+                            rdfubClOf beRM_Clfer ;
+                            dderpton "The dt lfeyle of envronmentl reerh nfrtruture  trutured n fve phe Dt Aquton, Dt Curton, Dt Publhng, Dt Proeng nd Dt Ue  The fundmentl reon of the dvon of the dt lfeyle  bed on the obervton tht ll pplton, erve nd oftwre tool re degned nd mplemented round fve mjor tvte qurng dt, torng nd preervng dt, mkng the dt publly vlble, provdng erve for further dt proeng, nd ung the dt to derve dfferent dt produt. Th dt lfeyle  frly generl nd ll reerh nfrtruture nvetgted exhbt behvour tht lgn wth t phe. Conequently, the ENVRI-RM  trutured n lne wth the fve phe of the dt lfe-yle."@en ,
+                                           "环境研究基础设施的数据生命周期分为五个阶段：数据采集，数据处理，数据发布，数据处理和数据使用。数据生命周期划分的根本原因是基于观察到所有的应用程序，服务和软件 工具是围绕五个主要活动设计和实现的：获取数据，存储和保存数据，公开数据，为进一步的数据处理提供服务，以及使用数据导出不同的数据产品。 这个数据生命周期相当普遍，调查的所有研究基础设施都显示与其阶段相一致的行为。 因此，ENVRI-RM的结构与数据生命周期的五个阶段一致。"@zh-hn-n ;
+                            rdflbel "reerh dt lfeyle phe"@en ,
+                                       "数据生命周期阶段"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ReerhInfrtruture
+ReerhInfrtruture rdftype owlCl ;
+                        owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                                   [ rdftype owlRetrton ;
+                                                                     owlonProperty beplyRole ;
+                                                                     owlhVlue ReerhInfrtruture
+                                                                   ]
+                                                                 ) ;
+                                              rdftype owlCl
+                                            ] ;
+                        rdfubClOf beInfrtruture .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Reerher
+Reerher rdftype owlCl ;
+            owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                       [ rdftype owlRetrton ;
+                                                         owlonProperty beplyRole ;
+                                                         owlhVlue Reerher
+                                                       ]
+                                                     ) ;
+                                  rdftype owlCl
+                                ] ;
+            rdfubClOf Uer .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ReolveIdentfer
+ReolveIdentfer rdftype owlCl ;
+                   rdfubClOf beCV_SmpleOperton ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty beopertonInvokedBy ;
+                                     owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                               [ rdftype owlRetrton ;
+                                                                                 owlonProperty nvokeCpblty ;
+                                                                                 owlhVlue ReolveIdentferCpblty
+                                                                               ]
+                                                                             ) ;
+                                                          rdftype owlCl
+                                                        ]
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty beopertonProvdedBy ;
+                                     owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                               [ rdftype owlRetrton ;
+                                                                                 owlonProperty provdeCpblty ;
+                                                                                 owlhVlue ReolveIdentferCpblty
+                                                                               ]
+                                                                             ) ;
+                                                          rdftype owlCl
+                                                        ]
+                                   ] ;
+                   dderpton "I ued to reolve dentfer."^^xdtrng ,
+                                  "用于解析标识符。"@zh-hn-n ;
+                   rhetype EnvrRefereneModel ;
+                   rdflbel "reolve dentfer [operton]"@en ,
+                              "解析标志符"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RetreveDt
+RetreveDt rdftype owlCl ;
+              rdfubClOf beCV_SmpleOperton ,
+                              [ rdftype owlRetrton ;
+                                owlonProperty beopertonInvokedBy ;
+                                owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                          [ rdftype owlRetrton ;
+                                                                            owlonProperty nvokeCpblty ;
+                                                                            owlhVlue RetreveDtCpblty
+                                                                          ]
+                                                                        ) ;
+                                                     rdftype owlCl
+                                                   ]
+                              ] ,
+                              [ rdftype owlRetrton ;
+                                owlonProperty beopertonProvdedBy ;
+                                owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                          [ rdftype owlRetrton ;
+                                                                            owlonProperty provdeCpblty ;
+                                                                            owlhVlue RetreveDtCpblty
+                                                                          ]
+                                                                        ) ;
+                                                     rdftype owlCl
+                                                   ]
+                              ] ;
+              dderpton " ued to requet  new pertent dentfer to be oted wth the dt beng trnferred."^^xdtrng ,
+                             "用于请求与正在传输的数据相关联的新的持久标识符。"@zh-hn-n ;
+              rhetype EnvrRefereneModel ;
+              rdflbel "retreve dt [operton]"@en ,
+                         "获取数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_CoCrete
+SV_CoCrete rdftype owlCl ;
+             rdfubClOf DtUeBehvour ,
+                             [ rdftype owlRetrton ;
+                               owlonProperty benvolve ;
+                               owlomeVlueFrom beAtor
+                             ] ;
+             dderpton "A behvour performed by tve role whh entl the degn nd plnnng of tvte for the olleton, preervton, nly or publhng of reerh dt n prtnerhp wth dfferent ommunte."@en ,
+                            "由主动角色执行的行为，需要与不同社区合作，设计和规划与收集，保存，分析或发布研究数据有关的活动。"@zh-hn-n ;
+             rhetype EnvrRefereneModel ;
+             rdflbel "o-rete [behvour]"@en ,
+                        "协同创建"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_Collborte
+SV_Collborte rdftype owlCl ;
+                rdfubClOf DtUeBehvour ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty benvolve ;
+                                  owlomeVlueFrom beAtor
+                                ] ;
+                dderpton "A behvour performed by tve role whh entl tng/prtptng n ome of the phe of the olleton, preervton, nly or publhng of reerh dt."@en ,
+                               "主动角色的行为需要帮助/参与收集，保存，分析或发布研究数据的某些阶段。"@zh-hn-n ;
+                rhetype EnvrRefereneModel ;
+                rdflbel "ollborte [behvour]"@en ,
+                           "协作"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_CompoeServe
+SV_CompoeServe rdftype owlCl ;
+                   rdfubClOf DtProengBehvour ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty benvolve ;
+                                     owlomeVlueFrom ServeConumer
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty benvolve ;
+                                     owlomeVlueFrom ServeProvder
+                                   ] ;
+                   dderpton "A behvour performed by  Serve Provder to ombne multple erve whh n be heved by ether Choreogrphy or Orhetrton. Serve Choreogrphy   ollborton between Serve Provder nd Serve Conumer. Serve Orhetrton  the behvour tht  Serve Provder perform nternlly to rele  erve tht t provde."@en ,
+                                  "由服务提供者执行的组合可以通过编排或编排实现的多个服务的行为。 服务编排是服务提供者和服务使用者之间的协作。 服务协调是服务提供者在内部执行以实现其提供的服务的行为。"@zh-hn-n ;
+                   rhetype EnvrRefereneModel ;
+                   rdflbel "ompoe erve [behvour]"@en ,
+                              "构建服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_Contrbute
+SV_Contrbute rdftype owlCl ;
+               rdfubClOf DtUeBehvour ,
+                               [ rdftype owlRetrton ;
+                                 owlonProperty benvolve ;
+                                 owlomeVlueFrom beAtor
+                               ] ;
+               dderpton "A behvour performed by tve role whh entl dretly olletng, preervng, nlyng, or publhng reerh dt held by the RI, ordng to  predefned protool."@en ,
+                              "活动角色执行的行为，需要根据预定义的协议直接收集，保存，分析或发布由RI所持有的研究数据。"@zh-hn-n ;
+               rhetype EnvrRefereneModel ;
+               rdflbel "ontrbute [behvour]"@en ,
+                          "贡献"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_CoordnteServe
+SV_CoordnteServe rdftype owlCl ;
+                      rdfubClOf DtProengBehvour ,
+                                      [ rdftype owlRetrton ;
+                                        owlonProperty benvolve ;
+                                        owlomeVlueFrom ServeProvder
+                                      ] ;
+                      dderpton "A behvour performed by  Serve Provder to oordnte the ton of dtrbuted pplton n order to reh ontent greement on the outome of dtrbuted trnton."@en ,
+                                     "服务提供商为协调分布式应用程序的行为而执行的行为，以便就分布式事务的结果达成一致的协议。"@zh-hn-n ;
+                      rhetype EnvrRefereneModel ;
+                      rdflbel "oordnte erve [behvour]"@en ,
+                                 "协调服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_CutomeProengEnvronment
+SV_CutomeProengEnvronment rdftype owlCl ;
+                                   rdfubClOf DtProengBehvour ,
+                                                   [ rdftype owlRetrton ;
+                                                     owlonProperty benvolve ;
+                                                     owlomeVlueFrom ProengEnvronmentPlnner
+                                                   ] ;
+                                   dderpton "A behvour performed by  proeng envronment plnner to enble  Dt Proeng Subytem to prepre utomed nfrtruture nd erve pltform for mngng pef dt proeng pplton optmlly, nludng the plnnng, provonng nd deployment ub-tvte."@en ,
+                                                  "由处理环境规划人员执行的行为，使数据处理子系统能够最佳地准备用于管理特定数据处理应用程序的定制基础架构和服务平台，包括规划，供应和部署子活动。"@zh-hn-n ;
+                                   rhetype EnvrRefereneModel ;
+                                   rdflbel "utome proeng envronment [behvour]"@en ,
+                                              "定制处理环境"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtAnnotton
+SV_DtAnnotton rdftype owlCl ;
+                   rdfubClOf DtCurtonBehvour ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty benvolve ;
+                                     owlomeVlueFrom SemntCurtor
+                                   ] ;
+                   dderpton "A behvour performed by  Semnt Curtor whh upport the lnkng of dt nd metdt wth  lol oneptul model."@en ,
+                                  "由语义整理者执行的行为，支持数据和元数据与本地概念模型的链接。"@zh-hn-n ;
+                   rhetype EnvrRefereneModel ;
+                   rdflbel "dt nnotton [behvour]"@en ,
+                              "数据标注"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtCtton
+SV_DtCtton rdftype owlCl ;
+                 rdfubClOf DtPublhngBehvour ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty benvolve ;
+                                   owlomeVlueFrom PIDMnger
+                                 ] ;
+                 dderpton "A behvour performed by  PID Mnger tht gn n urte, ontent nd tndrded referene to  dt objet, n the me wy  reerher routnely provde  bblogrph referene to prnted reoure. The RI publhng the dt n defne the tton ontent uh  uthor, nd dte for dfferent tton tyle."@en ,
+                                "由PID管理者执行的一项行为，它为数据对象分配一个精确的，一致的和标准化的参考，就像研究人员经常为印刷资源提供参考书目一样。 发布数据的RI可以定义作者的引用内容，不同引文风格的日期。"@zh-hn-n ;
+                 rhetype EnvrRefereneModel ;
+                 rdflbel "dt tton [behvour]"@en ,
+                            "数据引用"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtColleton
+SV_DtColleton rdftype owlCl ;
+                   rdfubClOf DtAqutonBehvour ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty benvolve ;
+                                     owlomeVlueFrom DtColletor
+                                   ] ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty benvolve ;
+                                     owlomeVlueFrom RwDtGtherer
+                                   ] ;
+                   dderpton "A behvour performed by  Dt Colletor tht ontrol nd montor the olleton of the dgtl vlue from  enor ntrument (or  humn enor uh   Meurer or  Oberver), otng ontent tmetmp nd neery metdt."@en ,
+                                  "数据收集器执行的行为，用于控制和监视来自传感器仪器（或人体感应器，如Meurer或Oberver）的数字值的集合，将一致的时间戳和必要的元数据关联起来。"@zh-hn-n ;
+                   rhetype EnvrRefereneModel ;
+                   rdflbel "dt olleton [behvour]"@en ,
+                              "数据收集"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtDoveryAndAe
+SV_DtDoveryAndAe rdftype owlCl ;
+                           rdfubClOf DtPublhngBehvour ,
+                                           [ rdftype owlRetrton ;
+                                             owlonProperty benvolve ;
+                                             owlomeVlueFrom DtPublhngSytem
+                                           ] ;
+                           dderpton "A behvour enbled by  Dt Dovery nd Ae Sytem tht retreve requeted dt from  dt reoure by ung utble erh tehnology."@en ,
+                                          "数据发现和访问系统启用的行为，通过使用适当的搜索技术从数据资源中检索请求的数据。"@zh-hn-n ;
+                           rhetype EnvrRefereneModel ;
+                           rdflbel "dt dovery nd e [behvour]"@en ,
+                                      "数据发现与访问"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtIdentfton
+SV_DtIdentfton rdftype owlCl ;
+                       rdfubClOf DtCurtonBehvour ,
+                                       [ rdftype owlRetrton ;
+                                         owlonProperty benvolve ;
+                                         owlomeVlueFrom PIDMnger
+                                       ] ;
+                       dderpton "A behvour performed by  PID mnger whh provde  unque PID for dt nd metdt beng urted."@en ,
+                                      "由PID管理器执行的行为，为管理的数据和元数据提供唯一的PID。"@zh-hn-n ;
+                       rhetype EnvrRefereneModel ;
+                       rdflbel "dt dentfton [behvour]"@en ,
+                                  "数据鉴定"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtPreervton
+SV_DtPreervton rdftype owlCl ;
+                     rdfubClOf DtCurtonBehvour ,
+                                     [ rdftype owlRetrton ;
+                                       owlonProperty benvolve ;
+                                       owlomeVlueFrom DtCurtor
+                                     ] ;
+                     dderpton "A behvour performed by  Dt Curtor tht depot (over long-term) the dt nd metdt or other upplementry dt nd method ordng to pefed pole, nd mke them eble on requet."@en ,
+                                    "由数据整理员执行的行为，该行为根据指定的策略（长期）存储数据和元数据或其他补充数据和方法，并根据请求使其可访问。"@zh-hn-n ;
+                     rhetype EnvrRefereneModel ;
+                     rdflbel "dt preervton [behvour]"@en ,
+                                "数据保存"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtProdutGenerton
+SV_DtProdutGenerton rdftype owlCl ;
+                          rdfubClOf DtCurtonBehvour ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom DtCurtor
+                                          ] ;
+                          dderpton "A behvour performed by  Dt Curtor tht proee dt gnt requrement pefton nd tndrded formt nd derpton."@en ,
+                                         "由数据整理者执行的行为，根据需求规格和标准化格式和描述处理数据。"@zh-hn-n ;
+                          rhetype EnvrRefereneModel ;
+                          rdflbel "dt produt generton [behvour]"@en ,
+                                     "数据产品生成"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtPublton
+SV_DtPublton rdftype owlCl ;
+                    rdfubClOf DtPublhngBehvour ;
+                    dderpton "A behvour tht provde len, well-nnotted, nonymty-preervng dtet n  utble formt, nd by followng pefed dt-publton nd hrng pole, to mke the dtet eble publly or to thoe who gree to ertn ondton of ue, nd to ndvdul who meet ertn profeonl rter."@en ,
+                                   "一种行为，通过适当的格式提供干净，注释良好，保存匿名的数据集，并遵循特定的数据出版和共享政策，使数据集可以公开访问，也可以让那些同意某些使用条件的访问者以及个人访问 谁符合一定的专业标准。"@zh-hn-n ;
+                    rhetype EnvrRefereneModel ;
+                    rdflbel "dt publton [behvour]"@en ,
+                               "数据发布"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtQultyChekng
+SV_DtQultyChekng rdftype owlCl ;
+                        rdfubClOf DtCurtonBehvour ,
+                                        [ rdftype owlRetrton ;
+                                          owlonProperty benvolve ;
+                                          owlomeVlueFrom DtCurtor
+                                        ] ;
+                        dderpton "A behvour performed by  Dt Curtor tht detet nd orret (or remove) orrupt, nontent or nurte reord from dt et."@en ,
+                                       "数据整理者执行的行为，用于检测和纠正（或删除）数据集中的损坏，不一致或不准确的记录。"@zh-hn-n ;
+                        rhetype EnvrRefereneModel ;
+                        rdflbel "dt qulty hekng [behvour]"@en ,
+                                   "数据质量检测"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DtReplton
+SV_DtReplton rdftype owlCl ;
+                    rdfubClOf DtCurtonBehvour ,
+                                    [ rdftype owlRetrton ;
+                                      owlonProperty benvolve ;
+                                      owlomeVlueFrom StorgeAdmntrtor
+                                    ] ;
+                    dderpton "A behvour performed by  Storge Admntrtor tht rete, delete nd mntn the onteny of ope of  dt et on multple torge deve."@en ,
+                                   "存储管理员执行的行为，用于创建，删除和维护多个存储设备上数据集的副本的一致性。"@zh-hn-n ;
+                    rhetype EnvrRefereneModel ;
+                    rdflbel "dt replton [behvour]"@en ,
+                               "数据复制"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DerbeServe
+SV_DerbeServe rdftype owlCl ;
+                    rdfubClOf DtProengBehvour ,
+                                    [ rdftype owlRetrton ;
+                                      owlonProperty benvolve ;
+                                      owlomeVlueFrom ServeProvder
+                                    ] ;
+                    dderpton "A behvour performed by  Serve Provder to provde the nformton needed n order to ue  erve."@en ,
+                                   "由服务提供商执行的行为，以提供使用服务所需的信息。"@zh-hn-n ;
+                    rhetype EnvrRefereneModel ;
+                    rdflbel "derbe erve [behvour]"@en ,
+                               "描述服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DegnExperment
+SV_DegnExperment rdftype owlCl ;
+                     rdfubClOf DtAqutonBehvour ,
+                                     [ rdftype owlRetrton ;
+                                       owlonProperty benvolve ;
+                                       owlomeVlueFrom EnvronmentlSentt
+                                     ] ;
+                     dderpton "A behvour performed by  Envronmentl Sentt tht degn the entf experment whh motvte the dt quton tvte."@en ,
+                                    "环境科学家的行为，设计激励数据采集活动的科学实验。"@zh-hn-n ;
+                     rhetype EnvrRefereneModel ;
+                     rdflbel "degn experment [behvour]"@en ,
+                                "设计实验"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_DegnMeurementModel
+SV_DegnMeurementModel rdftype owlCl ;
+                           rdfubClOf DtAqutonBehvour ,
+                                           [ rdftype owlRetrton ;
+                                             owlonProperty benvolve ;
+                                             owlomeVlueFrom MeurementModelDegner
+                                           ] ;
+                           dderpton "A behvour performed by  Meurement Model Degner tht degn the meurement or montorng model bed on entf requrement."@en ,
+                                          "由测量模型设计师执行的行为，基于科学要求设计测量或监测模型。"@zh-hn-n ;
+                           rhetype EnvrRefereneModel ;
+                           rdflbel "degn meurement model [behvour]"@en ,
+                                      "设计测量模型"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_IntrumentClbrton
+SV_IntrumentClbrton rdftype owlCl ;
+                          rdfubClOf DtAqutonBehvour ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom Senor
+                                          ] ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom Tehnn
+                                          ] ;
+                          dderpton "A behvour performed by  Tehnn tht ontrol nd reord the proe of lgnng or tetng  enor gnt dependble tndrd or pefed verfton proee."@en ,
+                                         "技术人员执行的行为，控制和记录对准可靠的标准或指定的验证过程的传感器对齐或测试过程。"@zh-hn-n ;
+                          rhetype EnvrRefereneModel ;
+                          rdflbel "ntrument lbrton [behvour]"@en ,
+                                     "仪器校正"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_IntrumentConfgurton
+SV_IntrumentConfgurton rdftype owlCl ;
+                            rdfubClOf DtAqutonBehvour ,
+                                            [ rdftype owlRetrton ;
+                                              owlonProperty benvolve ;
+                                              owlomeVlueFrom Senor
+                                            ] ,
+                                            [ rdftype owlRetrton ;
+                                              owlonProperty benvolve ;
+                                              owlomeVlueFrom Tehnn
+                                            ] ;
+                            dderpton "A behvour performed by  Tehnn tht et up  enor or  enor network."@en ,
+                                           "由技术人员执行的设置传感器或传感器网络的行为。"@zh-hn-n ;
+                            rhetype EnvrRefereneModel ;
+                            rdflbel "ntrument onfgurton [behvour]"@en ,
+                                       "仪器配置"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_MetdtHrvetng
+SV_MetdtHrvetng rdftype owlCl ;
+                       rdfubClOf DtPublhngBehvour ,
+                                       [ rdftype owlRetrton ;
+                                         owlonProperty benvolve ;
+                                         owlomeVlueFrom DtPublhngSytem
+                                       ] ;
+                       dderpton "A behvour performed by  metdt hrveter to gther metdt from dt objet n order to ontrut tlogue of the vlble nformton."@en ,
+                                      "元数据采集器为了构建可用信息的目录而从数据对象收集元数据的行为。"@zh-hn-n ;
+                       rhetype EnvrRefereneModel ;
+                       rdflbel "metdt hrvetng [behvour]"@en ,
+                                  "元数据收割"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_RegterServe
+SV_RegterServe rdftype owlCl ;
+                    rdfubClOf DtProengBehvour ,
+                                    [ rdftype owlRetrton ;
+                                      owlonProperty benvolve ;
+                                      owlomeVlueFrom ServeProvder
+                                    ] ;
+                    dderpton "A behvour performed by  Serve Provder to mke the erve vble to Serve Conumer by regterng t n  erve regtry."@en ,
+                                   "由服务提供商执行的行为，通过将服务注册到服务注册中心来使该服务可见。"@zh-hn-n ;
+                    rhetype EnvrRefereneModel ;
+                    rdflbel "regter erve [behvour]"@en ,
+                               "注册服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_SeletOrBuldConeptulModel
+SV_SeletOrBuldConeptulModel rdftype owlCl ;
+                                 rdfubClOf DtCurtonBehvour ,
+                                                 [ rdftype owlRetrton ;
+                                                   owlonProperty benvolve ;
+                                                   owlomeVlueFrom SemntCurtor
+                                                 ] ;
+                                 dderpton "A behvour performed by  Semnt Curtor whh upport the nnotton of dt nd metdt."@en ,
+                                                "语义整理者支持数据和元数据注释的行为。"@zh-hn-n ;
+                                 rhetype EnvrRefereneModel ;
+                                 rdflbel "elet or buld oneptul model [behvour]"@en ,
+                                            "选择或构建概念模型"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_SemntHrmonton
+SV_SemntHrmonton rdftype owlCl ;
+                          rdfubClOf DtPublhngBehvour ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom SemntMedtor
+                                          ] ;
+                          dderpton "A behvour enbled by  Semnt Medtor tht unfe mlr dt (knowledge) model bed on the onenu of ollbortve domn expert to heve better dt (knowledge) reue nd emnt nteroperblty."@en ,
+                                         "一种基于协作领域专家共识的统一相似数据（知识）模型的语义媒介实现的行为，以实现更好的数据（知识）重用和语义互操作性。"@zh-hn-n ;
+                          rhetype EnvrRefereneModel ;
+                          rdflbel "emnt hrmonton [behvour]"@en ,
+                                     "语义协调"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_UerBehvourTrkng
+SV_UerBehvourTrkng rdftype owlCl ;
+                          rdfubClOf DtUeBehvour ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom DtUeSytem
+                                          ] ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom Uer
+                                          ] ;
+                          dderpton "A behvour enbled by  Communty Support Sytem to trk the Uer. If the reerh nfrtruture h dentty mngement, uthorton mehnm, ountng mehnm, for exmple,  Dt Ae (Sub)ytem  provded, then the Communty Support Sytem ether nlude thee or work well wth them."@en ,
+                                         "由社区支持系统启用的行为来跟踪用户。 如果研究基础设施具有身份管理，授权机制，会计机制（例如，数据访问（子））系统被提供，则社区支持系统或者包括这些或与其一起工作良好。"@zh-hn-n ;
+                          rhetype EnvrRefereneModel ;
+                          rdflbel "uer behvour trkng [behvour]"@en ,
+                                     "用户行为跟踪"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_UerGroupWorkSupport
+SV_UerGroupWorkSupport rdftype owlCl ;
+                         rdfubClOf DtUeBehvour ,
+                                         [ rdftype owlRetrton ;
+                                           owlonProperty benvolve ;
+                                           owlomeVlueFrom DtUeSytem
+                                         ] ;
+                         dderpton "A behvour enbled by  Communty Support Sytem to upport ontrolled hrng, ollbortve work nd publton of reult, wth pertent nd externlly tble PID."@en ,
+                                        "由社区支持系统支持的行为，用于支持受控共享，协作工作和结果发布，以及持续的，可在外部使用的PID。"@zh-hn-n ;
+                         rhetype EnvrRefereneModel ;
+                         rdflbel "uer group work upport [behvour]"@en ,
+                                    "用户组工作支持"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_UerProfleMngement
+SV_UerProfleMngement rdftype owlCl ;
+                          rdfubClOf DtUeBehvour ,
+                                          [ rdftype owlRetrton ;
+                                            owlonProperty benvolve ;
+                                            owlomeVlueFrom DtUeSytem
+                                          ] ;
+                          dderpton "A behvour enbled by  Communty Support Sytem to upport pertent nd moble profle, where profle wll nlude preferred nterton ettng, preferred omputtonl reoure ettng, nd o on."@en ,
+                                         "由社区支持系统启用的支持持久性和移动配置文件的行为，其中配置文件将包括首选交互设置，首选计算资源设置等。"@zh-hn-n ;
+                          rhetype EnvrRefereneModel ;
+                          rdflbel "uer profle mngement [behvour]"@en ,
+                                     "用户资料管理"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_UerWorkngReltonhpMngement
+SV_UerWorkngReltonhpMngement rdftype owlCl ;
+                                       rdfubClOf SV_UerProfleMngement ,
+                                                       [ rdftype owlRetrton ;
+                                                         owlonProperty benvolve ;
+                                                         owlomeVlueFrom DtUeSytem
+                                                       ] ;
+                                       dderpton "A behvour enbled by  Communty Support Sytem to upport  reord of workng reltonhp, (vrtul) group memberhp nd frend."@en ,
+                                                      "由社区支持系统支持的行为，以支持工作关系记录（虚拟）组成员和朋友。"@zh-hn-n ;
+                                       rhetype EnvrRefereneModel ;
+                                       rdflbel "uer workng reltonhp mngement [behvour]"@en ,
+                                                  "用户工作关系管理"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SV_UerWorkngSpeMngement
+SV_UerWorkngSpeMngement rdftype owlCl ;
+                               rdfubClOf DtUeBehvour ,
+                                               [ rdftype owlRetrton ;
+                                                 owlonProperty benvolve ;
+                                                 owlomeVlueFrom DtUeSytem
+                                               ] ;
+                               dderpton "A behvour enbled by  Communty Support Sytem to upport work pe tht llow dt, doument nd ode ontnuty between onneton eon nd eble from multple te or moble mrt deve."@en ,
+                                              "由社区支持系统支持的行为，支持工作空间，允许连接会话之间的数据，文档和代码连续性，并可从多个站点或移动智能设备访问。"@zh-hn-n ;
+                               rhetype EnvrRefereneModel ;
+                               rdflbel "uer workng pe mngement [behvour]"@en ,
+                                          "用户工作空间管理"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SeneGtewy
+SeneGtewy rdftype owlCl ;
+                rdfubClOf PreenttonObjet ;
+                dderpton "A ene gtewy objet enpulte the funton requred to ntert wth  reerh nfrtruture from outde wth the objet provded for dt quton, dt urton, dt brokerng nd dt proeng. A ene gtewy hould be ble to provde vrtul 'lbortore' for uthored gent to ntert wth nd pobly onfgure mny of the ene funton of  reerh nfrtruture. A ene gtewy  lo known   Vrtul Reerh Envronment."@en ;
+                rhetype EnvrRefereneModel ;
+                rdfomment "科学网关对象封装了从外部与研究基础设施进行交互所需的功能，以及为数据获取，数据管理，数据代理和数据处理提供的对象。 科学网关应该能够为授权的代理提供虚拟的“实验室”，以便与研究基础设施的许多科学功能进行交互，并可能配置这些功能。 科学网关也被称为虚拟研究环境。"@zh-hn-n ;
+                rdflbel "ene gtewy"@en ,
+                           "科学网关"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Sentt
+Sentt rdftype owlCl ;
+           owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                      [ rdftype owlRetrton ;
+                                                        owlonProperty beplyRole ;
+                                                        owlhVlue Sentt
+                                                      ]
+                                                    ) ;
+                                 rdftype owlCl
+                               ] ;
+           rdfubClOf Uer .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SemntBroker
+SemntBroker rdftype owlCl ;
+                rdfubClOf BrokerObjet ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty provdeCpblty ;
+                                  owlhVlue TrnlteRequetCpblty
+                                ] ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty provdeCpblty ;
+                                  owlhVlue UpdteModelCpblty
+                                ] ;
+                dderpton "Semnt broker objet perform emnt nterpretton."@en ;
+                rhetype EnvrRefereneModel ;
+                rdfomment "语义代理对象执行语义解释。"@zh-hn-n ;
+                rdflbel "emnt broker"@en ,
+                           "语义代理"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SemntCurtor
+SemntCurtor rdftype owlCl ;
+                 owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                            [ rdftype owlRetrton ;
+                                                              owlonProperty beplyRole ;
+                                                              owlhVlue SemntCurtor
+                                                            ]
+                                                          ) ;
+                                       rdftype owlCl
+                                     ] ;
+                 rdfubClOf beAtor ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty bememberOf ;
+                                   owlomeVlueFrom DtCurtonCommunty
+                                 ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SemntLbortory
+SemntLbortory rdftype owlCl ;
+                    rdfubClOf VrtulLbortory ,
+                                    [ rdftype owlRetrton ;
+                                      owlonProperty nvokeCpblty ;
+                                      owlhVlue UpdteModelCpblty
+                                    ] ;
+                    dderpton "Semnt lbortore re ued to ntert wth the emnt model ued by  reerh nfrtruture to nterpret dtet nd hrtert (met)dt."@en ;
+                    rhetype EnvrRefereneModel ;
+                    rdfomment "语义实验室用于与研究基础设施使用的语义模型进行交互，以解释数据集和特征（元）数据。"@zh-hn-n ;
+                    rdflbel "emnt lbortory"@en ,
+                               "语义实验室"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SemntMedtor
+SemntMedtor rdftype owlCl ;
+                  owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                             [ rdftype owlRetrton ;
+                                                               owlonProperty beplyRole ;
+                                                               owlhVlue SemntMedtor
+                                                             ]
+                                                           ) ;
+                                        rdftype owlCl
+                                      ] ;
+                  rdfubClOf beAtor ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty bememberOf ;
+                                    owlomeVlueFrom DtPublhngCommunty
+                                  ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Senor
+Senor rdftype owlCl ;
+        owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                   [ rdftype owlRetrton ;
+                                                     owlonProperty beplyRole ;
+                                                     owlhVlue Senor
+                                                   ]
+                                                 ) ;
+                              rdftype owlCl
+                            ] ;
+        rdfubClOf RwDtGtherer ,
+                        beReoure ,
+                        [ rdftype owlRetrton ;
+                          owlonProperty beprtOf ;
+                          owlomeVlueFrom SenorNetwork
+                        ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SenorBkend
+SenorBkend rdftype owlCl ;
+               rdfubClOf BkendObjet ;
+               dderpton "A onverter tht meure  phyl quntty nd onvert t nto  gnl whh n be red by n oberver or by n (eletron) ntrument."@en ;
+               rhetype EnvrRefereneModel ;
+               rdfomment "一个转换器，用于测量一个物理量，并将其转换成一个可被观察者或（电子）仪器读取的信号。"@zh-hn-n ;
+               rdflbel "enor [bkend]"@en ,
+                          "传感器后端"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SenorNetwork
+SenorNetwork rdftype owlCl ;
+               owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                          [ rdftype owlRetrton ;
+                                                            owlonProperty beplyRole ;
+                                                            owlhVlue SenorNetwork
+                                                          ]
+                                                        ) ;
+                                     rdftype owlCl
+                                   ] ;
+               rdfubClOf beReoure ,
+                               [ rdftype owlRetrton ;
+                                 owlonProperty beprtOf ;
+                                 owlomeVlueFrom DtAqutonSytem
+                               ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SenorNetworkBkend
+SenorNetworkBkend rdftype owlCl ;
+                      rdfubClOf BkendObjet ;
+                      dderpton "A network ontng of dtrbuted enor whh montor phyl or envronmentl ondton."@en ;
+                      rhetype EnvrRefereneModel ;
+                      rdfomment "由分布式传感器组成的网络，用于监测物理或环境条件。"@zh-hn-n ;
+                      rdflbel "enor network [bkend]"@en ,
+                                 "传感网络后端"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Serve
+Serve rdftype owlCl ;
+         owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                    [ rdftype owlRetrton ;
+                                                      owlonProperty beplyRole ;
+                                                      owlhVlue Serve
+                                                    ]
+                                                  ) ;
+                               rdftype owlCl
+                             ] ;
+         rdfubClOf beReoure ,
+                         [ rdftype owlRetrton ;
+                           owlonProperty beprtOf ;
+                           owlomeVlueFrom DtProengSytem
+                         ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeConumer
+ServeConumer rdftype owlCl ;
+                 owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                            [ rdftype owlRetrton ;
+                                                              owlonProperty beplyRole ;
+                                                              owlhVlue ServeConumer
+                                                            ]
+                                                          ) ;
+                                       rdftype owlCl
+                                     ] ;
+                 rdfubClOf beReoure ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty beprtOf ;
+                                   owlomeVlueFrom DtProengSytem
+                                 ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeDerpton
+ServeDerpton rdftype owlCl ;
+                    rdfubClOf Metdt ;
+                    dderpton "Derpton of erve nd proee vlble for reue. The derpton  needed to fltte uge. The erve derpton uully nlude  referene to  erve or proe mkng t vlble for reue wthn  reerh nfrtruture or wthn n open network lke the Internet. Uully uh derpton nlude the eblty of the erve, the derpton of the nterfe, the derpton of behvor nd/or mplemented lgorthm. Suh derpton re uully done long erve derpton tndrd (e.g. WSDL, web erve derpton lnguge). Wthn ome erve derpton lnguge, emnt derpton of the erve nd/or nterfe re poble (e.g. SAWSDL, Semnt Annotton for WSDL)."@en ,
+                                   "可用于重用的服务和进程的描述。 需要描述以方便使用。 服务描述通常包括对服务或流程的引用，使其可以在研究基础设施内或在像因特网这样的开放网络中重用。 通常这样的描述包括服务的可访问性，接口的描述，行为描述和/或实现的算法。 这种描述通常是根据服务描述标准（例如WSDL，Web服务描述语言）完成的。 在一些服务描述语言中，服务和/或接口的语义描述是可能的（例如SAWSDL，用于WSDL的语义注释）。"@zh-hn-n ;
+                    rhetype EnvrRefereneModel ;
+                    rdflbel "erve derpton"@en ,
+                               "服务描述"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeObjet
+ServeObjet rdftype owlCl ;
+               rdfubClOf beCV_PertentObjet ;
+               dderpton "Serve objet offer progrmmt e to dtrbuted ytem nd reoure (nternl nd externl)."@en ;
+               rdfomment "服务对象提供对分布式系统和资源（内部和外部）的编程访问。"@zh-hn-n ;
+               rdflbel "erve objet"@en ,
+                          "服务对象"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeProvder
+ServeProvder rdftype owlCl ;
+                 owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                            [ rdftype owlRetrton ;
+                                                              owlonProperty beplyRole ;
+                                                              owlhVlue ServeProvder
+                                                            ]
+                                                          ) ;
+                                       rdftype owlCl
+                                     ] ;
+                 rdfubClOf beReoure ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty beprtOf ;
+                                   owlomeVlueFrom DtProengSytem
+                                 ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeRegtry
+ServeRegtry rdftype owlCl ;
+                 owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                            [ rdftype owlRetrton ;
+                                                              owlonProperty beplyRole ;
+                                                              owlhVlue ServeRegtry
+                                                            ]
+                                                          ) ;
+                                       rdftype owlCl
+                                     ] ;
+                 rdfubClOf beReoure ,
+                                 [ rdftype owlRetrton ;
+                                   owlonProperty beprtOf ;
+                                   owlomeVlueFrom DtProengSytem
+                                 ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeRegtryBkend
+ServeRegtryBkend rdftype owlCl ;
+                        rdfubClOf BkendObjet ;
+                        dderpton "An nformton ytem for regterng erve."@en ;
+                        rhetype EnvrRefereneModel ;
+                        rdfomment "一个注册服务的信息系统。"@zh-hn-n ;
+                        rdflbel "erve regtry [bkend]"@en ,
+                                   "服务注册后端"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SpeftonOfInvetgtonDegn
+SpeftonOfInvetgtonDegn rdftype owlCl ;
+                                    rdfubClOf Metdt ;
+                                    dderpton "Th  the bkground dt needed to undertnd the overll gol of the meurement or obervton. It ould be the mplng degn of obervton tton, the network degn, the derpton of the etup prmeter (ntervl of meurement) nd o on. It uully ontn mportnt dt for the llowed evluton of reerh reult (e.g. the queton of whether  mplng degn w done rndomly or by trtfton determne whh tttl method n be ppled)."@en ,
+                                                   "这是了解测量或观测总体目标所需的背景数据。 它可以是观测站的采样设计，网络设计，设置参数（测量间隔）的描述等等。 它通常包含允许评估研究结果的重要数据（例如抽样设计是随机进行还是通过分层来确定可以应用哪种统计方法的问题）。"@zh-hn-n ;
+                                    rhetype EnvrRefereneModel ;
+                                    rdflbel "pefton of nvetgton degn"@en ,
+                                               "调查设计规范"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SpeftonOfMeurementOrObervton
+SpeftonOfMeurementOrObervton rdftype owlCl ;
+                                           rdfubClOf Metdt ,
+                                                           [ rdftype owlRetrton ;
+                                                             owlonProperty beprtOf ;
+                                                             owlomeVlueFrom SpeftonOfInvetgtonDegn
+                                                           ] ;
+                                           dderpton """The derpton of the meurement/obervton whh pefe wht  meured/oberved;
+how t  meured/oberved (nludng proee/metod nd ntrument to be ued); by whom t  meured/oberved (nludng projet, orgnton nd expermenter/oberver profle); nd wht the temporl degn  (ngle / multple meurement / ntervl of meurement et.)."""@en ,
+                                                          "测量/观察的描述，指定：测量/观察的内容; 如何测量/观察（包括使用的过程/方法和仪器）; （包括项目，组织和实验者/观察员简介）; 以及时间设计是什么（单次/多次测量/测量间隔等）。"@zh-hn-n ;
+                                           rhetype EnvrRefereneModel ;
+                                           bepreondton "The etup derpton  reorded  long  nformton  vlble. Lo of nformton bout the workng hypothe  voded."@en ;
+                                           rdflbel "pefton of meurement or obervton"@en ,
+                                                      "测量或观测规范"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StgeDt
+StgeDt rdftype owlCl ;
+           rdfubClOf DtStremOperton ,
+                           [ rdftype owlRetrton ;
+                             owlonProperty beopertonInvokedBy ;
+                             owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                       [ rdftype owlRetrton ;
+                                                                         owlonProperty nvokeCpblty ;
+                                                                         owlhVlue StgeDtCpblty
+                                                                       ]
+                                                                     ) ;
+                                                  rdftype owlCl
+                                                ]
+                           ] ,
+                           [ rdftype owlRetrton ;
+                             owlonProperty beopertonProvdedBy ;
+                             owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                       [ rdftype owlRetrton ;
+                                                                         owlonProperty provdeCpblty ;
+                                                                         owlhVlue StgeDtCpblty
+                                                                       ]
+                                                                     ) ;
+                                                  rdftype owlCl
+                                                ]
+                           ] ;
+           dderpton " ued to qure dt ent from the dt urton ubytem of  reerh nfrtruture needed  prt of ome proe."^^xdtrng ,
+                          "用于从作为某个过程的一部分所需的研究基础设施的数据管理子系统获取所发送的数据。"@zh-hn-n ;
+           rhetype EnvrRefereneModel ;
+           rdflbel "tge dt [operton]"@en ,
+                      "筹划数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StorgeAdmntrtor
+StorgeAdmntrtor rdftype owlCl ;
+                      owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                                 [ rdftype owlRetrton ;
+                                                                   owlonProperty beplyRole ;
+                                                                   owlhVlue StorgeAdmntrtor
+                                                                 ]
+                                                               ) ;
+                                            rdftype owlCl
+                                          ] ;
+                      rdfubClOf beAtor ,
+                                      [ rdftype owlRetrton ;
+                                        owlonProperty bememberOf ;
+                                        owlomeVlueFrom DtCurtonCommunty
+                                      ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StorgeSytem
+StorgeSytem rdftype owlCl ;
+               owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                          [ rdftype owlRetrton ;
+                                                            owlonProperty beplyRole ;
+                                                            owlhVlue StorgeSytem
+                                                          ]
+                                                        ) ;
+                                     rdftype owlCl
+                                   ] ;
+               rdfubClOf beReoure ,
+                               [ rdftype owlRetrton ;
+                                 owlonProperty beprtOf ;
+                                 owlomeVlueFrom DtCurtonSytem
+                               ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StorgeSytemBkend
+StorgeSytemBkend rdftype owlCl ;
+                      rdfubClOf BkendObjet ;
+                      dderpton "A ytem tht mnge the torge nd retrevl of dt nd metdt."@en ;
+                      rhetype EnvrRefereneModel ;
+                      rdfomment "管理数据和元数据的存储和检索的系统。"@zh-hn-n ;
+                      rdflbel "torge ytem [bkend]"@en ,
+                                 "存储系统后端"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Tehnn
+Tehnn rdftype owlCl ;
+            owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                       [ rdftype owlRetrton ;
+                                                         owlonProperty beplyRole ;
+                                                         owlhVlue Tehnn
+                                                       ]
+                                                     ) ;
+                                  rdftype owlCl
+                                ] ;
+            rdfubClOf beAtor ,
+                            [ rdftype owlRetrton ;
+                              owlonProperty bememberOf ;
+                              owlomeVlueFrom DtAqutonCommunty
+                            ] .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Tehnologt
+Tehnologt rdftype owlCl ;
+              owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                         [ rdftype owlRetrton ;
+                                                           owlonProperty beplyRole ;
+                                                           owlhVlue Tehnologt
+                                                         ]
+                                                       ) ;
+                                    rdftype owlCl
+                                  ] ;
+              rdfubClOf Uer .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Trner
+Trner rdftype owlCl ;
+         owlequvlentCl [ owlnteretonOf ( beSV_Objet
+                                                    [ rdftype owlRetrton ;
+                                                      owlonProperty beplyRole ;
+                                                      owlhVlue Trner
+                                                    ]
+                                                  ) ;
+                               rdftype owlCl
+                             ] ;
+         rdfubClOf Uer .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#TrnlteRequet
+TrnlteRequet rdftype owlCl ;
+                  rdfubClOf beCV_SmpleOperton ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty beopertonInvokedBy ;
+                                    owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                              [ rdftype owlRetrton ;
+                                                                                owlonProperty nvokeCpblty ;
+                                                                                owlhVlue TrnlteRequetCpblty
+                                                                              ]
+                                                                            ) ;
+                                                         rdftype owlCl
+                                                       ]
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty beopertonProvdedBy ;
+                                    owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                              [ rdftype owlRetrton ;
+                                                                                owlonProperty provdeCpblty ;
+                                                                                owlhVlue TrnlteRequetCpblty
+                                                                              ]
+                                                                            ) ;
+                                                         rdftype owlCl
+                                                       ]
+                                  ] ;
+                  dderpton " ued to nvoke  emnt broker where ome mppng between dfferent emnt domn  deemed neery."^^xdtrng ,
+                                 "被用来调用语义代理，其中不同语义域之间的映射被认为是必要的。"@zh-hn-n ;
+                  rhetype EnvrRefereneModel ;
+                  rdflbel "trnlte requet [operton]"@en ,
+                             "转化请求"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UnqueIdentfer
+UnqueIdentfer rdftype owlCl ;
+                  rdfubClOf PertentDt ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty beprtOf ;
+                                    owlomeVlueFrom PertentDt
+                                  ] ;
+                  dderpton "Wth referene to  gven type of dt, objet  unque dentfer (UID)  ny dentfer whh  gurnteed to be unque mong ll dentfer ued for thoe type of objet nd for  pef purpoe."@en ,
+                                 "对于给定类型的数据，对象唯一标识符（UID）是在用于这些类型的对象和用于特定目的的所有标识符中保证唯一的任何标识符。"@zh-hn-n ;
+                  rhetype EnvrRefereneModel ;
+                  rdflbel "unque dentfer"@en ,
+                             "唯一标志符"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteCtlogue
+UpdteCtlogue rdftype owlCl ;
+                  rdfubClOf beCV_SmpleOperton ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty beopertonInvokedBy ;
+                                    owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                              [ rdftype owlRetrton ;
+                                                                                owlonProperty nvokeCpblty ;
+                                                                                owlhVlue UpdteCtlogueCpblty
+                                                                              ]
+                                                                            ) ;
+                                                         rdftype owlCl
+                                                       ]
+                                  ] ,
+                                  [ rdftype owlRetrton ;
+                                    owlonProperty beopertonProvdedBy ;
+                                    owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                              [ rdftype owlRetrton ;
+                                                                                owlonProperty provdeCpblty ;
+                                                                                owlhVlue UpdteCtlogueCpblty
+                                                                              ]
+                                                                            ) ;
+                                                         rdftype owlCl
+                                                       ]
+                                  ] ;
+                  dderpton " ued to updte (or ntte the updte) of dt tlogue or tlogue nformton mnged by  tlogue erve."^^xdtrng ,
+                                 "用于更新（或启动更新）由目录服务管理的数据目录或目录信息。"@zh-hn-n ;
+                  rhetype EnvrRefereneModel ;
+                  rdflbel "updte tlogue [operton]"@en ,
+                             "更新编目"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteModel
+UpdteModel rdftype owlCl ;
+             rdfubClOf beCV_SmpleOperton ,
+                             [ rdftype owlRetrton ;
+                               owlonProperty beopertonInvokedBy ;
+                               owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                         [ rdftype owlRetrton ;
+                                                                           owlonProperty nvokeCpblty ;
+                                                                           owlhVlue UpdteModelCpblty
+                                                                         ]
+                                                                       ) ;
+                                                    rdftype owlCl
+                                                  ]
+                             ] ,
+                             [ rdftype owlRetrton ;
+                               owlonProperty beopertonProvdedBy ;
+                               owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                         [ rdftype owlRetrton ;
+                                                                           owlonProperty provdeCpblty ;
+                                                                           owlhVlue UpdteModelCpblty
+                                                                         ]
+                                                                       ) ;
+                                                    rdftype owlCl
+                                                  ]
+                             ] ;
+             dderpton " ued to updte emnt model oted wth  reerh nfrtruture."^^xdtrng ,
+                            "用于更新与研究基础设施相关联的语义模型。"@zh-hn-n ;
+             rhetype EnvrRefereneModel ;
+             rdflbel "updte model [operton]"@en ,
+                        "更新模型"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteReord
+UpdteReord rdftype owlCl ;
+              rdfubClOf beCV_SmpleOperton ,
+                              [ rdftype owlRetrton ;
+                                owlonProperty beopertonInvokedBy ;
+                                owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                          [ rdftype owlRetrton ;
+                                                                            owlonProperty nvokeCpblty ;
+                                                                            owlhVlue UpdteReordCpblty
+                                                                          ]
+                                                                        ) ;
+                                                     rdftype owlCl
+                                                   ]
+                              ] ,
+                              [ rdftype owlRetrton ;
+                                owlonProperty beopertonProvdedBy ;
+                                owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                          [ rdftype owlRetrton ;
+                                                                            owlonProperty provdeCpblty ;
+                                                                            owlhVlue UpdteReordCpblty
+                                                                          ]
+                                                                        ) ;
+                                                     rdftype owlCl
+                                                   ]
+                              ] ;
+              dderpton " ued to dretly nnotte extng dtet urted wthn one or more dt tore."^^xdtrng ,
+                             "用于直接标注在一个或多个数据存储中策划的现有数据集。"@zh-hn-n ;
+              rhetype EnvrRefereneModel ;
+              rdflbel "updte reord [operton]"@en ,
+                         "更新记录"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteRegtry
+UpdteRegtry rdftype owlCl ;
+                rdfubClOf beCV_SmpleOperton ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty beopertonInvokedBy ;
+                                  owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                            [ rdftype owlRetrton ;
+                                                                              owlonProperty nvokeCpblty ;
+                                                                              owlhVlue UpdteRegtryCpblty
+                                                                            ]
+                                                                          ) ;
+                                                       rdftype owlCl
+                                                     ]
+                                ] ,
+                                [ rdftype owlRetrton ;
+                                  owlonProperty beopertonProvdedBy ;
+                                  owlomeVlueFrom [ owlnteretonOf ( beCV_Objet
+                                                                            [ rdftype owlRetrton ;
+                                                                              owlonProperty provdeCpblty ;
+                                                                              owlhVlue UpdteRegtryCpblty
+                                                                            ]
+                                                                          ) ;
+                                                       rdftype owlCl
+                                                     ]
+                                ] ;
+                dderpton " ued to regter nd unregter ntrument wth the dt quton ubytem."^^xdtrng ,
+                               "用于使用数据采集子系统注册和取消注册仪器。"@zh-hn-n ;
+                rhetype EnvrRefereneModel ;
+                rdflbel "updte regtry [operton]"@en ,
+                           "更新注册"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Uer
+Uer rdftype owlCl ;
+      rdfubClOf beAtor ,
+                      [ rdftype owlRetrton ;
+                        owlonProperty bememberOf ;
+                        owlomeVlueFrom DtUeCommunty
+                      ] ;
+      dderpton "Any tor who engge wth n nfrtruture v t dt ue ubytem."@en ,
+                     "任何通过其数据使用子系统与基础架构进行交互的角色。"@zh-hn-n ;
+      rdflbel "uer"@en ,
+                 "用户"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#VrtulLbortory
+VrtulLbortory rdftype owlCl ;
+                   rdfubClOf PreenttonObjet ,
+                                   [ rdftype owlRetrton ;
+                                     owlonProperty nvokeCpblty ;
+                                     owlhVlue AuthoreAtonCpblty
+                                   ] ;
+                   dderpton "A vrtul lbortory objet enpulte nterton between  uer or group of uer nd  ubet of the ene funton provded by  reerh nfrtruture. It role  to bnd  AAAI erve wth (potentlly) ny number of other nfrtruture objet."@en ;
+                   rhetype EnvrRefereneModel ;
+                   rdfomment "虚拟实验室对象封装了用户或用户组与研究基础设施提供的科学功能子集之间的交互。 其作用是将AAAI服务与（可能）任何数量的其他基础结构对象绑定。"@zh-hn-n ;
+                   rdflbel "vrtul lbortory"@en ,
+                              "虚拟实验室"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#WorkflowEntmentServe
+WorkflowEntmentServe rdftype owlCl ;
+                          rdfubClOf Serve ;
+                          dderpton "A erve provdng funtonlty for workflow entment."@en ,
+                                         "为工作流执行提供功能的服务。"@zh-hn-n ;
+                          rdflbel "workflow entment erve"@en ,
+                                     "工作流制定服务"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#AtveRole
+beAtveRole dderpton "积极参与某项行为者的角色。"@zh-hn-n ;
+                rdflbel "主动角色"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#Ator
+beAtor dderpton "演员是一个在系统行为中起积极作用的科学对象。 一般来说，这样的角色代表人或计算机代理人。"@zh-hn-n ;
+           rdflbel "角色"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#CV_BndngObjet
+beCV_BndngObjet rdfomment "用于协调复杂操作中其他计算对象之间相互作用的计算对象，通常（但不完全）是暂时性的。"@zh-hn-n ;
+                      rdflbel "结合对象"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#CV_ComplexOperton
+beCV_ComplexOperton dderpton "一个复杂的操作表示一个计算对象调用一个远程功能作用于一个绑定对象，该绑定对象被创建于代理两个或更多计算对象之间的交互。"@zh-hn-n ;
+                         rdflbel "复杂操作"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#CV_Objet
+beCV_Objet rdftype owlCl ;
+               rdfubClOf [ rdftype owlRetrton ;
+                                 owlonProperty nvokeCpblty ;
+                                 owlllVlueFrom ComputtonlCpblty
+                               ] ,
+                               [ rdftype owlRetrton ;
+                                 owlonProperty provdeCpblty ;
+                                 owlllVlueFrom ComputtonlCpblty
+                               ] ;
+               rdfomment "计算对象是从计算观点来看真实世界中实体的表示。 它包含信息和提供服务。 一个系统由交互对象组成。 一个对象的特点是通过封装，抽象和行为使其与其他对象不同。"@zh-hn-n ;
+               rdflbel "计算对象"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#CV_Operton
+beCV_Operton dderpton "计算操作表示由一个计算对象调用到一个或多个其他对象上的远程功能。"@zh-hn-n ;
+                  rdflbel "计算操作"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#CV_PertentObjet
+beCV_PertentObjet rdfomment "运算之间持续存在的计算对象，通常提供长期服务作为计算基础结构的一部分。"@zh-hn-n ;
+                         rdflbel "持久化对象"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#CV_SmpleOperton
+beCV_SmpleOperton dderpton "一个简单的操作代表由一个计算对象作用于另一个对象的远程功能。"@zh-hn-n ;
+                        rdflbel "简单操作"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#Communty
+beCommunty dderpton "一个社区是一个由一系列角色组成的合作组织，其目标是达成一个既定的商业目的。 社区可以是非正式的“新兴”集体，也可以是明确定义的行动者组织。"@zh-hn-n ;
+               rdflbel "社区"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#ConeptModel
+beConeptModel dderpton "一系列概念，属性和关系。 它可以是非结构化的或结构化的（例如术语表，词库，本体论）。 通常，概念和/或关系的描述以人可读的形式定义概念。 概念模型也可以用机器可读的格式表示，例如RDFS或OWL。 这些句子可以用来构建自我描述。 在同一系统中提供人类可读的描述和机器可读的描述是常见的做法。 从这个意义上说，概念模型也可以被看作是人类和机器可读句子的集合。 他们可以是本地的，在项目中开发的，也可以是全球的，被更广泛的社区接受和使用（如GEMET或OBOE）。 概念模型可用于注释数据（例如在三重商店的网络内）。"@zh-hn-n ;
+                  rdflbel "概念模型"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#Dt
+beDt dderpton "信息作为计算基础设施内的数据明确呈现。"@zh-hn-n ;
+          rdflbel "数据"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#DomnOfInteret
+beDomnOfInteret rdftype owlCl ;
+                      dderpton "一类研究者感兴趣的学科领域，如科学领域。"@zh-hn-n ;
+                      rdflbel "兴趣领域"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#IV_Aton
+beIV_Aton dderpton "信息动作模拟系统中的信息处理。 每个动作都与至少一个对象相关联。 操作会导致参与对象的状态更改。"@zh-hn-n ;
+               rdflbel "信息活动"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#IV_Objet
+beIV_Objet dderpton "信息对象是从信息观点来看真实世界中的实体的表示。 它包含信息和提供服务。 一个系统由交互对象组成。 一个对象的特点是通过封装，抽象和行为使其与其他对象不同。"@zh-hn-n ;
+               rdflbel "对象"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#IV_Stte
+beIV_Stte dderpton "信息对象可以以相对于其自然生命周期的各种不同状态存在。"@zh-hn-n ;
+              rdflbel "状态"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#Infrtruture
+beInfrtruture dderpton "资源或资源的集合，为某些努力或实体提供必要的支持，例如通过为计算服务或数据存储提供主机。"@zh-hn-n ;
+                    rdflbel "基础设施"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#PveRole
+bePveRole dderpton "行为中唯一被动的参与者的角色。"@zh-hn-n ;
+                 rdflbel "被动角色"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#RM_Attrbute
+beRM_Attrbute dderpton "系统视图中存在的对象或活动的质量。"@zh-hn-n ;
+                  rdflbel "参考属性"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#RM_Clfer
+beRM_Clfer dderpton "用于对从特定视角系统所呈现的物体进行分类的类别体系"@zh-hn-n ;
+                   rdflbel "参考模型分类"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#Reoure
+beReoure dderpton "资源是一个科学对象，在系统的行为中承担被动的角色，通常代表一些参与者可以参与的设施或工具。"@zh-hn-n ;
+              rdflbel "资源"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#Role
+beRole dderpton "社区中的角色是可以同时或相继执行任何次数的处方行为。 角色既可以是主动的（通常与人类参与者相关联），也可以是被动的（通常与非人类行为者相关联，例如软件或硬件组件）。"@zh-hn-n ;
+          rdflbel "角色"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#SV_Behvour
+beSV_Behvour dderpton "社区的行为是由角色执行的操作的组成，通常针对不同的业务需求。 在ENVRI RM中，社区行为的建模是基于对ENVRI研究基础设施的共同需求的分析，这导致了一系列共同的功能。 最初的模型着重于最小的一组要求。 社区行为可以是单个函数，也可以是函数列表中几个函数的组合。"@zh-hn-n ;
+                  rdflbel "行为"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#SV_Objet
+beSV_Objet dderpton "在复杂系统的科学观点中明确确定的实体。"@zh-hn-n ;
+               rdflbel "科学对象"@zh-hn-n .
+
+
+#################################################################
+#    Indvdul
+#################################################################
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#AqureIdentferCpblty
+AqureIdentferCpblty rdftype owlNmedIndvdul ,
+                                      ComputtonlCpblty ;
+                             rdflbel "qure dentfer [pblty]"@en ,
+                                        "获取标识符[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#AnnotteDtCpblty
+AnnotteDtCpblty rdftype owlNmedIndvdul ,
+                                 ComputtonlCpblty ;
+                        rdflbel "nnotte dt [pblty]"@en ,
+                                   "注释数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#AnnottedStte
+AnnottedStte rdftype owlNmedIndvdul ,
+                         MetdtStte ,
+                         PertentDtStte ;
+                rdflbel "nnotted [tte]"@en ,
+                           "注释[tte]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#AgnedMetdtStte
+AgnedMetdtStte rdftype owlNmedIndvdul ,
+                                PertentDtStte ;
+                       rdflbel "gned metdt [tte]"@en ,
+                                  "分配的元数据[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#AtmopherDomn
+AtmopherDomn rdftype owlNmedIndvdul ,
+                            beDomnOfInteret ;
+                   dderpton "The domn of envronmentl ene onerned wth the tmophere."@en ,
+                                  "环境科学与大气有关的领域。"@zh-hn-n ;
+                   rdflbel "tmopher domn"@en ,
+                              "大气领域"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#AuthoreAtonCpblty
+AuthoreAtonCpblty rdftype owlNmedIndvdul ,
+                                    ComputtonlCpblty ;
+                           rdflbel "uthore ton [pblty]"@en ,
+                                      "授权行动[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#BkedUpStte
+BkedUpStte rdftype owlNmedIndvdul ,
+                        PertentDtStte ;
+               rdflbel "bked up [tte]"@en ,
+                          "备份[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ClbrteIntrumentCpblty
+ClbrteIntrumentCpblty rdftype owlNmedIndvdul ,
+                                        ComputtonlCpblty ;
+                               rdflbel "lbrte ntrument [pblty]"@en ,
+                                          "校准仪器[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#CptyMnger
+CptyMnger rdftype owlNmedIndvdul ,
+                          beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#CtlogueSytem
+CtlogueSytem rdftype owlNmedIndvdul ,
+                          bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Ctzen
+Ctzen rdftype owlNmedIndvdul ,
+                  beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#CtzenSentt
+CtzenSentt rdftype owlNmedIndvdul ,
+                           beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ConfgureControllerCpblty
+ConfgureControllerCpblty rdftype owlNmedIndvdul ,
+                                        ComputtonlCpblty ;
+                               rdflbel "onfgure ontroller [pblty]"@en ,
+                                          "配置控制器[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Conultnt
+Conultnt rdftype owlNmedIndvdul ,
+                     beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#CoordnteProeCpblty
+CoordnteProeCpblty rdftype owlNmedIndvdul ,
+                                      ComputtonlCpblty ;
+                             rdflbel "oordnte proe [pblty]"@en ,
+                                        "协调过程[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtAqutonCommunty
+DtAqutonCommunty rdftype owlNmedIndvdul ,
+                                   DtAqutonCommunty .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtAqutonPhe
+DtAqutonPhe rdftype owlNmedIndvdul ,
+                               ReerhDtLfeylePhe ;
+                      dderpton """In the dt quton phe the reerh nfrtruture ollet rw dt from regtered oure to be tored nd mde eble wthn the nfrtruture.
+
+The dt quton phe upport olletng rw dt from enor rry nd other ntrument,  well  from humn oberver, nd brng thoe dt nto the dt mngement prt (e., ICT ub-ytem) of the reerh nfrtruture. Wthn the ENVRI RM, the quton phe  ondered to begn upon pont of dt entry nto the RI ytem. The quton phe  modeled n the ENVRI RM trt from the degn of the experment. Aquton  typlly dtrbuted ro network of obervtore nd tton. The dt qured  generlly umed to be non-reproduble, beng oted wth  pef (pobly ontnuou) event n tme nd ple. A uh, the gnment of provenne (prtulrly dt oure nd tmetmp)  eentl. Rel-tme dt trem my be temporrly tored, mpled, fltered nd proeed (e.g., bed on ppled qulty ontrol rter) before beng redy for urton. Control oftwre  often deployed to mnge nd hedule the exeuton nd montorng of dt flow. Dt olleted durng the quton phe ultmtely enter the dt urton phe for preervton, uully wthn  pef tme perod."""@en ,
+                                     """在数据采集阶段，研究基础设施从已登记的来源收集原始数据，并在基础设施内进行存储和访问。
+
+数据采集​​阶段支持从传感器阵列和其他仪器以及人类观察员收集原始数据，并将这些数据带入研究基础设施的数据管理部分（即ICT子系统）。在ENVRI RM中，采集阶段被认为是从进入RI系统的数据点开始的。 ENVRI RM模型中的采集阶段从实验设计开始。采集通常分布在天文台和台站的网络上。所获取的数据通常被认为是不可重现的，与时间和地点的特定（可能是连续的）事件相关联。因此，来源的分配（特别是数据源和时间戳）是至关重要的。实时数据流可以临时存储，采样，过滤和处理（例如，基于所应用的质量控制标准），然后准备好进行管理。通常部署控制软件来管理和调度数据流的执行和监视。在收购阶段收集的数据最终进入数据保存阶段进行保存，通常在特定的时间段内。"""@zh-hn-n ;
+                      rdflbel "dt quton phe"@en ,
+                                 "数据采集阶段"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtAqutonSytem
+DtAqutonSytem rdftype owlNmedIndvdul ,
+                                bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtColletor
+DtColletor rdftype owlNmedIndvdul ,
+                        beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtConumer
+DtConumer rdftype owlNmedIndvdul ,
+                       beAtveRole ,
+                       bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtCurtonCommunty
+DtCurtonCommunty rdftype owlNmedIndvdul ,
+                                DtCurtonCommunty .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtCurtonPhe
+DtCurtonPhe rdftype owlNmedIndvdul ,
+                            ReerhDtLfeylePhe ;
+                   dderpton """In the dt urton phe the reerh nfrtruture tore, mnge nd enure e to ll pertent dt-et produed wthn the nfrtruture.
+
+The dt urton phe fltte qulty ontrol nd preervton of entf dt. The dt urton funtonlte re typlly mplemented ro one or more dedted dt entre. Dt hndled t th phe nlude rw dt produt, metdt nd proeed dt. Where poble, proeed dt hould be reproduble by exeutng the me proe on the me oure dt-et, upported by provenne dt. Operton uh  dt qulty verfton, dentfton, nnotton, tlogung, replton nd rhvl re often provded. Ae to urted dt from outde the nfrtruture  brokered through ndependent dt e mehnm. There  uully n emph on non-funtonl requrement for dt urton tfyng vlblty, relblty, utlty, throughput, reponvene, eurty nd lblty rter."""@en ,
+                                  """在数据整理阶段，研究基础架构存储，管理和确保访问基础架构内生成的所有持久数据集。
+
+数据管理阶段有利于质量控制和科学数据的保存。数据管理功能通常在一个或多个专用数据中心中实施。在这个阶段处理的数据包括原始数据产品，元数据和处理的数据。在可能的情况下，处理的数据应该可以通过在来源数据支持的相同源数据集上执行相同的处理来重现。通常会提供数据质量验证，识别，注释，编目，复制和存档等操作。从基础设施之外访问策划的数据是通过独立的数据访问机制进行的。数据管理通常强调满足可用性，可靠性，实用性，吞吐量，响应性，安全性和可伸缩性标准的非功能性要求。"""@zh-hn-n ;
+                   rdflbel "dt urton phe"@en ,
+                              "数据整理阶段"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtCurtonSytem
+DtCurtonSytem rdftype owlNmedIndvdul ,
+                             bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtCurtor
+DtCurtor rdftype owlNmedIndvdul ,
+                      beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtOrgntor
+DtOrgntor rdftype owlNmedIndvdul ,
+                         beAtveRole ,
+                         bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtProengCommunty
+DtProengCommunty rdftype owlNmedIndvdul ,
+                                  DtProengCommunty .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtProengPhe
+DtProengPhe rdftype owlNmedIndvdul ,
+                              ReerhDtLfeylePhe ;
+                     dderpton """In the dt proeng phe the reerh nfrtruture provde  toolbox of erve for performng  vrety of dt proeng tk. The ope of dt proeng  very wde.
+
+The dt proeng phe enble the ggregton of dt from vrou oure,  well  ondut of experment nd nlye upon tht dt. Durng th phe dt tend to be mnpulted, ledng to both/ether derved nd/or reombned dt. To upport dt proeng,  reerh nfrtruture  lkely to offer erve operton for tttl nly nd dt mnng,  well  flte for rryng out entf experment, modellng nd multon, nd vulton. Performne requrement for proeng entf dt durng th phe tend to be onerned wth lblty, whh n be ddreed t the level of engneerng nd tehnl oluton to be ondered (e.g., by mkng ue of Cloud omputng erve). The dt produt generted durng proeng my themelve be urted nd preerver wthn the RI."""@en ,
+                                    """在数据处理阶段，研究基础设施提供了用于执行各种数据处理任务的服务工具箱。数据处理的范围非常广泛。
+
+数据处理阶段能够汇总各种来源的数据，并对这些数据进行实验和分析。在这个阶段，数据往往会被操纵，导致/导出和/或重组数据。为了支持数据处理，研究基础设施可能为统计分析和数据挖掘提供服务操作，以及进行科学实验，建模和模拟以及可视化的设施。在这个阶段处理科学数据的性能要求往往与可扩展性有关，可以在需要考虑的工程和技术解决方案（例如通过利用云计算服务）的层面上解决这个问题。在处理过程中产生的数据产品本身可以在RI内进行策划和保存。"""@zh-hn-n ;
+                     rdflbel "dt proeng phe"@en ,
+                                "数据处理阶段"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtProengSytem
+DtProengSytem rdftype owlNmedIndvdul ,
+                               bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtProvder
+DtProvder rdftype owlNmedIndvdul ,
+                       beAtveRole ,
+                       bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtPublher
+DtPublher rdftype owlNmedIndvdul ,
+                        beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtPublhngCommunty
+DtPublhngCommunty rdftype owlNmedIndvdul ,
+                                  DtPublhngCommunty .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtPublhngPhe
+DtPublhngPhe rdftype owlNmedIndvdul ,
+                              ReerhDtLfeylePhe ;
+                     dderpton """In the dt publhng phe the reerh nfrtruture enble dovery nd retrevl of entf dt to nternl nd externl prte.
+
+The dt publhng phe enble dovery nd retrevl of dt houed n dt reoure mnged  prt of dt urton. Dt publhng often provde mehnm for preentng or delverng dt produt. Query nd erh tool llow uer or uptrem erve to dover dt bed on metdt or emnt lnkge. Dt hndled durng publhng need not be homogeneou. When upportng heterogeneou dt, dfferent type of dt (often pulled from  vrety of dtrbuted dt reoure) n be onverted nto unform repreentton wth unform emnt reolved by  dt dovery erve. Serve for hrvetng, ompreng nd pkgng dt nd metdt,  well  enodng erve for eure trnfer n be provded. Dt publhng  ontrolled ung rght mngement, uthentton, nd uthorton pole."""@en ,
+                                    """在数据发布阶段，研究基础架构可以向内部和外部各方发现和检索科学数据。
+
+数据发布阶段使得能够发现和检索作为数据管理一部分管理的数据资源中的数据。 数据发布通常提供展示或交付数据产品的机制。 查询和搜索工具允许用户或上游服务基于元数据或语义链接发现数据。 在发布期间处理的数据不需要是同质的。 当支持异构数据时，可以将不同类型的数据（通常从各种分布式数据资源中提取）转换为统一的表示，并通过数据发现服务解析统一的语义。 可以提供收集，压缩和打包数据和元数据的服务，以及用于安全传输的编码服务。 数据发布是使用权限管理，身份验证和授权策略进行控制的。"""@zh-hn-n ;
+                     rdflbel "dt publhng phe"@en ,
+                                "数据发布阶段"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtPublhngSytem
+DtPublhngSytem rdftype owlNmedIndvdul ,
+                               bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtRepotory
+DtRepotory rdftype owlNmedIndvdul ,
+                         bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtUeCommunty
+DtUeCommunty rdftype owlNmedIndvdul ,
+                           DtUeCommunty .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtUePhe
+DtUePhe rdftype owlNmedIndvdul ,
+                       ReerhDtLfeylePhe ;
+              dderpton """In the dt ue phe the reerh nfrtruture upport uer of n nfrtruture n gnng e to dt nd flttng the preervton of derved dt produt.
+
+The dt ue phe provde funtonlte tht mnge nd trk uer' tvte whle upportng the uer to ondut ther reerh tvte whh my reult n the reton of new dt produt. Dt 'hndled' nd produed t th phe re typlly uer-generted dt nd ommunton. The dt ue phe requre upportng tvte uh  ntertve vulton, tndrded uthentton, uthorton nd ountng protool, nd the ue of vrtul orgnton. Th  the mot dvned form of dt proeng, t th phe the reerh nfrtruture mplement n nterfe wth the wder world n whh t ext."""@en ,
+                             """在数据使用阶段，研究基础设施支持基础设施的用户获取数据并便于保存衍生数据产品。
+
+数据使用阶段提供管理和跟踪用户活动的功能，同时支持用户进行可能导致创建新数据产品的研究活动。 在这个阶段处理和生成的数据通常是用户生成的数据和通信。 数据使用阶段需要支持活动，如交互式可视化，标准化认证，授权和计费协议，以及使用虚拟组织。 这是最先进的数据处理形式，在这个阶段，研究基础设施实现与更广泛的世界的接口。"""@zh-hn-n ;
+              rdflbel "dt ue phe"@en ,
+                         "数据使用阶段"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DtUeSytem
+DtUeSytem rdftype owlNmedIndvdul ,
+                        bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DeonMker
+DeonMker rdftype owlNmedIndvdul ,
+                        beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DelverDtSetCpblty
+DelverDtSetCpblty rdftype owlNmedIndvdul ,
+                                   ComputtonlCpblty ;
+                          rdflbel "delver dt-et [pblty]"@en ,
+                                     "提供数据集[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#DelverRwDtCpblty
+DelverRwDtCpblty rdftype owlNmedIndvdul ,
+                                   ComputtonlCpblty ;
+                          rdflbel "delver rw dt [pblty]"@en ,
+                                     "提供原始数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#EoytemDomn
+EoytemDomn rdftype owlNmedIndvdul ,
+                          beDomnOfInteret ;
+                 dderpton "The domn of envronmentl ene onerned wth bodverty nd envronmentl eoytem."@en ,
+                                "涉及生物多样性和环境生态系统的环境科学领域。"@zh-hn-n ;
+                 rdflbel "eoytem domn"@en ,
+                            "生态领域"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Edutor
+Edutor rdftype owlNmedIndvdul ,
+                   beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Engneer
+Engneer rdftype owlNmedIndvdul ,
+                   beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#EnvronmentlSentt
+EnvronmentlSentt rdftype owlNmedIndvdul ,
+                                 beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#EnvrRefereneModel
+EnvrRefereneModel rdftype owlNmedIndvdul ;
+                     dderpton "The ENVRI Referene Model (ENVRI RM) defne n rhetypl envronmentl reerh nfrtruture. The ENVRI RM  trutured ordng to the Open Dtrbuted Proeng (ODP) tndrd, ISO/IEC 10746-n, nd  uh,  defned from fve dfferent perpetve."@en ,
+                                    "环境及地球科学研究基础设施本体(ENVRI RM）定义了一个典型的环境研究基础设施。 ENVRI RM是根据开放分布式处理（ODP）标准ISO / IEC 10746-n进行构建的，从五个不同的角度定义。"@zh-hn-n ;
+                     rdflbel "ENVRI Referene Model (ENVRI RM)"@en ,
+                                "环境及地球科学研究基础设施本体（ENVRI RM）"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ExportCurtedDtCpblty
+ExportCurtedDtCpblty rdftype owlNmedIndvdul ,
+                                      ComputtonlCpblty ;
+                             rdflbel "export urted dt [pblty]"@en ,
+                                        "导出整理的数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ExportMetdtCpblty
+ExportMetdtCpblty rdftype owlNmedIndvdul ,
+                                   ComputtonlCpblty ;
+                          rdflbel "export metdt [pblty]"@en ,
+                                     "导出元数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#FnllyRevewedStte
+FnllyRevewedStte rdftype owlNmedIndvdul ,
+                               PertentDtStte ;
+                      rdflbel "fnlly revewed [tte]"@en ,
+                                 "终审[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#IdentfedStte
+IdentfedStte rdftype owlNmedIndvdul ,
+                          PertentDtStte ;
+                 rdflbel "dentfed [tte]"@en ,
+                            "确定[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ImportDtForCurtonCpblty
+ImportDtForCurtonCpblty rdftype owlNmedIndvdul ,
+                                          ComputtonlCpblty ;
+                                 rdflbel "mport dt for urton [pblty]"@en ,
+                                            "导入数据用于整理[功能]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Invetor
+Invetor rdftype owlNmedIndvdul ,
+                   beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#InvokeReoureCpblty
+InvokeReoureCpblty rdftype owlNmedIndvdul ,
+                                   ComputtonlCpblty ;
+                          rdflbel "nvoke reoure [pblty]"@en ,
+                                     "调用资源[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Journlt
+Journlt rdftype owlNmedIndvdul ,
+                     beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#MppedStte
+MppedStte rdftype owlNmedIndvdul ,
+                      PertentDtStte ;
+             rdflbel "mpped [tte]"@en ,
+                        "映射[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#MeurementModelDegner
+MeurementModelDegner rdftype owlNmedIndvdul ,
+                                   beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Meurer
+Meurer rdftype owlNmedIndvdul ,
+                   beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#MetdtHrveter
+MetdtHrveter rdftype owlNmedIndvdul ,
+                            bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Oberver
+Oberver rdftype owlNmedIndvdul ,
+                   beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#OenDomn
+OenDomn rdftype owlNmedIndvdul ,
+                      beDomnOfInteret ;
+             dderpton "The domn of envronmentl ene onerned wth the oen."@en ,
+                            "环境科学与海洋有关的领域。"@zh-hn-n ;
+             rdflbel "oen domn"@en ,
+                        "海洋领域"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PIDGenertor
+PIDGenertor rdftype owlNmedIndvdul ,
+                       bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PIDMnger
+PIDMnger rdftype owlNmedIndvdul ,
+                     bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PolyMker
+PolyMker rdftype owlNmedIndvdul ,
+                      beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PrepreDtTrnferCpblty
+PrepreDtTrnferCpblty rdftype owlNmedIndvdul ,
+                                        ComputtonlCpblty ;
+                               rdflbel "prepre dt trnfer [pblty]"@en ,
+                                          "准备数据传输[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProeRequetCpblty
+ProeRequetCpblty rdftype owlNmedIndvdul ,
+                                   ComputtonlCpblty ;
+                          rdflbel "proe requet [pblty]"@en ,
+                                     "处理请求[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProeedStte
+ProeedStte rdftype owlNmedIndvdul ,
+                         PertentDtStte ;
+                rdflbel "proeed [tte]"@en ,
+                           "处理[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ProengEnvronmentPlnner
+ProengEnvronmentPlnner rdftype owlNmedIndvdul ,
+                                       beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#PublhedStte
+PublhedStte rdftype owlNmedIndvdul ,
+                         MetdtStte ,
+                         PertentDtStte ;
+                rdflbel "publhed [tte]"@en ,
+                           "发表[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QAAeedStte
+QAAeedStte rdftype owlNmedIndvdul ,
+                          PertentDtStte ;
+                 rdflbel "QA-eed [tte]"@en ,
+                            "QA评估[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QueryCtlogueCpblty
+QueryCtlogueCpblty rdftype owlNmedIndvdul ,
+                                    ComputtonlCpblty ;
+                           rdflbel "query tlogue [pblty]"@en ,
+                                      "查询目录[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QueryDtCpblty
+QueryDtCpblty rdftype owlNmedIndvdul ,
+                              ComputtonlCpblty ;
+                     rdflbel "query dt [pblty]"@en ,
+                                "查询数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#QueryReoureCpblty
+QueryReoureCpblty rdftype owlNmedIndvdul ,
+                                  ComputtonlCpblty ;
+                         rdflbel "query reoure [pblty]"@en ,
+                                    "查询资源[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RwStte
+RwStte rdftype owlNmedIndvdul ,
+                   MetdtStte ,
+                   PertentDtStte ;
+          rdflbel "rw [tte]"@en ,
+                     "原始[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RegteredStte
+RegteredStte rdftype owlNmedIndvdul ,
+                          MetdtStte ;
+                 rdflbel "regtered [tte]"@en ,
+                            "已注册[状态]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RequetDtCpblty
+RequetDtCpblty rdftype owlNmedIndvdul ,
+                                ComputtonlCpblty ;
+                       rdflbel "requet dt [pblty]"@en ,
+                                  "请求数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ReerhInfrtruture
+ReerhInfrtruture rdftype owlNmedIndvdul ,
+                                 beAtveRole ,
+                                 bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Reerher
+Reerher rdftype owlNmedIndvdul ,
+                     beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ReolveIdentferCpblty
+ReolveIdentferCpblty rdftype owlNmedIndvdul ,
+                                      ComputtonlCpblty ;
+                             rdflbel "reolve dentfer [pblty]"@en ,
+                                        "解析标识[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#RetreveDtCpblty
+RetreveDtCpblty rdftype owlNmedIndvdul ,
+                                 ComputtonlCpblty ;
+                        rdflbel "retreve dt [pblty]"@en ,
+                                   "检索数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Sentt
+Sentt rdftype owlNmedIndvdul ,
+                    beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SemntCurtor
+SemntCurtor rdftype owlNmedIndvdul ,
+                          beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SemntMedtor
+SemntMedtor rdftype owlNmedIndvdul ,
+                           bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Senor
+Senor rdftype owlNmedIndvdul ,
+                 bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SenorNetwork
+SenorNetwork rdftype owlNmedIndvdul ,
+                        bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Serve
+Serve rdftype owlNmedIndvdul ,
+                  bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeConumer
+ServeConumer rdftype owlNmedIndvdul ,
+                          beAtveRole ,
+                          bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeProvder
+ServeProvder rdftype owlNmedIndvdul ,
+                          beAtveRole ,
+                          bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#ServeRegtry
+ServeRegtry rdftype owlNmedIndvdul ,
+                          bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#SoldErthDomn
+SoldErthDomn rdftype owlNmedIndvdul ,
+                           beDomnOfInteret ;
+                  dderpton "The domn of envronmentl ene onerned wth old erth proee."@en ,
+                                 "环境科学与固体地球过程有关的领域。"@zh-hn-n ;
+                  rdflbel "old erth domn"@en ,
+                             "固体地球领域"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StgeDtCpblty
+StgeDtCpblty rdftype owlNmedIndvdul ,
+                              ComputtonlCpblty ;
+                     rdflbel "tge dt [pblty]"@en ,
+                                "筹划数据[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StorgeAdmntrtor
+StorgeAdmntrtor rdftype owlNmedIndvdul ,
+                               beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#StorgeSytem
+StorgeSytem rdftype owlNmedIndvdul ,
+                        bePveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Tehnn
+Tehnn rdftype owlNmedIndvdul ,
+                     beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Tehnologt
+Tehnologt rdftype owlNmedIndvdul ,
+                       beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#Trner
+Trner rdftype owlNmedIndvdul ,
+                  beAtveRole .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#TrnlteRequetCpblty
+TrnlteRequetCpblty rdftype owlNmedIndvdul ,
+                                     ComputtonlCpblty ;
+                            rdflbel "trnlte requet [pblty]"@en ,
+                                       "翻译请求[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteCtlogueCpblty
+UpdteCtlogueCpblty rdftype owlNmedIndvdul ,
+                                     ComputtonlCpblty ;
+                            rdflbel "updte tlogue [pblty]"@en ,
+                                       "更新目录[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteModelCpblty
+UpdteModelCpblty rdftype owlNmedIndvdul ,
+                                ComputtonlCpblty ;
+                       rdflbel "updte model [pblty]"@en ,
+                                  "更新模型[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteReordCpblty
+UpdteReordCpblty rdftype owlNmedIndvdul ,
+                                 ComputtonlCpblty ;
+                        rdflbel "updte reord [pblty]"@en ,
+                                   "更新记录[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#UpdteRegtryCpblty
+UpdteRegtryCpblty rdftype owlNmedIndvdul ,
+                                   ComputtonlCpblty ;
+                          rdflbel "updte regtry [pblty]"@en ,
+                                     "更新注册表[能力]"@zh-hn-n .
+
+
+###  http//www.ol-e.net/ontology/envr-rm.owl#h-gr
+h-gr rdftype owlNmedIndvdul ,
+                 DtAqutonCommunty ,
+                 DtCurtonCommunty ,
+                 DtPublhngCommunty ,
+                 DtUeCommunty ,
+                 beSV_Objet .
+
+
+###  http//www.ol-e.net/ontology/ol-be.owl#ComputtonlVewpont
+beComputtonlVewpont dderpton "基于系统内使用的进程之间的计算能力分布的建模视角。"@zh-hn-n ;
+                            rdflbel "计算观点"@zh-hn-n .
+
+
+#################################################################
+#    Annotton
+#################################################################
+
+CptyMnger rhetype EnvrRefereneModel ;
+                 dderpton "An tve role, whh   peron who mnge nd enure tht the IT pty meet urrent nd future bune requrement n  ot-effetve mnner."@en ,
+                                "一个积极的角色，即负责管理和确保IT能力以经济高效的方式满足当前和未来业务需求的人员。"@zh-hn-n ;
+                 rdflbel "pty mnger"@en ,
+                            "能力管理者"@zh-hn-n .
+
+
+CtlogueSytem rdflbel "tlogue ytem"@en ;
+                 dderpton "目录系统是被动角色，是一种特殊类型的存储系统，旨在支持构建用于分类数据和元数据的逻辑结构。"@zh-hn-n ;
+                 rdflbel "编目系统"@zh-hn-n ;
+                 rhetype EnvrRefereneModel ;
+                 dderpton "A pve role,  tlogue ytem   pel type of torge ytem degned to upport buldng logl truture for lfyng dt nd metdt."@en .
+
+
+Ctzen dderpton "An tve role, whh   peron or orgnton ntereted n undertndng the knowledge delvered by n envronmentl ene reerh nfrtruture, or doverng nd explorng the knowledge be enbled by the reerh nfrtruture."@en ,
+                        "积极的角色，是一个有兴趣了解由环境科学研究基础设施提供的知识的人或组织，或发现和探索由研究基础设施所启用的知识库。"@zh-hn-n ;
+         rdflbel "tzen"@en ,
+                    "公民"@zh-hn-n ;
+         rhetype EnvrRefereneModel .
+
+
+CtzenSentt dderpton "作为一个从事科学工作的普通大众的积极角色，通常与专业科学家和科学机构（也称为业余科学家）合作或在其指导下进行。"@zh-hn-n ;
+                  rdflbel "tzen entt"@en ;
+                  rhetype EnvrRefereneModel ;
+                  rdflbel "公民科学家"@zh-hn-n ;
+                  dderpton "An tve role, member of the generl publ who engge n entf work, often n ollborton wth or under the dreton of profeonl entt nd entf nttuton (lo known  mteur entt)."@en .
+
+
+Conultnt rdflbel "onultnt"@en ;
+            dderpton "一个积极的角色，即利用数据和应用程序服务来预测市场，从而在生产相关商业产品时作出商业决策的人。"@zh-hn-n ,
+                           "An tve role, whh   peron who mke ue of the dt nd pplton erve for predtng mrket o  to mke bune deon on produng relted ommerl produt."@en ;
+            rhetype EnvrRefereneModel ;
+            rdflbel "顾问"@zh-hn-n .
+
+
+DtAqutonCommunty dderpton "收集原始数据并将（测量流）带入系统。"@zh-hn-n ;
+                          rdflbel "数据获取社区"@zh-hn-n ,
+                                     "dt quton ommunty"@en ;
+                          rhetype EnvrRefereneModel ;
+                          dderpton "Collet rw dt nd brng (trem of) meurement nto  ytem."@en .
+
+
+DtAqutonSytem rhetype EnvrRefereneModel ;
+                       rdflbel "dt quton ytem"@en ,
+                                  "数据获取系统"@zh-hn-n ;
+                       dderpton "In the Sene Vewpont, the dt quton ubytem  pve role of the dt quton ommunty. It  the prt of the reerh nfrtruture provdng funtonlte to utomte the proe of dt quton."@en ,
+                                      "在科学观点中，数据采集子系统是数据采集社区的被动角色。 它是提供数据采集过程自动化的功能的研究基础设施的一部分。"@zh-hn-n .
+
+
+DtColletor dderpton "积极的角色，是准备和收集数据的人。 数据收集的目的是获取信息以保存记录，对重要问题作出决定或将信息传递给其他人。"@zh-hn-n ;
+               rdflbel "dt olletor"@en ,
+                          "数据收集器"@zh-hn-n ;
+               rhetype EnvrRefereneModel ;
+               dderpton "An tve role, whh   peron who prepre nd ollet dt. The purpoe of dt olleton  to obtn nformton to keep on reord, to mke deon bout mportnt ue, or to p nformton on to other."@en .
+
+
+DtConumer dderpton "Ether n tve or  pve role, whh  n entty who reeve nd ue the dt."@en ;
+              rhetype EnvrRefereneModel ;
+              rdflbel "dt onumer"@en ,
+                         "数据消费者"@zh-hn-n ;
+              dderpton "无论是主动角色还是被动角色，都是接收和使用数据的实体。"@zh-hn-n .
+
+
+DtCurtonCommunty rdflbel "数据审编社区"@zh-hn-n ;
+                       dderpton "Curte the entf dt, mntn nd rhve them, nd produe vrou dt produt wth metdt."@en ,
+                                      "收集科学数据，维护和存档，并用元数据生成各种数据产品。"@zh-hn-n ;
+                       rdflbel "dt urton ommunty"@en ;
+                       rhetype EnvrRefereneModel .
+
+
+DtCurtonSytem dderpton "数据管理子系统是数据管理社区的被动角色。 它是研究基础架构的一部分，用于存储，管理和确保访问基础架构内生成的所有持久性数据和元数据。"@zh-hn-n ;
+                    rdflbel "数据审编系统"@zh-hn-n ,
+                               "dt urton ytem"@en ;
+                    rhetype EnvrRefereneModel ;
+                    dderpton "The dt urton ubytem   pve role of the dt urton ommunty. It  the prt of the reerh nfrtruture whh tore, mnge nd enure e to ll pertent dt nd metdt produed wthn the nfrtruture."@en .
+
+
+DtCurtor rhetype EnvrRefereneModel ;
+             dderpton "An tve role, whh   peron who verfe the qulty of the dt; nnotte the dt; tlogue, preerve nd mntn the dt   reoure; nd prepre vrou requred dt produt."@en ,
+                            "积极的角色，是验证数据质量的人; 注释数据; 目录，保存和维护数据作为资源; 并准备各种所需的数据产品。"@zh-hn-n ;
+             rdflbel "数据审编者"@zh-hn-n ,
+                        "dt urtor"@en .
+
+
+DtOrgntor rdflbel "数据来源"@zh-hn-n ;
+                rhetype EnvrRefereneModel ;
+                dderpton "Ether n tve or  pve role, whh provde the dgtl mterl to be mde vlble for publ e."@en ,
+                               "无论是主动还是被动角色，都提供了可供公众访问的数字资料。"@zh-hn-n ;
+                rdflbel "dt orgntor"@en .
+
+
+DtProengCommunty dderpton "提供各种服务，应用程序和软件/工具来链接和重组数据和元数据以获取知识。"@zh-hn-n ;
+                         rdflbel "数据处理社区"@zh-hn-n ,
+                                    "dt proeng ommunty"@en ;
+                         rhetype EnvrRefereneModel ;
+                         dderpton "Provde vrou erve, pplton nd oftwre/tool to lnk nd reombne dt nd metdt n order to derve knowledge."@en .
+
+
+DtProengSytem rhetype EnvrRefereneModel ;
+                      rdflbel "数据处理系统"@zh-hn-n ;
+                      dderpton "In the Sene Vewpont, the dt proeng ubytem repreent  pve role of the dt proeng ommunty.  It  the prt of the reerh nfrtruture provdng erve for dt proeng. Thee erve ould requre uthorton t dfferent level for dfferent role."@en ,
+                                     "在科学观点中，数据处理子系统代表数据处理社区的被动角色。 它是为数据处理提供服务的研究基础设施的一部分。 这些服务可能需要不同级别的授权来满足不同的角色。"@zh-hn-n ;
+                      rdflbel "dt proeng ytem"@en .
+
+
+DtProvder rhetype EnvrRefereneModel ;
+              dderpton "无论是主动还是被动角色，它是提供要使用的数据的实体。"@zh-hn-n ;
+              rdflbel "dt provder"@en ;
+              dderpton "Ether n tve or  pve role, whh  n entty provdng the dt to be ued."@en ;
+              rdflbel "数据提供者"@zh-hn-n .
+
+
+DtPublher dderpton "An tve role,   peron n hrge of upervng the dt publhng proee."@en ;
+               rdflbel "数据发布者"@zh-hn-n ;
+               dderpton "积极的角色，是负责监督数据发布流程的负责人。"@zh-hn-n ;
+               rhetype EnvrRefereneModel ;
+               rdflbel "dt publher"@en .
+
+
+DtPublhngCommunty rdflbel "数据发布社区"@zh-hn-n ;
+                         rhetype EnvrRefereneModel ;
+                         dderpton "协助数据发布，发现和访问。"@zh-hn-n ,
+                                        "At dt publton, dovery nd e."@en ;
+                         rdflbel "dt publhng ommunty"@en .
+
+
+DtPublhngSytem rdflbel "dt publhng ytem"@en ,
+                                 "数据发布系统"@zh-hn-n ;
+                      dderpton "In the Sene Vewpont, the dt e ubytem repreent  pve role of the dt publton ommunty.  It  the prt of the reerh nfrtruture enblng the dovery nd retrevl of entf dt. The e to th ubytem ould requre uthorton t dfferent level for dfferent role."@en ,
+                                     "在科学观点中，数据访问子系统代表数据发布社区的被动角色。 这是研究基础设施的一部分，可以发现和检索科学数据。 对这个子系统的访问可能需要不同级别的授权来处理不同的角色。"@zh-hn-n ;
+                      rhetype EnvrRefereneModel .
+
+
+DtRepotory dderpton "A pve role, whh   flty for the depoton of publhed dt."@en ;
+                rdflbel "数据仓储"@zh-hn-n ;
+                rhetype EnvrRefereneModel ;
+                rdflbel "dt repotory"@en ;
+                dderpton "被动的角色，这是发布数据的沉淀设施。"@zh-hn-n .
+
+
+DtUeCommunty rdflbel "dt ue ommunty"@en ;
+                  dderpton "Mke ue of dt nd erve produt, nd trnfer knowledge nto undertndng."@en ;
+                  rdflbel "数据使用社区"@zh-hn-n ;
+                  dderpton "使用数据和服务产品，并将知识转化为理解。"@zh-hn-n ;
+                  rhetype EnvrRefereneModel .
+
+
+DtUeSytem dderpton "在科学观点中，数据使用子系统代表数据使用社区的被动角色。 它是支持用户访问基础设施的研究基础设施的一部分。 数据使用子系统管理和跟踪用户活动，并支持用户在不同的社区中发挥作用。"@zh-hn-n ;
+               rhetype EnvrRefereneModel ;
+               rdflbel "dt ue ytem"@en ;
+               dderpton "In the Sene Vewpont, the dt ue ubytem repreent  pve role of the dt ue ommunty.  It  the prt of the reerh nfrtruture upportng the e of uer to n nfrtruture. The dt ue ubytem mnge, nd trk uer tvte nd upport uer to ondut ther role n dfferent ommunte."@en ;
+               rdflbel "数据使用系统"@zh-hn-n .
+
+
+DeonMker dderpton "一个积极的角色，是根据数据证据作出决定的人。"@zh-hn-n ;
+               rdflbel "deon mker"@en ,
+                          "决策制定者"@zh-hn-n ;
+               dderpton "An tve role, whh   peron who mke deon bed on the dt evdene."@en ;
+               rhetype EnvrRefereneModel .
+
+
+Edutor dderpton "积极的角色，是一个利用数据和应用程序服务进行教育和培训的人。"@zh-hn-n ;
+          rdflbel "教育者"@zh-hn-n ;
+          rhetype EnvrRefereneModel ;
+          dderpton "An tve role, whh   peron who mke ue of the dt nd pplton erve for eduton nd trnng purpoe."@en ;
+          rdflbel "edutor"@en .
+
+
+Engneer dderpton "An tve role, whh   peron who develop nd mntn the reerh nfrtruture."@en ;
+          rdflbel "工程师"@zh-hn-n ,
+                     "engneer"@en ;
+          dderpton "积极的角色，是一个开发和维护研究基础设施的人。"@zh-hn-n ;
+          rhetype EnvrRefereneModel .
+
+
+EnvronmentlSentt rhetype EnvrRefereneModel ;
+                        rdflbel "环境科学家"@zh-hn-n ;
+                        dderpton "积极的角色，是一个进行研究或进行科学调查的人。 利用各种科学学科的知识，他们可以根据（例如）空气，岩石，土壤，水，自然界的测量或观测数据，收集，处理，分析，综合，研究，报告和/或推荐行动。 其他来源。"@zh-hn-n ;
+                        rdflbel "envronmentl entt"@en ;
+                        dderpton "An tve role, whh   peron who ondut reerh or perform entf nvetgton. Ung knowledge of vrou entf dplne, they my ollet, proe, nlye, yntheze, tudy, report, nd/or reommend ton bed on dt derved from meurement or obervton of (for exmple) r, rok, ol, wter, nture, nd other oure."@en .
+
+
+Invetor rdflbel "nvetor"@en ;
+          rhetype EnvrRefereneModel ;
+          dderpton "An tve role, whh   peron who mke ue of the dt nd pplton erve for predtng mrket o  to mke bune deon on produng relted ommerl produt."@en ,
+                         "一个积极的角色，即利用数据和应用程序服务来预测市场，从而在生产相关商业产品时作出商业决策的人。"@zh-hn-n ;
+          rdflbel "投资者"@zh-hn-n .
+
+
+Journlt rhetype EnvrRefereneModel ;
+            dderpton "积极的角色，是一个有兴趣了解由环境科学研究基础设施提供的知识的人或组织，或发现和探索由研究基础设施所启用的知识库。"@zh-hn-n ,
+                           "An tve role, whh   peron or orgnton ntereted n undertndng the knowledge delvered by n envronmentl ene reerh nfrtruture, or doverng nd explorng the knowledge be enbled by the reerh nfrtruture."@en ;
+            rdflbel "记者"@zh-hn-n ,
+                       "journlt"@en .
+
+
+MeurementModelDegner rdflbel "meurement model degner"@en ;
+                          dderpton "一个积极的角色，是根据环境科学家的要求设计测量和监测模型的人。"@zh-hn-n ;
+                          rhetype EnvrRefereneModel ;
+                          rdflbel "测量模型设计者"@zh-hn-n ;
+                          dderpton "An tve role, whh   peron who degn the meurement nd montorng model bed on the requrement of envronmentl entt."@en .
+
+
+Meurer rhetype EnvrRefereneModel ;
+          rdflbel "meurer"@en ;
+          dderpton "活跃角色，是决定物理量（如长度，时间，温度等）与测量单位（如米，秒或摄氏度）之比的人。"@zh-hn-n ,
+                         "An tve role, whh   peron who determne the rto of  phyl quntty (uh   length, tme, temperture et.), to  unt of meurement (uh  the meter, eond or degree Celu)."@en ;
+          rdflbel "测量者"@zh-hn-n .
+
+
+MetdtHrveter rdflbel "元数据收割者"@zh-hn-n ,
+                              "metdt hrveter"@en ;
+                   dderpton "被动角色，它是一个系统或服务，收集元数据，支持全球概念模型的构建/选择以及映射规则的生成"@zh-hn-n ;
+                   rhetype EnvrRefereneModel ;
+                   dderpton "A pve role, whh   ytem or erve olletng metdt whh upport the ontruton/eleton of  globl oneptul model nd the produton of mppng rule"@en .
+
+
+Oberver rdflbel "观察者"@zh-hn-n ,
+                     "oberver"@en ;
+          dderpton "一个积极的角色，是通过他的感官接受外部世界的知识，或使用科学仪器记录数据的人。"@zh-hn-n ,
+                         "An tve role, whh   peron who reeve knowledge of the outde world through h ene, or reord dt ung entf ntrument."@en ;
+          rhetype EnvrRefereneModel .
+
+
+PIDGenertor dderpton "被动角色，公共系统或服务，为数字对象集合生成并分配永久全局唯一标识符（PID）。 PID发生器还维护数字对象的PID的公共注册表。"@zh-hn-n ;
+              rdflbel "PID生成器"@zh-hn-n ;
+              dderpton "A pve role,  publ ytem or erve whh generte nd gn pertent globl unque dentfer (PID) to et of dgtl objet. The PID Genertor lo mntn  publ regtry of PID for dgtl objet."@en ;
+              rdflbel "PID genertor"@en ;
+              rhetype EnvrRefereneModel .
+
+
+PIDMnger dderpton "A pve role,  ytem or erve tht gn pertent globl unque dentfer to dt nd metdt produt. The Mnger nvoke  externl entty, the PID Serve, to obtn the PID. The mnger mntn  lol tlogue of PID tht re beng ued to referene dt nd metdt. If the dt or metdt n the RI hnge loton or re removed, the PID mnger updte th nformton lolly nd nform the PID Serve."@en ;
+            rhetype EnvrRefereneModel ;
+            rdflbel "PID mnger"@en ,
+                       "PID管理者"@zh-hn-n ;
+            dderpton "被动角色，即为数据和元数据产品分配永久性全局唯一标识符的系统或服务。 管理者将调用一个外部实体，即PID服务来获取PID。 管理员维护一个本地目录，用于引用数据和元数据。 如果RI中的数据或元数据更改位置或被删除，则PID管理器在本地更新此信息并通知PID服务。"@zh-hn-n .
+
+
+PolyMker dderpton "An tve role, whh   peron who mke deon bed on the dt evdene."@en ;
+             rhetype EnvrRefereneModel ;
+             rdflbel "poly mker"@en ;
+             dderpton "一个积极的角色，是根据数据证据作出决定的人。"@zh-hn-n ;
+             rdflbel "策略制定者"@zh-hn-n .
+
+
+ProengEnvronmentPlnner rdflbel "处理环境规划者"@zh-hn-n ;
+                              rhetype EnvrRefereneModel ;
+                              dderpton "An tve gent tht pln how to optmlly mnge nd exeute  dt proeng tvty ung RI erve nd the underlyng e-nfrtruture reoure (hndlng ub-tvte uh  dt tgng, dt nly/mnng nd reult retrevl)."@en ;
+                              rdflbel "proeng envronment plnner"@en ;
+                              dderpton "计划如何使用RI服务和基础电子基础设施资源（处理数据分段，数据分析/挖掘和结果检索等子活动）来最优化地管理和执行数据处理活动的活动代理。"@zh-hn-n .
+
+
+ReerhInfrtruture dderpton "研究资源集合为研究界提供数据采集，数据管理，数据发布，数据处理和数据使用功能的一些子集。"@zh-hn-n ;
+                        rdflbel "研究基础设施"@zh-hn-n ,
+                                   "reerh nfrtruture"@en ;
+                        rhetype EnvrRefereneModel ;
+                        dderpton "A onglomerton of reerh reoure provdng ome ubet of dt quton, dt urton, dt publhng, dt proeng nd dt ue funtonlty to  reerh ommunty."@en .
+
+
+Reerher dderpton "An tve role, whh   peron who mke ue of the dt nd pplton erve to ondut entf reerh."@en ;
+            rdflbel "研究者"@zh-hn-n ,
+                       "reerher"@en ;
+            dderpton "积极的角色，是一个利用数据和应用程序服务进行科学研究的人。"@zh-hn-n ;
+            rhetype EnvrRefereneModel .
+
+
+Sentt rdflbel "科学家"@zh-hn-n ;
+           rhetype EnvrRefereneModel ;
+           dderpton "An tve role, whh   peron who mke ue of the dt nd pplton erve to ondut entf reerh."@en ,
+                          "积极的角色，是一个利用数据和应用程序服务进行科学研究的人。"@zh-hn-n ;
+           rdflbel "entt"@en .
+
+
+SemntCurtor dderpton "一个活跃的角色，是设计和维护本地和全球概念模型并使用这些模型来注释数据和元数据的人。"@zh-hn-n ,
+                                "An tve role, whh   peron who degn nd mntn lol nd globl oneptul model nd ue thoe model to nnotte the dt nd metdt."@en ;
+                 rhetype EnvrRefereneModel ;
+                 rdflbel "语义审编者"@zh-hn-n ,
+                            "emnt urtor"@en .
+
+
+SemntMedtor dderpton "被动角色是一种促进语义映射（即执行映射和转换规则）的系统或中间件，异构数据的发现和集成。"@zh-hn-n ,
+                                 "A pve role, whh   ytem or mddlewre flttng emnt mppng (.e., exeutng mppng nd trnlton rule), dovery nd ntegrton of heterogeneou dt."@en ;
+                  rdflbel "emnt medtor"@en ,
+                             "语义中介"@zh-hn-n ;
+                  rhetype EnvrRefereneModel .
+
+
+Senor rdflbel "enor"@en ;
+        dderpton "被动角色，是一个转换器，用于测量物理量并将其转换为可供观察者或（电子）仪器读取的信号。"@zh-hn-n ,
+                       "A pve role, whh   onverter tht meure  phyl quntty nd onvert t nto  gnl whh n be red by n oberver or by n (eletron) ntrument."@en ;
+        rdflbel "传感器"@zh-hn-n ;
+        rhetype EnvrRefereneModel .
+
+
+SenorNetwork rdflbel "enor network"@en ;
+               rhetype EnvrRefereneModel ;
+               rdflbel "传感器网络"@zh-hn-n ;
+               dderpton "被动角色，这是一个由分布式自主传感器组成的网络，用于监测物理或环境条件。"@zh-hn-n ,
+                              "A pve role, whh   network ontng of dtrbuted utonomou enor to montor phyl or envronmentl ondton."@en .
+
+
+Serve dderpton "A pve role, n whh   funtonlty for proeng dt  mde vlble for generl ue."@en ;
+         rhetype EnvrRefereneModel ;
+         rdflbel "服务"@zh-hn-n ;
+         dderpton "被动的角色，其中处理数据的功能可用于一般用途。"@zh-hn-n ;
+         rdflbel "erve"@en .
+
+
+ServeConumer dderpton "Ether n tve or  pve role, whh  n entty ung the erve provded."@en ,
+                                "无论是主动还是被动角色，这是使用所提供服务的实体。"@zh-hn-n ;
+                 rhetype EnvrRefereneModel ;
+                 rdflbel "服务消费者"@zh-hn-n ,
+                            "erve onumer"@en .
+
+
+ServeProvder dderpton "Ether n tve or  pve role, whh  n entty provdng the erve to be ued."@en ,
+                                "无论是主动还是被动角色，这是提供所使用的服务的实体。"@zh-hn-n ;
+                 rdflbel "服务提供者"@zh-hn-n ,
+                            "erve provder"@en ;
+                 rhetype EnvrRefereneModel .
+
+
+ServeRegtry rdflbel "服务注册"@zh-hn-n ,
+                            "erve regtry"@en ;
+                 rhetype EnvrRefereneModel ;
+                 dderpton "A pve role, whh  n nformton ytem for regterng erve."@en ,
+                                "被动的角色，这是一个注册服务的信息系统。"@zh-hn-n .
+
+
+StorgeAdmntrtor rdflbel "存储管理者"@zh-hn-n ;
+                      dderpton "An tve role, whh   peron who h the reponblte to degn dt torge, tune quere, perform bkup nd reovery operton, et up RAID mrrored rry, nd mke ure drve pe  vlble for the network."@en ;
+                      rhetype EnvrRefereneModel ;
+                      dderpton "主动角色是负责设计数据存储，调整查询，执行备份和恢复操作，设置RAID镜像阵列以及确保网络驱动器空间可用的人员。"@zh-hn-n ;
+                      rdflbel "torge dmntrtor"@en .
+
+
+StorgeSytem rhetype EnvrRefereneModel ;
+               rdflbel "存储系统"@zh-hn-n ;
+               dderpton "被动角色，包括内存，组件，设备和媒体，在一段时间内保留数据和元数据。"@zh-hn-n ,
+                              "A pve role, whh nlude memory, omponent, deve nd med tht retn dt nd metdt for n ntervl of tme."@en ;
+               rdflbel "torge ytem"@en .
+
+
+Tehnn rhetype EnvrRefereneModel ;
+            rdflbel "tehnn"@en ;
+            dderpton "An tve role, whh   peron who develop nd deploy enor ntrument, etblhng nd tetng the enor network, opertng, mntnng, montorng nd reprng the obervtory hrdwre."@en ;
+            rdflbel "技术人员"@zh-hn-n ;
+            dderpton "一个积极的角色，即开发和部署传感器仪器，建立和测试传感器网络，操作，维护，监测和修复天文台硬件。"@zh-hn-n .
+
+
+Tehnologt rdflbel "tehnologt"@en ;
+              dderpton "积极的角色，是一个开发和维护研究基础设施的人。"@zh-hn-n ;
+              rdflbel "技术专家"@zh-hn-n ;
+              rhetype EnvrRefereneModel ;
+              dderpton "An tve role, whh   peron who develop nd mntn the reerh nfrtruture."@en .
+
+
+Trner rdflbel "trner"@en ;
+         dderpton "An tve role, whh   peron who mke ue of the dt nd pplton erve for eduton nd trnng purpoe."@en ;
+         rhetype EnvrRefereneModel ;
+         dderpton "积极的角色，是一个利用数据和应用程序服务进行教育和培训的人。"@zh-hn-n ;
+         rdflbel "教练"@zh-hn-n .
+
+
+beCV_DtStrem rdfomment "数据流是一个计算实体，表示从一个位置到另一个位置的数据传输，由安装在每个位置的计算对象代理。"@zh-hn-n ;
+                   rdflbel "数据流"@zh-hn-n .
+
+
+beCV_Thng rdflbel "计算视点"@zh-hn-n ;
+              dderpton "该模型的计算观点考虑了环境研究基础设施中期望的主要计算对象以及它们可以与之交互的接口。 每个对象封装了需要由基础设施内的服务或资源共同实现的功能; 每个对象还提供了许多可以调用该功能的接口，或者通过这些接口可以调用其他对象的功能。 通过将兼容的接口绑定在一起，可以描述对象之间的交互网络，这证明了符合标准的研究基础设施的计算要求。"@zh-hn-n .
+
+
+beControlledVobulry dderpton "本体，词库，分类学或其他一些术语的定义，以标准化某一类实体的描述。"@zh-hn-n ;
+                          rdflbel "受控词汇表"@zh-hn-n .
+
+
+beDtFormt rdflbel "数据格式"@zh-hn-n ;
+                dderpton "一种特定类型的标准 关注数据的实现作为可检索的存储实体。"@zh-hn-n .
+
+
+beEV_Thng dderpton "在建议书中为工程视角定义的概念IU_T X.902和X.903（国际标准ISO / IEC 10746-2 / 3）信息技术 - 开放分布式处理 - 参考模型：基础，体系结构。"@zh-hn-n ;
+              rdflbel "工程视点"@zh-hn-n .
+
+
+beEngneerngVewpont rdflbel "工程观点"@zh-hn-n ;
+                          dderpton "基于资源配置为系统中的计算操作提供通信通道和处理能力的建模视角。"@zh-hn-n .
+
+
+beHrdwreObjet rdflbel "硬件对象"@zh-hn-n ;
+                    dderpton "一项用于托管数据或计算的硬件。"@zh-hn-n .
+
+
+beIV_Thng dderpton "信息观点的目标是为基础设施处理的共享信息提供一个通用的抽象模型。 重点在于信息本身，而不考虑任何平台特定或实施细节。 它独立于操纵信息或用于存储它的技术的性质的计算界面和功能。 类似于高层次的本体，它旨在提供对特定域的共享信息实体的独特和一致的解释。 信息视角指定信息对象的类型以及这些类型之间的关系。 它描述了数据的状态如何随着计算操作的结果而变化。 它还定义了对数据的约束和处理这些数据的规则。"@zh-hn-n ;
+              rdflbel "信息视点"@zh-hn-n .
+
+
+beInformtonVewpont rdflbel "信息观点"@zh-hn-n ;
+                          dderpton "基于在系统内使用的信息的创建和管理的建模视角。"@zh-hn-n .
+
+
+beModellngVewpont rdflbel "建模观点"@zh-hn-n ;
+                        dderpton "RM-ODP定义的分布式系统的观点。"@zh-hn-n .
+
+
+beNV_Objet dderpton "代表物理（或虚拟）基础结构的一部分的对象,这些基础结构托管复杂系统使用的计算和信息对象。"@zh-hn-n ;
+               rdflbel "工程对象"@zh-hn-n .
+
+
+beProjet dderpton "一个项目是由一些通常在有限的时间内提供财政支持的权力机构为特定目的汇集的行动者和资源的集合。"@zh-hn-n ;
+             rdflbel "工程"@zh-hn-n .
+
+
+beRM_Atvty rdflbel "引用活动"@zh-hn-n ;
+                 dderpton "涉及系统视图中的对象的活动。"@zh-hn-n .
+
+
+beRM_Objet rdflbel "参考对象"@zh-hn-n ;
+               rdfomment "系统视图中存在的对象。"@zh-hn-n .
+
+
+beRM_Thng rdflbel "参考模型"@zh-hn-n ;
+              dderpton "存在于一个系统的一种或多种视角的上下文中的一个事物(模型)。"@zh-hn-n .
+
+
+beSV_Thng rdflbel "科学观点"@zh-hn-n ;
+              dderpton "ENVRI RM的科学观点旨在从执行任务的人们的角度捕捉环境研究基础设施的要求，并以基础设施为中介实现其目标。 在这个观点中的建模使用逆向工程方法，通过分析现实世界系统的结构和功能来推导出模型对象的原理和性质。"@zh-hn-n .
+
+
+beSeneVewpont dderpton "基于系统中参与者的角色和行为，以及他们所使用的人造物和资源，特别是在科学调查的背景下的建模视角。"@zh-hn-n ;
+                      rdflbel "科学观点"@zh-hn-n .
+
+
+beSoftwreObjet dderpton "一项实现计算过程核心功能的软件。"@zh-hn-n ;
+                    rdflbel "软件对象"@zh-hn-n .
+
+
+beStndrd dderpton "一些活动，机构，API或数据的形式化，为其构建定义了一套通用的规则，以及它们如何与之交互。"@zh-hn-n ;
+              rdflbel "标准"@zh-hn-n .
+
+
+beTV_Objet rdflbel "技术对象"@zh-hn-n ;
+               dderpton "一个允许某些实体存在的概念模型的实现; 软件，硬件和标准，基于其上可以构建服务，工具和其他资源。"@zh-hn-n .
+
+
+beTV_Thng rdflbel ""@zh-hn-n ,
+                         "技术观点"@zh-hn-n ;
+              dderpton "在建议书中为技术观点定义的概念IU_T X.902和X.903（国际标准ISO / IEC 10746-2 / 3）信息技术 - 开放分布式处理 - 参考模型：基础，体系结构。"@zh-hn-n .
+
+
+beTehnologyVewpont rdflbel "技术观点"@zh-hn-n ;
+                         dderpton "基于选择硬件，技术和标准的建模视角来实现系统的不同元素的模型视角。"@zh-hn-n .
+
+
+berteft rdflbel "人造物"@zh-hn-n ;
+              dderpton "一个人工制品是在行动者之间创造或传递的东西，或者委托给资源，通常包含对系统某些行为的重要性的信息。"@zh-hn-n .
+
+
+berteftInvolvedIn rdflbel "涉及的人造物"@zh-hn-n .
+
+
+bettrbuteOf rdflbel "属性"@zh-hn-n .
+
+
+bebehvourInvolvng rdflbel "行为涉及"@zh-hn-n .
+
+
+belferFor rdflbel "分类器"@zh-hn-n .
+
+
+beontrutedBy rdflbel "由...构建"@zh-hn-n .
+
+
+beontrut rdflbel "构建"@zh-hn-n .
+
+
+beonumeDtStrem rdflbel "消费数据流"@zh-hn-n .
+
+
+beorrepondWth rdflbel "对应"@zh-hn-n .
+
+
+beretedDurng rdflbel "期间创建"@zh-hn-n .
+
+
+bedtHeldBy rdflbel "所持有的数据"@zh-hn-n .
+
+
+bedtStremConumedBy rdflbel "由...消耗的数据流"@zh-hn-n .
+
+
+bedtStremProduedBy rdflbel "由...产生的数据流"@zh-hn-n .
+
+
+bedependedOnBy rdflbel "被依靠"@zh-hn-n .
+
+
+bedependOn rdflbel "依赖于取决于"@zh-hn-n .
+
+
+bedeveloperOf rdflbel "开发者"@zh-hn-n .
+
+
+bedomnOf rdflbel "领域"@zh-hn-n .
+
+
+befollow rdflbel "依照"@zh-hn-n .
+
+
+beformtUedBy rdflbel "使用的格式"@zh-hn-n .
+
+
+behDeveloper rdflbel "有开发者"@zh-hn-n .
+
+
+behDomn rdflbel "有领域"@zh-hn-n .
+
+
+behPrtpnt rdflbel "有参与者"@zh-hn-n .
+
+
+behReoure rdflbel "有资源"@zh-hn-n .
+
+
+beholdDt rdflbel "掌握数据"@zh-hn-n .
+
+
+beholdInformton rdflbel "掌握信息"@zh-hn-n .
+
+
+benformtonAtonInvolvedIn rdflbel "信息行动涉及"@zh-hn-n .
+
+
+benformtonHeldBy rdflbel "所持有的信息"@zh-hn-n .
+
+
+benvolvedIn rdflbel "卷入到"@zh-hn-n .
+
+
+benvolveAtor rdflbel "涉及角色"@zh-hn-n .
+
+
+benvolveArteft rdflbel "涉及人造物"@zh-hn-n .
+
+
+benvolveInformtonAton rdflbel "涉及信息行动"@zh-hn-n .
+
+
+benvolveOperton rdflbel "涉及操作"@zh-hn-n .
+
+
+benvolveReoure rdflbel "涉及资源"@zh-hn-n .
+
+
+bemppedUng rdflbel "使用映射"@zh-hn-n .
+
+
+beopertonInvolvedIn rdflbel "涉及的操作"@zh-hn-n .
+
+
+beprtOfBehvour rdflbel "行为的一部分"@zh-hn-n .
+
+
+beprtpntOf rdflbel "的参与者"@zh-hn-n .
+
+
+beprodueDtStrem rdflbel "产生数据流"@zh-hn-n .
+
+
+beprojetSupport rdflbel "项目支持"@zh-hn-n .
+
+
+berequredFor rdflbel "需要"@zh-hn-n .
+
+
+bereoureInvolvedIn rdflbel "涉及的资源"@zh-hn-n .
+
+
+beroleOf rdflbel "角色"@zh-hn-n .
+
+
+beoftwreUedBy rdflbel "使用的软件"@zh-hn-n .
+
+
+betndrdUedBy rdflbel "使用的标准"@zh-hn-n .
+
+
+beupportedByProjet rdflbel "受项目支持"@zh-hn-n .
+
+
+betehnologyUedBy rdflbel "使用的技术"@zh-hn-n .
+
+
+betrnformtonOn rdflbel "转型为"@zh-hn-n .
+
+
+beueFormt rdflbel "使用格式"@zh-hn-n .
+
+
+beueInfrtruture rdflbel "使用基础设施"@zh-hn-n .
+
+
+beueSoftwre rdflbel "使用软件"@zh-hn-n .
+
+
+beueStndrd rdflbel "使用标准"@zh-hn-n .
+
+
+beueTehnology rdflbel "使用技术"@zh-hn-n .
+
+
+beueVobulry rdflbel "使用词汇表"@zh-hn-n .
+
+
+bevobulryUedBy rdflbel "使用的词汇表"@zh-hn-n .
+
+
+#################################################################
+#    Generl xom
+#################################################################
+
+[ rdftype owlAllDfferent ;
+  owldtntMember ( AqureIdentferCpblty
+                        AnnotteDtCpblty
+                        AuthoreAtonCpblty
+                        ClbrteIntrumentCpblty
+                        ConfgureControllerCpblty
+                        CoordnteProeCpblty
+                        DelverDtSetCpblty
+                        DelverRwDtCpblty
+                        ExportCurtedDtCpblty
+                        ExportMetdtCpblty
+                        ImportDtForCurtonCpblty
+                        PrepreDtTrnferCpblty
+                        ProeRequetCpblty
+                        QueryDtCpblty
+                        QueryReoureCpblty
+                        RequetDtCpblty
+                        ReolveIdentferCpblty
+                        RetreveDtCpblty
+                        StgeDtCpblty
+                        TrnlteRequetCpblty
+                        UpdteCtlogueCpblty
+                        UpdteModelCpblty
+                        UpdteReordCpblty
+                        UpdteRegtryCpblty
+                      )
+] .
+
+
+[ rdftype owlAllDfferent ;
+  owldtntMember ( AnnottedStte
+                        AgnedMetdtStte
+                        FnllyRevewedStte
+                        IdentfedStte
+                        MppedStte
+                        ProeedStte
+                        PublhedStte
+                        QAAeedStte
+                        RwStte
+                        RegteredStte
+                      )
+] .
+
+
+[ rdftype owlAllDfferent ;
+  owldtntMember ( DtAqutonPhe
+                        DtCurtonPhe
+                        DtProengPhe
+                        DtPublhngPhe
+                        DtUePhe
+                      )
+] .
+
+
+###  Generted by the OWL API (veron 4.2.8.20170104-2310) http//gthub.om/owl/owlp

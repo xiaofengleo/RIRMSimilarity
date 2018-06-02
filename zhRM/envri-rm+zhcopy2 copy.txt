@@ -1,0 +1,3384 @@
+                                              rdfs:label "ENVRI-RM ontology"@en ;
+                                              dc:creator "Xiaofeng Liao"@en ;
+                                              rdfs:label "环境及地球科学研究基础设施本体"@zh-hans-cn ;
+基于环境及地球科学研究基础设施参考模型描述环境科学研究基础设施的体系结构和信息流的本体。
+                                                         "环境科学研究基础设施" "环境及地球科学研究基础设施本体"
+                                                           "描述环境科学研究基础设施的体系结构和信息流的本体。"
+          
+                    "有角色"
+   "调用能力"
+                    "提供能力"
+"参与的角色"
+ "创建"
+ "被依照"
+"有属性"
+"有分类器"
+"有会员"
+
+"有一部分"
+
+"调用操作"
+"涉及"
+"映射"
+
+"由调用的操作"
+
+"由提供的操作"
+
+"部分"
+
+"扮演角色"
+
+"提供操作"
+"需求"
+
+"的资源"
+"ODP将目标定义为系统目的抽象。"
+"有目标"
+"AAAI服务处理用户的授权请求和身份验证，然后才能继续执行任何特权活动。
+"AAAI服务"
+                                  "用于请求一个新的与正在传输的数据相关联的持久标识符。"
+                              "获得标识"
+"采集服务负责确保根据当前的政策将任何数据传送到基础设施中。"
+                               "获取服务"
+"用于请求在研究基础设施的数据整理子系统内保存的数据标注。"
+                         "标注数据"@zh-hans-cn .
+                              "与概念相关的数据，描述其含义。"@zh-hans-cn ;
+                          "已标注数据"@zh-hans-cn .
+                                  "连接到概念的元数据，描述它们的含义。"@zh-hans-cn ;
+                              "已标注数据"@zh-hans-cn .
+
+"标注服务涉及更新记录（如数据集）和目录以响应用户注释请求。"@zh-hans-cn ;
+                              "标注服务"@zh-hans-cn .
+                                "用于获取与数据采集子系统进行任何受限交互所需的授权。"@zh-hans-cn ;
+                            "认证数据"@zh-hans-cn .
+
+"后端对象是计算对象，它包含为获取，保存，发布和处理研究数据和派生数据产品而提供的RI系统和资源。"@zh-hans-cn ;
+                          "后端对象"@zh-hans-cn .
+
+                           "（持久性）数据的副本，以便在数据丢失事件后用于恢复原始数据。"@zh-hans-cn ;
+                       "备份数据"@zh-hans-cn .
+"代理对象充当访问存储在数据存储区内的数据的媒介，并且便于执行语义解释和查询路由。"@zh-hans-cn ;
+                         "代理对象"@zh-hans-cn .
+                                   "从研究基础设施中导出数据需要从数据处理子系统中检索数据并将其传送到外部资源。 这个过程必须由数据使用和数据发布子系统来处理。"@zh-hans-cn ;
+                               "代理数据导出"@zh-hans-cn .
+                                   "从采集网络以外的其他来源导入数据需要在数据传送到数据整理子系统之前由发布子系统进行代理。"@zh-hans-cn ;
+                               "代理数据导入"@zh-hans-cn .
+                                    "用于原则上基于科学分析输出数据的仪器来校准数据读取。 这个借口也可以用来监视给定仪器上的活动。"@zh-hans-cn ;
+                                "校正仪器"@zh-hans-cn .
+                  rdfs:comment "编目服务涉及与存储在基础结构内的数据集关联的元数据和其他特征数据的编目。"@zh-hans-cn ;
+                             "编目服务"@zh-hans-cn .
+                         "已发布的可解析令牌，通过标识符链接到持久数据对象。"@zh-hans-cn ;
+                     "引用"@zh-hans-cn .
+                 rdfs:comment "组件对象提供对实际RI系统和资源（后端对象）的编程访问。"@zh-hans-cn ;
+                            "组件对象"@zh-hans-cn .
+                                        "分配给计算对象并通过其公共API提供的功能，或计算对象所需的功能，以提供某些功能。"@zh-hans-cn ;
+                                    "计算能力"@zh-hans-cn .
+                        "标识符，名称和事物含义的定义（抽象的或真实的东西）。 通过句子进行人类可读的定义，通过与其他概念（机器可读语句）的关系进行机器可读的定义 它也可以用于概念模型的最小实体。 它可以是概念的平面列表的一部分，概念的分层列表，分层叙词表或本体。"@zh-hans-cn ;
+                    "概念"@zh-hans-cn .
+                                    "用于配置独立仪器上的数据收集（以及其他可配置因子）。"@zh-hans-cn ;
+                                "配置控制器"@zh-hans-cn .
+                                  "用于协调过程控制器提供的执行资源上的数据处理任务的执行。"@zh-hans-cn ;
+                              "协调过程"@zh-hans-cn .
+"协调服务委托发送给特定执行资源的所有处理任务，协调多阶段工作流程并启动过程执行。"@zh-hans-cn ;
+                                "协同服务"@zh-hans-cn .
+                                         "数据采集社区的行为。"@zh-hans-cn ;
+                                     "数据获得行为"@zh-hans-cn .
+                                    "提供数据分析功能的服务。"@zh-hans-cn ;
+                                "数据分析服务"@zh-hans-cn .
+                                        "提供数据同化功能的服务。"@zh-hans-cn ;
+                                    "数据同化服务"@zh-hans-cn .
+            rdfs:comment "数据代理对象充当访问存储在数据存储内的数据的中介。"@zh-hans-cn ;
+                       "数据代理"@zh-hans-cn .
+                                      "数据审编社区的行为。"@zh-hans-cn ;
+                                  "数据审编行为"@zh-hans-cn .
+              rdfs:comment "数据导出器管理从一个或多个数据存储对象到外部目标（例如用户机器或下游服务从研究基础设施收集数据）的数据移动。"@zh-hans-cn ;
+                         "数据导出器"@zh-hans-cn .
+                                      "提供数据提取功能的服务。"@zh-hans-cn ;
+                                  "数据抽取服务"@zh-hans-cn .
+              rdfs:comment "数据导入器管理从外部来源（例如用户发起的数据集和来自数据处理的派生数据集）到一个或多个数据存储对象的数据移动。"@zh-hans-cn ;
+                         "数据导入器"@zh-hans-cn .
+                                  "为数据挖掘提供功能的服务。"@zh-hans-cn ;
+                              "数据挖掘服务"@zh-hans-cn .
+                                        "数据处理社区的行为。"@zh-hans-cn ;
+                                    "数据处理行为"@zh-hans-cn .
+                               "追溯数据来源的元数据，记录数据在其生命周期中的所有状态变化及其在存储之间的移动。"@zh-hans-cn ;
+                           "数据出处"@zh-hans-cn .
+                                        "数据发布社区的行为。"@zh-hans-cn ;
+                                    "数据发布服务"@zh-hans-cn .
+            rdfs:comment "数据暂存器协调管理和处理子系统之间的数据传输。"@zh-hans-cn ;
+                       "数据暂存器"@zh-hans-cn .
+                            "在研究基础设施内进行数据处理需要从数据整理子系统中检索数据并将其传送到数据处理子系统。"@zh-hans-cn ;
+                        "数据暂存"@zh-hans-cn .
+                     rdfs:comment "数据存储控制器提供对可能拥有内部数据管理机制的数据存储的访问。"@zh-hans-cn ;
+                                "数据存储控制器"@zh-hans-cn .
+                                    "一种计算操作，涉及从一个计算对象到另一个计算对象的数据流。"@zh-hans-cn ;
+                                "数据流操作"@zh-hans-cn .
+                     rdfs:comment "数据传输服务涉及数据进出基础设施。"@zh-hans-cn ;
+                                "数据传输服务"@zh-hans-cn .
+                 rdfs:comment "数据传输器用于管理从研究基础架构的一个部分到另一个部分的数据移动。"@zh-hans-cn ;
+                            "数据传送器"@zh-hans-cn .
+                                 "数据使用社区的行为。"@zh-hans-cn ;
+                             "数据使用行为"@zh-hans-cn .
+                                 "连接到描述这些数据的元数据的数据。"@zh-hans-cn ;
+                             "数据与元数据"@zh-hans-cn .
+                                 rdfs:comment "管理数据和元数据存储和检索到逻辑结构化存储库的存储系统。"@zh-hans-cn ;
+                                            "数据库管理系统后端"@zh-hans-cn .
+                               "用于检索存储在数据整理子系统之外的外部数据存储中的外部数据集。"@zh-hans-cn ;
+                           "分发数据集"@zh-hans-cn .
+                               "用于采集数据采集子系统中仪器发送的原始数据。"@zh-hans-cn ;
+                           "分发原始数据"@zh-hans-cn .
+                        rdfs:comment "试验实验室用于与策划的数据和数据处理设施进行交互，使研究人员能够部署数据集进行处理，并从计算实验中获取结果。"@zh-hans-cn ;
+                                   "试验实验室"@zh-hans-cn .
+                                  "用于检索存储在数据存储子系统中的数据存储区内的策划数据集。"@zh-hans-cn ;
+                              "导出审编数据"@zh-hans-cn .
+                               "用于检索任何附加的元数据，以便与正在传输的数据相关联。"@zh-hans-cn ;
+                           "导出元数据"@zh-hans-cn .
+                  rdfs:comment "外部资源是被模拟的系统范围之外的资源，但仍然提供输入或从系统接收输出。"@zh-hans-cn ;
+                             "外部资源"@zh-hans-cn .
+                 rdfs:comment "野外实验室（因为与现场的原始数据源相互作用而被命名）被用于与数据采集组件进行交互，使研究人员能够部署，校准和取消部署仪器，作为集成数据采集网络的一部分 收集主要“原始”数据的基础设施。 现场实验室能够从数据采集装置中实例化新的仪器控制器。"@zh-hans-cn ;
+                            "野外实验室"@zh-hans-cn .
+                             rdfs:comment "以计算机系统中的文件方式管理数据的存储和检索的存储系统。"@zh-hans-cn ;
+                                        "文件管理系统后端"@zh-hans-cn .
+                                    "数据已经过最终审查，因此不会再改变。"@zh-hans-cn ;
+                                "最终评阅数据"@zh-hans-cn .
+                              "全局概念模型中的一个概念。"@zh-hans-cn ;
+                          "全局概念"@zh-hans-cn .
+                                  "全局概念模型"@zh-hans-cn .
+                               "根据预定义模式（元数据模式）添加其他数据。 这与数据注释部分重叠。"@zh-hans-cn ;
+                           "增加元数据"@zh-hans-cn .
+                                  "执行信息对象的注释。"@zh-hans-cn ;
+                              "标注活动"@zh-hans-cn .
+                                "用含义注解数据（预定义的本地或全局概念模型的概念）。 在实践中，这可以通过向概念模型中的概念添加标签或指针来完成。 如果概念是术语，例如在SKOS / RDF叙词表中，并作为链接数据发布，则数据注释将意味着输入描述数据含义的术语的URL。 元数据和语义标注之间没有确切的界限。"@zh-hans-cn ;
+                            "标注数据"@zh-hans-cn .
+                                  "一般的注解行为。"@zh-hans-cn ;
+                              "标注实体"@zh-hans-cn .
+                                    "将元数据与意义联系起来（预定义的本地或全球概念模型的概念）。 这可以通过添加从概念模型中的概念指向元数据的指针来完成。 例如，如果概念是SKOS同义词的术语，由URI标识并作为链接数据发布，则注释等同于将元数据与术语的URI相关联。"@zh-hans-cn ;
+                                "标注元数据"@zh-hans-cn .
+                                          "获取一个唯一的标识符并将其与数据关联。"@zh-hans-cn ;
+                                      "指定标志符"@zh-hans-cn .
+                                        "建立一个相互关联概念的本地或全球模型。 这可能涉及以下问题：承诺（大量科学家/数据提供者/数据使用者就应该达成的协议达成一致）; 明确性（概念模型应明确定义）; 可读性（该模型应该是人类和机器本体都可读的，例如，在与人类和机器可读的同时，用与其他概念的关系来表达概念的含义，并且近来已经越来越重要的是将定义添加到人类可读的 语言）; 和可用性（概念模型必须长时间可参考和解除引用）。"@zh-hans-cn ;
+                                    "构建概念模型"@zh-hans-cn .
+                                  "将数据复制到其他数据存储区，以便在发生数据丢失事件后可用于恢复原始数据。 长期保存是一种特殊类型的备份。"@zh-hans-cn ;
+                              "开展备份"@zh-hans-cn .
+                                "验证数据质量的行动。 例如，它可能涉及：消除噪音; 删除明显错误的数据; 计算校准。 质量检查可以在数据生命周期的不同阶段进行。 质量检查可以通过软件工具支持那些可以自动进行的流程（例如统计公差检查）。"@zh-hans-cn ;
+                            "核实质量"@zh-hans-cn .
+                            "生成对持久数据或元数据的引用。"@zh-hans-cn ;
+                        "引用数据"@zh-hans-cn .
+                           "转化数据"@zh-hans-cn .
+                                   "描述可重用的一个或多个服务的可访问性，接口，行为描述和/或实现的算法。"@zh-hans-cn ;
+                               "描述服务"@zh-hans-cn .
+                                "执行一系列的元数据/数据请求 - >解释结果 - >执行一个新的请求。通常这个顺序有助于加深对数据的了解。 通常这个序列可以：从数据到元数据和语义标注; 跟踪数据的来源; 可以跟踪数据处理; 可以通过专门的软件来支持，这些软件可以帮助执行数据请求和结果解释的顺序。"@zh-hans-cn ;
+                            "挖掘数据"@zh-hans-cn .
+                               "检查要发布的数据，这些数据不会再被更改。 该动作触发数据状态的改变以“最终复查”。 在实践中，出于溯源的目的，应该记录这种状态变化的注释。 通常，这与存档和版本控制操作相结合。"@zh-hans-cn ;
+                           "最终评论"@zh-hans-cn .
+                                  "执行值的转换规则（从一个单元到另一个单元的映射）或概念的转换规则（将含义从一个概念模型转换为另一个概念模型，例如转换代码列表）。"@zh-hans-cn ;
+                              "执行映射"@zh-hans-cn .
+                                                   "测量参数或观察事件。 测量或观察的性能产生测量结果。"@zh-hans-cn ;
+                                               "执行测量或观测"@zh-hans-cn .
+                               "处理数据，目的是：转换和生成数据产品; 计算（例如统计过程，模拟模型）; 可视化（例如字母数字，图形，地理）。 数据处理应记录为起源实例。"@zh-hans-cn ;
+                           "处理数据"@zh-hans-cn .
+                                "用所提供的数据创建统计模型，模拟模型或摘要。"@zh-hans-cn ;
+                            "生成模型"@zh-hans-cn .
+                               "使数据公开可获取。 例如，可以通过在万维网上以可浏览的形式呈现它们，或者通过诸如RESTful服务，SOAP服务，OPEN GRID服务，OGC服务（web特征服务，web 地图服务等）或SPARQL端点。"@zh-hans-cn ;
+                           "发布数据"@zh-hans-cn .
+                                   "将注册的元数据提供给公众。"@zh-hans-cn ;
+                               "发布元数据"@zh-hans-cn .
+                             "向数据存储发送请求以检索所需的数据。 在实践中，有两种类型的数据查询。 首先是两步法（其中步骤1是查询/搜索元数据，步骤2是访问数据） - 例如，在使用OGC服务时，通常首先调用Web特征服务来获取特征描述，然后是Web地图服务 被调用来获取地图图像。 其次是一步法（其中直接查询数据），例如 通过使用SQL服务或SPARQL端点。 请求可以直接发送到服务或经纪人分发。"@zh-hans-cn ;
+                         "查询数据"@zh-hans-cn .
+                               "查询某个实体，如数据集，元数据或注释。"@zh-hans-cn ;
+                           "查询实体"@zh-hans-cn .
+                                 "向元数据资源发送请求以检索感兴趣的元数据。"@zh-hans-cn ;
+                             "查询元数据"@zh-hans-cn .
+                                   "该操作请求关于某些数据或元数据起源的特定持续数据。 这通常是为了确定数据的来源和有效性，但也可能有助于引用和参考。"@zh-hans-cn ;
+                               "查询出处"@zh-hans-cn .
+                                    "将元数据输入到元数据目录中。"@zh-hans-cn ;
+                                "注册元数据"@zh-hans-cn .
+                                     "检索对应于一组注释术语的特定对象集的引用。"@zh-hans-cn ;
+                                 "解析标注"@zh-hans-cn .
+                                          "将数据对象与来自预定义的本地或全局概念模型的结构化信息链接起来。"@zh-hans-cn ;
+                                      "语义标注活动"@zh-hans-cn .
+                                     "指定数据和/或概念的映射规则。 这些规则应该使用可以通过软件处理的语言来明确表达。 最小的一组映射规则应该包括以下数据：映射有效的源数据/概念; 目标数据/概念的映射是有效的; 映射过程（翻译和/或转换过程）; 映射的有效性约束（时间约束，上下文约束等）。"@zh-hans-cn ;
+                                 "建立映射规则"@zh-hans-cn .
+                                              "指定调查的设计，包括抽样设计。 这可能包括测量或观测（地点）的地理位置 - 观测和测量地点的选择，例如，可以是统计的或按领域知识分层的; 网站的特点; 测量的先决条件。"@zh-hans-cn ;
+                                          "指定调查设计"@zh-hans-cn .
+                                                   "指定观测/测量方法的细节。 例如，可以包括测量设备类型及其设置，测量/观察间隔的规格。"@zh-hans-cn ;
+                                               "指定测量或观测"@zh-hans-cn .
+                             "以持久化的方式归档或保存数据，以确保持续的可访问性和可用性。"@zh-hans-cn ;
+                         "储存数据"@zh-hans-cn .
+                                   "自动生成并存储关于操作和数据状态更改的元数据作为起源实例。"@zh-hans-cn ;
+                               "追踪出处"@zh-hans-cn .
+                                 "创建以字母数字，图形或地理位置显示数据的视觉模型。"@zh-hans-cn ;
+                             "可视化数据"@zh-hans-cn .
+                               "已经被分配了唯一标识符的数据。"@zh-hans-cn ;
+                           "已鉴定数据"@zh-hans-cn .
+                                      "接收在相关联的数据存储装置中打包的数据。"@zh-hans-cn ;
+                                  "导入待审编数据"@zh-hans-cn .
+                      rdfs:comment "仪器控制器封装了现场仪器和其他原始数据源的可访问功能。"@zh-hans-cn ;
+                                 "仪器控制器"@zh-hans-cn .
+                               "一个通用接口，用于启用其他服务，如收集、导出数据或自动更新。 这包括与内部组件（如用于检索数据的数据存储控制器）的通信。"@zh-hans-cn ;
+                           "调用资源"@zh-hans-cn .
+                             "本地概念模型中的概念。"@zh-hans-cn ;
+                         "局部对象"@zh-hans-cn .
+                                 "局部概念模型"@zh-hans-cn .
+                           "映射到特定概念模型的数据。"@zh-hans-cn ;
+                       "映射数据"@zh-hans-cn .
+                            "用于模型到模型转换的配置指令。"@zh-hans-cn ;
+                        "映射规则"@zh-hans-cn .
+                                  "测量说明包括用过的设备描述和可用的信息"@zh-hans-cn ;
+                              "测量结果"@zh-hans-cn .
+                         "关于数据的数据，在科学应用程序中用于描述，解释，定位数据资源，或者使得数据资源更容易检索，使用或管理。"@zh-hans-cn ;
+                     "元数据"@zh-hans-cn .
+                                  "元数据的集合，通常是为了使元数据可用于社区而建立的。 元数据目录可以通过访问服务公开。"@zh-hans-cn ;
+                              "元数据编目"@zh-hans-cn .
+                              "元数据状态是适用于在系统中用作元数据的数据的数据状态的改进。"@zh-hans-cn ;
+                          "元数据状态"@zh-hans-cn .
+                                              "提供建模和仿真功能的服务。"@zh-hans-cn ;
+                                          "建模和模拟服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Observer
+:Observer rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty base:playsRole ;
+                                                       owl:hasValue :Observer
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :RawDataGatherer ,
+                          base:Actor ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty base:memberOf ;
+                            owl:someValuesFrom :DataAcquisitionCommunity
+                          ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PIDGenerator
+:PIDGenerator rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty base:playsRole ;
+                                                           owl:hasValue :PIDGenerator
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf base:Resource ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty base:partOf ;
+                                owl:someValuesFrom :DataCurationSystem
+                              ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PIDManager
+:PIDManager rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty base:playsRole ;
+                                                         owl:hasValue :PIDManager
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf base:Actor ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty base:memberOf ;
+                              owl:someValuesFrom :DataCurationCommunity
+                            ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PIDService
+:PIDService rdf:type owl:Class ;
+            rdfs:subClassOf :ServiceObject ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :providesCapability ;
+                              owl:hasValue :AcquireIdentifierCapability
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :providesCapability ;
+                              owl:hasValue :ResolveIdentifierCapability
+                            ] ;
+            dc:description "PID services provide globally-readable persistent identifiers (PIDs) to infrastructure entities, mainly datasets, that may be cited by the community."@en ;
+            :archetype :EnvriReferenceModel ;
+            rdfs:comment "PID服务为基础设施实体（主要是数据集）提供全局可读的持久标识符（PID），可以由社区引用。"@zh-hans-cn ;
+            rdfs:label "PID service"@en ,
+                       "PID服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PersistentData
+:PersistentData rdf:type owl:Class ;
+                rdfs:subClassOf :ResearchData ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty base:hasAttribute ;
+                                  owl:someValuesFrom :PersistentDataState
+                                ] ;
+                dc:description "Data is the representations of information dealt with by information systems and users thereof (as defined in ODP, ISO/IEC 10746-2). Persistent Data denotes data that are persisted (stored for the long-term)."@en ,
+                               "数据是由信息系统及其用户处理的信息的表示（如ODP，ISO / IEC 10746-2中所定义的）。 持久性数据表示持续存储的数据（长期存储）。"@zh-hans-cn ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:label "persistent data"@en ,
+                           "持久数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PersistentDataState
+:PersistentDataState rdf:type owl:Class ;
+                     rdfs:subClassOf base:IV_State ;
+                     dc:description "Data state is the condition of an object that determines the set of all sequences of actions (or traces) in which the object can participate, at a given instant in time (as defined in ODP, ISO/IEC 10746-2)."@en ,
+                                    "数据状态是一个对象的条件，它在给定的时刻（如ODP，ISO / IEC 10746-2中定义的那样）确定对象可以参与的所有动作（或迹线）序列的集合。"@zh-hans-cn ;
+                     rdfs:label "persistent data state"@en ,
+                                "持久数据状态"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PolicyMaker
+:PolicyMaker rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty base:playsRole ;
+                                                          owl:hasValue :PolicyMaker
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :User .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PrepareDataTransfer
+:PrepareDataTransfer rdf:type owl:Class ;
+                     rdfs:subClassOf base:CV_SimpleOperation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty base:operationInvokedBy ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :invokesCapability ;
+                                                                                   owl:hasValue :PrepareDataTransferCapability
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty base:operationProvidedBy ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :providesCapability ;
+                                                                                   owl:hasValue :PrepareDataTransferCapability
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ;
+                     dc:description "is used to negotiate data transfers into the data curation subsystem."^xsd:string ,
+                                    "用于协调数据传输至数据审编系统。"@zh-hans-cn ;
+                     :archetype :EnvriReferenceModel ;
+                     rdfs:label "prepare data transfer [operation]"@en ,
+                                "数据传输准备"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PresentationObject
+:PresentationObject rdf:type owl:Class ;
+                    rdfs:subClassOf base:CV_PersistentObject ;
+                    dc:description "Presentation objects are the entry points for human users to the systems and services provided to access research data and their derived products."@en ;
+                    rdfs:comment "表征对象是人类用户访问提供的访问研究数据及其衍生产品的系统和服务的切入点。"@zh-hans-cn ;
+                    rdfs:label "presentation object"@en ,
+                               "表征对象"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessController
+:ProcessController rdf:type owl:Class ;
+                   rdfs:subClassOf :ComponentObject ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :invokesCapability ;
+                                     owl:hasValue :StageDataCapability
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :providesCapability ;
+                                     owl:hasValue :CoordinateProcessCapability
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :providesCapability ;
+                                     owl:hasValue :DeliverDataSetCapability
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :providesCapability ;
+                                     owl:hasValue :RetrieveDataCapability
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :providesCapability ;
+                                     owl:hasValue :UpdateRecordCapability
+                                   ] ;
+                   dc:description "Process controllers represent the computational functionality of registered execution resources."@en ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:comment "过程控制器表示已注册的执行资源的计算功能。"@zh-hans-cn ;
+                   rdfs:label "process controller"@en ,
+                              "处理控制器"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessRequest
+:ProcessRequest rdf:type owl:Class ;
+                rdfs:subClassOf base:CV_SimpleOperation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty base:operationInvokedBy ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :invokesCapability ;
+                                                                              owl:hasValue :ProcessRequestCapability
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty base:operationProvidedBy ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :providesCapability ;
+                                                                              owl:hasValue :ProcessRequestCapability
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ;
+                dc:description "is used to make requests of the research infrastructure pertaining to data processing."^^xsd:string ,
+                               "用于提出有关数据处理的研究基础设施的请求。"@zh-hans-cn ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:label "process request [operation]"@en ,
+                           "请求处理"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessedData
+:ProcessedData rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :PersistentData
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty base:hasAttribute ;
+                                                            owl:hasValue :ProcessedState
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               dc:description "Data that have undergone processing (evaluation, transformation)."@en ,
+                              "经过处理的数据（评估，转换）。"@zh-hans-cn ;
+               rdfs:label "processed data"@en ,
+                          "已处理数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessingEnvironmentPlanner
+:ProcessingEnvironmentPlanner rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty base:playsRole ;
+                                                                           owl:hasValue :ProcessingEnvironmentPlanner
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf base:Actor ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty base:partOf ;
+                                                owl:someValuesFrom :DataProcessingSystem
+                                              ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PublishedData
+:PublishedData rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :PersistentData
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty base:hasAttribute ;
+                                                            owl:hasValue :PublishedState
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               dc:description "Data that are presented to the outside world."@en ,
+                              "提供给外部世界的数据。"@zh-hans-cn ;
+               base:precondition "A decision is made that data can be seen by others."@en ,
+                                 "Data are made accessible via a service."@en ,
+                                 "Data are minable; you can follow links."@en ;
+               rdfs:label "published data"@en ,
+                          "已发布数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PublishedMetadata
+:PublishedMetadata rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Metadata
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty base:hasAttribute ;
+                                                                owl:hasValue :PublishedState
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   dc:description "Metadata made available to the public, the outside world. Metadata registered within public catalogues."@en ,
+                                  "元数据提供给公众，外界。 在公共目录中注册的元数据。"@zh-hans-cn ;
+                   rdfs:label "published metadata"@en ,
+                              "已发布元数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QAAssessedData
+:QAAssessedData rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :PersistentData
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty base:hasAttribute ;
+                                                             owl:hasValue :QAAssessedState
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                dc:description "Data that have undergone checks and are connected with descriptions of the results of those checks."@en ,
+                               "经过检查并与检查结果描述相关的数据。"@zh-hans-cn ;
+                rdfs:label "QA-assessed data"@en ,
+                           "QA评估数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QANotation
+:QANotation rdf:type owl:Class ;
+            rdfs:subClassOf :Metadata ;
+            dc:description "Notation of the result of a Quality Assessment. This notation can be a nominal value out of a classification system up to a comprehensive (machine readable) description of the whole QA process."@en ,
+                           "质量评估结果的标记。 对于整个质量保证过程的全面（机器可读）描述，这个符号可以是分类系统中的一个名义值。"@zh-hans-cn ;
+            :archetype :EnvriReferenceModel ;
+            rdfs:label "QA notation"@en ,
+                       "QA记号"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QueryCatalogues
+:QueryCatalogues rdf:type owl:Class ;
+                 rdfs:subClassOf base:CV_SimpleOperation ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:operationInvokedBy ;
+                                   owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :invokesCapability ;
+                                                                               owl:hasValue :QueryCataloguesCapability
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:operationProvidedBy ;
+                                   owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :providesCapability ;
+                                                                               owl:hasValue :QueryCataloguesCapability
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                 ] ;
+                 dc:description "Provides functions for querying data held by the infrastructure, including the retrieval of datasets associated with a given persistent identifier."@en ,
+                                "提供用于查询基础结构所拥有的数据的功能，包括检索与给定持久标识符关联的数据集。"@zh-hans-cn ;
+                 :archetype :EnvriReferenceModel ;
+                 rdfs:label "query catalogues [operation]"@en ,
+                            "查询编目"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QueryData
+:QueryData rdf:type owl:Class ;
+           rdfs:subClassOf base:CV_SimpleOperation ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty base:operationInvokedBy ;
+                             owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :invokesCapability ;
+                                                                         owl:hasValue :QueryDataCapability
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty base:operationProvidedBy ;
+                             owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :providesCapability ;
+                                                                         owl:hasValue :QueryDataCapability
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ;
+           dc:description "is used to forward queries onto the data curation subsystem of a research infrastructure and receive the results."^^xsd:string ,
+                          "用于将查询转发到研究基础架构的数据调整子系统并接收结果。"@zh-hans-cn ;
+           :archetype :EnvriReferenceModel ;
+           rdfs:label "query data [operation]"@en ,
+                      "查询数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QueryResource
+:QueryResource rdf:type owl:Class ;
+               rdfs:subClassOf base:CV_SimpleOperation ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty base:operationInvokedBy ;
+                                 owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :invokesCapability ;
+                                                                             owl:hasValue :QueryResourceCapability
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty base:operationProvidedBy ;
+                                 owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :providesCapability ;
+                                                                             owl:hasValue :QueryResourceCapability
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                               ] ;
+               dc:description "is used to retrieve data from data stores."^^xsd:string ,
+                              "用于从数据存储检索数据。"@zh-hans-cn ;
+               :archetype :EnvriReferenceModel ;
+               rdfs:label "query resource [operation]"@en ,
+                          "查询资源"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RawData
+:RawData rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :PersistentData
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty base:hasAttribute ;
+                                                      owl:hasValue :RawState
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         dc:description "The primary results of observations or measurements."@en ,
+                        "观测或测量的主要结果。"@zh-hans-cn ;
+         rdfs:label "raw data"@en ,
+                    "原始数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RawDataCollection
+:RawDataCollection rdf:type owl:Class ;
+                   rdfs:subClassOf base:CV_ComplexOperation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:operationProvidedBy ;
+                                     owl:someValuesFrom :RawDataCollector
+                                   ] ;
+                   dc:description "The collection of raw scientific data requires coordination between the data acquisition phase (which extracts the raw data from instruments) and the data curation phase (which packages and stores the data)."@en ,
+                                  "原始科学数据的收集需要数据采集阶段（提取仪器的原始数据）和数据整理阶段（包装和存储数据）之间的协调。"@zh-hans-cn ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:label "raw data collection [operation]"@en ,
+                              "原始数据收集"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RawDataCollector
+:RawDataCollector rdf:type owl:Class ;
+                  rdfs:subClassOf base:CV_BindingObject ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:invokesOperation ;
+                                    owl:someValuesFrom :AcquireIdentifier
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:invokesOperation ;
+                                    owl:someValuesFrom :DeliverRawData
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:invokesOperation ;
+                                    owl:someValuesFrom :UpdateCatalogues
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:providesOperation ;
+                                    owl:someValuesFrom :ImportDataForCuration
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :invokesCapability ;
+                                    owl:hasValue :AcquireIdentifierCapability
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :invokesCapability ;
+                                    owl:hasValue :DeliverRawDataCapability
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :invokesCapability ;
+                                    owl:hasValue :UpdateCataloguesCapability
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :providesCapability ;
+                                    owl:hasValue :ImportDataForCurationCapability
+                                  ] ;
+                  dc:description "Raw data collectors manage the movement of data from one or more data acquisition objects to one or more data store objects."@en ;
+                  :archetype :EnvriReferenceModel ;
+                  rdfs:comment "原始数据收集器管理从一个或多个数据获取对象到一个或多个数据存储对象的数据移动。"@zh-hans-cn ;
+                  rdfs:label "raw data collector"@en ,
+                             "原始数据收集器"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RawDataGatherer
+:RawDataGatherer rdf:type owl:Class ;
+                 rdfs:subClassOf base:SV_Object ;
+                 dc:description "持有传感器，观察者和测量者的类。"@zh-hans-cn ;
+                 rdfs:comment "Holding class for sensors, observers and measurers."@en ;
+                 rdfs:label "raw data gatherer"@en ,
+                            "元数据收集者"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RawMetadata
+:RawMetadata rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Metadata
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty base:hasAttribute ;
+                                                          owl:hasValue :RawState
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             dc:description "Established metadata, which are not yet registered. In general, they are not shareable in this state."@en ,
+                            "已建立的元数据，尚未注册。 一般来说，他们在这个状态不能共享。"@zh-hans-cn ;
+             base:precondition "Raw data is persisted in a way that further information can be added: it must have a minimum set of identifiers and it must allow links."@en ;
+             rdfs:label "raw metadata"@en ,
+                        "原始元数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RegisteredMetadata
+:RegisteredMetadata rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :Metadata
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty base:hasAttribute ;
+                                                                 owl:hasValue :RegisteredState
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    dc:description "Metadata which are inserted into a metadata catalogue."@en ,
+                                   "被插入到元数据目录中的元数据。"@zh-hans-cn ;
+                    rdfs:label "registered metadata"@en ,
+                               "注册元数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RequestData
+:RequestData rdf:type owl:Class ;
+             rdfs:subClassOf base:CV_SimpleOperation ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty base:operationInvokedBy ;
+                               owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :invokesCapability ;
+                                                                           owl:hasValue :RequestDataCapability
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty base:operationProvidedBy ;
+                               owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :providesCapability ;
+                                                                           owl:hasValue :RequestDataCapability
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             dc:description "is used to make requests of the research infrastructure pertaining to curated datasets."^^xsd:string ,
+                            "用于向研究基础设施提出有关整理数据集的请求。"@zh-hans-cn ;
+             :archetype :EnvriReferenceModel ;
+             rdfs:label "request data [operation]"@en ,
+                        "请求数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ResearchData
+:ResearchData rdf:type owl:Class ;
+              rdfs:subClassOf base:Data ;
+              dc:description "Research data processed by the RI. This is the base information object class from which all other information objects are derived."@en ,
+                             "由RI处理的研究数据。 这是派生所有其他信息对象的基本信息对象类。"@zh-hans-cn ;
+              :archetype :EnvriReferenceModel ;
+              rdfs:label "research data"@en ,
+                         "科学研究数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ResearchDataLifecyclePhase
+:ResearchDataLifecyclePhase rdf:type owl:Class ;
+                            rdfs:subClassOf base:RM_Classifier ;
+                            dc:description "The data lifecycle of environmental research infrastructures is structured in five phases: Data Acquisition, Data Curation, Data Publishing, Data Processing and Data Use  The fundamental reason of the division of the data lifecycle is based on the observation that all applications, services and software tools are designed and implemented around five major activities: acquiring data, storing and preserving data, making the data publicly available, providing services for further data processing, and using the data to derive different data products. This data lifecycle is fairly general and all research infrastructures investigated exhibit behaviour that aligns with its phases. Consequently, the ENVRI-RM is structured in line with the five phases of the data life-cycle."@en ,
+                                           "环境研究基础设施的数据生命周期分为五个阶段：数据采集，数据处理，数据发布，数据处理和数据使用。数据生命周期划分的根本原因是基于观察到所有的应用程序，服务和软件 工具是围绕五个主要活动设计和实现的：获取数据，存储和保存数据，公开数据，为进一步的数据处理提供服务，以及使用数据导出不同的数据产品。 这个数据生命周期相当普遍，调查的所有研究基础设施都显示与其阶段相一致的行为。 因此，ENVRI-RM的结构与数据生命周期的五个阶段一致。"@zh-hans-cn ;
+                            rdfs:label "research data lifecycle phase"@en ,
+                                       "数据生命周期阶段"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
+:ResearchInfrastructure rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty base:playsRole ;
+                                                                     owl:hasValue :ResearchInfrastructure
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf base:Infrastructure .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Researcher
+:Researcher rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty base:playsRole ;
+                                                         owl:hasValue :Researcher
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :User .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ResolveIdentifier
+:ResolveIdentifier rdf:type owl:Class ;
+                   rdfs:subClassOf base:CV_SimpleOperation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:operationInvokedBy ;
+                                     owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :invokesCapability ;
+                                                                                 owl:hasValue :ResolveIdentifierCapability
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:operationProvidedBy ;
+                                     owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :providesCapability ;
+                                                                                 owl:hasValue :ResolveIdentifierCapability
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                   ] ;
+                   dc:description "Is used to resolve identifiers."^^xsd:string ,
+                                  "用于解析标识符。"@zh-hans-cn ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:label "resolve identifier [operation]"@en ,
+                              "解析标志符"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RetrieveData
+:RetrieveData rdf:type owl:Class ;
+              rdfs:subClassOf base:CV_SimpleOperation ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty base:operationInvokedBy ;
+                                owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :invokesCapability ;
+                                                                            owl:hasValue :RetrieveDataCapability
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty base:operationProvidedBy ;
+                                owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :providesCapability ;
+                                                                            owl:hasValue :RetrieveDataCapability
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                              ] ;
+              dc:description "is used to request a new persistent identifier to be associated with the data being transferred."^^xsd:string ,
+                             "用于请求与正在传输的数据相关联的新的持久标识符。"@zh-hans-cn ;
+              :archetype :EnvriReferenceModel ;
+              rdfs:label "retrieve data [operation]"@en ,
+                         "获取数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_CoCreate
+:SV_CoCreate rdf:type owl:Class ;
+             rdfs:subClassOf :DataUseBehaviour ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty base:involves ;
+                               owl:someValuesFrom base:Actor
+                             ] ;
+             dc:description "A behaviour performed by active roles which entails the design and planning of activities for the collection, preservation, analysis or publishing of research data in partnership with different communities."@en ,
+                            "由主动角色执行的行为，需要与不同社区合作，设计和规划与收集，保存，分析或发布研究数据有关的活动。"@zh-hans-cn ;
+             :archetype :EnvriReferenceModel ;
+             rdfs:label "co-create [behaviour]"@en ,
+                        "协同创建"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_Collaborate
+:SV_Collaborate rdf:type owl:Class ;
+                rdfs:subClassOf :DataUseBehaviour ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty base:involves ;
+                                  owl:someValuesFrom base:Actor
+                                ] ;
+                dc:description "A behaviour performed by active roles which entails assisting/participating in some of the phases of the collection, preservation, analysis or publishing of research data."@en ,
+                               "主动角色的行为需要帮助/参与收集，保存，分析或发布研究数据的某些阶段。"@zh-hans-cn ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:label "collaborate [behaviour]"@en ,
+                           "协作"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_ComposeService
+:SV_ComposeService rdf:type owl:Class ;
+                   rdfs:subClassOf :DataProcessingBehaviour ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:involves ;
+                                     owl:someValuesFrom :ServiceConsumer
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:involves ;
+                                     owl:someValuesFrom :ServiceProvider
+                                   ] ;
+                   dc:description "A behaviour performed by a Service Provider to combine multiple services which can be achieved by either Choreography or Orchestration. Service Choreography is a collaboration between Service Providers and Service Consumers. Service Orchestration is the behaviour that a Service Provider performs internally to realise a service that it provides."@en ,
+                                  "由服务提供者执行的组合可以通过编排或编排实现的多个服务的行为。 服务编排是服务提供者和服务使用者之间的协作。 服务协调是服务提供者在内部执行以实现其提供的服务的行为。"@zh-hans-cn ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:label "compose service [behaviour]"@en ,
+                              "构建服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_Contribute
+:SV_Contribute rdf:type owl:Class ;
+               rdfs:subClassOf :DataUseBehaviour ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty base:involves ;
+                                 owl:someValuesFrom base:Actor
+                               ] ;
+               dc:description "A behaviour performed by active roles which entails directly collecting, preserving, analysing, or publishing research data held by the RI, according to a predefined protocol."@en ,
+                              "活动角色执行的行为，需要根据预定义的协议直接收集，保存，分析或发布由RI所持有的研究数据。"@zh-hans-cn ;
+               :archetype :EnvriReferenceModel ;
+               rdfs:label "contribute [behaviour]"@en ,
+                          "贡献"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_CoordinateService
+:SV_CoordinateService rdf:type owl:Class ;
+                      rdfs:subClassOf :DataProcessingBehaviour ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty base:involves ;
+                                        owl:someValuesFrom :ServiceProvider
+                                      ] ;
+                      dc:description "A behaviour performed by a Service Provider to coordinate the actions of distributed applications in order to reach consistent agreement on the outcome of distributed transactions."@en ,
+                                     "服务提供商为协调分布式应用程序的行为而执行的行为，以便就分布式事务的结果达成一致的协议。"@zh-hans-cn ;
+                      :archetype :EnvriReferenceModel ;
+                      rdfs:label "coordinate service [behaviour]"@en ,
+                                 "协调服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_CustomiseProcessingEnvironment
+:SV_CustomiseProcessingEnvironment rdf:type owl:Class ;
+                                   rdfs:subClassOf :DataProcessingBehaviour ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty base:involves ;
+                                                     owl:someValuesFrom :ProcessingEnvironmentPlanner
+                                                   ] ;
+                                   dc:description "A behaviour performed by a processing environment planner to enable a Data Processing Subsystem to prepare customised infrastructure and service platforms for managing specific data processing applications optimally, including the planning, provisioning and deployment sub-activities."@en ,
+                                                  "由处理环境规划人员执行的行为，使数据处理子系统能够最佳地准备用于管理特定数据处理应用程序的定制基础架构和服务平台，包括规划，供应和部署子活动。"@zh-hans-cn ;
+                                   :archetype :EnvriReferenceModel ;
+                                   rdfs:label "customise processing environment [behaviour]"@en ,
+                                              "定制处理环境"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataAnnotation
+:SV_DataAnnotation rdf:type owl:Class ;
+                   rdfs:subClassOf :DataCurationBehaviour ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:involves ;
+                                     owl:someValuesFrom :SemanticCurator
+                                   ] ;
+                   dc:description "A behaviour performed by a Semantic Curator which supports the linking of data and metadata with a local conceptual model."@en ,
+                                  "由语义整理者执行的行为，支持数据和元数据与本地概念模型的链接。"@zh-hans-cn ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:label "data annotation [behaviour]"@en ,
+                              "数据标注"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataCitation
+:SV_DataCitation rdf:type owl:Class ;
+                 rdfs:subClassOf :DataPublishingBehaviour ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:involves ;
+                                   owl:someValuesFrom :PIDManager
+                                 ] ;
+                 dc:description "A behaviour performed by a PID Manager that assigns an accurate, consistent and standardised reference to a data object, in the same way as researchers routinely provide a bibliographic reference to printed resources. The RI publishing the data can define the citation contents such as authors, and dates for different citation styles."@en ,
+                                "由PID管理者执行的一项行为，它为数据对象分配一个精确的，一致的和标准化的参考，就像研究人员经常为印刷资源提供参考书目一样。 发布数据的RI可以定义作者的引用内容，不同引文风格的日期。"@zh-hans-cn ;
+                 :archetype :EnvriReferenceModel ;
+                 rdfs:label "data citation [behaviour]"@en ,
+                            "数据引用"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataCollection
+:SV_DataCollection rdf:type owl:Class ;
+                   rdfs:subClassOf :DataAcquisitionBehaviour ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:involves ;
+                                     owl:someValuesFrom :DataCollector
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty base:involves ;
+                                     owl:someValuesFrom :RawDataGatherer
+                                   ] ;
+                   dc:description "A behaviour performed by a Data Collector that control and monitor the collection of the digital values from a sensor instrument (or a human sensor such as a Measurer or a Observer), associating consistent timestamps and necessary metadata."@en ,
+                                  "数据收集器执行的行为，用于控制和监视来自传感器仪器（或人体感应器，如Measurer或Observer）的数字值的集合，将一致的时间戳和必要的元数据关联起来。"@zh-hans-cn ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:label "data collection [behaviour]"@en ,
+                              "数据收集"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataDiscoveryAndAccess
+:SV_DataDiscoveryAndAccess rdf:type owl:Class ;
+                           rdfs:subClassOf :DataPublishingBehaviour ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty base:involves ;
+                                             owl:someValuesFrom :DataPublishingSystem
+                                           ] ;
+                           dc:description "A behaviour enabled by a Data Discovery and Access System that retrieves requested data from a data resource by using suitable search technology."@en ,
+                                          "数据发现和访问系统启用的行为，通过使用适当的搜索技术从数据资源中检索请求的数据。"@zh-hans-cn ;
+                           :archetype :EnvriReferenceModel ;
+                           rdfs:label "data discovery and access [behaviour]"@en ,
+                                      "数据发现与访问"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataIdentification
+:SV_DataIdentification rdf:type owl:Class ;
+                       rdfs:subClassOf :DataCurationBehaviour ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty base:involves ;
+                                         owl:someValuesFrom :PIDManager
+                                       ] ;
+                       dc:description "A behaviour performed by a PID manager which provides a unique PID for data and metadata being curated."@en ,
+                                      "由PID管理器执行的行为，为管理的数据和元数据提供唯一的PID。"@zh-hans-cn ;
+                       :archetype :EnvriReferenceModel ;
+                       rdfs:label "data identification [behaviour]"@en ,
+                                  "数据鉴定"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataPreservation
+:SV_DataPreservation rdf:type owl:Class ;
+                     rdfs:subClassOf :DataCurationBehaviour ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty base:involves ;
+                                       owl:someValuesFrom :DataCurator
+                                     ] ;
+                     dc:description "A behaviour performed by a Data Curator that deposits (over long-term) the data and metadata or other supplementary data and methods according to specified policies, and makes them accessible on request."@en ,
+                                    "由数据整理员执行的行为，该行为根据指定的策略（长期）存储数据和元数据或其他补充数据和方法，并根据请求使其可访问。"@zh-hans-cn ;
+                     :archetype :EnvriReferenceModel ;
+                     rdfs:label "data preservation [behaviour]"@en ,
+                                "数据保存"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataProductGeneration
+:SV_DataProductGeneration rdf:type owl:Class ;
+                          rdfs:subClassOf :DataCurationBehaviour ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :DataCurator
+                                          ] ;
+                          dc:description "A behaviour performed by a Data Curator that processes data against requirement specifications and standardised formats and descriptions."@en ,
+                                         "由数据整理者执行的行为，根据需求规格和标准化格式和描述处理数据。"@zh-hans-cn ;
+                          :archetype :EnvriReferenceModel ;
+                          rdfs:label "data product generation [behaviour]"@en ,
+                                     "数据产品生成"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataPublication
+:SV_DataPublication rdf:type owl:Class ;
+                    rdfs:subClassOf :DataPublishingBehaviour ;
+                    dc:description "A behaviour that provides clean, well-annotated, anonymity-preserving datasets in a suitable format, and by following specified data-publication and sharing policies, to make the datasets accessible publicly or to those who agree to certain conditions of use, and to individuals who meet certain professional criteria."@en ,
+                                   "一种行为，通过适当的格式提供干净，注释良好，保存匿名的数据集，并遵循特定的数据出版和共享政策，使数据集可以公开访问，也可以让那些同意某些使用条件的访问者以及个人访问 谁符合一定的专业标准。"@zh-hans-cn ;
+                    :archetype :EnvriReferenceModel ;
+                    rdfs:label "data publication [behaviour]"@en ,
+                               "数据发布"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataQualityChecking
+:SV_DataQualityChecking rdf:type owl:Class ;
+                        rdfs:subClassOf :DataCurationBehaviour ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty base:involves ;
+                                          owl:someValuesFrom :DataCurator
+                                        ] ;
+                        dc:description "A behaviour performed by a Data Curator that detects and corrects (or removes) corrupt, inconsistent or inaccurate records from data sets."@en ,
+                                       "数据整理者执行的行为，用于检测和纠正（或删除）数据集中的损坏，不一致或不准确的记录。"@zh-hans-cn ;
+                        :archetype :EnvriReferenceModel ;
+                        rdfs:label "data quality checking [behaviour]"@en ,
+                                   "数据质量检测"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DataReplication
+:SV_DataReplication rdf:type owl:Class ;
+                    rdfs:subClassOf :DataCurationBehaviour ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty base:involves ;
+                                      owl:someValuesFrom :StorageAdministrator
+                                    ] ;
+                    dc:description "A behaviour performed by a Storage Administrator that creates, deletes and maintains the consistency of copies of a data set on multiple storage devices."@en ,
+                                   "存储管理员执行的行为，用于创建，删除和维护多个存储设备上数据集的副本的一致性。"@zh-hans-cn ;
+                    :archetype :EnvriReferenceModel ;
+                    rdfs:label "data replication [behaviour]"@en ,
+                               "数据复制"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DescribeService
+:SV_DescribeService rdf:type owl:Class ;
+                    rdfs:subClassOf :DataProcessingBehaviour ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty base:involves ;
+                                      owl:someValuesFrom :ServiceProvider
+                                    ] ;
+                    dc:description "A behaviour performed by a Service Provider to provide the information needed in order to use a service."@en ,
+                                   "由服务提供商执行的行为，以提供使用服务所需的信息。"@zh-hans-cn ;
+                    :archetype :EnvriReferenceModel ;
+                    rdfs:label "describe service [behaviour]"@en ,
+                               "描述服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DesignExperiment
+:SV_DesignExperiment rdf:type owl:Class ;
+                     rdfs:subClassOf :DataAcquisitionBehaviour ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty base:involves ;
+                                       owl:someValuesFrom :EnvironmentalScientist
+                                     ] ;
+                     dc:description "A behaviour performed by a Environmental Scientist that designs the scientific experiment which motivates the data acquisition activities."@en ,
+                                    "环境科学家的行为，设计激励数据采集活动的科学实验。"@zh-hans-cn ;
+                     :archetype :EnvriReferenceModel ;
+                     rdfs:label "design experiment [behaviour]"@en ,
+                                "设计实验"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_DesignMeasurementModel
+:SV_DesignMeasurementModel rdf:type owl:Class ;
+                           rdfs:subClassOf :DataAcquisitionBehaviour ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty base:involves ;
+                                             owl:someValuesFrom :MeasurementModelDesigner
+                                           ] ;
+                           dc:description "A behaviour performed by a Measurement Model Designer that designs the measurement or monitoring model based on scientific requirements."@en ,
+                                          "由测量模型设计师执行的行为，基于科学要求设计测量或监测模型。"@zh-hans-cn ;
+                           :archetype :EnvriReferenceModel ;
+                           rdfs:label "design measurement model [behaviour]"@en ,
+                                      "设计测量模型"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_InstrumentCalibration
+:SV_InstrumentCalibration rdf:type owl:Class ;
+                          rdfs:subClassOf :DataAcquisitionBehaviour ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :Sensor
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :Technician
+                                          ] ;
+                          dc:description "A behaviour performed by a Technician that controls and records the process of aligning or testing a sensor against dependable standards or specified verification processes."@en ,
+                                         "技术人员执行的行为，控制和记录对准可靠的标准或指定的验证过程的传感器对齐或测试过程。"@zh-hans-cn ;
+                          :archetype :EnvriReferenceModel ;
+                          rdfs:label "instrument calibration [behaviour]"@en ,
+                                     "仪器校正"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_InstrumentConfiguration
+:SV_InstrumentConfiguration rdf:type owl:Class ;
+                            rdfs:subClassOf :DataAcquisitionBehaviour ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty base:involves ;
+                                              owl:someValuesFrom :Sensor
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty base:involves ;
+                                              owl:someValuesFrom :Technician
+                                            ] ;
+                            dc:description "A behaviour performed by a Technician that sets up a sensor or a sensor network."@en ,
+                                           "由技术人员执行的设置传感器或传感器网络的行为。"@zh-hans-cn ;
+                            :archetype :EnvriReferenceModel ;
+                            rdfs:label "instrument configuration [behaviour]"@en ,
+                                       "仪器配置"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_MetadataHarvesting
+:SV_MetadataHarvesting rdf:type owl:Class ;
+                       rdfs:subClassOf :DataPublishingBehaviour ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty base:involves ;
+                                         owl:someValuesFrom :DataPublishingSystem
+                                       ] ;
+                       dc:description "A behaviour performed by a metadata harvester to gather metadata from data objects in order to construct catalogues of the available information."@en ,
+                                      "元数据采集器为了构建可用信息的目录而从数据对象收集元数据的行为。"@zh-hans-cn ;
+                       :archetype :EnvriReferenceModel ;
+                       rdfs:label "metadata harvesting [behaviour]"@en ,
+                                  "元数据收割"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_RegisterService
+:SV_RegisterService rdf:type owl:Class ;
+                    rdfs:subClassOf :DataProcessingBehaviour ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty base:involves ;
+                                      owl:someValuesFrom :ServiceProvider
+                                    ] ;
+                    dc:description "A behaviour performed by a Service Provider to make the service visible to Service Consumers by registering it in a service registry."@en ,
+                                   "由服务提供商执行的行为，通过将服务注册到服务注册中心来使该服务可见。"@zh-hans-cn ;
+                    :archetype :EnvriReferenceModel ;
+                    rdfs:label "register service [behaviour]"@en ,
+                               "注册服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_SelectOrBuildConceptualModel
+:SV_SelectOrBuildConceptualModel rdf:type owl:Class ;
+                                 rdfs:subClassOf :DataCurationBehaviour ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty base:involves ;
+                                                   owl:someValuesFrom :SemanticCurator
+                                                 ] ;
+                                 dc:description "A behaviour performed by a Semantic Curator which supports the annotation of data and metadata."@en ,
+                                                "语义整理者支持数据和元数据注释的行为。"@zh-hans-cn ;
+                                 :archetype :EnvriReferenceModel ;
+                                 rdfs:label "select or build conceptual model [behaviour]"@en ,
+                                            "选择或构建概念模型"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_SemanticHarmonisation
+:SV_SemanticHarmonisation rdf:type owl:Class ;
+                          rdfs:subClassOf :DataPublishingBehaviour ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :SemanticMediator
+                                          ] ;
+                          dc:description "A behaviour enabled by a Semantic Mediator that unifies similar data (knowledge) models based on the consensus of collaborative domain experts to achieve better data (knowledge) reuse and semantic interoperability."@en ,
+                                         "一种基于协作领域专家共识的统一相似数据（知识）模型的语义媒介实现的行为，以实现更好的数据（知识）重用和语义互操作性。"@zh-hans-cn ;
+                          :archetype :EnvriReferenceModel ;
+                          rdfs:label "semantic harmonisation [behaviour]"@en ,
+                                     "语义协调"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_UserBehaviourTracking
+:SV_UserBehaviourTracking rdf:type owl:Class ;
+                          rdfs:subClassOf :DataUseBehaviour ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :DataUseSystem
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :User
+                                          ] ;
+                          dc:description "A behaviour enabled by a Community Support System to track the Users. If the research infrastructure has identity management, authorisation mechanisms, accounting mechanisms, for example, a Data Access (Sub)system is provided, then the Community Support System either include these or work well with them."@en ,
+                                         "由社区支持系统启用的行为来跟踪用户。 如果研究基础设施具有身份管理，授权机制，会计机制（例如，数据访问（子））系统被提供，则社区支持系统或者包括这些或与其一起工作良好。"@zh-hans-cn ;
+                          :archetype :EnvriReferenceModel ;
+                          rdfs:label "user behaviour tracking [behaviour]"@en ,
+                                     "用户行为跟踪"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_UserGroupWorkSupport
+:SV_UserGroupWorkSupport rdf:type owl:Class ;
+                         rdfs:subClassOf :DataUseBehaviour ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty base:involves ;
+                                           owl:someValuesFrom :DataUseSystem
+                                         ] ;
+                         dc:description "A behaviour enabled by a Community Support System to support controlled sharing, collaborative work and publication of results, with persistent and externally citable PIDs."@en ,
+                                        "由社区支持系统支持的行为，用于支持受控共享，协作工作和结果发布，以及持续的，可在外部使用的PID。"@zh-hans-cn ;
+                         :archetype :EnvriReferenceModel ;
+                         rdfs:label "user group work support [behaviour]"@en ,
+                                    "用户组工作支持"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_UserProfileManagement
+:SV_UserProfileManagement rdf:type owl:Class ;
+                          rdfs:subClassOf :DataUseBehaviour ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty base:involves ;
+                                            owl:someValuesFrom :DataUseSystem
+                                          ] ;
+                          dc:description "A behaviour enabled by a Community Support System to support persistent and mobile profiles, where profiles will include preferred interaction settings, preferred computational resource settings, and so on."@en ,
+                                         "由社区支持系统启用的支持持久性和移动配置文件的行为，其中配置文件将包括首选交互设置，首选计算资源设置等。"@zh-hans-cn ;
+                          :archetype :EnvriReferenceModel ;
+                          rdfs:label "user profile management [behaviour]"@en ,
+                                     "用户资料管理"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_UserWorkingRelationshipsManagement
+:SV_UserWorkingRelationshipsManagement rdf:type owl:Class ;
+                                       rdfs:subClassOf :SV_UserProfileManagement ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty base:involves ;
+                                                         owl:someValuesFrom :DataUseSystem
+                                                       ] ;
+                                       dc:description "A behaviour enabled by a Community Support System to support a record of working relationships, (virtual) group memberships and friends."@en ,
+                                                      "由社区支持系统支持的行为，以支持工作关系记录（虚拟）组成员和朋友。"@zh-hans-cn ;
+                                       :archetype :EnvriReferenceModel ;
+                                       rdfs:label "user working relationships management [behaviour]"@en ,
+                                                  "用户工作关系管理"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SV_UserWorkingSpaceManagement
+:SV_UserWorkingSpaceManagement rdf:type owl:Class ;
+                               rdfs:subClassOf :DataUseBehaviour ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty base:involves ;
+                                                 owl:someValuesFrom :DataUseSystem
+                                               ] ;
+                               dc:description "A behaviour enabled by a Community Support System to support work spaces that allow data, document and code continuity between connection sessions and accessible from multiple sites or mobile smart devices."@en ,
+                                              "由社区支持系统支持的行为，支持工作空间，允许连接会话之间的数据，文档和代码连续性，并可从多个站点或移动智能设备访问。"@zh-hans-cn ;
+                               :archetype :EnvriReferenceModel ;
+                               rdfs:label "user working space management [behaviour]"@en ,
+                                          "用户工作空间管理"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ScienceGateway
+:ScienceGateway rdf:type owl:Class ;
+                rdfs:subClassOf :PresentationObject ;
+                dc:description "A science gateway object encapsulates the functions required to interact with a research infrastructure from outside with the objects provided for data acquisition, data curation, data brokering and data processing. A science gateway should be able to provide virtual 'laboratories' for authorised agents to interact with and possibly configure many of the science functions of a research infrastructure. A science gateway is also known as a Virtual Research Environment."@en ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:comment "科学网关对象封装了从外部与研究基础设施进行交互所需的功能，以及为数据获取，数据管理，数据代理和数据处理提供的对象。 科学网关应该能够为授权的代理提供虚拟的“实验室”，以便与研究基础设施的许多科学功能进行交互，并可能配置这些功能。 科学网关也被称为虚拟研究环境。"@zh-hans-cn ;
+                rdfs:label "science gateway"@en ,
+                           "科学网关"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Scientist
+:Scientist rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty base:playsRole ;
+                                                        owl:hasValue :Scientist
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :User .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SemanticBroker
+:SemanticBroker rdf:type owl:Class ;
+                rdfs:subClassOf :BrokerObject ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :providesCapability ;
+                                  owl:hasValue :TranslateRequestCapability
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :providesCapability ;
+                                  owl:hasValue :UpdateModelCapability
+                                ] ;
+                dc:description "Semantic broker objects perform semantic interpretation."@en ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:comment "语义代理对象执行语义解释。"@zh-hans-cn ;
+                rdfs:label "semantic broker"@en ,
+                           "语义代理"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SemanticCurator
+:SemanticCurator rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty base:playsRole ;
+                                                              owl:hasValue :SemanticCurator
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf base:Actor ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:memberOf ;
+                                   owl:someValuesFrom :DataCurationCommunity
+                                 ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SemanticLaboratory
+:SemanticLaboratory rdf:type owl:Class ;
+                    rdfs:subClassOf :VirtualLaboratory ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :invokesCapability ;
+                                      owl:hasValue :UpdateModelCapability
+                                    ] ;
+                    dc:description "Semantic laboratories are used to interact with the semantic models used by a research infrastructure to interpret datasets and characteristic (meta)data."@en ;
+                    :archetype :EnvriReferenceModel ;
+                    rdfs:comment "语义实验室用于与研究基础设施使用的语义模型进行交互，以解释数据集和特征（元）数据。"@zh-hans-cn ;
+                    rdfs:label "semantic laboratory"@en ,
+                               "语义实验室"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SemanticMediator
+:SemanticMediator rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty base:playsRole ;
+                                                               owl:hasValue :SemanticMediator
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf base:Actor ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:memberOf ;
+                                    owl:someValuesFrom :DataPublishingCommunity
+                                  ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Sensor
+:Sensor rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty base:playsRole ;
+                                                     owl:hasValue :Sensor
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :RawDataGatherer ,
+                        base:Resource ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty base:partOf ;
+                          owl:someValuesFrom :SensorNetwork
+                        ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SensorBackend
+:SensorBackend rdf:type owl:Class ;
+               rdfs:subClassOf :BackendObject ;
+               dc:description "A converter that measures a physical quantity and converts it into a signal which can be read by an observer or by an (electronic) instrument."@en ;
+               :archetype :EnvriReferenceModel ;
+               rdfs:comment "一个转换器，用于测量一个物理量，并将其转换成一个可被观察者或（电子）仪器读取的信号。"@zh-hans-cn ;
+               rdfs:label "sensor [backend]"@en ,
+                          "传感器后端"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SensorNetwork
+:SensorNetwork rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty base:playsRole ;
+                                                            owl:hasValue :SensorNetwork
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf base:Resource ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty base:partOf ;
+                                 owl:someValuesFrom :DataAcquisitionSystem
+                               ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SensorNetworkBackend
+:SensorNetworkBackend rdf:type owl:Class ;
+                      rdfs:subClassOf :BackendObject ;
+                      dc:description "A network consisting of distributed sensors which monitor physical or environmental conditions."@en ;
+                      :archetype :EnvriReferenceModel ;
+                      rdfs:comment "由分布式传感器组成的网络，用于监测物理或环境条件。"@zh-hans-cn ;
+                      rdfs:label "sensor network [backend]"@en ,
+                                 "传感网络后端"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Service
+:Service rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty base:playsRole ;
+                                                      owl:hasValue :Service
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf base:Resource ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty base:partOf ;
+                           owl:someValuesFrom :DataProcessingSystem
+                         ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceConsumer
+:ServiceConsumer rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty base:playsRole ;
+                                                              owl:hasValue :ServiceConsumer
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf base:Resource ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:partOf ;
+                                   owl:someValuesFrom :DataProcessingSystem
+                                 ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceDescription
+:ServiceDescription rdf:type owl:Class ;
+                    rdfs:subClassOf :Metadata ;
+                    dc:description "Description of services and processes available for reuse. The description is needed to facilitate usage. The service description usually includes a reference to a service or process making it available for reuse within a research infrastructure or within an open network like the Internet. Usually such descriptions include the accessibility of the service, the description of the interfaces, the description of behavior and/or implemented algorithms. Such descriptions are usually done along service description standards (e.g. WSDL, web service description language). Within some service description languages, semantic descriptions of the services and/or interfaces are possible (e.g. SAWSDL, Semantic Annotations for WSDL)."@en ,
+                                   "可用于重用的服务和进程的描述。 需要描述以方便使用。 服务描述通常包括对服务或流程的引用，使其可以在研究基础设施内或在像因特网这样的开放网络中重用。 通常这样的描述包括服务的可访问性，接口的描述，行为描述和/或实现的算法。 这种描述通常是根据服务描述标准（例如WSDL，Web服务描述语言）完成的。 在一些服务描述语言中，服务和/或接口的语义描述是可能的（例如SAWSDL，用于WSDL的语义注释）。"@zh-hans-cn ;
+                    :archetype :EnvriReferenceModel ;
+                    rdfs:label "service description"@en ,
+                               "服务描述"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceObject
+:ServiceObject rdf:type owl:Class ;
+               rdfs:subClassOf base:CV_PersistentObject ;
+               dc:description "Service objects offer programmatic access to distributed systems and resources (internal and external)."@en ;
+               rdfs:comment "服务对象提供对分布式系统和资源（内部和外部）的编程访问。"@zh-hans-cn ;
+               rdfs:label "service object"@en ,
+                          "服务对象"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceProvider
+:ServiceProvider rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty base:playsRole ;
+                                                              owl:hasValue :ServiceProvider
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf base:Resource ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:partOf ;
+                                   owl:someValuesFrom :DataProcessingSystem
+                                 ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceRegistry
+:ServiceRegistry rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty base:playsRole ;
+                                                              owl:hasValue :ServiceRegistry
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf base:Resource ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty base:partOf ;
+                                   owl:someValuesFrom :DataProcessingSystem
+                                 ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceRegistryBackend
+:ServiceRegistryBackend rdf:type owl:Class ;
+                        rdfs:subClassOf :BackendObject ;
+                        dc:description "An information system for registering services."@en ;
+                        :archetype :EnvriReferenceModel ;
+                        rdfs:comment "一个注册服务的信息系统。"@zh-hans-cn ;
+                        rdfs:label "service registry [backend]"@en ,
+                                   "服务注册后端"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SpecificationOfInvestigationDesign
+:SpecificationOfInvestigationDesign rdf:type owl:Class ;
+                                    rdfs:subClassOf :Metadata ;
+                                    dc:description "This is the background data needed to understand the overall goal of the measurement or observation. It could be the sampling design of observation stations, the network design, the description of the setup parameters (interval of measurements) and so on. It usually contains important data for the allowed evaluations of research results (e.g. the question of whether a sampling design was done randomly or by stratification determines which statistical methods can be applied)."@en ,
+                                                   "这是了解测量或观测总体目标所需的背景数据。 它可以是观测站的采样设计，网络设计，设置参数（测量间隔）的描述等等。 它通常包含允许评估研究结果的重要数据（例如抽样设计是随机进行还是通过分层来确定可以应用哪种统计方法的问题）。"@zh-hans-cn ;
+                                    :archetype :EnvriReferenceModel ;
+                                    rdfs:label "specification of investigation design"@en ,
+                                               "调查设计规范"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SpecificationOfMeasurementsOrObservations
+:SpecificationOfMeasurementsOrObservations rdf:type owl:Class ;
+                                           rdfs:subClassOf :Metadata ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty base:partOf ;
+                                                             owl:someValuesFrom :SpecificationOfInvestigationDesign
+                                                           ] ;
+                                           dc:description """The description of the measurement/observation which specifies: what is measured/observed;
+how it is measured/observed (including processes/metods and instruments to be used); by whom it is measured/observed (including project, organisation and experimenter/observer profile); and what the temporal design is (single / multiple measurements / interval of measurement etc.)."""@en ,
+                                                          "测量/观察的描述，指定：测量/观察的内容; 如何测量/观察（包括使用的过程/方法和仪器）; （包括项目，组织和实验者/观察员简介）; 以及时间设计是什么（单次/多次测量/测量间隔等）。"@zh-hans-cn ;
+                                           :archetype :EnvriReferenceModel ;
+                                           base:precondition "The setup description is recorded as long as information is available. Loss of information about the working hypothesis is avoided."@en ;
+                                           rdfs:label "specification of measurements or observations"@en ,
+                                                      "测量或观测规范"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StageData
+:StageData rdf:type owl:Class ;
+           rdfs:subClassOf :DataStreamOperation ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty base:operationInvokedBy ;
+                             owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :invokesCapability ;
+                                                                         owl:hasValue :StageDataCapability
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty base:operationProvidedBy ;
+                             owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :providesCapability ;
+                                                                         owl:hasValue :StageDataCapability
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ;
+           dc:description "is used to acquire data sent from the data curation subsystem of a research infrastructure needed as part of some process."^^xsd:string ,
+                          "用于从作为某个过程的一部分所需的研究基础设施的数据管理子系统获取所发送的数据。"@zh-hans-cn ;
+           :archetype :EnvriReferenceModel ;
+           rdfs:label "stage data [operation]"@en ,
+                      "筹划数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StorageAdministrator
+:StorageAdministrator rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty base:playsRole ;
+                                                                   owl:hasValue :StorageAdministrator
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf base:Actor ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty base:memberOf ;
+                                        owl:someValuesFrom :DataCurationCommunity
+                                      ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StorageSystem
+:StorageSystem rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty base:playsRole ;
+                                                            owl:hasValue :StorageSystem
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf base:Resource ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty base:partOf ;
+                                 owl:someValuesFrom :DataCurationSystem
+                               ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StorageSystemBackend
+:StorageSystemBackend rdf:type owl:Class ;
+                      rdfs:subClassOf :BackendObject ;
+                      dc:description "A system that manages the storage and retrieval of data and metadata."@en ;
+                      :archetype :EnvriReferenceModel ;
+                      rdfs:comment "管理数据和元数据的存储和检索的系统。"@zh-hans-cn ;
+                      rdfs:label "storage system [backend]"@en ,
+                                 "存储系统后端"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Technician
+:Technician rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty base:playsRole ;
+                                                         owl:hasValue :Technician
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf base:Actor ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty base:memberOf ;
+                              owl:someValuesFrom :DataAcquisitionCommunity
+                            ] .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Technologist
+:Technologist rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty base:playsRole ;
+                                                           owl:hasValue :Technologist
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :User .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Trainer
+:Trainer rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( base:SV_Object
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty base:playsRole ;
+                                                      owl:hasValue :Trainer
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :User .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#TranslateRequest
+:TranslateRequest rdf:type owl:Class ;
+                  rdfs:subClassOf base:CV_SimpleOperation ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:operationInvokedBy ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :invokesCapability ;
+                                                                                owl:hasValue :TranslateRequestCapability
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:operationProvidedBy ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :providesCapability ;
+                                                                                owl:hasValue :TranslateRequestCapability
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ;
+                  dc:description "is used to invoke a semantic broker where some mapping between different semantic domains is deemed necessary."^^xsd:string ,
+                                 "被用来调用语义代理，其中不同语义域之间的映射被认为是必要的。"@zh-hans-cn ;
+                  :archetype :EnvriReferenceModel ;
+                  rdfs:label "translate request [operation]"@en ,
+                             "转化请求"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UniqueIdentifier
+:UniqueIdentifier rdf:type owl:Class ;
+                  rdfs:subClassOf :PersistentData ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:partOf ;
+                                    owl:someValuesFrom :PersistentData
+                                  ] ;
+                  dc:description "With reference to a given type of data, objects a unique identifier (UID) is any identifier which is guaranteed to be unique among all identifiers used for those type of objects and for a specific purpose."@en ,
+                                 "对于给定类型的数据，对象唯一标识符（UID）是在用于这些类型的对象和用于特定目的的所有标识符中保证唯一的任何标识符。"@zh-hans-cn ;
+                  :archetype :EnvriReferenceModel ;
+                  rdfs:label "unique identifer"@en ,
+                             "唯一标志符"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateCatalogues
+:UpdateCatalogues rdf:type owl:Class ;
+                  rdfs:subClassOf base:CV_SimpleOperation ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:operationInvokedBy ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :invokesCapability ;
+                                                                                owl:hasValue :UpdateCataloguesCapability
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty base:operationProvidedBy ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :providesCapability ;
+                                                                                owl:hasValue :UpdateCataloguesCapability
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ;
+                  dc:description "is used to update (or initiate the update) of data catalogues or catalogue information managed by a catalogue service."^^xsd:string ,
+                                 "用于更新（或启动更新）由目录服务管理的数据目录或目录信息。"@zh-hans-cn ;
+                  :archetype :EnvriReferenceModel ;
+                  rdfs:label "update catalogues [operation]"@en ,
+                             "更新编目"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateModel
+:UpdateModel rdf:type owl:Class ;
+             rdfs:subClassOf base:CV_SimpleOperation ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty base:operationInvokedBy ;
+                               owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :invokesCapability ;
+                                                                           owl:hasValue :UpdateModelCapability
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty base:operationProvidedBy ;
+                               owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :providesCapability ;
+                                                                           owl:hasValue :UpdateModelCapability
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             dc:description "is used to update semantic models associated with a research infrastructure."^^xsd:string ,
+                            "用于更新与研究基础设施相关联的语义模型。"@zh-hans-cn ;
+             :archetype :EnvriReferenceModel ;
+             rdfs:label "update model [operation]"@en ,
+                        "更新模型"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateRecord
+:UpdateRecord rdf:type owl:Class ;
+              rdfs:subClassOf base:CV_SimpleOperation ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty base:operationInvokedBy ;
+                                owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :invokesCapability ;
+                                                                            owl:hasValue :UpdateRecordCapability
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty base:operationProvidedBy ;
+                                owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :providesCapability ;
+                                                                            owl:hasValue :UpdateRecordCapability
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                              ] ;
+              dc:description "is used to directly annotate existing datasets curated within one or more data stores."^^xsd:string ,
+                             "用于直接标注在一个或多个数据存储中策划的现有数据集。"@zh-hans-cn ;
+              :archetype :EnvriReferenceModel ;
+              rdfs:label "update record [operation]"@en ,
+                         "更新记录"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateRegistry
+:UpdateRegistry rdf:type owl:Class ;
+                rdfs:subClassOf base:CV_SimpleOperation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty base:operationInvokedBy ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :invokesCapability ;
+                                                                              owl:hasValue :UpdateRegistryCapability
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty base:operationProvidedBy ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( base:CV_Object
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :providesCapability ;
+                                                                              owl:hasValue :UpdateRegistryCapability
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ;
+                dc:description "is used to register and unregister instruments with the data acquistion subsystem."^^xsd:string ,
+                               "用于使用数据采集子系统注册和取消注册仪器。"@zh-hans-cn ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:label "update registry [operation]"@en ,
+                           "更新注册"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf base:Actor ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty base:memberOf ;
+                        owl:someValuesFrom :DataUseCommunity
+                      ] ;
+      dc:description "Any actor who engages with an infrastructure via its data use subsystem."@en ,
+                     "任何通过其数据使用子系统与基础架构进行交互的角色。"@zh-hans-cn ;
+      rdfs:label "user"@en ,
+                 "用户"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#VirtualLaboratory
+:VirtualLaboratory rdf:type owl:Class ;
+                   rdfs:subClassOf :PresentationObject ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :invokesCapability ;
+                                     owl:hasValue :AuthoriseActionCapability
+                                   ] ;
+                   dc:description "A virtual laboratory object encapsulates interaction between a user or group of users and a subset of the science functions provided by a research infrastructure. Its role is to bind a AAAI service with (potentially) any number of other infrastructure objects."@en ;
+                   :archetype :EnvriReferenceModel ;
+                   rdfs:comment "虚拟实验室对象封装了用户或用户组与研究基础设施提供的科学功能子集之间的交互。 其作用是将AAAI服务与（可能）任何数量的其他基础结构对象绑定。"@zh-hans-cn ;
+                   rdfs:label "virtual laboratory"@en ,
+                              "虚拟实验室"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#WorkflowEnactmentService
+:WorkflowEnactmentService rdf:type owl:Class ;
+                          rdfs:subClassOf :Service ;
+                          dc:description "A service providing functionality for workflow enactment."@en ,
+                                         "为工作流执行提供功能的服务。"@zh-hans-cn ;
+                          rdfs:label "workflow enactment service"@en ,
+                                     "工作流制定服务"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#ActiveRole
+base:ActiveRole dc:description "积极参与某项行为者的角色。"@zh-hans-cn ;
+                rdfs:label "主动角色"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#Actor
+base:Actor dc:description "演员是一个在系统行为中起积极作用的科学对象。 一般来说，这样的角色代表人或计算机代理人。"@zh-hans-cn ;
+           rdfs:label "角色"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#CV_BindingObject
+base:CV_BindingObject rdfs:comment "用于协调复杂操作中其他计算对象之间相互作用的计算对象，通常（但不完全）是暂时性的。"@zh-hans-cn ;
+                      rdfs:label "结合对象"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#CV_ComplexOperation
+base:CV_ComplexOperation dc:description "一个复杂的操作表示一个计算对象调用一个远程功能作用于一个绑定对象，该绑定对象被创建于代理两个或更多计算对象之间的交互。"@zh-hans-cn ;
+                         rdfs:label "复杂操作"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#CV_Object
+base:CV_Object rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :invokesCapability ;
+                                 owl:allValuesFrom :ComputationalCapability
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :providesCapability ;
+                                 owl:allValuesFrom :ComputationalCapability
+                               ] ;
+               rdfs:comment "计算对象是从计算观点来看真实世界中实体的表示。 它包含信息和提供服务。 一个系统由交互对象组成。 一个对象的特点是通过封装，抽象和行为使其与其他对象不同。"@zh-hans-cn ;
+               rdfs:label "计算对象"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#CV_Operation
+base:CV_Operation dc:description "计算操作表示由一个计算对象调用到一个或多个其他对象上的远程功能。"@zh-hans-cn ;
+                  rdfs:label "计算操作"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#CV_PersistentObject
+base:CV_PersistentObject rdfs:comment "运算之间持续存在的计算对象，通常提供长期服务作为计算基础结构的一部分。"@zh-hans-cn ;
+                         rdfs:label "持久化对象"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#CV_SimpleOperation
+base:CV_SimpleOperation dc:description "一个简单的操作代表由一个计算对象作用于另一个对象的远程功能。"@zh-hans-cn ;
+                        rdfs:label "简单操作"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#Community
+base:Community dc:description "一个社区是一个由一系列角色组成的合作组织，其目标是达成一个既定的商业目的。 社区可以是非正式的“新兴”集体，也可以是明确定义的行动者组织。"@zh-hans-cn ;
+               rdfs:label "社区"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#ConceptModel
+base:ConceptModel dc:description "一系列概念，属性和关系。 它可以是非结构化的或结构化的（例如术语表，词库，本体论）。 通常，概念和/或关系的描述以人可读的形式定义概念。 概念模型也可以用机器可读的格式表示，例如RDFS或OWL。 这些句子可以用来构建自我描述。 在同一系统中提供人类可读的描述和机器可读的描述是常见的做法。 从这个意义上说，概念模型也可以被看作是人类和机器可读句子的集合。 他们可以是本地的，在项目中开发的，也可以是全球的，被更广泛的社区接受和使用（如GEMET或OBOE）。 概念模型可用于注释数据（例如在三重商店的网络内）。"@zh-hans-cn ;
+                  rdfs:label "概念模型"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#Data
+base:Data dc:description "信息作为计算基础设施内的数据明确呈现。"@zh-hans-cn ;
+          rdfs:label "数据"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#DomainOfInterest
+base:DomainOfInterest rdf:type owl:Class ;
+                      dc:description "一类研究者感兴趣的学科领域，如科学领域。"@zh-hans-cn ;
+                      rdfs:label "兴趣领域"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#IV_Action
+base:IV_Action dc:description "信息动作模拟系统中的信息处理。 每个动作都与至少一个对象相关联。 操作会导致参与对象的状态更改。"@zh-hans-cn ;
+               rdfs:label "信息活动"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#IV_Object
+base:IV_Object dc:description "信息对象是从信息观点来看真实世界中的实体的表示。 它包含信息和提供服务。 一个系统由交互对象组成。 一个对象的特点是通过封装，抽象和行为使其与其他对象不同。"@zh-hans-cn ;
+               rdfs:label "对象"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#IV_State
+base:IV_State dc:description "信息对象可以以相对于其自然生命周期的各种不同状态存在。"@zh-hans-cn ;
+              rdfs:label "状态"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#Infrastructure
+base:Infrastructure dc:description "资源或资源的集合，为某些努力或实体提供必要的支持，例如通过为计算服务或数据存储提供主机。"@zh-hans-cn ;
+                    rdfs:label "基础设施"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#PassiveRole
+base:PassiveRole dc:description "行为中唯一被动的参与者的角色。"@zh-hans-cn ;
+                 rdfs:label "被动角色"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#RM_Attribute
+base:RM_Attribute dc:description "系统视图中存在的对象或活动的质量。"@zh-hans-cn ;
+                  rdfs:label "参考属性"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#RM_Classifier
+base:RM_Classifier dc:description "用于对从特定视角系统所呈现的物体进行分类的类别体系"@zh-hans-cn ;
+                   rdfs:label "参考模型分类"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#Resource
+base:Resource dc:description "资源是一个科学对象，在系统的行为中承担被动的角色，通常代表一些参与者可以参与的设施或工具。"@zh-hans-cn ;
+              rdfs:label "资源"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#Role
+base:Role dc:description "社区中的角色是可以同时或相继执行任何次数的处方行为。 角色既可以是主动的（通常与人类参与者相关联），也可以是被动的（通常与非人类行为者相关联，例如软件或硬件组件）。"@zh-hans-cn ;
+          rdfs:label "角色"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#SV_Behaviour
+base:SV_Behaviour dc:description "社区的行为是由角色执行的操作的组成，通常针对不同的业务需求。 在ENVRI RM中，社区行为的建模是基于对ENVRI研究基础设施的共同需求的分析，这导致了一系列共同的功能。 最初的模型着重于最小的一组要求。 社区行为可以是单个函数，也可以是函数列表中几个函数的组合。"@zh-hans-cn ;
+                  rdfs:label "行为"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#SV_Object
+base:SV_Object dc:description "在复杂系统的科学观点中明确确定的实体。"@zh-hans-cn ;
+               rdfs:label "科学对象"@zh-hans-cn .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#AcquireIdentifierCapability
+:AcquireIdentifierCapability rdf:type owl:NamedIndividual ,
+                                      :ComputationalCapability ;
+                             rdfs:label "acquire identifier [capability]"@en ,
+                                        "获取标识符[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#AnnotateDataCapability
+:AnnotateDataCapability rdf:type owl:NamedIndividual ,
+                                 :ComputationalCapability ;
+                        rdfs:label "annotate data [capability]"@en ,
+                                   "注释数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#AnnotatedState
+:AnnotatedState rdf:type owl:NamedIndividual ,
+                         :MetadataState ,
+                         :PersistentDataState ;
+                rdfs:label "annotated [state]"@en ,
+                           "注释[state]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#AssignedMetadataState
+:AssignedMetadataState rdf:type owl:NamedIndividual ,
+                                :PersistentDataState ;
+                       rdfs:label "assigned metadata [state]"@en ,
+                                  "分配的元数据[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#AtmosphericDomain
+:AtmosphericDomain rdf:type owl:NamedIndividual ,
+                            base:DomainOfInterest ;
+                   dc:description "The domain of environmental science concerned with the atmosphere."@en ,
+                                  "环境科学与大气有关的领域。"@zh-hans-cn ;
+                   rdfs:label "atmospheric domain"@en ,
+                              "大气领域"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#AuthoriseActionCapability
+:AuthoriseActionCapability rdf:type owl:NamedIndividual ,
+                                    :ComputationalCapability ;
+                           rdfs:label "authorise action [capability]"@en ,
+                                      "授权行动[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#BackedUpState
+:BackedUpState rdf:type owl:NamedIndividual ,
+                        :PersistentDataState ;
+               rdfs:label "backed up [state]"@en ,
+                          "备份[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#CalibrateInstrumentCapability
+:CalibrateInstrumentCapability rdf:type owl:NamedIndividual ,
+                                        :ComputationalCapability ;
+                               rdfs:label "calibrate instrument [capability]"@en ,
+                                          "校准仪器[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#CapacityManager
+:CapacityManager rdf:type owl:NamedIndividual ,
+                          base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#CatalogueSystem
+:CatalogueSystem rdf:type owl:NamedIndividual ,
+                          base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Citizen
+:Citizen rdf:type owl:NamedIndividual ,
+                  base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#CitizenScientist
+:CitizenScientist rdf:type owl:NamedIndividual ,
+                           base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ConfigureControllerCapability
+:ConfigureControllerCapability rdf:type owl:NamedIndividual ,
+                                        :ComputationalCapability ;
+                               rdfs:label "configure controller [capability]"@en ,
+                                          "配置控制器[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Consultant
+:Consultant rdf:type owl:NamedIndividual ,
+                     base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#CoordinateProcessCapability
+:CoordinateProcessCapability rdf:type owl:NamedIndividual ,
+                                      :ComputationalCapability ;
+                             rdfs:label "coordinate process [capability]"@en ,
+                                        "协调过程[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataAcquisitionCommunity
+:DataAcquisitionCommunity rdf:type owl:NamedIndividual ,
+                                   :DataAcquisitionCommunity .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataAcquisitionPhase
+:DataAcquisitionPhase rdf:type owl:NamedIndividual ,
+                               :ResearchDataLifecyclePhase ;
+                      dc:description """In the data acquisition phase the research infrastructure collects raw data from registered sources to be stored and made accessible within the infrastructure.
+
+The data acquisition phase supports collecting raw data from sensor arrays and other instruments, as well as from human observers, and brings those data into the data management part (ie., ICT sub-systems) of the research infrastructure. Within the ENVRI RM, the acquisition phase is considered to begin upon point of data entry into the RI systems. The acquisition phase as modeled in the ENVRI RM starts from the design of the experiment. Acquisition is typically distributed across networks of observatories and stations. The data acquired is generally assumed to be non-reproducible, being associated with a specific (possibly continuous) event in time and place. As such, the assignment of provenance (particularly data source and timestamp) is essential. Real-time data streams may be temporarily stored, sampled, filtered and processed (e.g., based on applied quality control criteria) before being ready for curation. Control software is often deployed to manage and schedule the execution and monitoring of data flows. Data collected during the acquisition phase ultimately enters the data curation phase for preservation, usually within a specific time period."""@en ,
+                                     """在数据采集阶段，研究基础设施从已登记的来源收集原始数据，并在基础设施内进行存储和访问。
+
+数据采集​​阶段支持从传感器阵列和其他仪器以及人类观察员收集原始数据，并将这些数据带入研究基础设施的数据管理部分（即ICT子系统）。在ENVRI RM中，采集阶段被认为是从进入RI系统的数据点开始的。 ENVRI RM模型中的采集阶段从实验设计开始。采集通常分布在天文台和台站的网络上。所获取的数据通常被认为是不可重现的，与时间和地点的特定（可能是连续的）事件相关联。因此，来源的分配（特别是数据源和时间戳）是至关重要的。实时数据流可以临时存储，采样，过滤和处理（例如，基于所应用的质量控制标准），然后准备好进行管理。通常部署控制软件来管理和调度数据流的执行和监视。在收购阶段收集的数据最终进入数据保存阶段进行保存，通常在特定的时间段内。"""@zh-hans-cn ;
+                      rdfs:label "data acquisition phase"@en ,
+                                 "数据采集阶段"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataAcquisitionSystem
+:DataAcquisitionSystem rdf:type owl:NamedIndividual ,
+                                base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataCollector
+:DataCollector rdf:type owl:NamedIndividual ,
+                        base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataConsumer
+:DataConsumer rdf:type owl:NamedIndividual ,
+                       base:ActiveRole ,
+                       base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataCurationCommunity
+:DataCurationCommunity rdf:type owl:NamedIndividual ,
+                                :DataCurationCommunity .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataCurationPhase
+:DataCurationPhase rdf:type owl:NamedIndividual ,
+                            :ResearchDataLifecyclePhase ;
+                   dc:description """In the data curation phase the research infrastructure stores, manages and ensures access to all persistent data-sets produced within the infrastructure.
+
+The data curation phase facilitates quality control and preservation of scientific data. The data curation functionalities are typically implemented across one or more dedicated data centres. Data handled at this phase include raw data products, metadata and processed data. Where possible, processed data should be reproducible by executing the same process on the same source data-sets, supported by provenance data. Operations such as data quality verification, identification, annotation, cataloguing, replication and archival are often provided. Access to curated data from outside the infrastructure is brokered through independent data access mechanisms. There is usually an emphasis on non-functional requirements for data curation satisfying availability, reliability, utility, throughput, responsiveness, security and scalability criteria."""@en ,
+                                  """在数据整理阶段，研究基础架构存储，管理和确保访问基础架构内生成的所有持久数据集。
+
+数据管理阶段有利于质量控制和科学数据的保存。数据管理功能通常在一个或多个专用数据中心中实施。在这个阶段处理的数据包括原始数据产品，元数据和处理的数据。在可能的情况下，处理的数据应该可以通过在来源数据支持的相同源数据集上执行相同的处理来重现。通常会提供数据质量验证，识别，注释，编目，复制和存档等操作。从基础设施之外访问策划的数据是通过独立的数据访问机制进行的。数据管理通常强调满足可用性，可靠性，实用性，吞吐量，响应性，安全性和可伸缩性标准的非功能性要求。"""@zh-hans-cn ;
+                   rdfs:label "data curation phase"@en ,
+                              "数据整理阶段"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataCurationSystem
+:DataCurationSystem rdf:type owl:NamedIndividual ,
+                             base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataCurator
+:DataCurator rdf:type owl:NamedIndividual ,
+                      base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataOriginator
+:DataOriginator rdf:type owl:NamedIndividual ,
+                         base:ActiveRole ,
+                         base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataProcessingCommunity
+:DataProcessingCommunity rdf:type owl:NamedIndividual ,
+                                  :DataProcessingCommunity .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataProcessingPhase
+:DataProcessingPhase rdf:type owl:NamedIndividual ,
+                              :ResearchDataLifecyclePhase ;
+                     dc:description """In the data processing phase the research infrastructure provides a toolbox of services for performing a variety of data processing tasks. The scope of data processing is very wide.
+
+The data processing phase enables the aggregation of data from various sources, as well as conduct of experiments and analyses upon that data. During this phase data tends to be manipulated, leading to both/either derived and/or recombined data. To support data processing, a research infrastructure is likely to offer service operations for statistical analysis and data mining, as well as facilities for carrying out scientific experiments, modelling and simulation, and visualisation. Performance requirements for processing scientific data during this phase tend to be concerned with scalability, which can be addressed at the level of engineering and technical solutions to be considered (e.g., by making use of Cloud computing services). The data products generated during processing may themselves be curated and preserver within the RI."""@en ,
+                                    """在数据处理阶段，研究基础设施提供了用于执行各种数据处理任务的服务工具箱。数据处理的范围非常广泛。
+
+数据处理阶段能够汇总各种来源的数据，并对这些数据进行实验和分析。在这个阶段，数据往往会被操纵，导致/导出和/或重组数据。为了支持数据处理，研究基础设施可能为统计分析和数据挖掘提供服务操作，以及进行科学实验，建模和模拟以及可视化的设施。在这个阶段处理科学数据的性能要求往往与可扩展性有关，可以在需要考虑的工程和技术解决方案（例如通过利用云计算服务）的层面上解决这个问题。在处理过程中产生的数据产品本身可以在RI内进行策划和保存。"""@zh-hans-cn ;
+                     rdfs:label "data processing phase"@en ,
+                                "数据处理阶段"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataProcessingSystem
+:DataProcessingSystem rdf:type owl:NamedIndividual ,
+                               base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataProvider
+:DataProvider rdf:type owl:NamedIndividual ,
+                       base:ActiveRole ,
+                       base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataPublisher
+:DataPublisher rdf:type owl:NamedIndividual ,
+                        base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataPublishingCommunity
+:DataPublishingCommunity rdf:type owl:NamedIndividual ,
+                                  :DataPublishingCommunity .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataPublishingPhase
+:DataPublishingPhase rdf:type owl:NamedIndividual ,
+                              :ResearchDataLifecyclePhase ;
+                     dc:description """In the data publishing phase the research infrastructure enables discovery and retrieval of scientific data to internal and external parties.
+
+The data publishing phase enables discovery and retrieval of data housed in data resources managed as part of data curation. Data publishing often provide mechanisms for presenting or delivering data products. Query and search tools allow users or upstream services to discover data based on metadata or semantic linkages. Data handled during publishing need not be homogeneous. When supporting heterogeneous data, different types of data (often pulled from a variety of distributed data resources) can be converted into uniform representations with uniform semantics resolved by a data discovery service. Services for harvesting, compressing and packaging data and metadata, as well as encoding services for secure transfer can be provided. Data publishing is controlled using rights management, authentication, and authorisation policies."""@en ,
+                                    """在数据发布阶段，研究基础架构可以向内部和外部各方发现和检索科学数据。
+
+数据发布阶段使得能够发现和检索作为数据管理一部分管理的数据资源中的数据。 数据发布通常提供展示或交付数据产品的机制。 查询和搜索工具允许用户或上游服务基于元数据或语义链接发现数据。 在发布期间处理的数据不需要是同质的。 当支持异构数据时，可以将不同类型的数据（通常从各种分布式数据资源中提取）转换为统一的表示，并通过数据发现服务解析统一的语义。 可以提供收集，压缩和打包数据和元数据的服务，以及用于安全传输的编码服务。 数据发布是使用权限管理，身份验证和授权策略进行控制的。"""@zh-hans-cn ;
+                     rdfs:label "data publishing phase"@en ,
+                                "数据发布阶段"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataPublishingSystem
+:DataPublishingSystem rdf:type owl:NamedIndividual ,
+                               base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataRepository
+:DataRepository rdf:type owl:NamedIndividual ,
+                         base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataUseCommunity
+:DataUseCommunity rdf:type owl:NamedIndividual ,
+                           :DataUseCommunity .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataUsePhase
+:DataUsePhase rdf:type owl:NamedIndividual ,
+                       :ResearchDataLifecyclePhase ;
+              dc:description """In the data use phase the research infrastructure supports users of an infrastructure in gaining access to data and facilitating the preservation of derived data products.
+
+The data use phase provides functionalities that manage and track users' activities while supporting the users to conduct their research activities which may result in the creation of new data products. Data 'handled' and produced at this phase are typically user-generated data and communications. The data use phase requires supporting activities such as interactive visualisation, standardised authentication, authorisation and accounting protocols, and the use of virtual organisations. This is the most advanced form of data processing, at this phase the research infrastructure implements an interface with the wider world in which it exists."""@en ,
+                             """在数据使用阶段，研究基础设施支持基础设施的用户获取数据并便于保存衍生数据产品。
+
+数据使用阶段提供管理和跟踪用户活动的功能，同时支持用户进行可能导致创建新数据产品的研究活动。 在这个阶段处理和生成的数据通常是用户生成的数据和通信。 数据使用阶段需要支持活动，如交互式可视化，标准化认证，授权和计费协议，以及使用虚拟组织。 这是最先进的数据处理形式，在这个阶段，研究基础设施实现与更广泛的世界的接口。"""@zh-hans-cn ;
+              rdfs:label "data use phase"@en ,
+                         "数据使用阶段"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DataUseSystem
+:DataUseSystem rdf:type owl:NamedIndividual ,
+                        base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DecisionMaker
+:DecisionMaker rdf:type owl:NamedIndividual ,
+                        base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DeliverDataSetCapability
+:DeliverDataSetCapability rdf:type owl:NamedIndividual ,
+                                   :ComputationalCapability ;
+                          rdfs:label "deliver data-set [capability]"@en ,
+                                     "提供数据集[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#DeliverRawDataCapability
+:DeliverRawDataCapability rdf:type owl:NamedIndividual ,
+                                   :ComputationalCapability ;
+                          rdfs:label "deliver raw data [capability]"@en ,
+                                     "提供原始数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#EcosystemDomain
+:EcosystemDomain rdf:type owl:NamedIndividual ,
+                          base:DomainOfInterest ;
+                 dc:description "The domain of environmental science concerned with biodiveristy and environmental ecosystems."@en ,
+                                "涉及生物多样性和环境生态系统的环境科学领域。"@zh-hans-cn ;
+                 rdfs:label "ecosystem domain"@en ,
+                            "生态领域"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Educator
+:Educator rdf:type owl:NamedIndividual ,
+                   base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Engineer
+:Engineer rdf:type owl:NamedIndividual ,
+                   base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#EnvironmentalScientist
+:EnvironmentalScientist rdf:type owl:NamedIndividual ,
+                                 base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#EnvriReferenceModel
+:EnvriReferenceModel rdf:type owl:NamedIndividual ;
+                     dc:description "The ENVRI Reference Model (ENVRI RM) defines an archetypical environmental research infrastructure. The ENVRI RM is structured according to the Open Distributed Processing (ODP) standard, ISO/IEC 10746-n, and as such, is defined from five different perspectives."@en ,
+                                    "环境及地球科学研究基础设施本体(ENVRI RM）定义了一个典型的环境研究基础设施。 ENVRI RM是根据开放分布式处理（ODP）标准ISO / IEC 10746-n进行构建的，从五个不同的角度定义。"@zh-hans-cn ;
+                     rdfs:label "ENVRI Reference Model (ENVRI RM)"@en ,
+                                "环境及地球科学研究基础设施本体（ENVRI RM）"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ExportCuratedDataCapability
+:ExportCuratedDataCapability rdf:type owl:NamedIndividual ,
+                                      :ComputationalCapability ;
+                             rdfs:label "export curated data [capability]"@en ,
+                                        "导出整理的数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ExportMetadataCapability
+:ExportMetadataCapability rdf:type owl:NamedIndividual ,
+                                   :ComputationalCapability ;
+                          rdfs:label "export metadata [capability]"@en ,
+                                     "导出元数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#FinallyReviewedState
+:FinallyReviewedState rdf:type owl:NamedIndividual ,
+                               :PersistentDataState ;
+                      rdfs:label "finally reviewed [state]"@en ,
+                                 "终审[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#IdentifiedState
+:IdentifiedState rdf:type owl:NamedIndividual ,
+                          :PersistentDataState ;
+                 rdfs:label "identified [state]"@en ,
+                            "确定[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ImportDataForCurationCapability
+:ImportDataForCurationCapability rdf:type owl:NamedIndividual ,
+                                          :ComputationalCapability ;
+                                 rdfs:label "import data for curation [capability]"@en ,
+                                            "导入数据用于整理[功能]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Investor
+:Investor rdf:type owl:NamedIndividual ,
+                   base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#InvokeResourceCapability
+:InvokeResourceCapability rdf:type owl:NamedIndividual ,
+                                   :ComputationalCapability ;
+                          rdfs:label "invoke resource [capability]"@en ,
+                                     "调用资源[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Journalist
+:Journalist rdf:type owl:NamedIndividual ,
+                     base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#MappedState
+:MappedState rdf:type owl:NamedIndividual ,
+                      :PersistentDataState ;
+             rdfs:label "mapped [state]"@en ,
+                        "映射[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#MeasurementModelDesigner
+:MeasurementModelDesigner rdf:type owl:NamedIndividual ,
+                                   base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Measurer
+:Measurer rdf:type owl:NamedIndividual ,
+                   base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#MetadataHarvester
+:MetadataHarvester rdf:type owl:NamedIndividual ,
+                            base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Observer
+:Observer rdf:type owl:NamedIndividual ,
+                   base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#OceanDomain
+:OceanDomain rdf:type owl:NamedIndividual ,
+                      base:DomainOfInterest ;
+             dc:description "The domain of environmental science concerned with the oceans."@en ,
+                            "环境科学与海洋有关的领域。"@zh-hans-cn ;
+             rdfs:label "ocean domain"@en ,
+                        "海洋领域"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PIDGenerator
+:PIDGenerator rdf:type owl:NamedIndividual ,
+                       base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PIDManager
+:PIDManager rdf:type owl:NamedIndividual ,
+                     base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PolicyMaker
+:PolicyMaker rdf:type owl:NamedIndividual ,
+                      base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PrepareDataTransferCapability
+:PrepareDataTransferCapability rdf:type owl:NamedIndividual ,
+                                        :ComputationalCapability ;
+                               rdfs:label "prepare data transfer [capability]"@en ,
+                                          "准备数据传输[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessRequestCapability
+:ProcessRequestCapability rdf:type owl:NamedIndividual ,
+                                   :ComputationalCapability ;
+                          rdfs:label "process request [capability]"@en ,
+                                     "处理请求[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessedState
+:ProcessedState rdf:type owl:NamedIndividual ,
+                         :PersistentDataState ;
+                rdfs:label "processed [state]"@en ,
+                           "处理[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ProcessingEnvironmentPlanner
+:ProcessingEnvironmentPlanner rdf:type owl:NamedIndividual ,
+                                       base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#PublishedState
+:PublishedState rdf:type owl:NamedIndividual ,
+                         :MetadataState ,
+                         :PersistentDataState ;
+                rdfs:label "published [state]"@en ,
+                           "发表[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QAAssessedState
+:QAAssessedState rdf:type owl:NamedIndividual ,
+                          :PersistentDataState ;
+                 rdfs:label "QA-assessed [state]"@en ,
+                            "QA评估[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QueryCataloguesCapability
+:QueryCataloguesCapability rdf:type owl:NamedIndividual ,
+                                    :ComputationalCapability ;
+                           rdfs:label "query catalogues [capability]"@en ,
+                                      "查询目录[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QueryDataCapability
+:QueryDataCapability rdf:type owl:NamedIndividual ,
+                              :ComputationalCapability ;
+                     rdfs:label "query data [capability]"@en ,
+                                "查询数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#QueryResourceCapability
+:QueryResourceCapability rdf:type owl:NamedIndividual ,
+                                  :ComputationalCapability ;
+                         rdfs:label "query resource [capability]"@en ,
+                                    "查询资源[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RawState
+:RawState rdf:type owl:NamedIndividual ,
+                   :MetadataState ,
+                   :PersistentDataState ;
+          rdfs:label "raw [state]"@en ,
+                     "原始[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RegisteredState
+:RegisteredState rdf:type owl:NamedIndividual ,
+                          :MetadataState ;
+                 rdfs:label "registered [state]"@en ,
+                            "已注册[状态]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RequestDataCapability
+:RequestDataCapability rdf:type owl:NamedIndividual ,
+                                :ComputationalCapability ;
+                       rdfs:label "request data [capability]"@en ,
+                                  "请求数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
+:ResearchInfrastructure rdf:type owl:NamedIndividual ,
+                                 base:ActiveRole ,
+                                 base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Researcher
+:Researcher rdf:type owl:NamedIndividual ,
+                     base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ResolveIdentifierCapability
+:ResolveIdentifierCapability rdf:type owl:NamedIndividual ,
+                                      :ComputationalCapability ;
+                             rdfs:label "resolve identifer [capability]"@en ,
+                                        "解析标识[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#RetrieveDataCapability
+:RetrieveDataCapability rdf:type owl:NamedIndividual ,
+                                 :ComputationalCapability ;
+                        rdfs:label "retrieve data [capability]"@en ,
+                                   "检索数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Scientist
+:Scientist rdf:type owl:NamedIndividual ,
+                    base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SemanticCurator
+:SemanticCurator rdf:type owl:NamedIndividual ,
+                          base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SemanticMediator
+:SemanticMediator rdf:type owl:NamedIndividual ,
+                           base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Sensor
+:Sensor rdf:type owl:NamedIndividual ,
+                 base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SensorNetwork
+:SensorNetwork rdf:type owl:NamedIndividual ,
+                        base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Service
+:Service rdf:type owl:NamedIndividual ,
+                  base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceConsumer
+:ServiceConsumer rdf:type owl:NamedIndividual ,
+                          base:ActiveRole ,
+                          base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceProvider
+:ServiceProvider rdf:type owl:NamedIndividual ,
+                          base:ActiveRole ,
+                          base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#ServiceRegistry
+:ServiceRegistry rdf:type owl:NamedIndividual ,
+                          base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#SolidEarthDomain
+:SolidEarthDomain rdf:type owl:NamedIndividual ,
+                           base:DomainOfInterest ;
+                  dc:description "The domain of environmental science concerned with solid earth processes."@en ,
+                                 "环境科学与固体地球过程有关的领域。"@zh-hans-cn ;
+                  rdfs:label "solid earth domain"@en ,
+                             "固体地球领域"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StageDataCapability
+:StageDataCapability rdf:type owl:NamedIndividual ,
+                              :ComputationalCapability ;
+                     rdfs:label "stage data [capability]"@en ,
+                                "筹划数据[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StorageAdministrator
+:StorageAdministrator rdf:type owl:NamedIndividual ,
+                               base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#StorageSystem
+:StorageSystem rdf:type owl:NamedIndividual ,
+                        base:PassiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Technician
+:Technician rdf:type owl:NamedIndividual ,
+                     base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Technologist
+:Technologist rdf:type owl:NamedIndividual ,
+                       base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#Trainer
+:Trainer rdf:type owl:NamedIndividual ,
+                  base:ActiveRole .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#TranslateRequestCapability
+:TranslateRequestCapability rdf:type owl:NamedIndividual ,
+                                     :ComputationalCapability ;
+                            rdfs:label "translate request [capability]"@en ,
+                                       "翻译请求[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateCataloguesCapability
+:UpdateCataloguesCapability rdf:type owl:NamedIndividual ,
+                                     :ComputationalCapability ;
+                            rdfs:label "update catalogues [capability]"@en ,
+                                       "更新目录[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateModelCapability
+:UpdateModelCapability rdf:type owl:NamedIndividual ,
+                                :ComputationalCapability ;
+                       rdfs:label "update model [capability]"@en ,
+                                  "更新模型[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateRecordCapability
+:UpdateRecordCapability rdf:type owl:NamedIndividual ,
+                                 :ComputationalCapability ;
+                        rdfs:label "update record [capability]"@en ,
+                                   "更新记录[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#UpdateRegistryCapability
+:UpdateRegistryCapability rdf:type owl:NamedIndividual ,
+                                   :ComputationalCapability ;
+                          rdfs:label "update registry [capability]"@en ,
+                                     "更新注册表[能力]"@zh-hans-cn .
+
+
+###  http://www.oil-e.net/ontology/envri-rm.owl#sh-agr
+:sh-agr rdf:type owl:NamedIndividual ,
+                 :DataAcquisitionCommunity ,
+                 :DataCurationCommunity ,
+                 :DataPublishingCommunity ,
+                 :DataUseCommunity ,
+                 base:SV_Object .
+
+
+###  http://www.oil-e.net/ontology/oil-base.owl#ComputationalViewpoint
+base:ComputationalViewpoint dc:description "基于系统内使用的进程之间的计算能力分布的建模视角。"@zh-hans-cn ;
+                            rdfs:label "计算观点"@zh-hans-cn .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:CapacityManager :archetype :EnvriReferenceModel ;
+                 dc:description "An active role, which is a person who manages and ensures that the IT capacity meets current and future business requirements in a cost-effective manner."@en ,
+                                "一个积极的角色，即负责管理和确保IT能力以经济高效的方式满足当前和未来业务需求的人员。"@zh-hans-cn ;
+                 rdfs:label "capacity manager"@en ,
+                            "能力管理者"@zh-hans-cn .
+
+
+:CatalogueSystem rdfs:label "catalogue system"@en ;
+                 dc:description "目录系统是被动角色，是一种特殊类型的存储系统，旨在支持构建用于分类数据和元数据的逻辑结构。"@zh-hans-cn ;
+                 rdfs:label "编目系统"@zh-hans-cn ;
+                 :archetype :EnvriReferenceModel ;
+                 dc:description "A passive role, a catalogue system is a special type of storage system designed to support building logical structures for classifying data and metadata."@en .
+
+
+:Citizen dc:description "An active role, which is a person or organisation interested in understanding the knowledge delivered by an environmental science research infrastructure, or discovering and exploring the knowledge base enabled by the research infrastructure."@en ,
+                        "积极的角色，是一个有兴趣了解由环境科学研究基础设施提供的知识的人或组织，或发现和探索由研究基础设施所启用的知识库。"@zh-hans-cn ;
+         rdfs:label "citizen"@en ,
+                    "公民"@zh-hans-cn ;
+         :archetype :EnvriReferenceModel .
+
+
+:CitizenScientist dc:description "作为一个从事科学工作的普通大众的积极角色，通常与专业科学家和科学机构（也称为业余科学家）合作或在其指导下进行。"@zh-hans-cn ;
+                  rdfs:label "citizen scientist"@en ;
+                  :archetype :EnvriReferenceModel ;
+                  rdfs:label "公民科学家"@zh-hans-cn ;
+                  dc:description "An active role, member of the general public who engages in scientific work, often in collaboration with or under the direction of professional scientists and scientific institutions (also known as amateur scientist)."@en .
+
+
+:Consultant rdfs:label "consultant"@en ;
+            dc:description "一个积极的角色，即利用数据和应用程序服务来预测市场，从而在生产相关商业产品时作出商业决策的人。"@zh-hans-cn ,
+                           "An active role, which is a person who makes use of the data and application service for predicting markets so as to make business decisions on producing related commercial products."@en ;
+            :archetype :EnvriReferenceModel ;
+            rdfs:label "顾问"@zh-hans-cn .
+
+
+:DataAcquisitionCommunity dc:description "收集原始数据并将（测量流）带入系统。"@zh-hans-cn ;
+                          rdfs:label "数据获取社区"@zh-hans-cn ,
+                                     "data acquisition community"@en ;
+                          :archetype :EnvriReferenceModel ;
+                          dc:description "Collects raw data and brings (streams of) measurements into a system."@en .
+
+
+:DataAcquisitionSystem :archetype :EnvriReferenceModel ;
+                       rdfs:label "data acquisition system"@en ,
+                                  "数据获取系统"@zh-hans-cn ;
+                       dc:description "In the Science Viewpoint, the data acquisition subsystem is passive role of the data acquistion community. It is the part of the research infrastructure providing functionalities to automate the process of data acquisition."@en ,
+                                      "在科学观点中，数据采集子系统是数据采集社区的被动角色。 它是提供数据采集过程自动化的功能的研究基础设施的一部分。"@zh-hans-cn .
+
+
+:DataCollector dc:description "积极的角色，是准备和收集数据的人。 数据收集的目的是获取信息以保存记录，对重要问题作出决定或将信息传递给其他人。"@zh-hans-cn ;
+               rdfs:label "data collector"@en ,
+                          "数据收集器"@zh-hans-cn ;
+               :archetype :EnvriReferenceModel ;
+               dc:description "An active role, which is a person who prepares and collects data. The purpose of data collection is to obtain information to keep on record, to make decisions about important issues, or to pass information on to others."@en .
+
+
+:DataConsumer dc:description "Either an active or a passive role, which is an entity who receives and uses the data."@en ;
+              :archetype :EnvriReferenceModel ;
+              rdfs:label "data consumer"@en ,
+                         "数据消费者"@zh-hans-cn ;
+              dc:description "无论是主动角色还是被动角色，都是接收和使用数据的实体。"@zh-hans-cn .
+
+
+:DataCurationCommunity rdfs:label "数据审编社区"@zh-hans-cn ;
+                       dc:description "Curates the scientific data, maintains and archives them, and produces various data products with metadata."@en ,
+                                      "收集科学数据，维护和存档，并用元数据生成各种数据产品。"@zh-hans-cn ;
+                       rdfs:label "data curation community"@en ;
+                       :archetype :EnvriReferenceModel .
+
+
+:DataCurationSystem dc:description "数据管理子系统是数据管理社区的被动角色。 它是研究基础架构的一部分，用于存储，管理和确保访问基础架构内生成的所有持久性数据和元数据。"@zh-hans-cn ;
+                    rdfs:label "数据审编系统"@zh-hans-cn ,
+                               "data curation system"@en ;
+                    :archetype :EnvriReferenceModel ;
+                    dc:description "The data curation subsystem is a passive role of the data curation community. It is the part of the research infrastructure which stores, manages and ensures access to all persistent data and metadata produced within the infrastructure."@en .
+
+
+:DataCurator :archetype :EnvriReferenceModel ;
+             dc:description "An active role, which is a person who verifies the quality of the data; annotates the data; catalogues, preserves and maintains the data as a resource; and prepares various required data products."@en ,
+                            "积极的角色，是验证数据质量的人; 注释数据; 目录，保存和维护数据作为资源; 并准备各种所需的数据产品。"@zh-hans-cn ;
+             rdfs:label "数据审编者"@zh-hans-cn ,
+                        "data curator"@en .
+
+
+:DataOriginator rdfs:label "数据来源"@zh-hans-cn ;
+                :archetype :EnvriReferenceModel ;
+                dc:description "Either an active or a passive role, which provides the digital material to be made available for public access."@en ,
+                               "无论是主动还是被动角色，都提供了可供公众访问的数字资料。"@zh-hans-cn ;
+                rdfs:label "data originator"@en .
+
+
+:DataProcessingCommunity dc:description "提供各种服务，应用程序和软件/工具来链接和重组数据和元数据以获取知识。"@zh-hans-cn ;
+                         rdfs:label "数据处理社区"@zh-hans-cn ,
+                                    "data processing community"@en ;
+                         :archetype :EnvriReferenceModel ;
+                         dc:description "Provides various services, applications and software/tools to link and recombine data and metadata in order to derive knowledge."@en .
+
+
+:DataProcessingSystem :archetype :EnvriReferenceModel ;
+                      rdfs:label "数据处理系统"@zh-hans-cn ;
+                      dc:description "In the Science Viewpoint, the data processing subsystem represents a passive role of the data processing community.  It is the part of the research infrastructure providing services for data processing. These services could require authorisation at different levels for different roles."@en ,
+                                     "在科学观点中，数据处理子系统代表数据处理社区的被动角色。 它是为数据处理提供服务的研究基础设施的一部分。 这些服务可能需要不同级别的授权来满足不同的角色。"@zh-hans-cn ;
+                      rdfs:label "data processing system"@en .
+
+
+:DataProvider :archetype :EnvriReferenceModel ;
+              dc:description "无论是主动还是被动角色，它是提供要使用的数据的实体。"@zh-hans-cn ;
+              rdfs:label "data provider"@en ;
+              dc:description "Either an active or a passive role, which is an entity providing the data to be used."@en ;
+              rdfs:label "数据提供者"@zh-hans-cn .
+
+
+:DataPublisher dc:description "An active role, is a person in charge of supervising the data publishing processes."@en ;
+               rdfs:label "数据发布者"@zh-hans-cn ;
+               dc:description "积极的角色，是负责监督数据发布流程的负责人。"@zh-hans-cn ;
+               :archetype :EnvriReferenceModel ;
+               rdfs:label "data publisher"@en .
+
+
+:DataPublishingCommunity rdfs:label "数据发布社区"@zh-hans-cn ;
+                         :archetype :EnvriReferenceModel ;
+                         dc:description "协助数据发布，发现和访问。"@zh-hans-cn ,
+                                        "Assists data publication, discovery and access."@en ;
+                         rdfs:label "data publishing community"@en .
+
+
+:DataPublishingSystem rdfs:label "data publishing system"@en ,
+                                 "数据发布系统"@zh-hans-cn ;
+                      dc:description "In the Science Viewpoint, the data access subsystem represents a passive role of the data publication community.  It is the part of the research infrastructure enabling the discovery and retrieval of scientific data. The access to this subsystem could require authorisation at different levels for different roles."@en ,
+                                     "在科学观点中，数据访问子系统代表数据发布社区的被动角色。 这是研究基础设施的一部分，可以发现和检索科学数据。 对这个子系统的访问可能需要不同级别的授权来处理不同的角色。"@zh-hans-cn ;
+                      :archetype :EnvriReferenceModel .
+
+
+:DataRepository dc:description "A passive role, which is a facility for the deposition of published data."@en ;
+                rdfs:label "数据仓储"@zh-hans-cn ;
+                :archetype :EnvriReferenceModel ;
+                rdfs:label "data repository"@en ;
+                dc:description "被动的角色，这是发布数据的沉淀设施。"@zh-hans-cn .
+
+
+:DataUseCommunity rdfs:label "data use community"@en ;
+                  dc:description "Makes use of data and service products, and transfers knowledge into understanding."@en ;
+                  rdfs:label "数据使用社区"@zh-hans-cn ;
+                  dc:description "使用数据和服务产品，并将知识转化为理解。"@zh-hans-cn ;
+                  :archetype :EnvriReferenceModel .
+
+
+:DataUseSystem dc:description "在科学观点中，数据使用子系统代表数据使用社区的被动角色。 它是支持用户访问基础设施的研究基础设施的一部分。 数据使用子系统管理和跟踪用户活动，并支持用户在不同的社区中发挥作用。"@zh-hans-cn ;
+               :archetype :EnvriReferenceModel ;
+               rdfs:label "data use system"@en ;
+               dc:description "In the Science Viewpoint, the data use subsystem represents a passive role of the data use community.  It is the part of the research infrastructure supporting the access of users to an infrastructure. The data use subsystem manages, and tracks user activities and supports users to conduct their roles in different communities."@en ;
+               rdfs:label "数据使用系统"@zh-hans-cn .
+
+
+:DecisionMaker dc:description "一个积极的角色，是根据数据证据作出决定的人。"@zh-hans-cn ;
+               rdfs:label "decision maker"@en ,
+                          "决策制定者"@zh-hans-cn ;
+               dc:description "An active role, which is a person who makes decisions based on the data evidence."@en ;
+               :archetype :EnvriReferenceModel .
+
+
+:Educator dc:description "积极的角色，是一个利用数据和应用程序服务进行教育和培训的人。"@zh-hans-cn ;
+          rdfs:label "教育者"@zh-hans-cn ;
+          :archetype :EnvriReferenceModel ;
+          dc:description "An active role, which is a person who makes use of the data and application services for education and training purposes."@en ;
+          rdfs:label "educator"@en .
+
+
+:Engineer dc:description "An active role, which is a person who develops and maintains the research infrastructure."@en ;
+          rdfs:label "工程师"@zh-hans-cn ,
+                     "engineer"@en ;
+          dc:description "积极的角色，是一个开发和维护研究基础设施的人。"@zh-hans-cn ;
+          :archetype :EnvriReferenceModel .
+
+
+:EnvironmentalScientist :archetype :EnvriReferenceModel ;
+                        rdfs:label "环境科学家"@zh-hans-cn ;
+                        dc:description "积极的角色，是一个进行研究或进行科学调查的人。 利用各种科学学科的知识，他们可以根据（例如）空气，岩石，土壤，水，自然界的测量或观测数据，收集，处理，分析，综合，研究，报告和/或推荐行动。 其他来源。"@zh-hans-cn ;
+                        rdfs:label "environmental scientist"@en ;
+                        dc:description "An active role, which is a person who conducts research or performs scientific investigations. Using knowledge of various scientific disciplines, they may collect, process, analyse, synthesize, study, report, and/or recommend action based on data derived from measurements or observations of (for example) air, rock, soil, water, nature, and other sources."@en .
+
+
+:Investor rdfs:label "investor"@en ;
+          :archetype :EnvriReferenceModel ;
+          dc:description "An active role, which is a person who makes use of the data and application service for predicting markets so as to make business decisions on producing related commercial products."@en ,
+                         "一个积极的角色，即利用数据和应用程序服务来预测市场，从而在生产相关商业产品时作出商业决策的人。"@zh-hans-cn ;
+          rdfs:label "投资者"@zh-hans-cn .
+
+
+:Journalist :archetype :EnvriReferenceModel ;
+            dc:description "积极的角色，是一个有兴趣了解由环境科学研究基础设施提供的知识的人或组织，或发现和探索由研究基础设施所启用的知识库。"@zh-hans-cn ,
+                           "An active role, which is a person or organisation interested in understanding the knowledge delivered by an environmental science research infrastructure, or discovering and exploring the knowledge base enabled by the research infrastructure."@en ;
+            rdfs:label "记者"@zh-hans-cn ,
+                       "journalist"@en .
+
+
+:MeasurementModelDesigner rdfs:label "measurement model designer"@en ;
+                          dc:description "一个积极的角色，是根据环境科学家的要求设计测量和监测模型的人。"@zh-hans-cn ;
+                          :archetype :EnvriReferenceModel ;
+                          rdfs:label "测量模型设计者"@zh-hans-cn ;
+                          dc:description "An active role, which is a person who designs the measurements and monitoring models based on the requirements of environmental scientists."@en .
+
+
+:Measurer :archetype :EnvriReferenceModel ;
+          rdfs:label "measurer"@en ;
+          dc:description "活跃角色，是决定物理量（如长度，时间，温度等）与测量单位（如米，秒或摄氏度）之比的人。"@zh-hans-cn ,
+                         "An active role, which is a person who determines the ratio of a physical quantity (such as a length, time, temperature etc.), to a unit of measurement (such as the meter, second or degree Celsius)."@en ;
+          rdfs:label "测量者"@zh-hans-cn .
+
+
+:MetadataHarvester rdfs:label "元数据收割者"@zh-hans-cn ,
+                              "metadata harvester"@en ;
+                   dc:description "被动角色，它是一个系统或服务，收集元数据，支持全球概念模型的构建/选择以及映射规则的生成"@zh-hans-cn ;
+                   :archetype :EnvriReferenceModel ;
+                   dc:description "A passive role, which is a system or service collecting metadata which supports the construction/selection of a global conceptual model and the production of mapping rules"@en .
+
+
+:Observer rdfs:label "观察者"@zh-hans-cn ,
+                     "observer"@en ;
+          dc:description "一个积极的角色，是通过他的感官接受外部世界的知识，或使用科学仪器记录数据的人。"@zh-hans-cn ,
+                         "An active role, which is a person who receives knowledge of the outside world through his senses, or records data using scientific instruments."@en ;
+          :archetype :EnvriReferenceModel .
+
+
+:PIDGenerator dc:description "被动角色，公共系统或服务，为数字对象集合生成并分配永久全局唯一标识符（PID）。 PID发生器还维护数字对象的PID的公共注册表。"@zh-hans-cn ;
+              rdfs:label "PID生成器"@zh-hans-cn ;
+              dc:description "A passive role, a public system or service which generates and assigns persistent global unique identifiers (PIDs) to sets of digital objects. The PID Generator also maintains a public registry of PIDs for digital objects."@en ;
+              rdfs:label "PID generator"@en ;
+              :archetype :EnvriReferenceModel .
+
+
+:PIDManager dc:description "A passive role, a system or service that assigns persistent global unique identifiers to data and metadata products. The Manager invokes a external entity, the PID Service, to obtain the PIDs. The manager maintains a local catalogue of PIDs that are being used to reference data and metadata. If the data or metadata in the RI change location or are removed, the PID manager updates this information locally and informs the PID Service."@en ;
+            :archetype :EnvriReferenceModel ;
+            rdfs:label "PID manager"@en ,
+                       "PID管理者"@zh-hans-cn ;
+            dc:description "被动角色，即为数据和元数据产品分配永久性全局唯一标识符的系统或服务。 管理者将调用一个外部实体，即PID服务来获取PID。 管理员维护一个本地目录，用于引用数据和元数据。 如果RI中的数据或元数据更改位置或被删除，则PID管理器在本地更新此信息并通知PID服务。"@zh-hans-cn .
+
+
+:PolicyMaker dc:description "An active role, which is a person who makes decisions based on the data evidence."@en ;
+             :archetype :EnvriReferenceModel ;
+             rdfs:label "policy maker"@en ;
+             dc:description "一个积极的角色，是根据数据证据作出决定的人。"@zh-hans-cn ;
+             rdfs:label "策略制定者"@zh-hans-cn .
+
+
+:ProcessingEnvironmentPlanner rdfs:label "处理环境规划者"@zh-hans-cn ;
+                              :archetype :EnvriReferenceModel ;
+                              dc:description "An active agent that plans how to optimally manage and execute a data processing activity using RI services and the underlying e-infrastructure resources (handling sub-activities such as data staging, data analysis/mining and result retrieval)."@en ;
+                              rdfs:label "processing environment planner"@en ;
+                              dc:description "计划如何使用RI服务和基础电子基础设施资源（处理数据分段，数据分析/挖掘和结果检索等子活动）来最优化地管理和执行数据处理活动的活动代理。"@zh-hans-cn .
+
+
+:ResearchInfrastructure dc:description "研究资源集合为研究界提供数据采集，数据管理，数据发布，数据处理和数据使用功能的一些子集。"@zh-hans-cn ;
+                        rdfs:label "研究基础设施"@zh-hans-cn ,
+                                   "research infrastructure"@en ;
+                        :archetype :EnvriReferenceModel ;
+                        dc:description "A conglomeration of research resources providing some subset of data acquisition, data curation, data publishing, data processing and data use functionality to a research community."@en .
+
+
+:Researcher dc:description "An active role, which is a person who makes use of the data and application services to conduct scientific research."@en ;
+            rdfs:label "研究者"@zh-hans-cn ,
+                       "researcher"@en ;
+            dc:description "积极的角色，是一个利用数据和应用程序服务进行科学研究的人。"@zh-hans-cn ;
+            :archetype :EnvriReferenceModel .
+
+
+:Scientist rdfs:label "科学家"@zh-hans-cn ;
+           :archetype :EnvriReferenceModel ;
+           dc:description "An active role, which is a person who makes use of the data and application services to conduct scientific research."@en ,
+                          "积极的角色，是一个利用数据和应用程序服务进行科学研究的人。"@zh-hans-cn ;
+           rdfs:label "scientist"@en .
+
+
+:SemanticCurator dc:description "一个活跃的角色，是设计和维护本地和全球概念模型并使用这些模型来注释数据和元数据的人。"@zh-hans-cn ,
+                                "An active role, which is a person who designs and maintains local and global conceptual models and uses those models to annotate the data and metadata."@en ;
+                 :archetype :EnvriReferenceModel ;
+                 rdfs:label "语义审编者"@zh-hans-cn ,
+                            "semantic curator"@en .
+
+
+:SemanticMediator dc:description "被动角色是一种促进语义映射（即执行映射和转换规则）的系统或中间件，异构数据的发现和集成。"@zh-hans-cn ,
+                                 "A passive role, which is a system or middleware facilitating semantic mapping (i.e., executing mapping and translation rules), discovery and integration of heterogeneous data."@en ;
+                  rdfs:label "semantic mediator"@en ,
+                             "语义中介"@zh-hans-cn ;
+                  :archetype :EnvriReferenceModel .
+
+
+:Sensor rdfs:label "sensor"@en ;
+        dc:description "被动角色，是一个转换器，用于测量物理量并将其转换为可供观察者或（电子）仪器读取的信号。"@zh-hans-cn ,
+                       "A passive role, which is a converter that measures a physical quantity and converts it into a signal which can be read by an observer or by an (electronic) instrument."@en ;
+        rdfs:label "传感器"@zh-hans-cn ;
+        :archetype :EnvriReferenceModel .
+
+
+:SensorNetwork rdfs:label "sensor network"@en ;
+               :archetype :EnvriReferenceModel ;
+               rdfs:label "传感器网络"@zh-hans-cn ;
+               dc:description "被动角色，这是一个由分布式自主传感器组成的网络，用于监测物理或环境条件。"@zh-hans-cn ,
+                              "A passive role, which is a network consisting of distributed autonomous sensors to monitor physical or environmental conditions."@en .
+
+
+:Service dc:description "A passive role, in which a  functionality for processing data is made available for general use."@en ;
+         :archetype :EnvriReferenceModel ;
+         rdfs:label "服务"@zh-hans-cn ;
+         dc:description "被动的角色，其中处理数据的功能可用于一般用途。"@zh-hans-cn ;
+         rdfs:label "service"@en .
+
+
+:ServiceConsumer dc:description "Either an active or a passive role, which is an entity using the services provided."@en ,
+                                "无论是主动还是被动角色，这是使用所提供服务的实体。"@zh-hans-cn ;
+                 :archetype :EnvriReferenceModel ;
+                 rdfs:label "服务消费者"@zh-hans-cn ,
+                            "service consumer"@en .
+
+
+:ServiceProvider dc:description "Either an active or a passive role, which is an entity providing the services to be used."@en ,
+                                "无论是主动还是被动角色，这是提供所使用的服务的实体。"@zh-hans-cn ;
+                 rdfs:label "服务提供者"@zh-hans-cn ,
+                            "service provider"@en ;
+                 :archetype :EnvriReferenceModel .
+
+
+:ServiceRegistry rdfs:label "服务注册"@zh-hans-cn ,
+                            "service registry"@en ;
+                 :archetype :EnvriReferenceModel ;
+                 dc:description "A passive role, which is an information system for registering services."@en ,
+                                "被动的角色，这是一个注册服务的信息系统。"@zh-hans-cn .
+
+
+:StorageAdministrator rdfs:label "存储管理者"@zh-hans-cn ;
+                      dc:description "An active role, which is a person who has the responsibilities to design data storage, tune queries, perform backup and recovery operations, set up RAID mirrored arrays, and make sure drive space is available for the network."@en ;
+                      :archetype :EnvriReferenceModel ;
+                      dc:description "主动角色是负责设计数据存储，调整查询，执行备份和恢复操作，设置RAID镜像阵列以及确保网络驱动器空间可用的人员。"@zh-hans-cn ;
+                      rdfs:label "storage administrator"@en .
+
+
+:StorageSystem :archetype :EnvriReferenceModel ;
+               rdfs:label "存储系统"@zh-hans-cn ;
+               dc:description "被动角色，包括内存，组件，设备和媒体，在一段时间内保留数据和元数据。"@zh-hans-cn ,
+                              "A passive role, which includes memory, components, devices and media that retain data and metadata for an interval of time."@en ;
+               rdfs:label "storage system"@en .
+
+
+:Technician :archetype :EnvriReferenceModel ;
+            rdfs:label "technician"@en ;
+            dc:description "An active role, which is a person who develops and deploys sensor instruments, establishing and testing the sensor network, operating, maintaining, monitoring and repairing the observatory hardware."@en ;
+            rdfs:label "技术人员"@zh-hans-cn ;
+            dc:description "一个积极的角色，即开发和部署传感器仪器，建立和测试传感器网络，操作，维护，监测和修复天文台硬件。"@zh-hans-cn .
+
+
+:Technologist rdfs:label "technologist"@en ;
+              dc:description "积极的角色，是一个开发和维护研究基础设施的人。"@zh-hans-cn ;
+              rdfs:label "技术专家"@zh-hans-cn ;
+              :archetype :EnvriReferenceModel ;
+              dc:description "An active role, which is a person who develops and maintains the research infrastructure."@en .
+
+
+:Trainer rdfs:label "trainer"@en ;
+         dc:description "An active role, which is a person who makes use of the data and application services for education and training purposes."@en ;
+         :archetype :EnvriReferenceModel ;
+         dc:description "积极的角色，是一个利用数据和应用程序服务进行教育和培训的人。"@zh-hans-cn ;
+         rdfs:label "教练"@zh-hans-cn .
+
+
+base:CV_DataStream rdfs:comment "数据流是一个计算实体，表示从一个位置到另一个位置的数据传输，由安装在每个位置的计算对象代理。"@zh-hans-cn ;
+                   rdfs:label "数据流"@zh-hans-cn .
+
+
+base:CV_Thing rdfs:label "计算视点"@zh-hans-cn ;
+              dc:description "该模型的计算观点考虑了环境研究基础设施中期望的主要计算对象以及它们可以与之交互的接口。 每个对象封装了需要由基础设施内的服务或资源共同实现的功能; 每个对象还提供了许多可以调用该功能的接口，或者通过这些接口可以调用其他对象的功能。 通过将兼容的接口绑定在一起，可以描述对象之间的交互网络，这证明了符合标准的研究基础设施的计算要求。"@zh-hans-cn .
+
+
+base:ControlledVocabulary dc:description "本体，词库，分类学或其他一些术语的定义，以标准化某一类实体的描述。"@zh-hans-cn ;
+                          rdfs:label "受控词汇表"@zh-hans-cn .
+
+
+base:DataFormat rdfs:label "数据格式"@zh-hans-cn ;
+                dc:description "一种特定类型的标准 关注数据的实现作为可检索的存储实体。"@zh-hans-cn .
+
+
+base:EV_Thing dc:description "在建议书中为工程视角定义的概念IU_T X.902和X.903（国际标准ISO / IEC 10746-2 / 3）信息技术 - 开放分布式处理 - 参考模型：基础，体系结构。"@zh-hans-cn ;
+              rdfs:label "工程视点"@zh-hans-cn .
+
+
+base:EngineeringViewpoint rdfs:label "工程观点"@zh-hans-cn ;
+                          dc:description "基于资源配置为系统中的计算操作提供通信通道和处理能力的建模视角。"@zh-hans-cn .
+
+
+base:HardwareObject rdfs:label "硬件对象"@zh-hans-cn ;
+                    dc:description "一项用于托管数据或计算的硬件。"@zh-hans-cn .
+
+
+base:IV_Thing dc:description "信息观点的目标是为基础设施处理的共享信息提供一个通用的抽象模型。 重点在于信息本身，而不考虑任何平台特定或实施细节。 它独立于操纵信息或用于存储它的技术的性质的计算界面和功能。 类似于高层次的本体，它旨在提供对特定域的共享信息实体的独特和一致的解释。 信息视角指定信息对象的类型以及这些类型之间的关系。 它描述了数据的状态如何随着计算操作的结果而变化。 它还定义了对数据的约束和处理这些数据的规则。"@zh-hans-cn ;
+              rdfs:label "信息视点"@zh-hans-cn .
+
+
+base:InformationViewpoint rdfs:label "信息观点"@zh-hans-cn ;
+                          dc:description "基于在系统内使用的信息的创建和管理的建模视角。"@zh-hans-cn .
+
+
+base:ModellingViewpoint rdfs:label "建模观点"@zh-hans-cn ;
+                        dc:description "RM-ODP定义的分布式系统的观点。"@zh-hans-cn .
+
+
+base:NV_Object dc:description "代表物理（或虚拟）基础结构的一部分的对象,这些基础结构托管复杂系统使用的计算和信息对象。"@zh-hans-cn ;
+               rdfs:label "工程对象"@zh-hans-cn .
+
+
+base:Project dc:description "一个项目是由一些通常在有限的时间内提供财政支持的权力机构为特定目的汇集的行动者和资源的集合。"@zh-hans-cn ;
+             rdfs:label "工程"@zh-hans-cn .
+
+
+base:RM_Activity rdfs:label "引用活动"@zh-hans-cn ;
+                 dc:description "涉及系统视图中的对象的活动。"@zh-hans-cn .
+
+
+base:RM_Object rdfs:label "参考对象"@zh-hans-cn ;
+               rdfs:comment "系统视图中存在的对象。"@zh-hans-cn .
+
+
+base:RM_Thing rdfs:label "参考模型"@zh-hans-cn ;
+              dc:description "存在于一个系统的一种或多种视角的上下文中的一个事物(模型)。"@zh-hans-cn .
+
+
+base:SV_Thing rdfs:label "科学观点"@zh-hans-cn ;
+              dc:description "ENVRI RM的科学观点旨在从执行任务的人们的角度捕捉环境研究基础设施的要求，并以基础设施为中介实现其目标。 在这个观点中的建模使用逆向工程方法，通过分析现实世界系统的结构和功能来推导出模型对象的原理和性质。"@zh-hans-cn .
+
+
+base:ScienceViewpoint dc:description "基于系统中参与者的角色和行为，以及他们所使用的人造物和资源，特别是在科学调查的背景下的建模视角。"@zh-hans-cn ;
+                      rdfs:label "科学观点"@zh-hans-cn .
+
+
+base:SoftwareObject dc:description "一项实现计算过程核心功能的软件。"@zh-hans-cn ;
+                    rdfs:label "软件对象"@zh-hans-cn .
+
+
+base:Standard dc:description "一些活动，机构，API或数据的形式化，为其构建定义了一套通用的规则，以及它们如何与之交互。"@zh-hans-cn ;
+              rdfs:label "标准"@zh-hans-cn .
+
+
+base:TV_Object rdfs:label "技术对象"@zh-hans-cn ;
+               dc:description "一个允许某些实体存在的概念模型的实现; 软件，硬件和标准，基于其上可以构建服务，工具和其他资源。"@zh-hans-cn .
+
+
+base:TV_Thing rdfs:label ""@zh-hans-cn ,
+                         "技术观点"@zh-hans-cn ;
+              dc:description "在建议书中为技术观点定义的概念IU_T X.902和X.903（国际标准ISO / IEC 10746-2 / 3）信息技术 - 开放分布式处理 - 参考模型：基础，体系结构。"@zh-hans-cn .
+
+
+base:TechnologyViewpoint rdfs:label "技术观点"@zh-hans-cn ;
+                         dc:description "基于选择硬件，技术和标准的建模视角来实现系统的不同元素的模型视角。"@zh-hans-cn .
+
+
+base:artefact rdfs:label "人造物"@zh-hans-cn ;
+              dc:description "一个人工制品是在行动者之间创造或传递的东西，或者委托给资源，通常包含对系统某些行为的重要性的信息。"@zh-hans-cn .
+
+
+base:artefactInvolvedIn rdfs:label "涉及的人造物"@zh-hans-cn .
+
+
+base:attributeOf rdfs:label "属性"@zh-hans-cn .
+
+
+base:behaviourInvolving rdfs:label "行为涉及"@zh-hans-cn .
+
+
+base:classifierFor rdfs:label "分类器"@zh-hans-cn .
+
+
+base:constructedBy rdfs:label "由...构建"@zh-hans-cn .
+
+
+base:constructs rdfs:label "构建"@zh-hans-cn .
+
+
+base:consumesDataStream rdfs:label "消费数据流"@zh-hans-cn .
+
+
+base:correspondsWith rdfs:label "对应"@zh-hans-cn .
+
+
+base:createdDuring rdfs:label "期间创建"@zh-hans-cn .
+
+
+base:dataHeldBy rdfs:label "所持有的数据"@zh-hans-cn .
+
+
+base:dataStreamConsumedBy rdfs:label "由...消耗的数据流"@zh-hans-cn .
+
+
+base:dataStreamProducedBy rdfs:label "由...产生的数据流"@zh-hans-cn .
+
+
+base:dependedOnBy rdfs:label "被依靠"@zh-hans-cn .
+
+
+base:dependsOn rdfs:label "依赖于取决于"@zh-hans-cn .
+
+
+base:developerOf rdfs:label "开发者"@zh-hans-cn .
+
+
+base:domainOf rdfs:label "领域"@zh-hans-cn .
+
+
+base:follows rdfs:label "依照"@zh-hans-cn .
+
+
+base:formatUsedBy rdfs:label "使用的格式"@zh-hans-cn .
+
+
+base:hasDeveloper rdfs:label "有开发者"@zh-hans-cn .
+
+
+base:hasDomain rdfs:label "有领域"@zh-hans-cn .
+
+
+base:hasParticipant rdfs:label "有参与者"@zh-hans-cn .
+
+
+base:hasResource rdfs:label "有资源"@zh-hans-cn .
+
+
+base:holdsData rdfs:label "掌握数据"@zh-hans-cn .
+
+
+base:holdsInformation rdfs:label "掌握信息"@zh-hans-cn .
+
+
+base:informationActionInvolvedIn rdfs:label "信息行动涉及"@zh-hans-cn .
+
+
+base:informationHeldBy rdfs:label "所持有的信息"@zh-hans-cn .
+
+
+base:involvedIn rdfs:label "卷入到"@zh-hans-cn .
+
+
+base:involvesActor rdfs:label "涉及角色"@zh-hans-cn .
+
+
+base:involvesArtefact rdfs:label "涉及人造物"@zh-hans-cn .
+
+
+base:involvesInformationAction rdfs:label "涉及信息行动"@zh-hans-cn .
+
+
+base:involvesOperation rdfs:label "涉及操作"@zh-hans-cn .
+
+
+base:involvesResource rdfs:label "涉及资源"@zh-hans-cn .
+
+
+base:mappedUsing rdfs:label "使用映射"@zh-hans-cn .
+
+
+base:operationInvolvedIn rdfs:label "涉及的操作"@zh-hans-cn .
+
+
+base:partOfBehaviour rdfs:label "行为的一部分"@zh-hans-cn .
+
+
+base:participantOf rdfs:label "的参与者"@zh-hans-cn .
+
+
+base:producesDataStream rdfs:label "产生数据流"@zh-hans-cn .
+
+
+base:projectSupports rdfs:label "项目支持"@zh-hans-cn .
+
+
+base:requiredFor rdfs:label "需要"@zh-hans-cn .
+
+
+base:resourceInvolvedIn rdfs:label "涉及的资源"@zh-hans-cn .
+
+
+base:roleOf rdfs:label "角色"@zh-hans-cn .
+
+
+base:softwareUsedBy rdfs:label "使用的软件"@zh-hans-cn .
+
+
+base:standardUsedBy rdfs:label "使用的标准"@zh-hans-cn .
+
+
+base:supportedByProject rdfs:label "受项目支持"@zh-hans-cn .
+
+
+base:technologyUsedBy rdfs:label "使用的技术"@zh-hans-cn .
+
+
+base:transformationOn rdfs:label "转型为"@zh-hans-cn .
+
+
+base:usesFormat rdfs:label "使用格式"@zh-hans-cn .
+
+
+base:usesInfrastructure rdfs:label "使用基础设施"@zh-hans-cn .
+
+
+base:usesSoftware rdfs:label "使用软件"@zh-hans-cn .
+
+
+base:usesStandard rdfs:label "使用标准"@zh-hans-cn .
+
+
+base:usesTechnology rdfs:label "使用技术"@zh-hans-cn .
+
+
+base:usesVocabulary rdfs:label "使用词汇表"@zh-hans-cn .
+
+
+base:vocabularyUsedBy rdfs:label "使用的词汇表"@zh-hans-cn .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :AcquireIdentifierCapability
+                        :AnnotateDataCapability
+                        :AuthoriseActionCapability
+                        :CalibrateInstrumentCapability
+                        :ConfigureControllerCapability
+                        :CoordinateProcessCapability
+                        :DeliverDataSetCapability
+                        :DeliverRawDataCapability
+                        :ExportCuratedDataCapability
+                        :ExportMetadataCapability
+                        :ImportDataForCurationCapability
+                        :PrepareDataTransferCapability
+                        :ProcessRequestCapability
+                        :QueryDataCapability
+                        :QueryResourceCapability
+                        :RequestDataCapability
+                        :ResolveIdentifierCapability
+                        :RetrieveDataCapability
+                        :StageDataCapability
+                        :TranslateRequestCapability
+                        :UpdateCataloguesCapability
+                        :UpdateModelCapability
+                        :UpdateRecordCapability
+                        :UpdateRegistryCapability
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :AnnotatedState
+                        :AssignedMetadataState
+                        :FinallyReviewedState
+                        :IdentifiedState
+                        :MappedState
+                        :ProcessedState
+                        :PublishedState
+                        :QAAssessedState
+                        :RawState
+                        :RegisteredState
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :DataAcquisitionPhase
+                        :DataCurationPhase
+                        :DataProcessingPhase
+                        :DataPublishingPhase
+                        :DataUsePhase
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
